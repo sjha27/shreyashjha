@@ -9,6 +9,8 @@ if git diff --cached --quiet; then
 fi
 
 git commit -m "Website update $(date '+%Y-%m-%d %H:%M:%S')"
+
+git pull --rebase origin main
 git push origin main
 
 echo "Published successfully."

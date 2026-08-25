@@ -1,15 +1,465 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="is-locked">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreyash</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreyash Jha — Product &amp; Analytics</title>
+<meta name="description" content="Shreyash Jha is a product and analytics professional at Inspire Brands, finishing an M.S. in Economics at Georgia Tech. Experience, resume, and contact.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFFFFF">
+
+<link rel="canonical" href="https://shreyashjha.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shreyash Jha — Product & Analytics">
+<meta property="og:description" content="Product and analytics professional at Inspire Brands. Georgia Tech M.S. Economics.">
+<meta property="og:url" content="https://shreyashjha.com/">
+<meta property="og:image" content="https://shreyashjha.com/assets/img/headshot.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shreyash Jha — Product & Analytics">
+<meta name="twitter:description" content="Product and analytics professional at Inspire Brands. Georgia Tech M.S. Economics.">
+<meta name="twitter:image" content="https://shreyashjha.com/assets/img/headshot.jpg">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<!-- TODO: add apple-touch-icon.png (180x180) + favicon.ico fallback -->
+<!-- TODO: replace og:image with a purpose-built 1200x630 share card -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Shreyash</h1>
-        <p class="intro">Hi my name is Shreyash</p>
+
+<div class="lock-screen" id="lock-screen" role="dialog" aria-modal="true" aria-labelledby="lock-title">
+  <div class="lock-bg" aria-hidden="true"></div>
+  <div class="lock-panel">
+    <p class="lock-eyebrow" id="lock-title">Shreyash&rsquo;s site</p>
+    <h1 class="lock-heading">Enter Passcode</h1>
+
+    <div class="lock-passcode">
+      <div class="lock-dots" aria-hidden="true">
+        <span class="lock-dot" data-dot></span>
+        <span class="lock-dot" data-dot></span>
+        <span class="lock-dot" data-dot></span>
+        <span class="lock-dot" data-dot></span>
+      </div>
+      <label class="sr-only" for="passcode-input">4-digit passcode</label>
+      <input
+        class="lock-input"
+        type="tel"
+        inputmode="numeric"
+        pattern="[0-9]*"
+        autocomplete="off"
+        maxlength="4"
+        id="passcode-input"
+        aria-describedby="lock-error">
     </div>
+
+    <p class="lock-error" id="lock-error" role="alert"></p>
+
+    <div class="lock-keypad" aria-hidden="true">
+      <button type="button" class="lock-key" data-digit="1">1</button>
+      <button type="button" class="lock-key" data-digit="2">2</button>
+      <button type="button" class="lock-key" data-digit="3">3</button>
+      <button type="button" class="lock-key" data-digit="4">4</button>
+      <button type="button" class="lock-key" data-digit="5">5</button>
+      <button type="button" class="lock-key" data-digit="6">6</button>
+      <button type="button" class="lock-key" data-digit="7">7</button>
+      <button type="button" class="lock-key" data-digit="8">8</button>
+      <button type="button" class="lock-key" data-digit="9">9</button>
+      <span class="lock-key lock-key-spacer"></span>
+      <button type="button" class="lock-key" data-digit="0">0</button>
+      <button type="button" class="lock-key lock-key-delete" data-action="delete">
+        <span class="sr-only">Delete</span>
+        <span aria-hidden="true">⌫</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="site-content" inert>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="#top">Shreyash<span class="wordmark-dot">.</span></a>
+
+    <nav class="site-nav" id="site-menu" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-resume-item">
+          <a class="btn btn-dark btn-sm" href="assets/shreyash-jha-resume.pdf" target="_blank" rel="noopener">
+            Résumé<span class="sr-only"> (PDF, opens in new tab)</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+      <span class="sr-only">Menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="top" class="hero">
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Atlanta, GA · Open to APM roles</p>
+
+        <h1 class="hero-title">
+          I make data<br>
+          make <span class="hl">sense</span>.
+        </h1>
+
+        <p class="hero-sub">
+          Product &amp; analytics at Inspire Brands, working on
+          <span class="rotator" id="rotator" aria-hidden="true"><span class="rotator-word">loyalty</span></span><span class="sr-only">loyalty, personalization, experimentation, growth, and AI</span>
+        </p>
+
+        <p class="hero-desc">
+          I&rsquo;m finishing an M.S. in Economics at Georgia Tech. Most of my work lives where
+          customer behavior, experiments, and business strategy overlap.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="assets/shreyash-jha-resume.pdf" target="_blank" rel="noopener">
+            View Résumé<span class="sr-only"> (PDF, opens in new tab)</span>
+          </a>
+          <a class="btn btn-outline" href="#experience">See my work</a>
+        </div>
+
+        <ul class="hero-links">
+          <li><a href="mailto:shreyashkjha@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/shreyashjha" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in new tab)</span></a></li>
+        </ul>
+      </div>
+
+      <div class="hero-media">
+        <div class="photo-frame">
+          <img src="assets/img/headshot.jpg" alt="Shreyash Jha" width="800" height="1200" fetchpriority="high" decoding="async">
+        </div>
+        <span class="float-chip chip-a" aria-hidden="true">SQL</span>
+        <span class="float-chip chip-b" aria-hidden="true">Python</span>
+        <span class="float-chip chip-c" aria-hidden="true">A/B Testing</span>
+        <span class="float-chip chip-d" aria-hidden="true">Snowflake</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="stats-band" aria-labelledby="stats-heading">
+    <div class="wrap">
+      <h2 id="stats-heading" class="band-title">The numbers I&rsquo;ve worked behind</h2>
+      <ul class="stats-grid">
+        <li class="stat">
+          <p class="stat-num">200M+</p>
+          <p class="stat-label">Customers in the loyalty and personalization programs I support at Inspire Brands.</p>
+        </li>
+        <li class="stat">
+          <p class="stat-num">150M+</p>
+          <p class="stat-label">Users on the streaming platform whose technology and security controls I evaluated at PwC.</p>
+        </li>
+        <li class="stat">
+          <p class="stat-num">68,000+</p>
+          <p class="stat-label">Athletes in the performance database I built and maintained at Reel Analytics.</p>
+        </li>
+        <li class="stat">
+          <p class="stat-num">$1.5M</p>
+          <p class="stat-label">Value generated by the data initiative I supported through a Tableau to Power BI migration.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="kicker">About</p>
+        <h2 class="section-title">Economics taught me to ask <span class="hl hl-mint">why</span> first.</h2>
+        <p>
+          I started in economics because I liked the discipline of understanding why something
+          happened before deciding what to do about it. That instinct followed me into data:
+          first building a performance database for 68,000+ athletes at Reel Analytics, then
+          evaluating technology and risk controls for a streaming platform used by 150 million
+          people at PwC, and now working inside Inspire Brands&rsquo; loyalty and personalization
+          programs.
+        </p>
+        <p>
+          The question I work on has shifted from &ldquo;what happened&rdquo; to &ldquo;what
+          should we build.&rdquo; That shift is what pulled me toward product management. The
+          parts of the job I like best are the ones that feel like economics: deciding what&rsquo;s
+          actually worth prioritizing, testing an assumption before spending real resources on
+          it, and turning a business problem into something an engineering team can build.
+        </p>
+        <p>
+          Outside of that I follow basketball closely enough that I spent two seasons breaking
+          down film for Georgia Tech&rsquo;s Division I program.
+        </p>
+      </div>
+
+      <div class="about-media">
+        <figure class="photo-card photo-card-tilt-a">
+          <img src="assets/img/grad-masters.jpg" alt="Shreyash Jha at Georgia Tech commencement" width="1200" height="855" loading="lazy" decoding="async">
+          <figcaption>Georgia Tech commencement</figcaption>
+        </figure>
+        <figure class="photo-card photo-card-tilt-b">
+          <img src="assets/img/grad-ivanallen.jpg" alt="Shreyash Jha at the Georgia Tech Ivan Allen College ceremony" width="1200" height="798" loading="lazy" decoding="async">
+          <figcaption>Ivan Allen College ceremony</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section reveal">
+    <div class="wrap">
+      <p class="kicker">Experience</p>
+      <h2 class="section-title">Where I&rsquo;ve worked.</h2>
+
+      <h3 class="group-title">Professional</h3>
+      <ol class="cards">
+
+        <li class="card">
+          <div class="card-head">
+            <div>
+              <p class="card-role">Consumer &amp; Product Analyst</p>
+              <p class="card-org">Inspire Brands</p>
+            </div>
+            <p class="card-date">Jan 2026 &ndash; Present</p>
+          </div>
+          <p class="card-note">Arby&rsquo;s · Buffalo Wild Wings · Baskin-Robbins · Dunkin&rsquo; · Jimmy John&rsquo;s · Sonic</p>
+          <p class="card-desc">
+            I own analytics for loyalty and personalized marketing across 200M+ customers,
+            including the consumer analysis that informed Arby&rsquo;s in-app points program. I
+            design test-control experiments to measure what actually moves conversion, and I
+            automated reporting workflows that give the team back 6+ hours a week.
+          </p>
+          <ul class="chips">
+            <li class="chip chip-mint">Product Analytics</li>
+            <li class="chip chip-sky">Experimentation</li>
+            <li class="chip chip-butter">Personalization</li>
+            <li class="chip chip-blush">Loyalty</li>
+          </ul>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <div>
+              <p class="card-role">Data Analyst</p>
+              <p class="card-org">Inspire Brands</p>
+            </div>
+            <p class="card-date">May 2024 &ndash; Aug 2024</p>
+          </div>
+          <p class="card-desc">
+            I built a growth and market-share strategy for BWW GO aimed at customers under 25,
+            and helped migrate the team&rsquo;s Tableau dashboards to Power BI as part of an
+            initiative that generated $1.5M in value. I also restructured a data pipeline
+            covering 2,000+ Jimmy John&rsquo;s menu items.
+          </p>
+          <ul class="chips">
+            <li class="chip chip-sky">Growth Strategy</li>
+            <li class="chip chip-lilac">Power BI</li>
+            <li class="chip chip-mint">Data Pipelines</li>
+          </ul>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <div>
+              <p class="card-role">Technology Risk Analyst</p>
+              <p class="card-org">PwC</p>
+            </div>
+            <p class="card-date">Jun 2025 &ndash; Aug 2025</p>
+          </div>
+          <p class="card-desc">
+            I evaluated technology, security, and operational controls for a streaming platform
+            serving 150M+ users, working across four PwC teams and 50+ stakeholders to close
+            evidence gaps and support audit readiness. A useful lesson in how much product work
+            is shaped by constraints users never see.
+          </p>
+          <ul class="chips">
+            <li class="chip chip-blush">Technology Risk</li>
+            <li class="chip chip-butter">Stakeholder Management</li>
+            <li class="chip chip-mint">Process Automation</li>
+          </ul>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <div>
+              <p class="card-role">Financial Analyst</p>
+              <p class="card-org">Allianz Commercial</p>
+            </div>
+            <p class="card-date">May 2023 &ndash; Aug 2023</p>
+          </div>
+          <p class="card-desc">
+            I evaluated financial and operational risk for 300+ Amazon Delivery Service Provider
+            clients across accounts valued above $150M, and wrote the Excel-based SOPs the team
+            used to standardize risk review and client communication.
+          </p>
+          <ul class="chips">
+            <li class="chip chip-sky">Risk Analysis</li>
+            <li class="chip chip-lilac">Process Design</li>
+          </ul>
+        </li>
+
+      </ol>
+
+      <h3 class="group-title">Product &amp; Leadership</h3>
+      <ol class="cards">
+
+        <li class="card">
+          <div class="card-head">
+            <div>
+              <p class="card-role">Product Lead</p>
+              <p class="card-org">Reel Analytics</p>
+            </div>
+            <p class="card-date">Jan 2023 &ndash; May 2024</p>
+          </div>
+          <p class="card-desc">
+            I led an end-to-end analytics project to build and maintain a database of performance
+            metrics for 68,000+ athletes, managed the ETL workflows behind it, and translated
+            data-quality findings into product recommendations for the CEO. I also led development
+            of an ML player-classification model built on computer-vision data.
+          </p>
+          <ul class="chips">
+            <li class="chip chip-mint">Product Leadership</li>
+            <li class="chip chip-sky">SQL &amp; ETL</li>
+            <li class="chip chip-butter">ML / Computer Vision</li>
+          </ul>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <div>
+              <p class="card-role">Statistics &amp; Film Analyst</p>
+              <p class="card-org">Georgia Tech Men&rsquo;s Basketball</p>
+            </div>
+            <p class="card-date">Aug 2023 &ndash; May 2025</p>
+          </div>
+          <p class="card-desc">
+            I analyzed team film with Sportscode to identify play patterns and built statistical
+            models evaluating player performance, feeding both into coaching decisions for a
+            Division I program.
+          </p>
+          <ul class="chips">
+            <li class="chip chip-blush">Statistical Modeling</li>
+            <li class="chip chip-lilac">Sportscode</li>
+          </ul>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <div>
+              <p class="card-role">Product Lead, Health Care Research</p>
+              <p class="card-org">Georgia Tech VIP Program</p>
+            </div>
+            <p class="card-date">Jan 2024 &ndash; May 2026</p>
+          </div>
+          <p class="card-desc">
+            I built and validated a dataset covering 200+ U.S. hospital M&amp;A transactions to
+            study industry consolidation, and presented award-winning research on gaps in CMS
+            ownership data and hospital M&amp;A reporting.
+          </p>
+          <ul class="chips">
+            <li class="chip chip-mint">Research</li>
+            <li class="chip chip-sky">Data Validation</li>
+          </ul>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <section id="education" class="section reveal">
+    <div class="wrap">
+      <p class="kicker">Education &amp; Learning</p>
+      <h2 class="section-title">Georgia Tech, twice.</h2>
+
+      <div class="edu-card">
+        <div class="edu-main">
+          <p class="card-role">Georgia Institute of Technology</p>
+          <ul class="edu-degrees">
+            <li><strong>M.S. Economics</strong> <span>May 2026</span></li>
+            <li><strong>B.S. Economics</strong>, Minor in Computational Data Analysis <span>May 2025</span></li>
+          </ul>
+        </div>
+        <p class="edu-gpa"><span>GPA</span> 3.62<span class="edu-gpa-max">/4.00</span></p>
+      </div>
+
+      <div class="toolbelt">
+        <p class="toolbelt-label">Tools I use</p>
+        <ul class="chips">
+          <li class="chip chip-plain">SQL</li>
+          <li class="chip chip-plain">Python</li>
+          <li class="chip chip-plain">R</li>
+          <li class="chip chip-plain">Java</li>
+          <li class="chip chip-plain">Excel</li>
+          <li class="chip chip-plain">Snowflake</li>
+          <li class="chip chip-plain">Databricks</li>
+          <li class="chip chip-plain">Power BI</li>
+          <li class="chip chip-plain">Jira</li>
+          <li class="chip chip-plain">Claude</li>
+          <li class="chip chip-plain">ChatGPT</li>
+          <li class="chip chip-plain">Copilot</li>
+        </ul>
+      </div>
+
+      <div class="learning-note">
+        <p class="learning-note-label">Certifications &amp; ongoing learning</p>
+        <p>
+          Nothing listed here yet. I&rsquo;d rather leave this empty than pad it with courses that
+          didn&rsquo;t teach me much, so it fills up as I finish things worth sharing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future: Projects / Case Studies section slots in here.
+       Use the `.cards` + `.card` pattern above for the index grid, and give each
+       project its own page under /projects/ for the full problem → research →
+       decisions → tradeoffs → results write-up. -->
+
+  <section id="contact" class="contact-band">
+    <div class="wrap contact-inner">
+      <p class="kicker kicker-light">Contact</p>
+      <h2 class="contact-title">Let&rsquo;s talk.</h2>
+      <p class="contact-lead">
+        I&rsquo;m looking for Associate Product Manager and early-career PM roles for 2026. If
+        that&rsquo;s you, or you just want to compare notes on product and data, my inbox is open.
+      </p>
+      <div class="contact-actions">
+        <a class="btn btn-light" href="mailto:shreyashkjha@gmail.com">shreyashkjha@gmail.com</a>
+        <a class="btn btn-outline-light" href="https://linkedin.com/in/shreyashjha" target="_blank" rel="noopener">
+          LinkedIn<span class="sr-only"> (opens in new tab)</span>
+        </a>
+        <a class="btn btn-outline-light" href="assets/shreyash-jha-resume.pdf" target="_blank" rel="noopener">
+          Résumé<span class="sr-only"> (PDF, opens in new tab)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Shreyash Jha</p>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1005,15 +1005,38 @@ h1, h2, h3, p, figure { margin: 0; }
 }
 
 .learning-note {
-  border: 2px dashed var(--line);
+  border: 1px solid var(--line);
   border-radius: var(--r-lg);
   padding: var(--s3);
   max-width: var(--measure);
 }
 
-.learning-note p:last-child {
-  color: var(--ink-soft);
-  font-size: 0.95rem;
+.cert-list { margin-bottom: var(--s2); }
+
+.cert-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.5rem;
+  padding: 0.6rem 0;
+}
+
+.cert-item + .cert-item { border-top: 1px solid var(--line); }
+
+.cert-name {
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+
+.cert-issuer {
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+}
+
+.cert-footnote {
+  color: var(--ink-faint);
+  font-size: 0.85rem;
 }
 
 /* ---------------------------------------------------------------

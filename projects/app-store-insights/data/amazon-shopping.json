@@ -1,0 +1,718 @@
+{
+  "schemaVersion": "1.0",
+  "app": {
+    "appId": 297606951,
+    "name": "Amazon Shopping",
+    "developer": "AMZN Mobile LLC",
+    "category": "Shopping",
+    "countryCode": "us",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/79/b8/5d79b865-9ad4-f905-696c-0e07bac67986/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/amazon-shopping/id297606951?uo=4"
+  },
+  "reviewSnapshot": {
+    "sourceFile": "amazon-shopping-2026-08-26.json",
+    "fetchedAt": "2026-08-26T06:52:02.622Z",
+    "reviewsAnalyzed": 200,
+    "dateRange": {
+      "latest": "2026-08-24T20:48:45-07:00",
+      "earliest": "2026-08-21T08:58:29-07:00"
+    }
+  },
+  "metrics": {
+    "sampleAverageRating": 1.81,
+    "ratingDistribution": {
+      "1": 138,
+      "2": 18,
+      "3": 16,
+      "4": 1,
+      "5": 27
+    },
+    "ratingDistributionPercent": {
+      "1": 69,
+      "2": 9,
+      "3": 8,
+      "4": 0.5,
+      "5": 13.5
+    },
+    "currentAppStoreRating": {
+      "average": 4.82739,
+      "count": 8431118
+    }
+  },
+  "productBrief": "By a wide margin, the dominant signal in this sample is a specific, recent product change: a default AI search experience (\"Alexa for Shopping\") inserted ahead of standard search results with no setting to disable it. This is the single most consistent and frequent complaint pattern observed across this entire ten-app project, with reviewers explicitly stating they've reduced Amazon use or considered cancelling Prime specifically over it. A second, largely independent pattern describes delivery estimates -- including the Prime shipping promise itself -- slipping after an order is placed, and a related cluster describes customer support as effectively inaccessible for resolving the refund and billing disputes that result. Where users do praise the app, it centers on Amazon's foundational strengths: sheer selection and, separately, delivery reliability when it works as intended -- both of which are precisely what the top two pain points describe eroding.",
+  "transformationSummary": {
+    "reviewsAnalyzed": 200,
+    "recurringSignalCount": 9,
+    "priorityCount": 4
+  },
+  "headlineSignals": {
+    "topStrengthId": "strength-selection-convenience",
+    "topPainPointId": "pain-forced-ai-search",
+    "topRequestId": "request-disable-ai-search",
+    "topPriorityId": "priority-forced-ai-search"
+  },
+  "strengths": [
+    {
+      "id": "strength-selection-convenience",
+      "theme": "Vast Selection & Shopping Convenience",
+      "supportingReviewIds": [
+        "14467998461",
+        "14463164934",
+        "14463083452",
+        "14462331329",
+        "14461234633"
+      ],
+      "evidenceCount": 5,
+      "whatUsersValue": "Reviewers repeatedly cite the sheer breadth of what's available on Amazon and the convenience of finding nearly anything in one place, compared to competitors or physical shopping.",
+      "whyThisMatters": "Selection breadth is Amazon's foundational value proposition; this remains a genuine draw for reviewers even in a sample otherwise dominated by complaints about a specific recent change (forced AI search).",
+      "protectThis": "The core search-and-browse experience that lets people actually find and compare this vast selection is exactly what the AI-search pain point below describes as newly degraded -- protecting this strength and fixing that pain point are the same underlying task.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14461234633",
+          "quote": "If it isn’t on Amazon, the chances that I buy it get slimmer by the seconds that I spend looking for it.",
+          "rating": 5,
+          "date": "2026-08-22"
+        },
+        {
+          "reviewId": "14463083452",
+          "quote": "amazon actually has almost anything even the ns2 mario kart bundle and they refund too if u dont like the item!",
+          "rating": 5,
+          "date": "2026-08-23"
+        }
+      ]
+    },
+    {
+      "id": "strength-fast-delivery",
+      "theme": "Fast, Reliable Delivery When It Works As Intended",
+      "supportingReviewIds": [
+        "14467404536",
+        "14464552324",
+        "14459035095"
+      ],
+      "evidenceCount": 3,
+      "whatUsersValue": "A separate group of reviewers specifically credit fast, dependable delivery -- some citing a decade or more of consistent experience -- distinct from the general selection/convenience praise above.",
+      "whyThisMatters": "This is direct evidence that the core Prime delivery promise works well for a meaningful share of reviewers, which is worth stating plainly alongside the shipping-delay pain point below since both can be true in the same sample.",
+      "protectThis": "Consistent, fast delivery is the specific thing this group praises and is directly what the shipping-delay pain point below describes eroding for other reviewers -- worth protecting as the underlying cause of that pain point is investigated.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14467404536",
+          "quote": "Most items arrive within two days and sometimes that very next day. I’ve been with Amazon for at least a decade and the vast majority of times any problem I have is with the product itself and not Amazon. I might add that I have very few issues with the product itself.",
+          "rating": 5,
+          "date": "2026-08-24"
+        }
+      ]
+    }
+  ],
+  "painPoints": [
+    {
+      "id": "pain-forced-ai-search",
+      "theme": "Forced AI Search (\"Alexa for Shopping\") With No Opt-Out",
+      "issueType": "UI/UX Friction",
+      "productSurface": "Product Search",
+      "supportingReviewIds": [
+        "14468874675",
+        "14468845995",
+        "14468711045",
+        "14468599363",
+        "14468281014",
+        "14468255251",
+        "14467589924",
+        "14467183077",
+        "14466930263",
+        "14465646173",
+        "14463954720",
+        "14462915539",
+        "14458743827",
+        "14455547928"
+      ],
+      "evidenceCount": 14,
+      "evidencePercentOfSample": 7,
+      "affectedJourney": "Searching for a specific product to purchase.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Doesn't block a purchase outright (reviewers describe a workaround of clicking past the AI response), but reviewers consistently describe it as adding a mandatory extra step and delay to the single most frequent action in the app, with many stating they've reduced use or considered cancelling Prime specifically over this."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Product search is the primary entry point to the core shopping journey; a change that adds friction here touches nearly every session."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "This is, by a wide margin, the single largest and most consistent complaint pattern observed across this entire batch of ten apps -- reviewers overwhelmingly describe the identical specific grievance (a mandatory AI response inserted before search results, with no setting to disable it) using near-identical language independently."
+      },
+      "synthesis": "An overwhelming volume of reviewers describe a new default AI search experience (\"Alexa for Shopping\") that inserts an AI-generated response or summary before showing standard search results, with no available setting to disable it. Reviewers consistently frame this not as dislike of AI in general, but specifically as removing a choice they previously had.",
+      "potentialImplication": "Because search is the primary entry point to nearly every shopping session, and many reviewers explicitly state intent to reduce Amazon use, shop via other retailers, or cancel Prime specifically over this change, sustained friction here could plausibly affect engagement with the core shopping funnel more broadly than a typical feature complaint.",
+      "recommendedNextStep": "Validate whether a setting to disable the AI search response (reverting to direct results) is feasible, given the volume and consistency of reviewers requesting exactly that as the fix -- not an improved AI feature, but a way to skip it.",
+      "likelyImplementationSurface": "Search entry point and default search-result rendering (AI summary vs. direct results).",
+      "implementationConsiderations": "This reads as primarily a default-behavior and control/settings question rather than a technical defect in the AI feature itself.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Search & Discovery Engineering",
+        "Machine Learning"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14463954720",
+          "quote": "The forced use of Alexa AI in the search feature/results with NO way to opt out of its use is absolutely unacceptable. There is no circumstance where I want to see some AI bot shoving slop at me it “thinks” I want. Just give me the blasted search results! (Which were already hit or miss before this update.) AI is monstrous enough already on multiple fronts without it being forced down our throats. I’ve uninstalled the app and will cancel my Prime subscription if this isn’t reversed.",
+          "rating": 1,
+          "date": "2026-08-23"
+        },
+        {
+          "reviewId": "14466930263",
+          "quote": "They made it so Alexa generates a summary of what you searched instead of just searching for what you looked up. What is the point of this? How is this supposed to be useful to me? It takes an extra 10 seconds to pull up fewer results than what the default search would have. Can these developers admit that this AI isn’t as useful as they are trying to make it out to be??? Why is it being forced onto me? Where is the option to disable it?",
+          "rating": 1,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "pain-shipping-delays",
+      "theme": "Unreliable Delivery Estimates & Prime Shipping Promises",
+      "issueType": "Core Functionality Quality",
+      "productSurface": "Order Fulfillment & Delivery",
+      "supportingReviewIds": [
+        "14468794466",
+        "14467670851",
+        "14467419201",
+        "14467055392",
+        "14464562494",
+        "14459651635",
+        "14458842661",
+        "14456425243",
+        "14457008607",
+        "14456053024",
+        "14458169126"
+      ],
+      "evidenceCount": 11,
+      "evidencePercentOfSample": 5.5,
+      "affectedJourney": "Placing an order and expecting it to arrive by the displayed or Prime-promised delivery date.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe real consequences -- missing needed items for specific dates, repeated delays becoming the norm rather than the exception -- directly undermining the specific benefit (fast, reliable shipping) they're paying a subscription for."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Reliable delivery timing is the central benefit of a paid Prime subscription; consistent delays undermine the core paid value proposition, not a peripheral feature."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Eleven reviewers describe the same pattern -- delivery dates slipping after an order is placed, sometimes repeatedly for the same order -- with specific dates and multiple describing this as a new, worsening pattern rather than an occasional miss."
+      },
+      "synthesis": "Reviewers describe delivery dates that are promised at checkout (including expedited/Prime dates) slipping after the order is placed, in some cases multiple times for the same order, with several explicitly framing this as a recent decline from previously reliable service.",
+      "potentialImplication": "Because reliable delivery timing is the specific thing a Prime subscription is paid for, a sustained pattern of slipping dates could plausibly affect subscription renewal decisions specifically, beyond ordinary shopping satisfaction.",
+      "recommendedNextStep": "Segment delayed-delivery reports by fulfillment center and delivery-window type (standard vs. expedited/same-day) to determine whether delays concentrate in specific regions or delivery tiers.",
+      "likelyImplementationSurface": "Delivery-estimate calculation and fulfillment/logistics scheduling.",
+      "implementationConsiderations": "Whether this reflects an estimation-display issue (overpromising) or an actual fulfillment/logistics capacity issue is not determinable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Logistics / Fulfillment Operations",
+        "Customer Support Operations"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14467670851",
+          "quote": "Ordered on the 14th with a promised delivery date of the 22nd. On the 22nd, I was suddenly told it hasn't even shipped yet and pushed back to the 28th.",
+          "rating": 1,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14456053024",
+          "quote": "You’ve moved the delivery dates 3x (this is since last night at 11:30pm), and split the order 3 ways, total.",
+          "rating": 1,
+          "date": "2026-08-21"
+        }
+      ]
+    },
+    {
+      "id": "pain-support-access",
+      "theme": "Inaccessible Human Customer Support",
+      "issueType": "Policy / Trust Pushback",
+      "productSurface": "Customer Support",
+      "supportingReviewIds": [
+        "14468377938",
+        "14467956973",
+        "14467384508",
+        "14464659507",
+        "14459921028",
+        "14456922715",
+        "14456612873",
+        "14455829941",
+        "14456796596"
+      ],
+      "evidenceCount": 9,
+      "evidencePercentOfSample": 4.5,
+      "affectedJourney": "Trying to resolve an order problem (a missing refund, a wrong item, a repeated charge) after the standard order-status flow doesn't address it.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe unresolved refunds, repeated unwanted charges, and being routed through bots that don't address the specific issue -- a real, unresolved financial and time cost for affected users, though not affecting the majority of routine orders."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Support quality matters specifically once something has already gone wrong elsewhere (a delay, a billing issue), compounding other pain points rather than being a standalone core journey."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Nine reviewers describe a consistent pattern -- support restricted to scripted menu options, no accessible phone/human option, and unresolved refunds after repeated contact -- across a range of specific triggering issues."
+      },
+      "synthesis": "Reviewers describe customer support as effectively restricted to automated menus and chatbots that don't resolve their specific issue, with several describing being unable to reach a human at all and refunds or repeated-charge disputes going unresolved after multiple contact attempts.",
+      "potentialImplication": "Because this pain point compounds shipping and billing issues elsewhere in this sample, unresolved support access could plausibly turn an otherwise-recoverable problem into a permanent loss of trust.",
+      "recommendedNextStep": "Validate whether a genuine human-escalation path exists for unresolved refund and billing disputes specifically, and audit reported cases where automated support failed to resolve a repeated or erroneous charge.",
+      "likelyImplementationSurface": "Support-routing logic and escalation triggers from automated/AI support to a human agent.",
+      "implementationConsiderations": "Distinguishing an appropriately-scoped automated flow from one that's under-escalating requires internal support-volume data not available from public reviews.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Customer Support Operations"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14456612873",
+          "quote": "Customer service is hard to reach to and they make sure to make it hard for you to talk to any humans.",
+          "rating": 1,
+          "date": "2026-08-21"
+        },
+        {
+          "reviewId": "14456922715",
+          "quote": "I had few items returned on Jul 29 and have been waiting until today Aug 21 and nothing was refunded yet. The app keeps updating the refund day from Aug 13 to Aug 20 and now Aug 27. Tried to contact to their customer service 3 times, they promised to do an advance refund and nothing happened. Instead of doing sth, they just said sorry and I had to explain my case every single time. Totally drive me crazy.",
+          "rating": 1,
+          "date": "2026-08-21"
+        }
+      ]
+    },
+    {
+      "id": "pain-review-system-integrity",
+      "theme": "Reduced Trust in the Product Review System",
+      "issueType": "Policy / Trust Pushback",
+      "productSurface": "Customer Reviews",
+      "supportingReviewIds": [
+        "14468360217",
+        "14463589220",
+        "14463340489",
+        "14460255172"
+      ],
+      "evidenceCount": 4,
+      "evidencePercentOfSample": 2,
+      "affectedJourney": "Reading other customers' reviews before purchasing, or writing a review (including about Amazon itself).",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Doesn't block a purchase, but reviewers describe losing confidence in a decision-support tool (reviews) they specifically relied on, and in a few cases describe their own review being blocked or disappearing before submission."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Trustworthy customer reviews are a differentiating part of Amazon's shopping experience but are one input to a purchase decision rather than the core transaction itself."
+      },
+      "evidenceConfidence": {
+        "level": "Low",
+        "reasoning": "Only four reviewers raise this specific concern, and they describe related but distinct symptoms (a curated/limited review view, an AI review-approval gate, reviews vanishing while being typed) -- a real and specific enough pattern to note, but too sparse to treat as a dominant signal."
+      },
+      "synthesis": "A small number of reviewers describe reduced ability to see the full range of customer reviews for a product (a \"curated selection\" rather than all reviews), one reviewer describing an AI gate that can reject a submitted review without explanation, and another describing a negative review about Amazon itself vanishing before they could finish writing it.",
+      "potentialImplication": "If genuinely widespread, reduced confidence in review completeness or submission fairness could plausibly erode the specific trust advantage Amazon has built around customer reviews as a purchase-decision tool -- though this sample's low volume means this should be treated as a signal worth watching, not a confirmed pattern.",
+      "recommendedNextStep": "Clarify what criteria determine which reviews are shown by default versus require an extra step to view, and validate whether the described review-vanishing behavior is a rendering bug or intentional moderation.",
+      "likelyImplementationSurface": "Review display/curation logic and review-submission moderation.",
+      "implementationConsiderations": "Given the low evidence volume, this is more appropriately scoped as a monitoring item than an immediate investigation.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Content Moderation"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14460255172",
+          "quote": "For decades I - and others - have depended on Amazon for honest reviews about thousands of products. Now, I can only see a “curated selection” of the “most helpful “ reviews? How exactly do you know what reviews are most helpful to me?",
+          "rating": 2,
+          "date": "2026-08-22"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "request-disable-ai-search",
+      "requestedCapability": "A setting to disable the AI search response and go directly to standard search results.",
+      "underlyingNeed": "Users aren't necessarily asking Amazon to remove the AI feature for everyone -- they want the choice to skip it and return to the prior direct-search behavior.",
+      "context": "Every time a product search is performed.",
+      "supportingReviewIds": [
+        "14468599363",
+        "14467183077",
+        "14463954720"
+      ],
+      "evidenceCount": 3
+    },
+    {
+      "id": "request-honest-delivery-dates",
+      "requestedCapability": "A delivery estimate that reflects what will actually happen, rather than one that's later pushed back after the order is placed.",
+      "underlyingNeed": "Users want to make plans (be present for a delivery, have an item by a needed date) based on a number they can trust, even if that number is a more conservative estimate.",
+      "context": "After placing an order and comparing the original estimate to what actually happens.",
+      "supportingReviewIds": [
+        "14467670851",
+        "14464562494",
+        "14459651635"
+      ],
+      "evidenceCount": 3
+    },
+    {
+      "id": "request-human-support-escalation",
+      "requestedCapability": "A real path to a human agent when automated support doesn't resolve a refund or billing issue.",
+      "underlyingNeed": "Users don't object to automated support as a first step, but want genuine escalation when the specific issue isn't addressed by scripted options.",
+      "context": "After automated support fails to resolve a refund, repeated charge, or order dispute.",
+      "supportingReviewIds": [
+        "14467384508",
+        "14456922715",
+        "14456612873"
+      ],
+      "evidenceCount": 3
+    }
+  ],
+  "priorities": [
+    {
+      "id": "priority-forced-ai-search",
+      "priorityLabel": "P0",
+      "title": "Investigate an Opt-Out for Forced AI Search",
+      "linkedItemId": "pain-forced-ai-search",
+      "whyNow": "By a wide margin the highest-frequency, highest-confidence signal in this sample, touching the single most common action in the app (search), with many reviewers explicitly citing intent to reduce Amazon use or cancel Prime specifically over this change.",
+      "recommendedNextStep": "Validate whether a setting to disable the AI search response is feasible, given the volume and consistency of reviewers requesting exactly that fix.",
+      "likelyImplementationSurface": "Search entry point and default search-result rendering.",
+      "implementationConsiderations": "Primarily a default-behavior and control/settings question rather than a technical defect.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Search & Discovery Engineering",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": "priority-shipping-delays",
+      "priorityLabel": "P1",
+      "title": "Prioritize Delivery Estimate Reliability",
+      "linkedItemId": "pain-shipping-delays",
+      "whyNow": "High-frequency, high-confidence pattern directly undermining the core paid Prime benefit (reliable fast shipping), with several reviewers framing it as a recent decline.",
+      "recommendedNextStep": "Segment delayed-delivery reports by fulfillment center and delivery-window type to determine where delays concentrate.",
+      "likelyImplementationSurface": "Delivery-estimate calculation and fulfillment/logistics scheduling.",
+      "implementationConsiderations": "Whether this is an estimation-display issue or an actual fulfillment-capacity issue isn't determinable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Logistics / Fulfillment Operations",
+        "Customer Support Operations"
+      ]
+    },
+    {
+      "id": "priority-support-access",
+      "priorityLabel": "P1",
+      "title": "Prioritize Human Support Escalation for Unresolved Issues",
+      "linkedItemId": "pain-support-access",
+      "whyNow": "High-confidence pattern that compounds shipping and billing pain points elsewhere in this sample, turning otherwise-recoverable issues into lasting dissatisfaction.",
+      "recommendedNextStep": "Validate whether a genuine human-escalation path exists for unresolved refund and billing disputes.",
+      "likelyImplementationSurface": "Support-routing logic and escalation triggers.",
+      "implementationConsiderations": "Requires internal support-volume data not available from public reviews.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Customer Support Operations"
+      ]
+    },
+    {
+      "id": "priority-review-system",
+      "priorityLabel": "P2",
+      "title": "Monitor Product Review System Trust",
+      "linkedItemId": "pain-review-system-integrity",
+      "whyNow": "A real but low-volume signal touching a differentiating trust feature -- worth monitoring for growth rather than immediate investigation given current evidence confidence.",
+      "recommendedNextStep": "Clarify review display/curation criteria and validate the reported review-vanishing behavior.",
+      "likelyImplementationSurface": "Review display/curation logic and review-submission moderation.",
+      "implementationConsiderations": "Low evidence volume makes this better suited to monitoring than immediate investigation.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Content Moderation"
+      ]
+    }
+  ],
+  "methodology": {
+    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
+    "sampleScope": "200 most recent publicly available reviews for Amazon Shopping (App Store ID 297606951) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
+    "limitations": [
+      "A small number of reviews referencing unrelated political or unverifiable conspiracy-style content were read but excluded from thematic evidence, consistent with this project's Review Relevance principle.",
+      "App Store reviewers are self-selected and are not a random or complete sample of Amazon Shopping's user base; prevalence in this sample is not the same as prevalence across all users.",
+      "This is a single point-in-time snapshot with no historical or version-linked data; the AI-search complaint volume in particular likely reflects the recency of that specific feature's rollout rather than a stable long-term baseline -- no claim is made about whether this signal will persist.",
+      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
+      "Internal engineering effort is intentionally not estimated anywhere in this report.",
+      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Amazon's actual internal team structure."
+    ],
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Forced AI search, shipping delays, and support access are kept as separate pain points despite sometimes co-occurring in the same reviews, because each points at a distinct product mechanism (search UX, logistics, support routing)."
+  },
+  "evidenceIndex": {
+    "14467998461": {
+      "rating": 5,
+      "date": "2026-08-24T14:59:45-07:00",
+      "title": "Love Amazon",
+      "body": "Amazon just makes things easy and simple what more can you ask for."
+    },
+    "14463164934": {
+      "rating": 5,
+      "date": "2026-08-23T09:26:46-07:00",
+      "title": "Amazon, the best",
+      "body": "Thanks for having everything I need"
+    },
+    "14463083452": {
+      "rating": 5,
+      "date": "2026-08-23T09:02:39-07:00",
+      "title": "Ts app is so good!!!",
+      "body": "This is better then temu because amazon actually has almost anything even the ns2 mario kart bundle and they refund too if u dont like the item!"
+    },
+    "14462331329": {
+      "rating": 5,
+      "date": "2026-08-23T05:14:13-07:00",
+      "title": "Stupendous",
+      "body": "Great shopping experience! If you can think it — they have it and can sell it."
+    },
+    "14461234633": {
+      "rating": 5,
+      "date": "2026-08-22T21:34:07-07:00",
+      "title": "slimmer chances",
+      "body": "If it isn’t on Amazon, the chances that I buy it get slimmer by the seconds that I spend looking for it."
+    },
+    "14467404536": {
+      "rating": 5,
+      "date": "2026-08-24T11:24:49-07:00",
+      "title": "Easy & Efficient",
+      "body": "Most items arrive within two days and sometimes that very next day. I’ve been with Amazon for at least a decade and the vast majority of times any problem I have is with the product itself and not Amazon. I might add that I have very few issues with the product itself."
+    },
+    "14464552324": {
+      "rating": 5,
+      "date": "2026-08-23T17:48:48-07:00",
+      "title": "Te best ever delivery ordering service in the entire world",
+      "body": "Love it here and the ability to have my items in a day or two , thx Amazon! Hearts….."
+    },
+    "14459035095": {
+      "rating": 5,
+      "date": "2026-08-22T08:01:57-07:00",
+      "title": "Great Selection, Easy Shopping, and Reliable Delivery",
+      "body": "I’ve consistently had a positive experience shopping with Amazon. The website is easy to navigate, there’s a great selection of products, and I appreciate being able to compare prices and read customer reviews before making a purchase. My orders usually arrive quickly and are packaged well, and the tracking updates are very helpful. On the rare occasion that I’ve had an issue, the return and refund process has been simple and convenient. Overall, Amazon continues to be a reliable and convenient place to shop!"
+    },
+    "14468874675": {
+      "rating": 1,
+      "date": "2026-08-24T20:48:45-07:00",
+      "title": "alexa for shopping ruined the app",
+      "body": "there’s no way to turn off alexa for shopping. i don’t consent to ai usage. i don’t consent to ai search functions. close to deleting my account"
+    },
+    "14468845995": {
+      "rating": 1,
+      "date": "2026-08-24T20:36:27-07:00",
+      "title": "GET RID OF THE AI",
+      "body": "i NEVER write reviews, but this is absolutely ridiculous you’re being forced to use alexa ai to shop. definitely going to stop using amazon if they don’t get rid of this feature or make it possible to disable"
+    },
+    "14468711045": {
+      "rating": 1,
+      "date": "2026-08-24T19:40:45-07:00",
+      "title": "Alexa for shopping SUCKS",
+      "body": "Remove Alexa for shopping please. I just want to shop with no AI interaction."
+    },
+    "14468599363": {
+      "rating": 1,
+      "date": "2026-08-24T18:56:55-07:00",
+      "title": "Can’t disable Alexa AI",
+      "body": "It takes more time for Alexa to run the search than me. It’s like a pop up add that I have continue past it to see what I what searched for. Please disable this forced ‘feature’."
+    },
+    "14468281014": {
+      "rating": 1,
+      "date": "2026-08-24T16:53:33-07:00",
+      "title": "More Forced AI",
+      "body": "I have shopped with Amazon for close to twenty years, and I have used the app for years. I’m about to quit thanks to the built-in AI “helper.” If you think you can opt out of it, think again. Absolute trash."
+    },
+    "14468255251": {
+      "rating": 1,
+      "date": "2026-08-24T16:43:03-07:00",
+      "title": "Forced AI",
+      "body": "Defaulting to AI for a product search is scummy, Amazon"
+    },
+    "14467589924": {
+      "rating": 1,
+      "date": "2026-08-24T12:28:31-07:00",
+      "title": "STOP WITH THE FORCED AI SEARCH",
+      "body": "Holy crud. We get it, you invested a lot of money in AI and now you have to justify the money pit. Stop forcing these god awful changes. It's not helpful. It's not useful. The algorithm is hot garbage. It's making shopping absolutely annoying and impossible."
+    },
+    "14467183077": {
+      "rating": 1,
+      "date": "2026-08-24T10:12:08-07:00",
+      "title": "Alexa for shopping",
+      "body": "Alexa for shopping is incredible in how it makes the mobile app impossible to use. \nGreat job, team! I love not having the option to turn it off!"
+    },
+    "14466930263": {
+      "rating": 1,
+      "date": "2026-08-24T08:53:35-07:00",
+      "title": "Alexa AI slowing down shopping",
+      "body": "They made it so Alexa generates a summary of what you searched instead of just searching for what you looked up. What is the point of this? How is this supposed to be useful to me? It takes an extra 10 seconds to pull up fewer results than what the default search would have. Can these developers admit that this AI isn’t as useful as they are trying to make it out to be??? Why is it being forced onto me? Where is the option to disable it? trying to search for anything now is just a frustrating experience"
+    },
+    "14465646173": {
+      "rating": 1,
+      "date": "2026-08-24T01:39:59-07:00",
+      "title": "Alexa Shopping",
+      "body": "I use Alexa Shopping (Previously Rufus) all the time for questions. But I prefer the previous search UI for searching for products. The Alexa shopping is slow and shows less options and information. Thank you"
+    },
+    "14463954720": {
+      "rating": 1,
+      "date": "2026-08-23T13:47:42-07:00",
+      "title": "Forced AI Unacceptable",
+      "body": "The forced use of Alexa AI in the search feature/results with NO way to opt out of its use is absolutely unacceptable. There is no circumstance where I want to see some AI bot shoving slop at me it “thinks” I want. Just give me the blasted search results! (Which were already hit or miss before this update.) AI is monstrous enough already on multiple fronts without it being forced down our throats. I’ve uninstalled the app and will cancel my Prime subscription if this isn’t reversed."
+    },
+    "14462915539": {
+      "rating": 1,
+      "date": "2026-08-23T08:13:29-07:00",
+      "title": "Alexa For Shopping Unacceptable",
+      "body": "The forced integration of \"Alexa for Shopping\" has degraded the app experience to an unusable level. The forced integration of \"AI assistants\" is unacceptable, especially with no option to remove it. I've uninstalled the app."
+    },
+    "14458743827": {
+      "rating": 1,
+      "date": "2026-08-22T06:37:37-07:00",
+      "title": "Forced AI interactions makes the search process aggravating",
+      "body": "Open my Amazon account to find it now all my searches are forced through AI. Really unhappy, might consider canceling my Amazon Prime.\n\nAbsolutely ridiculous that you can’t even choose to disable it. Very frustrated."
+    },
+    "14455547928": {
+      "rating": 1,
+      "date": "2026-08-21T10:00:20-07:00",
+      "title": "Please make the Alexa shopping assistant go away",
+      "body": "Instead of just getting immediate search results I have to wait for an unrequested chat bot to give me a terrible overview and I can’t even turn it off. Utterly infuriating. Who would ever think this was a good idea?"
+    },
+    "14468794466": {
+      "rating": 1,
+      "date": "2026-08-24T20:14:42-07:00",
+      "title": "Corporate greed",
+      "body": "Consistently are late with deliveries, even when paying for the next day. Nobody to help or anyway to assure it doesn’t keep consistently happening. Tired of greed from companies without good services, customer assistance and lax product quality! 👎🏻"
+    },
+    "14467670851": {
+      "rating": 1,
+      "date": "2026-08-24T12:57:17-07:00",
+      "title": "Terrible shipping",
+      "body": "Ordered on the 14th with a promised delivery date of the 22nd. On the 22nd, I was suddenly told it hasn't even shipped yet and pushed back to the 28th. But when I checked the item page right after, it literally claimed: \"Order now, get it tomorrow.\" \nI reached out to customer service, and their response was, \"There's nothing we can do, we suggest you cancel and reorder.” Completely wasted my time waiting for nothing. If you can't honor delivery dates, don't make false promises. Have been a prime member for many years, very disappointed this time."
+    },
+    "14467419201": {
+      "rating": 1,
+      "date": "2026-08-24T11:29:42-07:00",
+      "title": "Shipping",
+      "body": "My past few orders have been delayed. If I pay for prime why do I bother get prime shipping?  I need my most recent order by tomorrow. I am going out of town!"
+    },
+    "14467055392": {
+      "rating": 3,
+      "date": "2026-08-24T09:31:49-07:00",
+      "title": "Prime critique",
+      "body": "Lately even with Amazon prime the deliveries have been uncommonly slow and delayed. This is bad customer service experience. Step it up Amazon you’ve been horrible lately."
+    },
+    "14464562494": {
+      "rating": 1,
+      "date": "2026-08-23T17:52:53-07:00",
+      "title": "Packages are always delayed!!",
+      "body": "I am extremely frustrated and disappointed with my experience with Amazon. While I completely understand that delays can occasionally happen, the fact that I am consistently experiencing delays on essentially every single order has become completely unacceptable. This is not an isolated incident or a rare inconvenience anymore—it has become a recurring pattern that makes it incredibly difficult to rely on Amazon for anything I actually need within a reasonable timeframe.  One of the biggest problems I have been experiencing is the issue with payments and orders seemingly not actually being processed when they are placed. I will place an order, go through the checkout process, select my payment method, and believe that the order has been successfully paid for and is being processed. Then, somehow, the order can sit there for days before Amazon actually charges the card or begins shipping it. I have had situations where it seems like I “paid” for an item when I placed the order, only for Amazon to apparently not process the payment until days later. Then, because the payment apparently wasn’t processed correctly, the package doesn’t ship when it was originally supposed to.  This is especially frustrating because Amazon will show an expected delivery date, so I naturally assume that everything is already taken care of. I place the order, expect the payment to go through, and expect the item to start moving through the shipping process. Instead, I can end up waiting several days just for the payment to apparently be processed before the item even ships. In some cases, it feels like the package isn’t actually considered ready to ship until Amazon decides to process the payment, even though I completed the checkout process days earlier.  Even worse, there have been situations where I apparently have to re-add my card to Amazon because the payment method is suddenly not working. This makes absolutely no sense from a customer’s perspective. If a payment method is saved to my Amazon account and I use that payment method to place an order, I should not have to constantly go back into my account and add the same card again because Amazon apparently couldn’t process the payment. If there is a problem with the card, Amazon should clearly and immediately tell me what the problem is instead of allowing the order to sit there and then delaying the shipment.  It is incredibly frustrating to think that an order is being processed, only to find out later that it apparently wasn’t actually paid for or that Amazon needed me to update my payment information. By the time I realize what happened, several days can already be gone. Then I have to update the card, wait for Amazon to process the payment, and only after all of that does the package finally start shipping. At that point, the original delivery estimate becomes practically meaningless.  This creates a ridiculous cycle: I place an order, I believe I paid for it, I expect it to arrive within the estimated timeframe, Amazon apparently doesn’t process the payment right away, the package doesn’t ship, I eventually discover there is some sort of payment issue, I have to re-add or re-enter my card information, Amazon finally processes the payment, and then the package finally ships days after I originally placed the order. Then I am expected to just accept that the delivery date has been pushed back significantly.  If Amazon is not actually charging the customer when the order is placed, that should be made extremely clear. Customers should not be left with the impression that their order is fully paid and being processed when it is actually sitting in limbo waiting for payment authorization or some other issue to be resolved. The entire process feels unnecessarily confusing.  I also don’t understand why a saved payment method can apparently stop working without a clear explanation. If my card information is already saved and has previously worked for Amazon purchases, why am I suddenly being required to add it again? And if there is a problem with the payment, why isn’t there a much clearer notification explaining exactly what is happening and how it will affect my delivery date?  The shipping delays are frustrating enough on their own, but when payment processing appears to be adding additional days before an order even ships, it makes the situation even worse. A package that was supposed to arrive in 2–3 days can effectively lose several days before it even leaves Amazon’s system. Then I have to wait for the actual shipping process on top of that.  I understand that Amazon may need to verify payments, authorize cards, prevent fraud, or deal with banks and payment processors. I am not expecting Amazon to ignore legitimate payment problems. What I am expecting is transparency. If my payment has not actually gone through, tell me immediately. If my card needs to be re-added, tell me immediately. If my order cannot ship until payment is successfully processed, make that extremely clear. Do not make it look like everything is fine and then have the order sit for days.  This is especially ridiculous when Amazon gives customers an estimated delivery date that appears to assume the order is going to be processed immediately. If the payment isn’t actually going to be processed until several days later, then the delivery estimate should account for that. Otherwise, customers are being given an expectation that Amazon itself is not realistically meeting.  I am also extremely frustrated by the fact that I can pay for an Amazon order and still feel like the order hasn’t actually been paid for or processed. From the customer’s perspective, once I submit the order with my selected payment method, I have done my part. I should not have to constantly monitor my Amazon account to make sure the payment somehow didn’t fail, the card didn’t disappear, or Amazon didn’t decide it needed me to enter the card information again."
+    },
+    "14459651635": {
+      "rating": 2,
+      "date": "2026-08-22T11:10:45-07:00",
+      "title": "Delivery promises are highly questionable",
+      "body": "Okay, let’s face it. One review is not going to cause anyone to choose whether to download the Amazon app. Probably 90% of humanity has it at this point. However, maybe this review might clear up some expectations. \n\nDo NOT believe Amazon’s same day or next day delivery promises. Do NOT add items to your order to increase the total to get that same day of next day delivery. Why? Because they are lying to you. \n\nI live in the Dallas area, and standard Prime deliveries (2 day) are all processed through the McKinney Amazon hub. These are consistently delivered on time. However, deliveries with same day or next day delivery windows are processed through Richardson. Oddly, this is much, much closer to my home, but these deliveries fail to be delivered within their expected window over 50% of the time. \n\nToday’s delivery was “attempted and failed due to inclement weather”. Huh?? It’s sunny and 98 degrees right now. Last weekend’s delivery was “facilitated” by Amazon through a 3rd party, and the driver just went home in the middle of the afternoon without completing her schedule. \n\nIf you want endless shopping options of junk that you probably don’t need, and are pretty flexible with delivery times, Amazon is for you. If you live 5 minutes away from a Walmart or pretty much any modern grocery store, I’d take my business there if possible."
+    },
+    "14458842661": {
+      "rating": 1,
+      "date": "2026-08-22T07:06:29-07:00",
+      "title": "Doesn’t care",
+      "body": "I used to love Amazon Always got deliveries super fast so when I was out of something never had to wait. But the last several months it has drastically went down hill. I’m waiting on items right now that were ordered last month! No tracking updates and customer support is a joke. All they tell you is you will get it but can’t say when. Then they promise you credits that you never receive. I’m done with them. I’ll just drive to Walmart get what I need and move on."
+    },
+    "14456425243": {
+      "rating": 1,
+      "date": "2026-08-21T15:13:36-07:00",
+      "title": "Amazon delay",
+      "body": "Amazon delayed my order by three weeks don’t get Amazon they delay orders to much"
+    },
+    "14457008607": {
+      "rating": 1,
+      "date": "2026-08-21T19:06:21-07:00",
+      "title": "Not a good experience",
+      "body": "I ordered grocery delivery and it’s been 3 1/2 hours and it’s still not here. Had to pass on going grocery shopping due to having to wait for my delivery and now I simply just don’t have ANY food. I would not recommend this service to others, unless you like misleading driver locations, delayed deliveries and starving. Oh look, another update from Amazon, driver must complete new orders before making it this way despite me waiting for almost 4 hours!"
+    },
+    "14456053024": {
+      "rating": 1,
+      "date": "2026-08-21T12:51:09-07:00",
+      "title": "Not impressed",
+      "body": "Well, let’s see…first of all, out of the last 3 deliveries, your delivery driver has totally botched it 2 out of 3 times. I’ve NEVER had this kind of trouble before, and I’ve lived here (16 unit apt bldg) over 10 yrs now. Used to be you had good drivers. Now it’s like they don’t even try. And the last delivery, they left it OUTSIDE the apt bldg - are you freakin’ kidding me? I’m recovering from serious lumbar (back) surgery, and the last 2 times I had to go walkabout to find the bloody package. NOT impressed.\n\nAnd now…Spectrum gave me a freebie - a Prime membership. Which I thought, “ok, this could be cool.” So far, I’m NOT impressed. You’ve moved the delivery dates 3x (this is since last night at 11:30pm), and split the order 3 ways, total. And I’m not falling for that “you have X hrs to add to your order before it ships” again. Because just as soon as I added something, you split the order yet again. I was thinking it could be pretty cool near Christmas. Now? Undetermined. I might give Temu a try. I’ve heard good things about them, and I’ve seen some of their products. At least they don’t pretend they’re not Chinese. Try a little harder, Amazon. You think because you’re the “Industry Giant,” you’re indestructible and indivisible. You wouldn’t want to bet the farm on that."
+    },
+    "14458169126": {
+      "rating": 1,
+      "date": "2026-08-22T03:20:20-07:00",
+      "title": "Orders",
+      "body": "I’m getting so disappointed I rearly get orders on time . We pay a fee we should get what we are paying for"
+    },
+    "14468377938": {
+      "rating": 2,
+      "date": "2026-08-24T17:31:48-07:00",
+      "title": "Can’t reach a human",
+      "body": "Good luck if you need help with an order"
+    },
+    "14467956973": {
+      "rating": 2,
+      "date": "2026-08-24T14:43:40-07:00",
+      "title": "No customer service, no longer customer first",
+      "body": "Every update makes it worse and worse and worse.  There’s no more text based customer service.  Finding a phone call is impossible.  Automatic systems are useless and idiotic. Orders no longer send detailed invoices…"
+    },
+    "14467384508": {
+      "rating": 2,
+      "date": "2026-08-24T11:17:59-07:00",
+      "title": "Horrible Customer Service",
+      "body": "Do you have a question about your order? Well that sucks because Amazon won't hear it. You have to select from approved questions. If your question isn't on the list, you can't ask it. Of course you have to talk to a robot instead of a person. I am having issues with my account right now but there's nothing I can do about it, because of the horrible customer service this app provides."
+    },
+    "14464659507": {
+      "rating": 1,
+      "date": "2026-08-23T18:31:16-07:00",
+      "title": "Hidden customer service chat",
+      "body": "They hid the link to talk to a customer service associate so you can’t get help."
+    },
+    "14459921028": {
+      "rating": 1,
+      "date": "2026-08-22T12:43:19-07:00",
+      "title": "Multiple packages delayed/went out of stock/ delivered at the wrong place",
+      "body": "I recently moved so I had ordered a lot of stuff from Amazon and in the span of 2 weeks about 50% of my packages that I ordered were delayed/went out of stock/ delivered at the wrong place. Customer service did nothing to help with it and instead kept transferring me over the chat or gave me misinformation and just kept apologizing. There was an item that was returned 3weeks ago and I still didn’t receive the refund for it. Amazon still owes me $150+ in refunds and they don’t have anything else to say for it apart from saying check back in 7-10 days and sorry."
+    },
+    "14456922715": {
+      "rating": 1,
+      "date": "2026-08-21T18:32:36-07:00",
+      "title": "Taking forever for the refund",
+      "body": "I had few items returned on Jul 29 and have been waiting until today Aug 21 and nothing was refunded yet. The app keeps updating the refund day from Aug 13 to Aug 20 and now Aug 27. Tried to contact to their customer service 3 times, they promised to do an advance refund and nothing happened. Instead of doing sth, they just said sorry and I had to explain my case every single time. Totally drive me crazy."
+    },
+    "14456612873": {
+      "rating": 1,
+      "date": "2026-08-21T16:29:10-07:00",
+      "title": "The customer service is non existent",
+      "body": "Customer service is hard to reach to and they make sure to make it hard for you to talk to any humans. Amazon is the dystopian company that’ll bring end to civilization"
+    },
+    "14455829941": {
+      "rating": 1,
+      "date": "2026-08-21T11:32:49-07:00",
+      "title": "Scam",
+      "body": "I had a pressure washer purshased just a few weeks ago, and it did not work. I wanted to return it but there was not option for return . Then i called to amazon 4 or 5 times in 8 days. Only the that they helped was wasting my time. They only provided me hard time instead solving problem. And again they want respect ."
+    },
+    "14456796596": {
+      "rating": 1,
+      "date": "2026-08-21T17:42:53-07:00",
+      "title": "Bad business",
+      "body": "I’m so mad at Amazon. They keep trying to charge my card. I put my card on there for a trial period. And made an order for groceries. Inpaid with gift card. Order was confirmed 25dollars and delivery time was confirmed. So then they tried charging my card for the order again and again and again. Made it three other orders and kept charging me for them orders. Now I can’t get ahold of a person to complain. All they keep throwing st me is revise payment or update payment method . No body is doin a single thing to help me . That is so mean . Dang .  Consumer."
+    },
+    "14468360217": {
+      "rating": 1,
+      "date": "2026-08-24T17:24:52-07:00",
+      "title": "You get one chance to write a review…",
+      "body": "If their AI algorithm doesn't approve your review you don't get a chance to change it. You are done!  No review from you!\n\nWhy bother having us write honest reviews on a product for others to see if AI deems it doesn't like it then won't post it.  If we don't know why it wasn't approved we cannot improve our reviews. \n\nAI is ruining our lives. No human contact so this world is doomed!"
+    },
+    "14463589220": {
+      "rating": 1,
+      "date": "2026-08-23T11:40:19-07:00",
+      "title": "Recent Reviews Gone",
+      "body": "They have now removed the consumers ability to look at recent reviews and are only showing the good ones.\n\nAmazon has gone down hill so quickly that I’ve got whip lash from it…."
+    },
+    "14463340489": {
+      "rating": 3,
+      "date": "2026-08-23T10:20:30-07:00",
+      "title": "Negative reviews disappear before finishing",
+      "body": "I’ve now found several times that if I’m writing a critical review about Amazon itself that before I get to the end of it it just vanishes from my phone screen. I’m sure it’s just a glitch of some sort, but it’s starting to feel intentional. I hope that’s not the case because I’m sure I’m not the only one that’s noticed and it’s not a good look for a company that relies on it’s Customer relationships and trust. Perhaps someone might look into that strange little glitch that seems to keep happening, only when I’m writing a negative review, about Amazon. But wouldn’t you know it: this one didn’t disappear. It’s almost as if there is some kind of intelligence monitoring and editing things…"
+    },
+    "14460255172": {
+      "rating": 2,
+      "date": "2026-08-22T14:50:00-07:00",
+      "title": "Limited review viewing? What the heck, Amazon?",
+      "body": "For decades I - and others - have depended on Amazon for honest reviews about thousands of products. Now, I can only see a “curated selection” of the “most helpful “ reviews? How exactly do you know what reviews are most helpful to me? How can I rate if a review is helpful or not if I CANNOT EVEN SEE IT??? I don’t know who thought this was a good idea, but it makes me feel like you’re trying to hide something. What are you trying to hide, Amazon? All I want are honest reviews on products."
+    }
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "schemaVersion": "1.0",
+  "app": {
+    "appId": 401626263,
+    "name": "Airbnb",
+    "developer": "Airbnb, Inc.",
+    "category": "Travel",
+    "countryCode": "us",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2f/77/dd/2f77ddc1-bcbb-6fbd-72cd-a44506eda2aa/AppIcon-0-0-1x_U007epad-0-1-0-0-0-85-220.png/512x512bb.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/airbnb/id401626263?uo=4"
+  },
+  "reviewSnapshot": {
+    "sourceFile": "airbnb-2026-08-26.json",
+    "fetchedAt": "2026-08-26T06:51:58.312Z",
+    "reviewsAnalyzed": 200,
+    "dateRange": {
+      "latest": "2026-08-24T17:04:24-07:00",
+      "earliest": "2026-07-11T18:40:20-07:00"
+    }
+  },
+  "metrics": {
+    "sampleAverageRating": 1.21,
+    "ratingDistribution": {
+      "1": 175,
+      "2": 13,
+      "3": 9,
+      "4": 2,
+      "5": 1
+    },
+    "ratingDistributionPercent": {
+      "1": 87.5,
+      "2": 6.5,
+      "3": 4.5,
+      "4": 1,
+      "5": 0.5
+    },
+    "currentAppStoreRating": {
+      "average": 4.7582,
+      "count": 702609
+    }
+  },
+  "productBrief": "This is an unusually negative sample -- 87.5% one-star, with only a single outright positive review -- and unlike Google Maps, this is not a data-quality artifact: these are overwhelmingly genuine, specific, on-topic accounts of the platform's dispute-resolution and trust systems. The dominant pattern is guests receiving refunds reviewers describe as disproportionately small for stays that became unsafe or uninhabitable (lost utilities, mold, hazardous air quality), paired with a closely related complaint from both guests and hosts that damage claims and review disputes are resolved without transparent evidence or reasoning shown to the disadvantaged party. A smaller but specific cluster describes an advertised price differing from what's actually charged, and a further group of hosts describe a recent 15.5% fee increase as financially significant and poorly communicated. Notably, many of the harshest reviews come from self-described long-tenured users (10+ years) rather than new or occasional ones, suggesting a real erosion of trust among the platform's most loyal base rather than a mismatch with new users' expectations.",
+  "transformationSummary": {
+    "reviewsAnalyzed": 200,
+    "recurringSignalCount": 9,
+    "priorityCount": 5
+  },
+  "headlineSignals": {
+    "topStrengthId": "strength-legacy-loyalty",
+    "topPainPointId": "pain-property-refunds",
+    "topRequestId": "request-transparent-adjudication",
+    "topPriorityId": "priority-property-refunds"
+  },
+  "strengths": [
+    {
+      "id": "strength-legacy-loyalty",
+      "theme": "Long-Tenured User Loyalty, Predating a Recent Decline",
+      "supportingReviewIds": [
+        "14411620302",
+        "14395629265",
+        "14331850984"
+      ],
+      "evidenceCount": 3,
+      "whatUsersValue": "A notable pattern in this sample: reviewers repeatedly cite many years (often 10+) of trouble-free use before describing the specific incident that made them stop trusting the platform. This is evidence of durable past satisfaction, not current praise -- worth stating plainly rather than dressing it up as an active strength.",
+      "whyThisMatters": "The fact that so many of the harshest reviews in this sample come from self-described long-time loyal users -- not first-time or occasional users -- suggests the underlying product concept and historical execution built real trust, and that trust is what's currently being spent down by the issues detailed below.",
+      "protectThis": "This is less something to protect going forward and more a signal of how much goodwill is at stake: these are exactly the users a trust/dispute-resolution fix would need to win back.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14395629265",
+          "quote": "After 13 years of using Airbnb, this is the first time I’ve ever had a truly disappointing experience.",
+          "rating": 1,
+          "date": "2026-08-06"
+        },
+        {
+          "reviewId": "14331850984",
+          "quote": "After 11 years and many stays, I’m done with using Airbnb.",
+          "rating": 1,
+          "date": "2026-07-21"
+        }
+      ]
+    }
+  ],
+  "painPoints": [
+    {
+      "id": "pain-property-refunds",
+      "theme": "Inadequate Refunds for Uninhabitable or Unsafe Properties",
+      "issueType": "Policy / Monetization Pushback",
+      "productSurface": "Stay Refunds & AirCover",
+      "supportingReviewIds": [
+        "14448580370",
+        "14442404023",
+        "14437327329",
+        "14422993357",
+        "14411620302",
+        "14395629265",
+        "14382297910",
+        "14339075934",
+        "14331850984",
+        "14330518333",
+        "14303181394",
+        "14302899602",
+        "14299860070"
+      ],
+      "evidenceCount": 13,
+      "evidencePercentOfSample": 6.5,
+      "affectedJourney": "Staying at a booked property that turns out to be unsafe, uninhabitable, or materially misrepresented, and seeking a fair refund.",
+      "userImpact": {
+        "level": "Critical",
+        "reasoning": "Reviewers describe losing water/electricity, mold, sewage, and wildfire-smoke air quality emergencies, then receiving only partial (sometimes ~20%) refunds -- this isn't a convenience issue, it's guests paying substantial sums for stays that were unsafe or unusable and not being made whole."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Guests trusting that a booked stay will be safe and as-described, and that Airbnb will make it right when it isn't, is foundational to the entire booking model -- this is not a peripheral feature."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Thirteen independent reviewers describe the same underlying pattern -- a genuinely unsafe or uninhabitable property, followed by a refund reviewers describe as disproportionately small relative to the harm -- with specific, verifiable-sounding details (dollar amounts, AQI readings, utility outages)."
+      },
+      "synthesis": "Reviewers describe serious property failures -- no water or electricity for days, sewage backup, mold, dangerous air quality from nearby wildfires -- and then a refund process that returns only a fraction of what was paid, with several describing the resolution amount as arbitrary rather than tied to a clear policy.",
+      "potentialImplication": "Because several of these cases involve health/safety conditions (mold, hazardous air quality, contaminated water) rather than mere inconvenience, a pattern of under-refunding could plausibly expose the platform to reputational and possibly regulatory risk beyond ordinary customer dissatisfaction -- though this sample cannot establish legal exposure, only reviewer-reported experience.",
+      "recommendedNextStep": "Review the current refund-calculation policy for safety/habitability failures specifically (as distinct from ordinary cancellations), and validate whether the partial-refund amounts reviewers report are consistent with an intended policy or reflect inconsistent case-by-case judgment calls.",
+      "likelyImplementationSurface": "AirCover/refund policy logic and the support-agent tooling used to calculate compensation.",
+      "implementationConsiderations": "Reviewers describe inconsistent-seeming resolutions for similar-sounding problems, which may reflect genuine policy nuance not visible from outside, agent-level discretion, or a policy gap for safety-specific cases -- not distinguishable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Customer Support Operations",
+        "Policy"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14339075934",
+          "quote": "The property became completely uninhabitable after it lost both electricity and running water. No guest should ever be expected to stay in those conditions, yet there was little meaningful support when it mattered most.\n\nThe most disappointing part was Airbnb’s response. Despite paying for accommodations that could not be used, Airbnb took almost no responsibility for the situation. After countless calls, broken promises of callbacks, and hours spent trying to resolve the issue, the only goodwill gesture offered was $100, which doesn’t come close to making up for the experience.",
+          "rating": 1,
+          "date": "2026-07-23"
+        },
+        {
+          "reviewId": "14299860070",
+          "quote": "My Airbnb was full of MOLD when I arrived. After immediately becoming ill and needing to leave, I contacted Airbnb trying to get support on it, and have now been IGNORED for 3 days by the escalations team. In fact, AirBnb stranded me in a foreign country with no place to stay",
+          "rating": 1,
+          "date": "2026-07-13"
+        }
+      ]
+    },
+    {
+      "id": "pain-dispute-adjudication",
+      "theme": "Inconsistent, Evidence-Light Dispute Adjudication",
+      "issueType": "Policy / Monetization Pushback",
+      "productSurface": "Damage Claims & Review Disputes",
+      "supportingReviewIds": [
+        "14463798583",
+        "14461368208",
+        "14461344527",
+        "14456244728",
+        "14449661133",
+        "14444848383",
+        "14390904977",
+        "14384874622",
+        "14379727469",
+        "14372026426",
+        "14353201769",
+        "14348417348",
+        "14331882070",
+        "14306059613",
+        "14411063988"
+      ],
+      "evidenceCount": 15,
+      "evidencePercentOfSample": 7.5,
+      "affectedJourney": "Either party (guest or host) disputing a damage claim, a review, or an accusation, and expecting a transparent, evidence-based decision.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Being charged for damage you dispute, or having a legitimate review removed while an allegedly retaliatory one stands, causes real financial and reputational harm to the disadvantaged party -- distinct from the property-condition pain point above, this is specifically about how Airbnb decides who's telling the truth."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Both sides of a two-sided marketplace need to trust that disputes are adjudicated fairly; this is foundational to a platform whose entire model depends on strangers transacting with each other."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Fifteen reviewers -- notably including both guests and hosts, describing complaints in both directions -- independently describe the same pattern: a claim or review dispute resolved without the disputing party being shown the evidence used to decide against them."
+      },
+      "synthesis": "Reviewers on both sides of the marketplace describe damage claims, reviews, and disputes being resolved without a transparent evidentiary process -- being told a decision was made after the other party's evidence was 'reviewed' without specifics, having a legitimate review removed while an allegedly false one stands, or being charged for damage they dispute.",
+      "potentialImplication": "Because this affects both guests and hosts, unresolved perception of an unfair process could plausibly erode trust on both sides of the marketplace simultaneously, which is a different kind of risk than a guest-only or host-only complaint.",
+      "recommendedNextStep": "Investigate whether the dispute/claims process currently shares specific evidence and reasoning with both parties before a final decision, and validate whether the review-removal policy applies its standard consistently regardless of which party benefits.",
+      "likelyImplementationSurface": "Damage-claim and review-dispute case-management tooling and policy.",
+      "implementationConsiderations": "This reads as primarily a process-transparency and policy-consistency question rather than a technical defect.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Customer Support Operations",
+        "Policy"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14348417348",
+          "quote": "I submitted evidence from the Airbnb message thread that contradicted several statements in a guest’s review, yet I felt that the evidence was not adequately considered.",
+          "rating": 1,
+          "date": "2026-07-25"
+        },
+        {
+          "reviewId": "14390904977",
+          "quote": "Airbnb allows hosts to alter reviews last minute to say false negative statements after guests leave positive reviews.",
+          "rating": 1,
+          "date": "2026-08-05"
+        }
+      ]
+    },
+    {
+      "id": "pain-price-transparency",
+      "theme": "Guest-Facing Price and Fee Transparency",
+      "issueType": "Policy / Monetization Pushback",
+      "productSurface": "Checkout & Pricing Display",
+      "supportingReviewIds": [
+        "14467349379",
+        "14466381155",
+        "14464472401",
+        "14436391367",
+        "14380199467",
+        "14342790266"
+      ],
+      "evidenceCount": 6,
+      "evidencePercentOfSample": 3,
+      "affectedJourney": "Comparing a listing's displayed rate to what is actually charged at checkout or upon arrival.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Reviewers complete their bookings despite the discrepancy -- this is a trust and pricing-fairness issue rather than a blocked task, but several describe it as deliberately misleading."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Accurate pricing display affects trust in every booking decision, though it's one step in the funnel rather than the core service itself."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Six reviewers describe a consistent pattern (displayed rate changes by checkout, or fees appear only after payment), which is coherent but a more modest volume than the two dispute-related pain points above."
+      },
+      "synthesis": "Reviewers describe a listing's advertised rate differing from what's actually charged once fees are added at checkout, or discovering additional fees (deposits, pet fees) only after payment despite marketing language stating fees are fully included upfront.",
+      "potentialImplication": "Discrepancies between advertised and actual price could plausibly violate pricing-disclosure expectations regulators increasingly scrutinize, though this sample cannot confirm anything beyond reviewer-reported experience.",
+      "recommendedNextStep": "Audit a sample of listings for gaps between the initially displayed rate and the final checkout total, and validate whether all mandatory fees are disclosed before payment is collected.",
+      "likelyImplementationSurface": "Search-result and listing-page price display logic versus the checkout pricing engine.",
+      "implementationConsiderations": "Could reflect a display timing issue (fees calculated late in the flow) or a host-side listing-configuration gap; not distinguishable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Pricing / Business Strategy",
+        "Trust & Safety"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14464472401",
+          "quote": "This app very blatantly falsely advertises one rate for a listing and then as soon as you click reserve the rate is different",
+          "rating": 1,
+          "date": "2026-08-23"
+        },
+        {
+          "reviewId": "14436391367",
+          "quote": "these pop-ups clearly and aggressively remind you that all fees are included and that what shows is all you pay.  \n\nAfter speaking with Airbnb, this is simply not true and I find the practice dishonest and problematic.",
+          "rating": 1,
+          "date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "id": "pain-host-fee-increase",
+      "theme": "Host Service Fee Increase (15.5%)",
+      "issueType": "Policy / Monetization Pushback",
+      "productSurface": "Host Payouts & Pricing",
+      "supportingReviewIds": [
+        "14450198242",
+        "14364823186",
+        "14346911118",
+        "14317845566",
+        "14376774626"
+      ],
+      "evidenceCount": 5,
+      "evidencePercentOfSample": 2.5,
+      "affectedJourney": "Hosts calculating payout after a recent change to Airbnb's service fee structure.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "This is a business-model/cost complaint rather than a functional failure -- hosts describe reduced margin and being forced to raise prices, which is a real business impact but not a blocked task."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Host economics directly affect listing supply and pricing on the platform, though this is one input among several to host retention rather than the core guest-facing experience."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Five reviewers specifically cite the 15.5% figure and describe it as a recent, poorly-communicated change, which is a coherent and specific signal despite the modest count."
+      },
+      "synthesis": "A specific group of hosts describe a recent change to a 15.5% service fee as both financially significant and poorly disclosed -- with one reviewer noting the change took effect immediately rather than at a clearly communicated future date.",
+      "potentialImplication": "Host-side margin pressure could plausibly push hosts to raise listing prices or leave the platform, though this sample cannot measure actual host attrition or pricing behavior.",
+      "recommendedNextStep": "Review how recent host fee changes are communicated (timing, notice period) and validate hosts' specific claim that the change applied immediately rather than at the stated future date.",
+      "likelyImplementationSurface": "Host payout calculation and fee-change communication/notice systems.",
+      "implementationConsiderations": "This is a pricing/business-policy question, not a technical defect.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Pricing / Business Strategy",
+        "Host Communications"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14346911118",
+          "quote": "The 15.5% charge to the host is exorbitant and abusive.",
+          "rating": 1,
+          "date": "2026-07-25"
+        }
+      ]
+    },
+    {
+      "id": "pain-account-restrictions",
+      "theme": "Account & Booking Restrictions With Little Transparency or Recourse",
+      "issueType": "Policy / Trust Pushback",
+      "productSurface": "Account Verification & Trust and Safety Enforcement",
+      "supportingReviewIds": [
+        "14419268923",
+        "14418164544",
+        "14319870137",
+        "14309245289",
+        "14350566566",
+        "14297699604",
+        "14314643211",
+        "14368429940"
+      ],
+      "evidenceCount": 8,
+      "evidencePercentOfSample": 4,
+      "affectedJourney": "Attempting to book, host, or maintain an account, and being blocked, flagged, or banned by an automated or policy-driven decision.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe being banned as hosts (losing a described livelihood), blocked from booking by an automated 'unauthorized party' flag, or losing account access entirely, in each case without a clear explanation or appeal path -- a severe outcome for the affected users even though it doesn't affect the majority of users."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Trust-and-safety enforcement is necessary to a marketplace's health, but the complaint here is specifically about transparency and recourse, not that enforcement exists."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Eight reviewers describe related but not identical restriction types (host bans, guest account locks, automated booking-block flags), which is a coherent pattern but spans a few different specific mechanisms."
+      },
+      "synthesis": "Reviewers describe being banned, blocked, or flagged -- sometimes by what they describe as an automated 'unauthorized party' system -- with little or no explanation of the specific reason and no clear path to appeal or speak with a person about it.",
+      "potentialImplication": "For hosts describing this as their livelihood, an opaque, hard-to-appeal restriction could plausibly cause real financial harm beyond the immediate booking or listing affected.",
+      "recommendedNextStep": "Validate whether current account-restriction notices include a specific, case-relevant reason and a documented appeal path, and whether the automated booking-flag system has a lower-friction override for false positives.",
+      "likelyImplementationSurface": "Trust-and-safety enforcement rules and account-restriction notification/appeal flows.",
+      "implementationConsiderations": "Distinguishing a justified enforcement action from a false positive requires case-level detail not available from public reviews alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Customer Support Operations"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14418164544",
+          "quote": "I threw my life investment to become a host i was doing great and they banned me because something i had no involvement in",
+          "rating": 1,
+          "date": "2026-08-12"
+        },
+        {
+          "reviewId": "14350566566",
+          "quote": "airbnb flagged it and said unauthorized party.",
+          "rating": 1,
+          "date": "2026-07-26"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "request-transparent-adjudication",
+      "requestedCapability": "A dispute/claims process that shows both parties the specific evidence and reasoning behind a decision, not just that a case was 'reviewed.'",
+      "underlyingNeed": "Users on both sides want to trust that decisions are made on a documented, evidence-based basis -- the request isn't necessarily to always rule in their favor, but to see why a decision was made.",
+      "context": "After a damage claim, review dispute, or refund request is decided against the reviewer.",
+      "supportingReviewIds": [
+        "14463798583",
+        "14353201769",
+        "14348417348",
+        "14330518333",
+        "14306059613"
+      ],
+      "evidenceCount": 5
+    },
+    {
+      "id": "request-upfront-pricing",
+      "requestedCapability": "The full, final price -- including all mandatory fees -- shown before checkout, matching what marketing already claims is the case.",
+      "underlyingNeed": "Confidence that the price seen while browsing is the price paid, without having to discover additions at the last step or after arrival.",
+      "context": "Comparing listings or reaching the final booking/payment step.",
+      "supportingReviewIds": [
+        "14436391367",
+        "14380199467",
+        "14342790266",
+        "14317845566"
+      ],
+      "evidenceCount": 4
+    },
+    {
+      "id": "request-restriction-explanation",
+      "requestedCapability": "A specific, case-relevant explanation and a real appeal path whenever an account is restricted, banned, or a booking is automatically blocked.",
+      "underlyingNeed": "Even where enforcement is justified, users want to understand why and have a path to contest a mistake -- the objection is to opacity, not to enforcement existing.",
+      "context": "Immediately after an account restriction, ban, or automated booking block.",
+      "supportingReviewIds": [
+        "14419268923",
+        "14350566566",
+        "14309245289",
+        "14297699604"
+      ],
+      "evidenceCount": 4
+    }
+  ],
+  "priorities": [
+    {
+      "id": "priority-property-refunds",
+      "priorityLabel": "P0",
+      "title": "Investigate Refund Adequacy for Unsafe/Uninhabitable Stays",
+      "linkedItemId": "pain-property-refunds",
+      "whyNow": "This is the highest-frequency, highest-severity signal in the sample -- involving lost utilities, mold, and hazardous air quality -- with reviewers consistently describing refunds disproportionate to the harm experienced.",
+      "recommendedNextStep": "Review the refund-calculation policy for safety/habitability failures specifically, and validate whether reported partial-refund amounts reflect intended policy or inconsistent case-by-case discretion.",
+      "likelyImplementationSurface": "AirCover/refund policy logic and support-agent compensation tooling.",
+      "implementationConsiderations": "May reflect genuine policy nuance, agent discretion, or a policy gap for safety-specific cases.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Customer Support Operations",
+        "Policy"
+      ]
+    },
+    {
+      "id": "priority-dispute-adjudication",
+      "priorityLabel": "P1",
+      "title": "Prioritize Dispute & Review Adjudication Transparency",
+      "linkedItemId": "pain-dispute-adjudication",
+      "whyNow": "High frequency and high confidence, and uniquely affects both sides of the marketplace (guests and hosts) simultaneously -- a broader trust risk than a single-sided complaint.",
+      "recommendedNextStep": "Validate whether the dispute/claims process shares specific evidence and reasoning with both parties before a final decision.",
+      "likelyImplementationSurface": "Damage-claim and review-dispute case-management tooling and policy.",
+      "implementationConsiderations": "Primarily a process-transparency and policy-consistency question.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Customer Support Operations",
+        "Policy"
+      ]
+    },
+    {
+      "id": "priority-account-restrictions",
+      "priorityLabel": "P1",
+      "title": "Prioritize Account Restriction Transparency & Appeal Paths",
+      "linkedItemId": "pain-account-restrictions",
+      "whyNow": "Severe impact for affected users (described livelihoods and travel plans lost) even at moderate frequency, with a specific automated-flag mechanism identified as one concrete cause worth validating.",
+      "recommendedNextStep": "Validate whether account-restriction notices include a specific reason and appeal path, and whether the automated booking-flag system needs a lower-friction override.",
+      "likelyImplementationSurface": "Trust-and-safety enforcement rules and account-restriction notification/appeal flows.",
+      "implementationConsiderations": "Distinguishing justified enforcement from false positives requires case-level detail not available from public reviews.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Customer Support Operations"
+      ]
+    },
+    {
+      "id": "priority-price-transparency",
+      "priorityLabel": "P1",
+      "title": "Prioritize Guest-Facing Price Transparency",
+      "linkedItemId": "pain-price-transparency",
+      "whyNow": "Directly affects trust in every booking decision across the funnel, and several reviewers frame the gap between marketing claims ('no hidden fees') and actual checkout behavior as specifically dishonest rather than merely confusing.",
+      "recommendedNextStep": "Audit a sample of listings for gaps between displayed rate and final checkout total, and validate whether all mandatory fees are disclosed before payment.",
+      "likelyImplementationSurface": "Search-result and listing-page price display logic versus the checkout pricing engine.",
+      "implementationConsiderations": "Could reflect a display-timing issue or host-side listing-configuration gap.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Pricing / Business Strategy",
+        "Trust & Safety"
+      ]
+    },
+    {
+      "id": "priority-host-fee",
+      "priorityLabel": "P2",
+      "title": "Monitor Host Fee Change Communication",
+      "linkedItemId": "pain-host-fee-increase",
+      "whyNow": "Real and specific, but narrower audience (hosts only) and a business-model question rather than a functional defect, better suited to monitoring than immediate deep investigation.",
+      "recommendedNextStep": "Review how recent host fee changes are communicated and validate the immediate-effective-date claim.",
+      "likelyImplementationSurface": "Host payout calculation and fee-change communication/notice systems.",
+      "implementationConsiderations": "A pricing/business-policy question, not a technical defect.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Pricing / Business Strategy",
+        "Host Communications"
+      ]
+    }
+  ],
+  "methodology": {
+    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
+    "sampleScope": "200 most recent publicly available reviews for Airbnb (App Store ID 401626263) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
+    "limitations": [
+      "This sample is unusually negative (87.5% one-star) and positive evidence is genuinely thin -- only one outright positive review and a handful of asides establishing prior loyalty before a complaint. The single reported strength reflects that thinness honestly rather than manufacturing balance that the sample doesn't support.",
+      "A small number of reviews referencing geopolitical topics (disputed-territory property listings) or personal attacks on named executives were read but excluded from thematic evidence, consistent with this project's Review Relevance principle -- isolated, unverifiable, or sensitive single mentions are not a sound basis for a product theme.",
+      "App Store reviewers are self-selected and are not a random or complete sample of Airbnb's user base (which includes both guests and hosts); prevalence in this sample is not the same as prevalence across all users.",
+      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend or measures whether sentiment has changed, even where reviewers themselves reference a change ('used to be good').",
+      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
+      "Internal engineering effort is intentionally not estimated anywhere in this report -- public reviews reveal user-facing symptoms, not Airbnb's internal architecture, policy rationale, or operational capacity.",
+      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Airbnb's actual internal team structure."
+    ],
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence), applying the Theme Cohesion Rule and Review Relevance principle throughout -- for example, property-condition refund complaints and dispute-adjudication-fairness complaints are kept as two separate pain points because they point at two different product mechanisms (a refund-policy question vs. an evidence/process-transparency question), even though many individual reviews touch both."
+  },
+  "evidenceIndex": {
+    "14411620302": {
+      "rating": 1,
+      "date": "2026-08-10T11:55:59-07:00",
+      "title": "Horrible experience with Airbnb lately",
+      "body": "Have been a Airbnb user for many years, but recently had a really terrible experience with a trip we booked. We with friends and families booked a stay at a house in east Washington area. We had to cancel due to wildfires and hazardous smoke spreading in the area, there were statewide alerts and national weather service guidance for that as well. We wanted to get a refund (or partial refund) because the situation is completely out of control, however the host is greedy and doesn’t want to issue any refund even we had an agreement and the house got rebooked for some of the same days, the Airbnb support team is completely useless, couldn’t (maybe not willing to) do anything to help their customers. So disappointed!!!"
+    },
+    "14395629265": {
+      "rating": 1,
+      "date": "2026-08-06T09:37:26-07:00",
+      "title": "Unsafe situation no refund",
+      "body": "After 13 years of using Airbnb, this is the first time I’ve ever had a truly disappointing experience.\n\nI’m currently traveling in Washington State, where widespread wildfires have blanketed much of the state in smoke. Last night, the Air Quality Index (AQI) reached 192, according to sources including AirNow.gov—classified as “Very Unhealthy.” That’s approximately 22.9 times higher than the World Health Organization’s recommended PM2.5 guideline.\n\nFor the past two days, I’ve been trying to work with Airbnb to find a solution. I was surprised to learn that unless there is an active fire in the exact city where you’re staying, they won’t reimburse or assist, even when the air quality is hazardous enough that public health agencies recommend limiting outdoor exposure.\n\nThis is not just “air pollution.” Wildfire smoke contains extremely fine particles (PM2.5) and can also carry toxic substances released as homes, buildings, vehicles, and other materials burn. Depending on what is burning, the smoke may contain chemicals, heavy metals, asbestos from older structures, and other hazardous compounds. These microscopic particles can travel deep into the lungs and even enter the bloodstream.\n\nExposure can cause immediate health effects such as eye irritation, coughing, shortness of breath, and can worsen heart and lung conditions. Repeated or prolonged exposure to wildfire smoke has also been associated with an increased risk of serious long-term health problems, including cardiovascular disease and some cancers.\n\nPolicies should also take into account environmental conditions that make a destination unsafe—not just the location of the fire itself. Smoke doesn’t stop at city limits.\n\nI hope Airbnb reviews its policy for situations like this. Travelers shouldn’t have to choose between losing their money and protecting their health."
+    },
+    "14331850984": {
+      "rating": 1,
+      "date": "2026-07-21T14:16:22-07:00",
+      "title": "Enables exploitation of guests",
+      "body": "After 11 years and many stays, I’m done with using Airbnb. Here’s why, if you’re willing to read a long one.\n\nStay #1 (Akumal, Mexico): Half our party arrived to find a man asleep in the guest house. He didn’t wake up for an hour despite our attempts. Turned out to be the groundskeeper, who insisted afterward he’d just been “checking the bed.” The pool skimmer was full, the bottom and steps were covered in algae, the porch furniture was dirty, and the sheets in our room hadn’t been changed (there was a crusty substance on the fitted sheet my daughter slept on). The AC in one room wasn’t cooling properly. The beach, advertised with photos of crystal blue water, had a four-foot wall of seaweed that made the ocean inaccessible and left the whole house smelling like it.\nWe messaged the host and property management starting around 3:30 PM. Radio silence until I called the property management office directly the next morning at 8 AM. They’d found us another place, which we’d already requested the night before with no acknowledgment. Given the total unresponsiveness, we asked for a full refund to book elsewhere instead, worried that if something else went wrong, we’d again get no response.\nProperty management agreed to the refund on one condition: we couldn’t leave a bad review. I called Airbnb support and said this felt like an ethics problem, maybe even a consumer rights issue. They confirmed it’s within a host’s discretion to make a refund contingent on suppressing a review, and if I wanted the refund, I had to agree. We rebooked with a place in Cancun, and things got worse from there.\n\nStay #2 (Cancun, Mexico): One bedroom’s AC cooled inefficiently for two nights. The host was responsive here, sending a tech out twice and buying a fan, but ultimately blamed a “locked” remote, implying we’d caused it, when it was his own tech who’d adjusted those settings on the first visit.\n\nBigger issue: we lost water entirely for two nights. No showers, no flushing toilets (I carried pool water inside in a mop bucket up the stairs to flush toilets while without water). The host called it “beyond his control” and blamed it on Quintana Roo utility distortions, then claimed our six-person group had drained his 1,000-liter cistern, despite no one being able to shower when we got home in the evening and his own maintenance reporting the cistern full that same morning. When I sent him the water meter readings, he told me I was misreading them. When I broke the math down and it held up, he said it was irrelevant. He refused any refund. Airbnb ultimately required a 30% refund for those two nights, but only after I spent a chunk of my vacation arguing on the phone.\n\nNow, post-returning home, the host is denying we ever paid the $100 cash electricity deposit his own listing requires, that he messaged us about, and that his own team collected in person. Airbnb is asking me to prove we paid this, and beyond a message where the host acknowledged our electricity concerns, I don’t have a clean paper trail for a cash handoff, because the person collecting the deposit would not give us a receipt. In retrospect, we should have just refused to pay, but it’s Airbnb’s policy that if it’s listed in advance of booking, you’re supposed to pay the host’s required deposit. \n\nIndividually, any one of these might be a bad-luck booking. Together, plus watching Airbnb side with hosts even when a refund is being held hostage in exchange for silence (thus subjecting future guests to potentially similar experiences), I’m out. If you’re going to travel, I’d look at hotels or a platform that doesn’t let hosts do whatever they’d like."
+    },
+    "14448580370": {
+      "rating": 1,
+      "date": "2026-08-19T16:00:08-07:00",
+      "title": "Sewage in the sink: airbnb APPROVES",
+      "body": "On the first morning of our three-night stay, we woke up to sewage coming up through the kitchen sink. We mutually agreed with the host that checking out early was the best option given the plumbing construction that would be required.\n\nWe paid $420 for three nights but stayed only one night. Despite the serious plumbing issue and having to leave early, Airbnb & the host refunded us only $160. That means we ultimately paid $260 for one night in a property where we woke up to sewage coming into the kitchen sink.\n\nWhat was most disappointing was Airbnb's handling of the situation. I was genuinely shocked that, given the circumstances, Airbnb supported a refund that left us paying $260 for a one-night stay affected by a major sanitation and plumbing issue.\n\nI understand that problems can happen during a stay, but I expected Airbnb to provide a fair resolution when a property becomes effectively uninhabitable because of a plumbing failure. Unfortunately, this experience has seriously affected my confidence in Airbnb, and I cannot recommend using the platform based on how this situation was handled."
+    },
+    "14442404023": {
+      "rating": 1,
+      "date": "2026-08-18T04:20:15-07:00",
+      "title": "Poor customer service",
+      "body": "I have used the app numerous times with no problems. The first time we have had an issue we had to find another place to stay due to the appliances failing.  First the freezer then the clothes washer/dryer. After Airbnb agreed to give us a refund for nights not stayed they shorted us by over 50% of the cost.  On short notice we had to find another residence at an increased cost. This was a five week stay so it was important for the appliances to function as advertised."
+    },
+    "14437327329": {
+      "rating": 1,
+      "date": "2026-08-16T21:00:55-07:00",
+      "title": "Do not use Airbnb",
+      "body": "I am extremely disappointed with Airbnb and the way their customer support handled the issues our family experienced during our vacation.\n\nWe had significant problems at two separate Airbnb properties during the same trip. At the second property, which cost us $2,818, we experienced extended periods without reliable running water. This affected our ability to shower, flush toilets, and normally use a home we had paid a significant amount of money to rent.\n\nWhat disappointed me the most was not that something went wrong—I understand that maintenance issues happen. It was the way Airbnb handled the situation afterward.\n\nI spent a significant amount of time contacting support, explaining the same situation repeatedly, providing timelines and documentation, and trying to get a fair resolution. I felt as though certain parts of my communication were taken out of context. For example, thanking the host after the water was finally repaired on our last full day was characterized as me being “satisfied,” when I was simply being polite and appreciative that the problem had finally been fixed.\n\nAirbnb also focused on the fact that we chose not to personally turn the water system back on while there was a leak. We did not feel comfortable doing that because of safety concerns and believed maintenance should handle the property’s water system rather than expecting paying guests to do so.\n\nAfter paying $2,818 and experiencing a significant disruption involving something as basic as running water, Airbnb determined that approximately $160 would be appropriate under AirCover. Because the host voluntarily refunded $200, Airbnb ultimately provided no additional compensation.\n\nI understand that Airbnb has policies it must follow, but this experience left me feeling that AirCover provided very little meaningful protection when we actually needed it.\n\nWe take a family vacation every year, and it takes a lot of planning, money, and coordinating time off for everyone to be together. Instead of enjoying that time, we spent a significant portion of this vacation dealing with property problems, relocating, maintenance issues, and Airbnb Support.\n\nUnfortunately, after this experience, my family has lost confidence in Airbnb. We will be using other vacation rental platforms for our future trips. I sincerely hope Airbnb improves how situations like this are handled because guests should feel supported when major issues arise during an expensive reservation."
+    },
+    "14422993357": {
+      "rating": 1,
+      "date": "2026-08-13T07:47:20-07:00",
+      "title": "Terrible Refund Policy",
+      "body": "The AC was out for 5 days in the hot Toronto summer and I was refunded only 20% for the affected days."
+    },
+    "14382297910": {
+      "rating": 1,
+      "date": "2026-08-03T04:16:56-07:00",
+      "title": "Don’t use",
+      "body": "I do not recommend using Airbnb we reserved a stay from Thursday -Sunday after arriving and it unsafe and hot the host said she would refund us then after 71 hours refused and yall are refusing to help us all tho I sent proof of her admitting she would refund and all the fans in house that’s was blazing hot yes I should of took more pics but didn’t think to . We literally was there 3 hrs before packing up to go back home .the home was blazing hot with fans in it wasn’t shown in pics . Wasp inside home, water so low my kids couldn’t play in it -had a river . Because of it so hot my son had an asthma attack also got splinter inside finger inside the home . Shower half worked and horse flys so bad they covered my car . But yet also host agreed to refund us they now aren’t and Airbnb won’t refund us cause host won’t !!!! Will not be using them again and leaving bad reviews everywhere"
+    },
+    "14339075934": {
+      "rating": 1,
+      "date": "2026-07-23T09:25:37-07:00",
+      "title": "Nightmare",
+      "body": "If I could give 0 stars, I would.\n\nThe property became completely uninhabitable after it lost both electricity and running water. No guest should ever be expected to stay in those conditions, yet there was little meaningful support when it mattered most.\n\nThe most disappointing part was Airbnb’s response. Despite paying for accommodations that could not be used, Airbnb took almost no responsibility for the situation. After countless calls, broken promises of callbacks, and hours spent trying to resolve the issue, the only goodwill gesture offered was $100, which doesn’t come close to making up for the experience.\n\nInstead of standing behind their guests when a listing is unlivable, Airbnb leaves you to fight for a fair resolution while passing the responsibility back and forth. The lack of accountability and customer support was just as frustrating as the property itself.\n\nThis experience completely changed my opinion of Airbnb. When something goes seriously wrong, don’t expect the company to stand by you."
+    },
+    "14330518333": {
+      "rating": 1,
+      "date": "2026-07-21T07:17:51-07:00",
+      "title": "Very difficult to communicate with customer service",
+      "body": "We had a terrible experience with our listing and the air bnb customer service. The issue with the listing was an unfortunate mishap where the air conditioner broke during our stay. \n\nWhen we reported he response was extremely disappointing. Airbnb support offered a fraction of a refund that in no way compensated for the unlivable conditions we stayed in. Trying to get a clear answer from customer service was almost impossible.  At this rate, I have talked to five different people and they keep telling me the one person who is trying to resolve this issue. Will give me a call and still has not. \n\nI will never book with Airbnb again because of this process.  I expected them to protect our rights in issues like this. Especially when we were told to keep the windows open during an air quality crisis mandated by the state."
+    },
+    "14303181394": {
+      "rating": 1,
+      "date": "2026-07-14T11:43:54-07:00",
+      "title": "Illusion of convenience",
+      "body": "The app is an illusion of convenience. The moment something goes wrong, you're back in the '90s dealing with call centers. I left a stay because of documented safety and sanitation issues. Airbnb's own verification system then prevented me from booking another Airbnb, leaving me homeless in a foreign country while I was bounced between agents, given contradictory solutions, and told it was my bank's fault when it wasn't. The support staff are trained to be polite. They are not empowered to solve problems. Despite the verification failure being entirely on Airbnb's side, no one could provide or explain a manual workaround—such as arranging the booking while the verification issue was being resolved and settling payment afterward. Instead, I was repeatedly offered solutions that depended on the very system that had already failed."
+    },
+    "14302899602": {
+      "rating": 1,
+      "date": "2026-07-14T10:15:50-07:00",
+      "title": "Beware. Zero protection for guests.",
+      "body": "My last Airbnb rental (1) Host was not identify verified. Airbnb promises, for your safety, all hosts identities are verified. This is not true. (2) Apartment was filthy. I took photos and a video (Airbnb won’t let me upload that.) (3) Host agreed to a refund. Then disputed it. (4) Host sent a message stating they recorded me. That could only be on a hidden camera in the apartment. (5) Host broke EU trafficking and consumer protection laws. \n\nAirbnb did nothing. Sent me a few comical chatbot messages. Then denied the refund. And refused to investigate any of this.  \n\nAirbnb does not care about your safety. They will take the host’s side. It’s not worth the risks to your family."
+    },
+    "14299860070": {
+      "rating": 1,
+      "date": "2026-07-13T15:59:57-07:00",
+      "title": "Completed Ignored and Illiterate Chatbot Escalations team",
+      "body": "My Airbnb was full of MOLD when I arrived. After immediately becoming ill and needing to leave, I contacted Airbnb trying to get support on it, and have now been IGNORED for 3 days by the escalations team. In fact, AirBnb stranded me in a foreign country with no place to stay and nearly had to try to find a safe place to sleep outside because of how bad their support is now. I called in over 5 times to a noisy “escalations” office where the staff can all be overheard in the background of your call etc and still haven’t been helped in the 3 days since \n\nOne of Senior Case members Nikita actually LIED and misrepresented the company policy on Mold in its listings \n\nOne of individuals answering phones on the floor, Sahil, straight up hung up on my phone call after talking down to me on the support i was needing \n\nI have used Airbnb for 10 years and this was my first vacation in almost 3 years. The complete disregard for customer safety and health ruined my time away that i had been looking forward to for so long, so please reconsider using this app for your vacations now. It is not the same as it used to be. I have screenshots of all chats documented and posting elsewhere too\n\n*UPDATE*\nI have now had a “senior case manager” named Jessa outright FABRICATE a story about having spoken to me on the phone. Jessa claimed that they connected with me, but that “i couldn’t hear them” \n\nThis is an outright blatant LIE as my phone records will indicate later. They never called or connected to me, I did NOT speak with them. They have explicitly LIED and misrepresented themselves with multiple individuals, and 4 days later i am still having to fight them instead of enjoying my dream vacation"
+    },
+    "14463798583": {
+      "rating": 1,
+      "date": "2026-08-23T12:51:27-07:00",
+      "title": "Don’t Use This it’s Worthless",
+      "body": "My experience with Airbnb’s customer service and damage-claim process has been extremely disappointing.\n\nA host accused us of causing damage that we strongly dispute, and despite providing our side of the situation, Airbnb ultimately decided that we were responsible. What bothered me most was the way the case was handled. It felt like the host’s allegations and documentation were given more weight than our explanation, and I was left questioning whether our evidence and concerns were seriously considered.\n\nWhen a company is making a decision that can require a guest to pay for alleged damages, there should be a transparent and fair process. Guests should be clearly shown what evidence supports the charge, how Airbnb determined responsibility, and why the guest’s evidence or explanation was rejected.\n\nAfter this experience, I have very little confidence in Airbnb’s damage-dispute process. As a customer, I expected Airbnb to act as a neutral party and carefully evaluate both sides before reaching a decision.\n\nI would strongly recommend that anyone using Airbnb document everything when checking into and leaving a property—take photos and videos of every room, furniture, appliances, and anything that could potentially be blamed on you later.\n\nThis experience has completely changed the way I view Airbnb. I expected much better customer service, transparency, and fairness from a company of this size."
+    },
+    "14461368208": {
+      "rating": 1,
+      "date": "2026-08-22T22:34:33-07:00",
+      "title": "Locked a door $4985 bill",
+      "body": "The app is great most hosts are fantastic however recently i stayed at one place locked an upstairs door and instead of getting a lock smith they broke their own door down and sent me a $4985 bill because of that. Secondly lied and put sheets next to the door they broke and said we left them there. Ignored us all day and sent this message 2 days after the fact wanting 5k for their own choices."
+    },
+    "14461344527": {
+      "rating": 1,
+      "date": "2026-08-22T22:23:43-07:00",
+      "title": "F Benjamin Anderson",
+      "body": "A host left me a bad review for a few tiny things even though he had sheetrock ripped off of an entire wall with exposed pipes and wires. He knew I had my baby there but never mentioned it which was a safety hazard and complete disregard to the safety of my baby. Airbnb did nothing to help rectify the matter. Deleting the app and going back to hotels!"
+    },
+    "14456244728": {
+      "rating": 1,
+      "date": "2026-08-21T14:02:38-07:00",
+      "title": "Guest Nightmare - Avoid Booking with AirBnB",
+      "body": "You want a headache? Book your next stay  with AirBnB.\n\nI have never dealt with a more unhelpful customer service team. I regret the day I book an Airbnb to host my family from out of town for my wedding. An absolute nightmare dealing with the team. We have been falsely accused of causing damage to the host's property and blamed us for being negligent. The so-called evidence and documentation they have reviewed is flawed and in their email they say their team has “carefully reviewed” said information/documentation.\n\nThe service team resolution team consistently talks in circles to me, they so difficult to understand, their team mumbles and cannot articulate a coherent sentence and effectively communicate. \n\nPrior to the host submitting a damage claim, Airbnb determined the condition warranted a refund to us, my family, roughly a 1/3 of what we paid due to the loss of use and disruption of the stay, how did Airbnb determine that same condition was unquestionably caused by guest neglect rather than a maintenance and property related? \n\nI have yet to receive the specific evidence Airbnb relied upon to conclude that an overflow occurred and in my group caused it. All I’ve heard from Airbnb is that they have reviewed the details of the case and determine the information in the email we received is correct and the host claim was reviewed by our team and the decision was made based on the documentation provided. \n\nThis system of problem solving is severely flawed. \n\nImagine that you booked an Airbnb for your wedding weekend. Only to have water pouring through the ceiling the night before your special event, special event that is supposed to be one of the most important days of your life. At no time did me or anyone in my party overfill the bathtub in the floor above us. Which we reiterated to the host. \n\nThe inspection company sent out, had their inspector who did not re-create the event as it occur to test the host’s bathtub. \n\nInstead, the service technician from the plumbing company ran water and splashed water outside of the tub and noted that the splashing was when they began to see water dripping onto the ceiling below. Instead of filling the tub to a normal level to see if the leak would continue to occur in the way it was reported to the host.\n\nMind you the flooring in the bathroom is tile, so it sounds like they also have a waterproofing, ceiling, construction, or maintenance failure on their hands."
+    },
+    "14449661133": {
+      "rating": 1,
+      "date": "2026-08-19T23:15:24-07:00",
+      "title": "Poor Host Support",
+      "body": "Airbnb does nothing to support the hosts. Airbnb’s host support and review-dispute process feels rigid and unhelpful. Even when hosts provide documented evidence and request a clear explanation, decisions can remain final with little transparency or meaningful recourse. Hosts deserve a more accountable and balanced support process."
+    },
+    "14444848383": {
+      "rating": 2,
+      "date": "2026-08-18T17:48:03-07:00",
+      "title": "Poor review was removed",
+      "body": "We had been in contact with our host  confirmed what spot we were getting for our camper  let her know we were a hour away. We get there and there is another camper in the spot we were told we had  host was not there but her husband was. Asked about the reasoning we were told it was his daughter and wife’s gig and the spot they were putting us was better it had more room. That’s not what\nWe agreed on over  messages. Description did not properly describe the area we ended up leaving going\nElsewhere. Left a\nReview air b&b removed it because host said we never arrived. But\nThen updated there listing. Air\nB&b confirmed \nThey just edited \nThe listing and still wouldn’t allow my review . I should have noticed two years of listings for this property and only two review .. how\nMany others were removed ?"
+    },
+    "14390904977": {
+      "rating": 1,
+      "date": "2026-08-05T06:16:54-07:00",
+      "title": "Airbnb supports predatory hosts",
+      "body": "Airbnb allows hosts to alter reviews last minute to say false negative statements after guests leave positive reviews. This supports predatory practices of hosts because it’s done in a way where guests can no longer update their review to share what happened to them to warn potential guests. Airbnb customer support lies to customers stating they will resolve the issue then backpedals on those statements saying there is nothing they can do. Don’t support Airbnb. Rent from actual hotels that can be held accountable for their actions."
+    },
+    "14384874622": {
+      "rating": 1,
+      "date": "2026-08-03T18:06:01-07:00",
+      "title": "Airbnb does not protect",
+      "body": "I had a guest stay and make damages at my property. They had written me a 5 star review. \nI wrote them a 3 star review and mentioned the damages they made. In retaliation they reached out to Airbnb and said made up lies and demanded a refund for their stay. Airbnb rewarded the refund. This violates their own terms"
+    },
+    "14379727469": {
+      "rating": 1,
+      "date": "2026-08-02T11:43:02-07:00",
+      "title": "Customer service team is not helpful at all",
+      "body": "I booked a place and the place was so awful so I tried to cancel and I couldn’t. I posted a bad review on on the host! So he lied and he wrote a bad review about me! And then I find out that Customer Service deleted the review I put about him and they kept the one he put about me\nif I could write this as a zero, I would’ve"
+    },
+    "14372026426": {
+      "rating": 1,
+      "date": "2026-07-31T13:47:53-07:00",
+      "title": "DO NOT USE THIS APP",
+      "body": "I rented a “penthouse” just got the hot tub. The hot tub did not work, tried to contact host and he blocked me. Rented the place for 15 days and thought to myself it’s too much work to get another one. When I left, the owner of the Airbnb left me a review stating “guest followed the rules and left property in good condition”. I did nothing to his property and always clean before I leave as if it were my own. As you could see from my other reviews of the 10 properties I have rented since joining this app 7 months ago. I wrote a review to the host, an honest review. Staying the hot tub did not function, how there is mold in the bathtub in master bathroom and that it smells. Also explained how host blocked me because I called him at 19:30 local time but apparently I bothered him in the middle of the night because he lives in Italy. Which he never stated before. After leaving an honest review, host sent me a request for $120. Stating I broke a pipe and stained couch. Never touched a pipe and the couch was already stained, as you can read in other reviews about his property. Other reviews state the couch had stains, bathroom had mold and smells bad. Airbnb is not safe for guests. I feel I can never leave an honest review again because I’ll be forced to pay $100+ for something I didn’t do. You’d be better off using another app and if you do use Airbnb, I’d suggest not writing a review at all to save yourself money."
+    },
+    "14353201769": {
+      "rating": 1,
+      "date": "2026-07-26T23:32:35-07:00",
+      "title": "Unfair platform for hosts",
+      "body": "Airbnb has lost sight of protecting the hosts who built its platform. The dispute process is heavily biased toward guests, even when hosts provide extensive evidence, respond immediately, and have years of outstanding reviews. A single guest can make exaggerated claims, threaten negative reviews, and still receive compensation while the host bears the financial and reputational damage.\n\nThe review system is easily weaponized, and there are few meaningful protections against retaliatory reviews. Airbnb also lacks consistency—different support ambassadors often reach completely different conclusions on the same case.\n\nHosts deserve a fair, evidence-based review process that values their long-term track record instead of assuming the guest is always right. Until that changes, many hosts will continue to lose confidence in Airbnb's commitment to protecting its partners."
+    },
+    "14348417348": {
+      "rating": 1,
+      "date": "2026-07-25T17:51:44-07:00",
+      "title": "Evidence Ignored, Unfair Review Process",
+      "body": "The app itself works well, but my experience with Airbnb’s customer support and review dispute process has been very disappointing.\n\nI submitted evidence from the Airbnb message thread that contradicted several statements in a guest’s review, yet I felt that the evidence was not adequately considered. As a host, it’s frustrating to invest time documenting a case only to receive what feels like a generic response.\n\nAirbnb should have a more transparent and evidence-based review process that protects both guests and hosts equally."
+    },
+    "14331882070": {
+      "rating": 1,
+      "date": "2026-07-21T14:27:53-07:00",
+      "title": "Fraud",
+      "body": "Watch out. The hosts will often try to get you by trying to make you pay for damages that were already there and Airbnb will side with them. Multiple times they charged my card without my permission. Please be less biased towards hosts."
+    },
+    "14306059613": {
+      "rating": 1,
+      "date": "2026-07-15T05:58:04-07:00",
+      "title": "False reviews",
+      "body": "Used Airbnb for years, the last time the owner claimed damage that we did not do. Including breaking the disposal, which we never used, per stain on a carpet which was insane. Airbnb sided with them and made us pay. I’ve always had 5 star reviews until now. Airbnb made us pay 350 for something we didn’t do. I immediately deleted my account and will no longer be using it."
+    },
+    "14411063988": {
+      "rating": 1,
+      "date": "2026-08-10T09:01:59-07:00",
+      "title": "There are better options!",
+      "body": "I had a recent experience where the host requested that I strip the beds and complete other chores prior to checkout.  Really, you pay a hefty cleaning fee and now you are expected to help clean and they are not disclosing this in the listing.  On top of that, the host left a nasty review that was misleading and Airbnb refused to remove the review.  Unbelievable!  Who needs this aggravation.  Booking.com is a better alternative and I have never had an issue with them."
+    },
+    "14467349379": {
+      "rating": 1,
+      "date": "2026-08-24T11:06:20-07:00",
+      "title": "Horrible App",
+      "body": "Do not use this app! Use the top two for better service. They allow hidden fees when they say “no hidden fees” and then when you call there is so much noise in the background and are no help whatsoever. My next two vacation planning will never be with them. I’m going to make sure that all of my fellow influencers know to make better choices. And the worst part is that my vacation is in 11 days and my flight and excursions are already paid for. NEVER AGAIN!!"
+    },
+    "14466381155": {
+      "rating": 1,
+      "date": "2026-08-24T06:09:35-07:00",
+      "title": "Airbnb scams hardworking people",
+      "body": "Scamming people on prices from person to person and minute by minute. If you like your hard earned cash find it on Airbnb and go straight to the source, if you can. I will be avoiding Airbnb all together."
+    },
+    "14464472401": {
+      "rating": 1,
+      "date": "2026-08-23T17:16:28-07:00",
+      "title": "Great Except for False Rate Bait and Switch",
+      "body": "This app very blatantly falsely advertises one rate for a listing and then as soon as you click reserve the rate is different (and that’s not even counting the added tax. If technical support wants to contact me and claim this is some kind of bug I can provide screenshots and listing detail. But it smacks me as intentional and it makes comparison with other booking sites difficult."
+    },
+    "14436391367": {
+      "rating": 1,
+      "date": "2026-08-16T14:52:02-07:00",
+      "title": "Dishonest Marketing",
+      "body": "First timer here and as a retired corporate founder, I am appalled with my first experience with the Airbnb app.  Everywhere on Airbnb’s website and app, these pop-ups clearly and aggressively remind you that all fees are included and that what shows is all you pay.  \n\nAfter speaking with Airbnb, this is simply not true and I find the practice dishonest and problematic. Imagine arriving at your destination and being asked for an additional $450 before being allowed to check in.  The fees in question: pet fees and a damage deposit to the tune of $450. There are other fees that are not included in the “price includes everything” marketing campaign that Airbnb is pushing.\n\nOnly after I made payment through Airbnb did I receive a message stating these fees are extra.  This is not an honest way to do business and I am appalled that no one else has called them out on it.  Had they made it clear before I paid, I would have chosen another location. By accepting payment before making the disclosure that, in fact, not all fees are included, I feel ethically and legally entitled to a refund. Now that I know the company is dishonestly marketing itself, I hesitate to trust them for additional travel matters.\n\nWhen speaking with Airbnb, they said, yes the listing clearly states extra fees. I said, yes, it does and before I booked, I got a pup-up that told me that the price I see is all I pay.  The front desk asked my for $450 and I paid it but it doesn’t sit well with me especially for those who’s travel plans would be ruined by such a large amount.  If they are not included, it should be very clear what is excluded inside the same pop-up window.The Federal Trade Commission has many laws about this and Airbnb needs to do better before a class action hits like a brick.\n\nI hope this helps you make a more informed decision of how you spend travel resources.  Happy travels!"
+    },
+    "14380199467": {
+      "rating": 1,
+      "date": "2026-08-02T14:26:50-07:00",
+      "title": "Dishonest and Greedy",
+      "body": "You have made it so it looks like hosts are charging an arm and a leg. When it is actually YOUR FEES. Disgusting. If you actually showed the breakdown then people can understand. But making it look like a host charges $250/night when they actually charge $170 is beyond dishonest. Bring back transparency or you’ll lose hosts to other platforms."
+    },
+    "14342790266": {
+      "rating": 2,
+      "date": "2026-07-24T07:53:54-07:00",
+      "title": "Still has hidden fees",
+      "body": "Still allows hosts to have hidden fees on their house manuals around check in times. And for some really dumb reason their marketing team thinks it’s a good idea to send me marketing pushes at 3 am in the morning (and that’s when I’m in my home time zone so not a travel time zone but). Hotels are looking like a better deal and experience!"
+    },
+    "14450198242": {
+      "rating": 3,
+      "date": "2026-08-20T02:58:07-07:00",
+      "title": "Hosts lose!",
+      "body": "As a host using this new revised pay schedule, we lose money! When I do the math Airbnb is collecting more of the payout forcing hosts to have to increase our pricing. Why does Airbnb need to collect  15.5%? 10% is fine, Airbnb count your days, other platforms are providing better pay options and hosts will start to prioritize bookings from other sites more."
+    },
+    "14364823186": {
+      "rating": 1,
+      "date": "2026-07-29T19:46:58-07:00",
+      "title": "Eff Airbnb",
+      "body": "They hold hosts hostage and make them absorb 15.5% service fee. I cant wait to see this woke fxggxt platform go bellyup."
+    },
+    "14346911118": {
+      "rating": 1,
+      "date": "2026-07-25T08:42:30-07:00",
+      "title": "New 15.5% rate fee for hosts is abusive.",
+      "body": "Many issues. The host is the one who absorbs the risk. The 15.5% charge to the host is exorbitant and abusive. I recommend other platforms."
+    },
+    "14317845566": {
+      "rating": 1,
+      "date": "2026-07-18T03:49:37-07:00",
+      "title": "NOT Host-Friendly",
+      "body": "Airbnb continues to squeeze hosts. Their latest scheme to hide fees has to now be absorbed by the hosts. Furthermore, when they ask if you want to set future prices to account for this cost they do NOT tell you that if takes effect IMMEDIATELY, and you opt in earlier than mid-September."
+    },
+    "14376774626": {
+      "rating": 2,
+      "date": "2026-08-01T18:15:02-07:00",
+      "title": "New hosts",
+      "body": "Beware of airbnbs model for hitting hosts with crazy fees"
+    },
+    "14419268923": {
+      "rating": 1,
+      "date": "2026-08-12T09:20:45-07:00",
+      "title": "Disappointing and Unfair Treatment by Airbnb",
+      "body": "I’ve been using Airbnb for years without any problems. I’ve been a customer of the platform for a long time, and suddenly I’ve been banned because of a felony conviction from 1999.\n\nI understand the importance of safety and background checks, but I have a serious problem with Airbnb using a conviction that is more than 25 years old to completely remove someone from the platform, especially when that person has been using Airbnb for years without incident.\n\nPeople make mistakes, serve their time, and move forward with their lives. A decades-old conviction should not automatically define who someone is today. If I had been using Airbnb for years without any safety issues or problems with the platform, I believe that history should matter.\n\nWhat’s especially frustrating is that there doesn’t seem to be meaningful consideration of the circumstances, how long ago the conviction occurred, or a person’s conduct since then.\n\nAirbnb should reconsider how it handles background checks and give people with old convictions an opportunity to demonstrate that they have moved forward. A mistake from 1999 should not erase 25+ years of someone’s life and responsible behavior.\n\nVery disappointed in Airbnb and the way this situation has been handled."
+    },
+    "14418164544": {
+      "rating": 1,
+      "date": "2026-08-12T03:50:17-07:00",
+      "title": "They can ban you anytime don’t throw your life investment",
+      "body": "I threw my life investment to become a host i was doing great and they banned me because something i had no involvement in"
+    },
+    "14319870137": {
+      "rating": 1,
+      "date": "2026-07-18T14:35:46-07:00",
+      "title": "Banned for no reason without explanation",
+      "body": "I’ve booked one air bnb in my life. Left the place as I found it and was not notified of any issues. I have since been locked out of my account and have been told that I have no recourse in getting my account unlocked. The worst part is that I’ve also not had an explanation as to why and they state that they don’t have to explain why. \n\nIt’s air bnb’s business they can do what they want, but is it good business to kick people off your platform at anytime without an explanation or a chance for the customer to get their account cleared?"
+    },
+    "14309245289": {
+      "rating": 1,
+      "date": "2026-07-16T00:42:39-07:00",
+      "title": "Discrimination",
+      "body": "One of the most horrible apps I got on. They discriminate based on on your background. People go through stuff in life. Know one in this earth is perfect. You shouldn’t close nobody’s account based on there criminal background. I’m not in jail now for half of the stuff I did in my past!!!!!!!! Yall need to close this App down. That’s messed up. But guess what? There’s millions of other apps that you can use so it doesn’t really bother me. I had to write this review. Because since yall are petty I can be pettier!!!!!!"
+    },
+    "14350566566": {
+      "rating": 1,
+      "date": "2026-07-26T07:32:29-07:00",
+      "title": "What a joke",
+      "body": "Tried renting a place for 3 night for myself & my family but airbnb flagged it and said unauthorized party. Mind you, I’ve never used this app ever before! Such a terrible experience."
+    },
+    "14297699604": {
+      "rating": 1,
+      "date": "2026-07-13T04:26:19-07:00",
+      "title": "Trash",
+      "body": "Airbnb is trash, I only booked with them once, got a good review and they randomly booted me off and removed me with no explanation, customer service is 0 help. I literally did nothing. I swear I know a lot of people say they did nothing and actually did something but I did absolutely nothing. I even got a good review for the only stay I did. So their loss, I was going to be using them a lot more because I was planning on traveling but I am taking my business elsewhere. They are run by bots with very little human communication of actually knowing what is going on. Do better Airbnb."
+    },
+    "14314643211": {
+      "rating": 1,
+      "date": "2026-07-17T08:09:27-07:00",
+      "title": "Not a good app",
+      "body": "20 something years ago you have background, I was a kid. They take your money then you gotta wait 15 days to get it back. Well I went through another one got book real quick. This App is a joke they discriminate right away when you seen a picture of you. Don’t waste your time."
+    },
+    "14368429940": {
+      "rating": 1,
+      "date": "2026-07-30T16:54:58-07:00",
+      "title": "Just not right",
+      "body": "I was trying to book an Airbnb for a weekend to visit my hometown and they said i could not book due to the fact their AI system thinks that I’m trying to have an unauthorized party. I had the option to submit an appeal and wait a couple of hours for them to take notice. After the appeal was approved I tried to book again but this time the screen says system error contact support. Contacted support and they said that I now have to wait another 24 hours to book it again. I now pull up the same Airbnb again and now it’s booked and I have to look for something else for me and my people. Does not make sense at all."
+    }
+  }
+}

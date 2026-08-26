@@ -7,3 +7,8 @@ build/
 .cache/
 *.log
 .publish
+
+# Local-only dev tooling for the App Store Insights project: raw review
+# snapshots, Run A/B analysis drafts, and scripts. Never publish this —
+# only the curated output in projects/app-store-insights/data/ is public.
+_tools/

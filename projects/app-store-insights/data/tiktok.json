@@ -1,0 +1,647 @@
+{
+  "schemaVersion": "1.0",
+  "app": {
+    "appId": 835599320,
+    "name": "TikTok - Videos, Shop & LIVE",
+    "developer": "TikTok Ltd.",
+    "category": "Entertainment",
+    "countryCode": "us",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b4/f6/9e/b4f69e23-a20c-784c-7f41-400fd8ab3d1c/TikTok_AppIcon26-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/tiktok-videos-shop-live/id835599320?uo=4"
+  },
+  "reviewSnapshot": {
+    "sourceFile": "tiktok-2026-08-26.json",
+    "fetchedAt": "2026-08-26T06:52:01.266Z",
+    "reviewsAnalyzed": 200,
+    "dateRange": {
+      "latest": "2026-08-24T21:01:41-07:00",
+      "earliest": "2026-08-23T10:42:33-07:00"
+    }
+  },
+  "metrics": {
+    "sampleAverageRating": 2.93,
+    "ratingDistribution": {
+      "1": 75,
+      "2": 18,
+      "3": 21,
+      "4": 19,
+      "5": 67
+    },
+    "ratingDistributionPercent": {
+      "1": 37.5,
+      "2": 9,
+      "3": 10.5,
+      "4": 9.5,
+      "5": 33.5
+    },
+    "currentAppStoreRating": {
+      "average": 4.72531,
+      "count": 18346472
+    }
+  },
+  "productBrief": "The most serious and consequential signal in this sample is a high-confidence, high-severity pattern describing content moderation failures: reviewers report sexually explicit and violent content -- including in paid advertisements -- reaching the main feed, in some cases describing exposure involving minors, with TikTok's own reporting tool repeatedly returning a 'no violation found' response. A related but mechanically distinct pattern describes account bans and age-verification face-scan failures locking out both minors and verified adults with little working recourse. Smaller clusters describe rising ad frequency and forced AI tools replacing simpler prior workflows with no opt-out. Where users do praise the app, it's largely simple, generic entertainment value -- this sample did not surface a strong secondary strength beyond that, which is itself worth noting given how much of the sample is dominated by the safety and access issues above.",
+  "transformationSummary": {
+    "reviewsAnalyzed": 200,
+    "recurringSignalCount": 8,
+    "priorityCount": 4
+  },
+  "headlineSignals": {
+    "topStrengthId": "strength-entertainment-value",
+    "topPainPointId": "pain-moderation-failures",
+    "topRequestId": "request-effective-moderation",
+    "topPriorityId": "priority-moderation-failures"
+  },
+  "strengths": [
+    {
+      "id": "strength-entertainment-value",
+      "theme": "Entertaining, Habit-Forming Content Discovery",
+      "supportingReviewIds": [
+        "14468576985",
+        "14467411076",
+        "14467365216",
+        "14465062038",
+        "14464999635",
+        "14464319722"
+      ],
+      "evidenceCount": 6,
+      "whatUsersValue": "Reviewers repeatedly describe TikTok in simple entertainment terms -- fun, funny, a good way to pass time or connect with friends through shared videos -- rather than describing a specific feature.",
+      "whyThisMatters": "This is the core hook of the product and, in a sample otherwise dominated by severe content-moderation and account-access complaints, it's the clearest evidence the core content-discovery loop still works for a meaningful share of reviewers.",
+      "protectThis": "The discovery/entertainment loop itself should be protected as moderation and account-enforcement changes are made in response to the pain points below -- fixing safety and access issues shouldn't come at the cost of the content quality and variety reviewers cite here.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14468576985",
+          "quote": "This app is absolutely amazing. The friends you get to make on here, the games, all the different videos and stuff.",
+          "rating": 5,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14467365216",
+          "quote": "Such an entertaining app Love watching and posting videos on this app",
+          "rating": 5,
+          "date": "2026-08-24"
+        }
+      ]
+    }
+  ],
+  "painPoints": [
+    {
+      "id": "pain-moderation-failures",
+      "theme": "Severe Content Moderation Failures (Explicit/Violent Content Reaching Minors)",
+      "issueType": "Policy / Trust Pushback",
+      "productSurface": "Content & Ad Moderation",
+      "supportingReviewIds": [
+        "14468272613",
+        "14468253310",
+        "14467093202",
+        "14464595567",
+        "14464571517",
+        "14464550356",
+        "14464495405",
+        "14464485795",
+        "14464432489",
+        "14464288868",
+        "14464061639",
+        "14463857685",
+        "14463618588"
+      ],
+      "evidenceCount": 13,
+      "evidencePercentOfSample": 6.5,
+      "affectedJourney": "Browsing the For You feed or receiving in-app ads, and reporting content that appears to violate stated community guidelines.",
+      "userImpact": {
+        "level": "Critical",
+        "reasoning": "Reviewers describe sexually explicit and violent content -- including in paid ads -- reaching accounts they say include minors, and report that flagging this content through the app's own reporting tool results in a 'no violation found' response. This is a severe safety failure, not a quality-of-life issue."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Content moderation is not a peripheral feature for a platform whose entire product is an algorithmically-served feed of user- and advertiser-submitted video -- if moderation fails, the core feed itself becomes the harm."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Thirteen independent reviewers describe the same specific pattern -- explicit sexual or violent content (including in ads) reaching the feed, reports being dismissed as non-violations, and the problem being described as persistent over time -- with enough specificity (describing exact ad content, exact report outcomes) to be a credible, coherent signal rather than isolated complaints."
+      },
+      "synthesis": "A large, high-severity cluster of reviewers describe sexually explicit content -- including what several describe as content sexualizing or endangering minors -- and graphic violence reaching the main feed and paid advertisements, and describe TikTok's own in-app reporting tool consistently returning a 'no violation' response even for content they consider unambiguous.",
+      "potentialImplication": "Because several reviewers describe this affecting minors specifically and describe reports being dismissed rather than acted on, this could plausibly represent a serious child-safety and platform-trust risk with potential regulatory exposure -- though this analysis can only report what reviewers describe, not verify the underlying content or confirm TikTok's actual moderation outcomes.",
+      "recommendedNextStep": "This is a P0 finding that likely warrants direct escalation to Trust & Safety leadership rather than a standard product investigation queue: audit a sample of the specific ad/content reports reviewers describe as wrongly dismissed, and validate whether the automated moderation system's 'no violation' threshold is calibrated appropriately for content of this severity.",
+      "likelyImplementationSurface": "Automated content and ad moderation classifiers, and the human-review escalation path for reports the system doesn't act on.",
+      "implementationConsiderations": "Public reviews cannot verify the actual content in question or confirm moderation outcomes; however, the volume, consistency, and severity described warrant treating this as a genuine signal requiring direct verification rather than dismissal as reviewer exaggeration.",
+      "likelyCrossFunctionalPartners": [
+        "Trust & Safety",
+        "Product",
+        "Legal / Policy",
+        "Ads Review"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14464571517",
+          "quote": "There are multiple ads on tiktok promoting cp where if you supposedly click on them it takes you to a site where that happens",
+          "rating": 1,
+          "date": "2026-08-23"
+        },
+        {
+          "reviewId": "14464432489",
+          "quote": "This app easily allows people to post videos of pornography and audios of people being sexually assaulted, and when yet reporting the videos, TikTok deems that it does not violate any of the established policies whatsoever",
+          "rating": 1,
+          "date": "2026-08-23"
+        }
+      ]
+    },
+    {
+      "id": "pain-account-bans",
+      "theme": "Account Bans & Age-Verification False Positives With Little Recourse",
+      "issueType": "Policy / Trust Pushback",
+      "productSurface": "Account Moderation & Age Verification",
+      "supportingReviewIds": [
+        "14468293732",
+        "14467903598",
+        "14466522769",
+        "14464603012",
+        "14464599728",
+        "14464076015",
+        "14464061751",
+        "14463785375",
+        "14463736401",
+        "14463547632",
+        "14463492538"
+      ],
+      "evidenceCount": 11,
+      "evidencePercentOfSample": 5.5,
+      "affectedJourney": "Using an existing account or verifying age, without being banned, IP-blocked, or incorrectly age-restricted.",
+      "userImpact": {
+        "level": "Critical",
+        "reasoning": "Reviewers describe losing access to accounts entirely -- sometimes permanently, sometimes for years -- often with no stated reason, including cases of adults incorrectly flagged as minors by an age-verification face scan with no working appeal."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Account access is the precondition for every other feature; incorrect enforcement here fails the same core requirement as the moderation pain point above, via a different mechanism."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Eleven reviewers independently describe the same pattern -- bans or age-restrictions with no clear reason, appeals that don't resolve, and specific mention of face-scan age verification failing for adults -- across a range of star ratings."
+      },
+      "synthesis": "Reviewers describe accounts banned or age-restricted with no specific reason given, including adults who say a face-scan age-verification tool incorrectly flagged them as minors, with appeals that either don't process or take months to years to resolve.",
+      "potentialImplication": "Because age-verification and ban enforcement are presumably intended to protect younger users, a high false-positive rate could plausibly undermine trust in the system's accuracy generally, for both the enforcement and its stated protective purpose.",
+      "recommendedNextStep": "Audit the false-positive rate of the face-scan age-verification tool specifically, and validate current appeal-resolution times against reviewers' reported multi-month to multi-year waits.",
+      "likelyImplementationSurface": "Age-verification (face-scan) classifier and the account-ban appeal review queue.",
+      "implementationConsiderations": "Distinguishing justified enforcement from false positives requires case-level detail not available from public reviews.",
+      "likelyCrossFunctionalPartners": [
+        "Trust & Safety",
+        "Product",
+        "Customer Support Operations"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14464599728",
+          "quote": "TikTok detected it and said I was under 13. There was a thing where you could do a face scan, and it will determine your age. I have done it multiple times and it has not went through. mind you I am 18 years old.",
+          "rating": 1,
+          "date": "2026-08-23"
+        },
+        {
+          "reviewId": "14463492538",
+          "quote": "all i did was tell my friend to shut the f up and they reported me as a joke and now my phone is IP banned",
+          "rating": 1,
+          "date": "2026-08-23"
+        }
+      ]
+    },
+    {
+      "id": "pain-ad-load",
+      "theme": "Ad Frequency & Oversaturation",
+      "issueType": "Policy / Monetization Pushback",
+      "productSurface": "Feed Ad Load",
+      "supportingReviewIds": [
+        "14467479096",
+        "14465852201",
+        "14465152925",
+        "14463797877"
+      ],
+      "evidenceCount": 4,
+      "evidencePercentOfSample": 2,
+      "affectedJourney": "Scrolling the main feed during a normal viewing session.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Doesn't block use of the app but reviewers describe it as disrupting the core scrolling experience enough to reduce or stop use."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Ad load affects the core feed experience broadly but is a monetization-balance question rather than a core content or safety failure."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Four reviewers describe a consistent pattern (multiple back-to-back ads within a short scrolling session), a real but more modest-volume signal than the top two pain points."
+      },
+      "synthesis": "Reviewers describe ad frequency increasing to the point of multiple consecutive ads within a few videos, framed as a recent and worsening change to the scrolling experience.",
+      "potentialImplication": "Could plausibly reduce session length or engagement for affected users, though this sample can't measure actual usage impact.",
+      "recommendedNextStep": "Validate current ad-frequency delivery against intended pacing targets for a sample of affected sessions.",
+      "likelyImplementationSurface": "Ad-frequency pacing logic in the feed-serving system.",
+      "implementationConsiderations": "Server-side ad-serving configuration is not observable from public reviews.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Growth / Monetization"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14463797877",
+          "quote": "I just received 3 back to back to back ads. I fired up the app an hour later and was served 3 ads in 5 videos. I’m done.",
+          "rating": 1,
+          "date": "2026-08-23"
+        }
+      ]
+    },
+    {
+      "id": "pain-forced-ai",
+      "theme": "Forced AI Features With No Opt-Out",
+      "issueType": "UI/UX Friction",
+      "productSurface": "AI Search & Content Tools",
+      "supportingReviewIds": [
+        "14467379459",
+        "14464668683",
+        "14463876799",
+        "14463672955"
+      ],
+      "evidenceCount": 4,
+      "evidencePercentOfSample": 2,
+      "affectedJourney": "Using search or content-discovery tools without being routed into an AI-driven feature.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Annoying and described as degrading a previously simpler workflow (e.g. search), but not blocking core use of the app."
+      },
+      "strategicRelevance": {
+        "level": "Adjacent",
+        "reasoning": "Affects specific tools (search, a content-tagging assistant) rather than the core feed itself."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Four reviewers describe related but distinct AI-feature complaints (search redirect, a content-tagging tool, general distaste for AI-made content in the feed), a real but modest and somewhat varied signal."
+      },
+      "synthesis": "A small group of reviewers describe specific AI-driven tools -- a search bar that redirects to an AI chat interface, a content-tagging assistant -- as replacing a simpler previous workflow with no way to opt out or revert.",
+      "potentialImplication": "Could plausibly push reviewers who dislike the AI-first workflow to reduce use of the specific affected tools.",
+      "recommendedNextStep": "Validate whether a non-AI fallback path exists for the specific tools named (search, content tagging) and consider surfacing it more directly if so.",
+      "likelyImplementationSurface": "Search entry point and content-tagging assistant UI.",
+      "implementationConsiderations": "Primarily a control/default-behavior question rather than a technical defect in the AI itself.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Search Engineering",
+        "Machine Learning"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14463876799",
+          "quote": "the ui and object tags have become way worse(lying,unrelated videos, wasting time)and the worst part about it is that you are forced into accepting the ais faults instead of just being able to revert back to the model *without ai and *without these flaws. every time i go to click a sound and hit the tako button since it was moved, my drive to delete this app gets stronger. please provide a way to turn off the ai features instead of forcing them onto us.",
+          "rating": 1,
+          "date": "2026-08-23"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "request-effective-moderation",
+      "requestedCapability": "Reports of explicit or violent content resulting in actual review and removal, not an automatic 'no violation' response.",
+      "underlyingNeed": "Users want confidence that the reporting tool they're asked to use actually results in human-reviewed action for severe content, not a rubber-stamp dismissal.",
+      "context": "After reporting sexually explicit, violent, or otherwise clearly-guideline-violating content or ads.",
+      "supportingReviewIds": [
+        "14463857685",
+        "14464495405",
+        "14464061639",
+        "14463618588"
+      ],
+      "evidenceCount": 4
+    },
+    {
+      "id": "request-ban-appeal",
+      "requestedCapability": "A working, reasonably fast appeal path for account bans and age-restrictions, with a specific reason given.",
+      "underlyingNeed": "Users -- including verified adults incorrectly flagged as minors -- want a real path back into a wrongly-restricted account, not a multi-month or multi-year wait.",
+      "context": "Immediately after a ban, IP block, or age-restriction is applied.",
+      "supportingReviewIds": [
+        "14466765139",
+        "14463785375",
+        "14463547632"
+      ],
+      "evidenceCount": 3
+    },
+    {
+      "id": "request-ai-optout",
+      "requestedCapability": "A way to opt out of AI-driven search redirects and content-tagging tools and use the prior, simpler workflow.",
+      "underlyingNeed": "Users who found the previous non-AI tool sufficient want it back as an option, not replaced outright.",
+      "context": "Using search or content-tagging specifically.",
+      "supportingReviewIds": [
+        "14463876799",
+        "14463672955"
+      ],
+      "evidenceCount": 2
+    }
+  ],
+  "priorities": [
+    {
+      "id": "priority-moderation-failures",
+      "priorityLabel": "P0",
+      "title": "Escalate Content Moderation Failures for Explicit/Violent Content",
+      "linkedItemId": "pain-moderation-failures",
+      "whyNow": "The most severe signal in this sample by a wide margin -- reviewers describe sexually explicit and violent content, including in paid ads, reaching what they describe as minor-inclusive audiences, with reports dismissed as non-violations. This combination of severity, specificity, and volume warrants treating it as a priority escalation, not a routine backlog item.",
+      "recommendedNextStep": "Audit a sample of the specific ad/content reports reviewers describe as wrongly dismissed, and validate whether the automated moderation system's threshold is calibrated appropriately for content of this severity.",
+      "likelyImplementationSurface": "Automated content and ad moderation classifiers, and the human-review escalation path.",
+      "implementationConsiderations": "Public reviews cannot verify the actual content or confirm moderation outcomes, but the volume, consistency, and severity described warrant direct verification.",
+      "likelyCrossFunctionalPartners": [
+        "Trust & Safety",
+        "Product",
+        "Legal / Policy",
+        "Ads Review"
+      ]
+    },
+    {
+      "id": "priority-account-bans",
+      "priorityLabel": "P1",
+      "title": "Prioritize Account Ban & Age-Verification Appeal Accuracy",
+      "linkedItemId": "pain-account-bans",
+      "whyNow": "High-frequency, high-confidence pattern of account access loss -- including a specific, verifiable-sounding failure mode (face-scan age verification misclassifying adults) with no working appeal.",
+      "recommendedNextStep": "Audit the false-positive rate of the face-scan age-verification tool and validate current appeal-resolution times.",
+      "likelyImplementationSurface": "Age-verification (face-scan) classifier and the account-ban appeal review queue.",
+      "implementationConsiderations": "Distinguishing justified enforcement from false positives requires case-level detail not available from public reviews.",
+      "likelyCrossFunctionalPartners": [
+        "Trust & Safety",
+        "Product",
+        "Customer Support Operations"
+      ]
+    },
+    {
+      "id": "priority-ad-load",
+      "priorityLabel": "P2",
+      "title": "Monitor Ad Frequency in the Feed",
+      "linkedItemId": "pain-ad-load",
+      "whyNow": "Real complaint but moderate impact and modest volume relative to the top two safety-related issues -- suited to monitoring rather than immediate deep investigation.",
+      "recommendedNextStep": "Validate current ad-frequency delivery against intended pacing targets.",
+      "likelyImplementationSurface": "Ad-frequency pacing logic in the feed-serving system.",
+      "implementationConsiderations": "Server-side ad-serving configuration is not observable from public reviews.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Growth / Monetization"
+      ]
+    },
+    {
+      "id": "priority-forced-ai",
+      "priorityLabel": "P2",
+      "title": "Monitor Forced AI Feature Complaints",
+      "linkedItemId": "pain-forced-ai",
+      "whyNow": "Modest volume and moderate impact, affecting specific tools rather than the core feed -- suited to monitoring.",
+      "recommendedNextStep": "Validate whether a non-AI fallback exists for the specific tools named.",
+      "likelyImplementationSurface": "Search entry point and content-tagging assistant UI.",
+      "implementationConsiderations": "Primarily a control/default-behavior question.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Search Engineering",
+        "Machine Learning"
+      ]
+    }
+  ],
+  "methodology": {
+    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
+    "sampleScope": "200 most recent publicly available reviews for TikTok (App Store ID 835599320) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
+    "limitations": [
+      "This report contains an unusually severe finding (content moderation failures involving explicit content reportedly reaching minors) drawn entirely from reviewer-reported experience. This analysis cannot verify the underlying content, confirm TikTok's actual moderation outcomes, or independently substantiate any individual claim -- it reports what a consistent, specific pattern of reviewers describe, and flags it for direct human verification rather than treating it as confirmed fact.",
+      "A number of reviews referencing broader political or geopolitical topics, or making unverifiable claims about coordinated targeting, were read but excluded from thematic evidence, consistent with this project's Review Relevance principle.",
+      "App Store reviewers are self-selected and skew toward strong reactions; prevalence in this sample is not the same as prevalence across all users, and this app's user base skews younger than some others in this demo set, which may affect how representative self-selected reviewers are of the full user base.",
+      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend, even where reviewers reference a change.",
+      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
+      "Internal engineering effort is intentionally not estimated anywhere in this report.",
+      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about TikTok's actual internal team structure."
+    ],
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Content moderation failures and account-ban/age-verification issues are kept as two separate pain points because they involve different systems (content/ad classification vs. account-level enforcement) despite both falling under trust and safety broadly."
+  },
+  "evidenceIndex": {
+    "14468576985": {
+      "rating": 5,
+      "date": "2026-08-24T18:48:19-07:00",
+      "title": "TikTok",
+      "body": "This app is absolutely amazing. The friends you get to make on here, the games, all the different videos and stuff."
+    },
+    "14467411076": {
+      "rating": 5,
+      "date": "2026-08-24T11:26:59-07:00",
+      "title": "First of all this app is so fun",
+      "body": "And all my friends like it, and we make TikTok’s all the time"
+    },
+    "14467365216": {
+      "rating": 5,
+      "date": "2026-08-24T11:11:34-07:00",
+      "title": "Good app",
+      "body": "Such an entertaining app Love watching and posting videos on this app"
+    },
+    "14465062038": {
+      "rating": 5,
+      "date": "2026-08-23T21:17:16-07:00",
+      "title": "Amazing",
+      "body": "TikTok is overall just a very nice amazing app"
+    },
+    "14464999635": {
+      "rating": 5,
+      "date": "2026-08-23T20:49:36-07:00",
+      "title": "Best app",
+      "body": "Best app in the world had it for almost 7 years never hate the app"
+    },
+    "14464319722": {
+      "rating": 5,
+      "date": "2026-08-23T16:13:00-07:00",
+      "title": "I love TikTok",
+      "body": "I spend 30+ hours a week on TikTok im not joking and I love it so much!"
+    },
+    "14468272613": {
+      "rating": 1,
+      "date": "2026-08-24T16:50:08-07:00",
+      "title": "This app shows porn to children and TikTok won’t do anything about it",
+      "body": "I have seen multiple photos of women with numbers on their bodys(on the chest, mouth and crotch) saying ‘choose a part to touch’ with AUDIO OF A WOMEN BEING RAPED! And this is being promoted as an AD. When you try and pause the video it directly takes you to a PORN SITE. I have seen multiple people also have the same type of ads on their fyp a lot of them being minors. CHILDREN OR BEING SHOWN PORN!!! On top of reporting the ads we are being told that the video didn’t have any violations and will stay up. This app has gone downhill since it was sold I don’t recommend this app to your children or in general"
+    },
+    "14468253310": {
+      "rating": 1,
+      "date": "2026-08-24T16:42:16-07:00",
+      "title": "Stop with the AI",
+      "body": "I keep seeing ads that are just straight porn. How is that allowed, but when I have a gun in my profile picture I get instantly flagged??? This is absolutely disgusting considering the app is 13+. Do better and stop allowing adult and child porn to be shown on your site."
+    },
+    "14467093202": {
+      "rating": 1,
+      "date": "2026-08-24T09:43:38-07:00",
+      "title": "Horrible moderation and they do absolutely nothing about it",
+      "body": "The app itself isnt that bad, but why is the moderation so blind? Every time i scroll on here, i see gore and cropped NSFW. Every direct message i get is someone telling me to take my own life or NSFW. And every time I report any of these, there is no violation. Recently, my cousin, who is a minor that recently used tiktok, got a direct message which had characters having sexual actions and death threats. Reported it and NO VIOLATION. Why are you allowing actual minors to watch this? Is the death threat not violating community guidelines because its in a different language? Why is the ai moderation doing nothing? If there are actual people having the same problem as me, why arent you resolving this issue? Please try having human moderation go through these atleast. I dont recommend using this app. And i advise guardians of minors to check what they are looking at."
+    },
+    "14464595567": {
+      "rating": 5,
+      "date": "2026-08-23T18:06:05-07:00",
+      "title": "You need to fix the moderation.",
+      "body": "There are literal porn ads and rape audio going into people’s fyps. You incompetent clowns won’t take them down because there’s “nothing” wrong."
+    },
+    "14464571517": {
+      "rating": 1,
+      "date": "2026-08-23T17:56:31-07:00",
+      "title": "THERES CP ON THE APP",
+      "body": "There is literal CHEESE PIZZA on the app!! There are multiple ads on tiktok promoting cp where if you supposedly click on them it takes you to a site where that happens tiktok PLEASE DO SOMETHING ABOUT THIS ITS DISGUSTING‼️‼️‼️‼️‼️"
+    },
+    "14464550356": {
+      "rating": 1,
+      "date": "2026-08-23T17:48:00-07:00",
+      "title": "allows innapropriate behavior",
+      "body": "allows rape and porn on the app.. moderation does absolutely nothing btw. moderation sucks."
+    },
+    "14464495405": {
+      "rating": 2,
+      "date": "2026-08-23T17:25:53-07:00",
+      "title": "Moderation",
+      "body": "The community is the only thing holding this company up from falling into pieces. The moderation on TikTok is so abysmal they’ve had multiple csam and just overall porn/gore scandals happen in the past two years. Something needs to change or I’m deleting this app. Also don’t let your kids get this app for obvious reasons."
+    },
+    "14464485795": {
+      "rating": 1,
+      "date": "2026-08-23T17:21:59-07:00",
+      "title": "Saw shootings on here sadly the moderation sucks",
+      "body": "There’s people who post shooting And are happy about em and tik tok just doesn’t care at all"
+    },
+    "14464432489": {
+      "rating": 1,
+      "date": "2026-08-23T17:00:11-07:00",
+      "title": "Moderation issue.",
+      "body": "TikTok’s moderation has gotten worse over the years ever since it was sold to the US. This app easily allows people to post videos of pornography and audios of people being sexually assaulted, and when yet reporting the videos, TikTok deems that it does not violate any of the established policies whatsoever, despite that fact that the platform does not allow 18+ adult content and anything similar in vein. Promotional advertisements also face the same issue, and it is much harder to track down when individuals are being targeted."
+    },
+    "14464288868": {
+      "rating": 1,
+      "date": "2026-08-23T16:00:10-07:00",
+      "title": "Disgusting",
+      "body": "I keep getting ads that are usually AI generated and sexually explicit, or outright pornographic. Some are even paired with violent and disturbing audio, including sounds of women crying or being assaulted. Clicking certain ads takes you off TikTok to a porn site, yet reporting these ads apparently doesn’t result in a violation.\n\nWhat’s especially disturbing is that these ads are reportedly being pushed onto minor accounts as well. This is completely unacceptable. TikTok needs to do a much better job protecting users, especially women and children from sexually explicit and violent content being served through its own advertising system. I’m genuinely disgusted."
+    },
+    "14464061639": {
+      "rating": 1,
+      "date": "2026-08-23T14:28:26-07:00",
+      "title": "Toxic Community",
+      "body": "This app is riddled with Misogyny, homophobia, transphobia, racism, etc..\nNot to mention disturbing sexual ads of women being assaulted being targeted towards children."
+    },
+    "14463857685": {
+      "rating": 1,
+      "date": "2026-08-23T13:12:25-07:00",
+      "title": "Reports aren’t handled right",
+      "body": "I like TikTok I really do but it’s really sad to see how reports are handled! I’m convinced I could report someone say a literal SLUR and would get the same “we found it doesn’t violate our community guidelines”. It’s really sad to see people be proudly homophobic, it gets tiring to be called unnatural and sinful for the hundredth time and the fact that you guys don’t do anything about it.\nEdit: a guy ACTUALLY said a racial slur and threatened someone, nothing happened when i reported it! Do better."
+    },
+    "14463618588": {
+      "rating": 3,
+      "date": "2026-08-23T11:49:58-07:00",
+      "title": "My POV as an og user.",
+      "body": "TikTok is a great app, it’s has many developments over the years making it easier for us users to watch and enjoy videos. The problem, adults and people have been creating inappropriate content on this app and it seems to be that the person/s watching over the videos aren’t acting up. I’ve seen sexualized ai videos and I think that Ai should be banned from this app. TikTok can be addictive and that’s also not okay. I sometimes get stuck on watching videos instead of doing my responsibilities and it gives me anxiety. TikTok needs to be a safer and more appropriate environment for the users. It used to be a dancing app and now it’s transforming into a sexual app. There should be a system to detect Ai that will stop this bad use. Aswell as language on this app that needs to be stopped. Not to mention the real life violence, gore, and etc of things being posted on TikTok. We need self harm and suicide videos GONE because they can influence children. I think TikTok should immediately send help to whoever makes a suicide or self harm video. If I could bring back 2022 TikTok I would, but I would keep the repost button. I am the only person with a realistic take on this app. Thank you, have a nice day."
+    },
+    "14468293732": {
+      "rating": 1,
+      "date": "2026-08-24T16:58:40-07:00",
+      "title": "Bruh",
+      "body": "It banned my account for no reason"
+    },
+    "14467903598": {
+      "rating": 1,
+      "date": "2026-08-24T14:22:59-07:00",
+      "title": "Don’t get banned",
+      "body": "TikTok banned me for no reason now I lost all my pictures and videos TikTok please can you give me my tik tok back I want do what I did again."
+    },
+    "14466522769": {
+      "rating": 5,
+      "date": "2026-08-24T06:52:19-07:00",
+      "title": "Cool but",
+      "body": "I got banned for no reason"
+    },
+    "14464603012": {
+      "rating": 1,
+      "date": "2026-08-23T18:09:02-07:00",
+      "title": "I’m over the age limit",
+      "body": "Bro this app is glazing me for being over thirteen with my baby face but they still keep banning me for no reason"
+    },
+    "14464599728": {
+      "rating": 1,
+      "date": "2026-08-23T18:07:46-07:00",
+      "title": "Its horrendous",
+      "body": "I was simply going on about my day scrolling my daily amount on TikTok when a notification pops up my account was banned because it suspects that I am under mind you I had one video of me showing half of my sister‘s face because I moved the camera. TikTok detected it and said I was under 13. There was a thing where you could do a face scan, and it will determine your age. I have done it multiple times and it has not went through. mind you I am 18 years old."
+    },
+    "14464076015": {
+      "rating": 1,
+      "date": "2026-08-23T14:33:49-07:00",
+      "title": "Bruh",
+      "body": "You banned me even though I’m well over 13🥲"
+    },
+    "14464061751": {
+      "rating": 5,
+      "date": "2026-08-23T14:28:28-07:00",
+      "title": "De Lok mi possay",
+      "body": "De Lok mi possay De Lok mi  possay De Lok mi possay De Lok mi possay"
+    },
+    "14463785375": {
+      "rating": 1,
+      "date": "2026-08-23T12:46:50-07:00",
+      "title": "Age restrictions.",
+      "body": "I am VERY ANGRY this app makes me very mad they age restricted me i got it removed then this app won’t let me be in bulletin boards, it won’t let me have any group streaks, and it won’t let me have tiktok shop i am so tired and disappointed bc of this app. I am trying me hardest to contact help support they take for ever to text me back they take atleast 4 hours i am so tired of trying to prove I AM OVER 18 but tiktok won’t let me call a agent when i text the help support the take FOREVER i am truly frustrated."
+    },
+    "14463736401": {
+      "rating": 1,
+      "date": "2026-08-23T12:29:51-07:00",
+      "title": "TikTok is trash",
+      "body": "I got banned for no reason fix ur app"
+    },
+    "14463547632": {
+      "rating": 5,
+      "date": "2026-08-23T11:26:48-07:00",
+      "title": "Why TikTok is not my friend anymore",
+      "body": "So basically I showed my little sister in a TikTok and they banned me permanently from TikTok and now when I go to make another account It tells me that I’m temporarily suspended so now I have to share a YouTube account with my little brother who watches gorilla tag soo that it but I’m so mad😡😭"
+    },
+    "14463492538": {
+      "rating": 1,
+      "date": "2026-08-23T11:08:49-07:00",
+      "title": "yo its been almost 3 years unban me😭",
+      "body": "all i did was tell my friend to shut the f up and they reported me as a joke and now my phone is IP banned and i can still use tiktok on my ipad so the ban did nothing😂😂😂😂"
+    },
+    "14467479096": {
+      "rating": 2,
+      "date": "2026-08-24T11:50:12-07:00",
+      "title": "Ads",
+      "body": "While I still can find news and entertainment and other things, I enjoy it is now oversaturated and flooded completely with ads. Most times if I scroll through 10 videos, three of them are ads. I’ve gotten two ads in a row or maybe one add three videos apart. This makes for an incredibly annoying user experience. And when I’m not getting a legitimate advertisement, I’m getting content creators who are trying to sell me on TikTok shop. I’m all for discovering new products, but I really hate trying to be sold things every single time I open my phone."
+    },
+    "14465852201": {
+      "rating": 2,
+      "date": "2026-08-24T03:05:24-07:00",
+      "title": "достала реклама",
+      "body": "ребят, а можно еще больше рекламы в приложении? чтобы не после двух-трех тик токов реклама была, а чтобы ВСЯ ЛЕНТА ИЗ РЕКЛАМЫ СОСТОЯЛА ДААА РЕКЛАМА \nдовели."
+    },
+    "14465152925": {
+      "rating": 1,
+      "date": "2026-08-23T21:59:29-07:00",
+      "title": "Your ad in my game",
+      "body": "How long does your ad need to be? It’s opening both Safari and the App Store. Faaak sake!"
+    },
+    "14463797877": {
+      "rating": 1,
+      "date": "2026-08-23T12:51:12-07:00",
+      "title": "Too many ads",
+      "body": "I just received 3 back to back to back ads. I fired up the app an hour later and was served 3 ads in 5 videos. I’m done."
+    },
+    "14467379459": {
+      "rating": 5,
+      "date": "2026-08-24T11:16:17-07:00",
+      "title": "I just used 5 stars so people can see, though really I give it 2 1/2",
+      "body": "I feel like I just stumble onto stuff made by AI, and not by humans, and you just allow it. So I have to now search for content and not scroll😔"
+    },
+    "14464668683": {
+      "rating": 2,
+      "date": "2026-08-23T18:34:54-07:00",
+      "title": "Not for me",
+      "body": "I always have the worst time with this app cooking my brain with this rot.. but it’s not like anything I could have done would have changed it. Please don’t be evil mr tik toc and try to have a bit of control over your ai"
+    },
+    "14463876799": {
+      "rating": 1,
+      "date": "2026-08-23T13:19:18-07:00",
+      "title": "forced ai",
+      "body": "with the introduction of the tako ai, the ui and object tags have become way worse(lying,unrelated videos, wasting time)and the worst part about it is that you are forced into accepting the ais faults instead of just being able to revert back to the model *without ai and *without these flaws. every time i go to click a sound and hit the tako button since it was moved, my drive to delete this app gets stronger. please provide a way to turn off the ai features instead of forcing them onto us."
+    },
+    "14463672955": {
+      "rating": 3,
+      "date": "2026-08-23T12:08:11-07:00",
+      "title": "Ai",
+      "body": "I’m going to delete the app if every time I press the search bar at the bottom it takes me to an ai website. Fix the bottom search bar."
+    },
+    "14466765139": {
+      "rating": 1,
+      "date": "2026-08-24T08:04:03-07:00",
+      "title": "New account",
+      "body": "Yesterday, I made a new account and I tried to change my profile, bio, and name but every time I try it says “You edited your profile too many times today. Try again later.” or “Slow down, you are editing too fast” but i only tried to do it once yesterday and once today. So I asked TikTok to give me a ticket so they can report this but they kept saying the same thing and didn’t help at all. I also tried to delete TikTok and redownloaded TikTok to see if it will work but it didn’t. And till this day im still having this issue."
+    }
+  }
+}

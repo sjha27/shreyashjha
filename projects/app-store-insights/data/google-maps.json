@@ -1,0 +1,899 @@
+{
+  "schemaVersion": "1.0",
+  "app": {
+    "appId": 585027354,
+    "name": "Google Maps",
+    "developer": "Google",
+    "category": "Navigation",
+    "countryCode": "us",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/d3/e2/4ed3e273-5114-70b7-b919-dca325bee1aa/maps_2025-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-0-85-220.png/512x512bb.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/google-maps/id585027354?uo=4"
+  },
+  "reviewSnapshot": {
+    "sourceFile": "google-maps-2026-08-26.json",
+    "fetchedAt": "2026-08-26T06:26:30.573Z",
+    "reviewsAnalyzed": 200,
+    "dateRange": {
+      "latest": "2026-08-24T19:35:08-07:00",
+      "earliest": "2026-08-16T07:45:13-07:00"
+    }
+  },
+  "metrics": {
+    "sampleAverageRating": 2.8,
+    "ratingDistribution": {
+      "1": 90,
+      "2": 13,
+      "3": 17,
+      "4": 8,
+      "5": 72
+    },
+    "ratingDistributionPercent": {
+      "1": 45,
+      "2": 6.5,
+      "3": 8.5,
+      "4": 4,
+      "5": 36
+    },
+    "currentAppStoreRating": {
+      "average": 4.67792,
+      "count": 7323596
+    }
+  },
+  "productBrief": "This sample skews unusually negative (45% one-star) and, distinctively for this app, a large share of the nominally positive reviews are not evaluations of Google Maps itself but appear to be reviews of local businesses -- restaurants, contractors, dentists -- submitted through Google's in-app \"rate this place\" flow rather than genuine app feedback, which narrows the reliable positive signal considerably. Among reviews that are genuinely about the app, the most serious recurring complaint is that Google Maps overrides explicit routing choices -- forcing reroutes mid-drive and ignoring toll-avoidance settings -- sometimes with real financial or safety consequences reviewers describe directly. A closely related complaint is that route quality itself has become less reliable, and a separate, equally frequent cluster objects to AI-generated summaries obscuring straightforward information like hours and addresses that used to be immediate. Where users do praise the app, it's most often framed as a direct comparison to Apple Maps rather than a specific Google Maps strength.",
+  "transformationSummary": {
+    "reviewsAnalyzed": 200,
+    "recurringSignalCount": 10,
+    "priorityCount": 5
+  },
+  "headlineSignals": {
+    "topStrengthId": "strength-vs-apple-maps",
+    "topPainPointId": "pain-preferences-overridden",
+    "topRequestId": "request-ai-optout",
+    "topPriorityId": "priority-preferences-overridden"
+  },
+  "strengths": [
+    {
+      "id": "strength-vs-apple-maps",
+      "theme": "Preferred Over Apple Maps",
+      "supportingReviewIds": [
+        "14467404188",
+        "14460050598",
+        "14459074775",
+        "14455402338"
+      ],
+      "evidenceCount": 4,
+      "whatUsersValue": "A recurring group of reviewers explicitly compare Google Maps favorably against Apple Maps -- for transit directions, general accuracy, and day-to-day reliability -- rather than describing one specific Google Maps feature in isolation.",
+      "whyThisMatters": "For a navigation app, being the reviewer's chosen default over the platform's own built-in alternative is a meaningful competitive signal, especially since switching costs are low (Apple Maps is pre-installed and free on the same device).",
+      "protectThis": "Whatever currently makes reviewers choose Google Maps over the built-in alternative -- described here mostly as general trust and day-to-day reliability -- should be protected as routing and search changes are made in response to the pain points below.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14467404188",
+          "quote": "Love this app, works better than Apple Maps in my opinion.",
+          "rating": 5,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14459074775",
+          "quote": "与Apple map比较过，google maps好得太多！",
+          "rating": 5,
+          "date": "2026-08-22"
+        }
+      ]
+    },
+    {
+      "id": "strength-ease-of-use",
+      "theme": "Straightforward, Everyday Ease of Use",
+      "supportingReviewIds": [
+        "14464140861",
+        "14459266010",
+        "14439538571",
+        "14460223569",
+        "14435258331"
+      ],
+      "evidenceCount": 5,
+      "whatUsersValue": "Separate from the comparison-driven praise above, several reviewers describe Google Maps in simple, habitual terms -- easy to follow for everyday trips, and something they'd genuinely miss if it were gone.",
+      "whyThisMatters": "This is a smaller and more generic signal than the comparison-based strength above, but it points at the same underlying asset: for routine, low-complexity trips, the app still delivers on its basic promise for a meaningful share of reviewers, even in a sample that otherwise skews heavily negative.",
+      "protectThis": "Basic-case reliability for common, simple trips is what this group is actually praising -- worth explicitly not regressing while addressing the more complex routing/preferences issues raised elsewhere in this sample.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14439538571",
+          "quote": "It is my favorite mapping app it is so easy to follow and use",
+          "rating": 5,
+          "date": "2026-08-17"
+        },
+        {
+          "reviewId": "14460223569",
+          "quote": "I love google maps it’s just so great to me if this app ever get deleted I will be sad",
+          "rating": 5,
+          "date": "2026-08-22"
+        }
+      ]
+    }
+  ],
+  "painPoints": [
+    {
+      "id": "pain-route-quality",
+      "theme": "Unreliable, Inefficient Route Quality",
+      "issueType": "Core Functionality Quality",
+      "productSurface": "Route Calculation / ETA",
+      "supportingReviewIds": [
+        "14463181684",
+        "14459706921",
+        "14456810101",
+        "14458613739",
+        "14457428366",
+        "14443574461",
+        "14443526066",
+        "14441374951",
+        "14436674216",
+        "14435276050"
+      ],
+      "evidenceCount": 10,
+      "evidencePercentOfSample": 5,
+      "affectedJourney": "Turn-by-turn driving navigation to a chosen destination.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe routes that are inefficient, nonsensical, or meaningfully slower than the route they know to be better -- wasting time, fuel, and trust in the app's core recommendation -- without fully blocking the trip (they can still ignore the suggestion and navigate manually)."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Calculating a good route is arguably the single most core function of a navigation app; complaints here go directly at the primary value proposition rather than a secondary feature."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Nine independent reviewers, across different trip types (driving, transit, biking) and geographies, describe the same underlying pattern -- a chosen or obviously-better route being passed over for a worse one -- with specific, concrete trip examples rather than vague dissatisfaction."
+      },
+      "synthesis": "Reviewers repeatedly describe Google Maps choosing routes that are objectively worse than an alternative they know about -- longer transit itineraries, backroads instead of highways, or paths that ignore known-better options -- and frame this as a regression from an app that used to route them well.",
+      "potentialImplication": "Because route quality is the core deliverable of a navigation app, a sustained pattern of visibly suboptimal routing could plausibly push reviewers toward competing apps for exactly the trips where routing quality matters most -- though this sample cannot measure actual switching behavior.",
+      "recommendedNextStep": "Validate a sample of the specific reported routes (several reviewers give concrete origin/destination examples) against what the routing engine currently returns, to check whether this reflects a recent algorithm or data change versus isolated edge cases.",
+      "likelyImplementationSurface": "Core route-calculation / ETA-ranking logic.",
+      "implementationConsiderations": "Reviewers give enough detail (specific routes, specific comparisons to a known-better path) to potentially reproduce individual cases, but public reviews can't reveal whether this is a scoring-weight change, a data-freshness issue, or something else in the ranking engine.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Routing / Maps Engineering",
+        "Quality Engineering"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14459706921",
+          "quote": "This app is a complete disaster. The algorithm sends you on absolutely ridiculous detours across toll roads, side streets  and bridges because it thinks it will save you 30 seconds of time.",
+          "rating": 1,
+          "date": "2026-08-22"
+        },
+        {
+          "reviewId": "14456810101",
+          "quote": "For the last month Google Maps has been sending me through the DUMBEST least effective routes.",
+          "rating": 1,
+          "date": "2026-08-21"
+        },
+        {
+          "reviewId": "14443526066",
+          "quote": "This app will rout you over curbs, and through illegal paths and could cost you your life.",
+          "rating": 1,
+          "date": "2026-08-18"
+        }
+      ]
+    },
+    {
+      "id": "pain-preferences-overridden",
+      "theme": "Routing Preferences Overridden (Forced Reroutes & Ignored Toll Settings)",
+      "issueType": "Bug / Stability",
+      "productSurface": "Turn-by-Turn Navigation / Routing Preferences",
+      "supportingReviewIds": [
+        "14459340243",
+        "14455708858",
+        "14463113896",
+        "14449098507",
+        "14449347061",
+        "14459692293",
+        "14448157674",
+        "14438767628",
+        "14437875398"
+      ],
+      "evidenceCount": 9,
+      "evidencePercentOfSample": 4.5,
+      "affectedJourney": "Navigating with an explicit route or setting already chosen (a preferred path, or \"avoid tolls\" enabled).",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "This isn't about route quality in the abstract -- it's the app overriding a choice the user already explicitly made, which several reviewers tie to concrete cost (unwanted tolls, described as tens of dollars) or safety framing (\"could cost you your life\"), a materially more severe consequence than a merely suboptimal route."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Respecting an explicit user setting or a manually chosen route is foundational to trusting a navigation tool -- if the app substitutes its own judgment for the user's stated preference, the preference controls themselves become unreliable."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Both sub-symptoms (forced mid-drive rerouting, and \"avoid tolls\" not being honored) are described consistently and specifically by independent reviewers, and several explicitly connect them as the same complaint: the app substitutes its own routing judgment for an explicit user instruction."
+      },
+      "synthesis": "Two closely related symptoms recur: the app reroutes a driver mid-trip away from their chosen path without a way to lock it in, and the \"avoid tolls\" setting is repeatedly not honored, in one case reportedly costing a reviewer over $50 in unwanted tolls. Both point at the same underlying product question -- does the app actually respect an explicit routing instruction once given.",
+      "potentialImplication": "Because some reviewers describe direct financial cost (unwanted tolls) or explicit safety framing, unresolved instances of this could plausibly affect trust in the app's settings generally, beyond just routing.",
+      "recommendedNextStep": "Audit whether \"avoid tolls\" and mid-route lock-in are being correctly read and honored by the live routing/rerouting logic, prioritizing the toll-avoidance setting given the concrete, specific cost reviewers report.",
+      "likelyImplementationSurface": "Route-preference persistence and the live rerouting trigger logic.",
+      "implementationConsiderations": "Reviewers describe the symptom precisely (specific setting enabled, specific outcome ignoring it), which narrows the likely surface, but whether this is a bug versus an intentional override under certain conditions (e.g., a closed toll-free road) can't be determined from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Routing / Maps Engineering",
+        "Client Engineering"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14459692293",
+          "quote": "Latest update can no longer accurately provide directions for toll/no toll on 66 and keeps provoking phantom directions",
+          "rating": 1,
+          "date": "2026-08-22"
+        },
+        {
+          "reviewId": "14449098507",
+          "quote": "I’ve been fined more times than I can count for using a fast lane because Google automatically recommends them.",
+          "rating": 2,
+          "date": "2026-08-19"
+        }
+      ]
+    },
+    {
+      "id": "pain-ai-features-forced",
+      "theme": "Unwanted AI Features Obscuring Core Information",
+      "issueType": "UI/UX Friction",
+      "productSurface": "Search Results & AI Overviews",
+      "supportingReviewIds": [
+        "14464076752",
+        "14461610505",
+        "14458657040",
+        "14457007120",
+        "14451471411",
+        "14448464557",
+        "14441553244",
+        "14436404982",
+        "14435166922",
+        "14435050015"
+      ],
+      "evidenceCount": 10,
+      "evidencePercentOfSample": 5,
+      "affectedJourney": "Quickly finding a place's basic information (hours, address, whether it's open now) or a fast restaurant recommendation.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe previously one-tap information (hours, an \"open now\" filter) now requiring more steps or being buried under an AI-generated summary they can't disable, actively slowing down a time-sensitive task rather than merely being an aesthetic annoyance."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Finding basic information about a place (is it open, where is it) is as central to a maps app's value proposition as turn-by-turn routing -- this isn't a peripheral feature being cluttered, it's the core search/discovery journey."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Ten reviewers independently describe the same specific pattern -- a previously fast, direct piece of information now requires navigating an AI layer -- citing concrete examples (the \"open now\" filter moving from one tap to three, hours buried under an AI summary)."
+      },
+      "synthesis": "Reviewers consistently describe AI-generated summaries and a conversational \"ask Maps\" interface replacing what used to be direct, fast access to basic place information -- hours, address, an \"open now\" filter -- and object specifically to having no way to turn it off.",
+      "potentialImplication": "Because this affects a core, high-frequency journey (quickly checking if a place is open), sustained friction here could plausibly push time-sensitive searches to a different app or to a plain web search, though this sample can't measure actual behavior change.",
+      "recommendedNextStep": "Validate whether a persistent opt-out (or a way to restore one-tap access to hours/open-now/address ahead of any AI summary) is feasible, since reviewers are specifically asking for the old direct-access behavior back, not for the AI feature to be improved.",
+      "likelyImplementationSurface": "Place-details page layout and the search-result ranking/summary generation pipeline.",
+      "implementationConsiderations": "This reads as primarily a layout/control-and-defaults question (where information is placed, whether AI features can be disabled) rather than a technical defect in the AI itself.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Search & Discovery Engineering",
+        "Machine Learning"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14458657040",
+          "quote": "It’s ridiculous and frustrating that you can’t turn off the generative AI features. When I’m searching for a place, now the important details like address and business hours are all the way at the bottom of the page after a long “AI summary” - that you can’t disable. I didn’t ask for this feature. Many people do not want this. You should be able to turn this off, or rearrange the layout",
+          "rating": 1,
+          "date": "2026-08-22"
+        },
+        {
+          "reviewId": "14435050015",
+          "quote": "The AI suggestions now on the header are hot garbage,",
+          "rating": 4,
+          "date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "id": "pain-stability",
+      "theme": "App Stability & Performance Regressions",
+      "issueType": "Bug / Stability",
+      "productSurface": "App Performance (general)",
+      "supportingReviewIds": [
+        "14468696952",
+        "14466098659",
+        "14461675608",
+        "14459247664",
+        "14456768594",
+        "14453143963",
+        "14452621554",
+        "14445924861",
+        "14443099168",
+        "14439360430"
+      ],
+      "evidenceCount": 10,
+      "evidencePercentOfSample": 5,
+      "affectedJourney": "General app use -- opening the app, loading a route, or using it during a drive.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Individually disruptive (crashes, freezing, a reported 12x slowdown in map-loading time), but symptoms vary across reviewers and most describe workarounds (reinstalling, restarting) rather than total, permanent loss of function."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "General reliability affects every session's baseline quality but doesn't map to one specific core journey the way routing or search does."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Ten reviewers report performance problems, but the specific symptoms are heterogeneous (crashing, freezing, slow loading, general lag), which lowers confidence this is one coherent, single-root-cause issue rather than several distinct regressions bundled together."
+      },
+      "synthesis": "A moderate number of reviewers describe the app becoming measurably slower or less stable after a recent update -- crashing, freezing, or in one specific case taking roughly twelve times longer to load a short route than before -- without a single dominant failure mode.",
+      "potentialImplication": "Accumulated reliability complaints across different symptoms could plausibly erode confidence in the app's general quality even without one severe, isolated failure.",
+      "recommendedNextStep": "Cluster these reports by symptom (crash vs. freeze vs. slow-load vs. general lag) and by app version/device to determine whether they share a root cause or represent independent regressions before prioritizing engineering investigation.",
+      "likelyImplementationSurface": "Client app stability and map-tile/render performance.",
+      "implementationConsiderations": "Heterogeneous symptoms make a single fix unlikely; better scoped as several small investigations than one ticket.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "Quality Engineering"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14459247664",
+          "quote": "Takes 3 minutes to map 0.2-miles trip, this is after latest roll out Version 26.33.1 . Before was 15 seconds. Now 3 minutes.",
+          "rating": 1,
+          "date": "2026-08-22"
+        },
+        {
+          "reviewId": "14452621554",
+          "quote": "Ever since the most recent update the app has been awful!!! Change it back!!!!! It lags HORRIBLY and directions are NOT accurate.",
+          "rating": 1,
+          "date": "2026-08-20"
+        }
+      ]
+    },
+    {
+      "id": "pain-position-accuracy",
+      "theme": "Live Location & Position Accuracy",
+      "issueType": "Core Functionality Quality",
+      "productSurface": "Live Location / GPS Tracking",
+      "supportingReviewIds": [
+        "14467243195",
+        "14455918598",
+        "14455412265",
+        "14453136929",
+        "14448636594",
+        "14443602324",
+        "14439898850",
+        "14435194134"
+      ],
+      "evidenceCount": 8,
+      "evidencePercentOfSample": 4,
+      "affectedJourney": "Following one's own live position on the map while driving, or dropping/finding a pin at a real-world location.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "An incorrect live position or destination pin directly corrupts the core navigation task -- reviewers describe being shown on the wrong street or sent to a location that isn't the one they searched for, which is a direct functional failure of the core use case, not a peripheral annoyance."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Knowing where you are and where a searched destination actually is are foundational to every other feature in the app; if either is wrong, navigation built on top of them is unreliable by definition."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Eight reviewers describe related but not identical symptoms (drifting live position, stale tracking, mislocated pins, wrong destination), which is a coherent theme but somewhat more varied in specific presentation than the routing-preference pattern above."
+      },
+      "synthesis": "A recurring group of reviewers describe the app's sense of location being wrong in some way -- the live position marker lagging or jumping, a dropped pin landing measurably off from the real address, or being directed to a different place than the one searched for.",
+      "potentialImplication": "Because this affects the basic \"where am I / where is this\" function underneath every other feature, unresolved position-accuracy issues could plausibly undermine trust broadly rather than in one specific feature.",
+      "recommendedNextStep": "Segment these reports by device type and iOS version to check whether the drift/mislocation pattern clusters around specific hardware or a specific app version before treating it as a general regression.",
+      "likelyImplementationSurface": "Live location rendering and geocoding/pin-placement accuracy.",
+      "implementationConsiderations": "Symptoms span live-tracking drift and static pin/address mislocation, which may share a geocoding root cause or may be two separate issues -- not distinguishable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Maps / Geo Engineering",
+        "Quality Engineering"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14455918598",
+          "quote": "Google Maps no longer functions as a navigational tool. Since the last update it is constantly losing my position, either placing me about a half to a whole mile behind where I am or just hallucinating my location entirely.",
+          "rating": 1,
+          "date": "2026-08-21"
+        },
+        {
+          "reviewId": "14453136929",
+          "quote": "constantly claiming to take me to a location when it’s taking me to a different location, wasting gas wasting time wasting energy do not download this app.",
+          "rating": 1,
+          "date": "2026-08-20"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "request-lock-route",
+      "requestedCapability": "A way to lock in a chosen route (or a specific setting) so the app can't silently reroute mid-drive.",
+      "underlyingNeed": "Predictability and trust in a route the driver has already committed to -- often for reasons the app can't see (a known local issue, a safety preference, or simply having already decided) -- rather than a better routing algorithm per se.",
+      "context": "Mid-drive, after a route has already been selected and the driver has started following it.",
+      "supportingReviewIds": [
+        "14463113896",
+        "14449347061",
+        "14446938027",
+        "14438767628",
+        "14436674216"
+      ],
+      "evidenceCount": 5
+    },
+    {
+      "id": "request-ai-optout",
+      "requestedCapability": "A way to disable AI-generated summaries and the conversational \"ask Maps\" interface, restoring direct one-tap access to hours, address, and an \"open now\" filter.",
+      "underlyingNeed": "Speed and directness for time-sensitive, in-the-moment decisions -- these reviewers aren't objecting to AI existing, they're objecting to it being the only path to information that used to be one tap away.",
+      "context": "Searching for a place and needing a quick fact (is it open, where exactly is it) rather than a conversational answer.",
+      "supportingReviewIds": [
+        "14461610505",
+        "14457007120",
+        "14436404982",
+        "14435166922",
+        "14435050015"
+      ],
+      "evidenceCount": 5
+    },
+    {
+      "id": "request-hazard-reporting",
+      "requestedCapability": "More comprehensive real-time, community-reported hazard and road-condition data (full closures, speed/traffic cameras), similar to what Waze offers.",
+      "underlyingNeed": "Confidence that the app knows about real-time, on-the-ground conditions a static map can't capture -- several reviewers invoke Waze by name as the specific benchmark they're comparing against.",
+      "context": "Driving through an area with a temporary closure, camera, or other condition not reflected in the current route.",
+      "supportingReviewIds": [
+        "14460690825",
+        "14456968972",
+        "14438348104"
+      ],
+      "evidenceCount": 3
+    }
+  ],
+  "priorities": [
+    {
+      "id": "priority-preferences-overridden",
+      "priorityLabel": "P0",
+      "title": "Investigate Routing Preferences Being Overridden",
+      "linkedItemId": "pain-preferences-overridden",
+      "whyNow": "This is the only pain point where reviewers describe concrete financial cost (unwanted tolls) and explicit safety framing, on top of a high-frequency, high-confidence, Core-relevance pattern -- the combination of severity and clarity makes it the most urgent signal in this sample.",
+      "recommendedNextStep": "Audit whether \"avoid tolls\" and mid-route lock-in are correctly read and honored by the live routing/rerouting logic, prioritizing the toll-avoidance setting given the concrete cost reviewers report.",
+      "likelyImplementationSurface": "Route-preference persistence and the live rerouting trigger logic.",
+      "implementationConsiderations": "Whether this is a bug versus an intentional override under certain conditions can't be determined from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Routing / Maps Engineering",
+        "Client Engineering"
+      ]
+    },
+    {
+      "id": "priority-route-quality",
+      "priorityLabel": "P1",
+      "title": "Prioritize Route Quality Investigation",
+      "linkedItemId": "pain-route-quality",
+      "whyNow": "Directly touches the app's single most core function (calculating a good route), with high-confidence, specific, reproducible-sounding examples from independent reviewers describing a regression rather than a persistent limitation.",
+      "recommendedNextStep": "Validate a sample of the specific reported routes against current routing-engine output to check whether this reflects a recent change or isolated edge cases.",
+      "likelyImplementationSurface": "Core route-calculation / ETA-ranking logic.",
+      "implementationConsiderations": "Public reviews can't reveal whether this is a scoring-weight change, a data-freshness issue, or a ranking-engine change.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Routing / Maps Engineering",
+        "Quality Engineering"
+      ]
+    },
+    {
+      "id": "priority-ai-features",
+      "priorityLabel": "P1",
+      "title": "Prioritize Restoring Fast Access to Core Place Information",
+      "linkedItemId": "pain-ai-features-forced",
+      "whyNow": "High frequency and high confidence, and touches a core, high-frequency journey (quickly checking if a place is open) that reviewers say has gotten strictly slower, not just different.",
+      "recommendedNextStep": "Validate whether a persistent opt-out or restored one-tap access to hours/open-now/address is feasible, since the ask is for the old direct-access behavior, not an improved AI feature.",
+      "likelyImplementationSurface": "Place-details page layout and the search-result ranking/summary generation pipeline.",
+      "implementationConsiderations": "Primarily a layout/control-and-defaults question rather than a technical defect in the AI itself.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Search & Discovery Engineering",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": "priority-position-accuracy",
+      "priorityLabel": "P1",
+      "title": "Prioritize Live Location & Position Accuracy",
+      "linkedItemId": "pain-position-accuracy",
+      "whyNow": "Affects the foundational \"where am I / where is this\" function every other feature depends on, with high user impact even though evidence confidence is a notch below the other P0/P1 items due to more varied symptom presentation.",
+      "recommendedNextStep": "Segment reports by device type and iOS version to check whether drift/mislocation clusters around specific hardware or a specific app version.",
+      "likelyImplementationSurface": "Live location rendering and geocoding/pin-placement accuracy.",
+      "implementationConsiderations": "May share a geocoding root cause with static pin mislocation, or may be a separate issue -- not distinguishable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Maps / Geo Engineering",
+        "Quality Engineering"
+      ]
+    },
+    {
+      "id": "priority-stability",
+      "priorityLabel": "P2",
+      "title": "Monitor App Stability & Performance Regressions",
+      "linkedItemId": "pain-stability",
+      "whyNow": "Real and recurring, but Medium confidence given heterogeneous symptoms (crash, freeze, slow-load, lag) makes this better suited to monitoring and root-cause clustering than immediate deep investigation.",
+      "recommendedNextStep": "Cluster reports by symptom and by app version/device before prioritizing engineering investigation.",
+      "likelyImplementationSurface": "Client app stability and map-tile/render performance.",
+      "implementationConsiderations": "Heterogeneous symptoms make a single fix unlikely.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "Quality Engineering"
+      ]
+    }
+  ],
+  "methodology": {
+    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
+    "sampleScope": "200 most recent publicly available reviews for Google Maps (App Store ID 585027354) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Unlike a high-single-day-review-volume app, this sample spans roughly 8 days (Aug 16-24, 2026), reflecting Google Maps' lower daily review volume relative to Spotify. Only the US storefront was analyzed.",
+    "limitations": [
+      "A substantial portion of this sample's nominally positive (mostly 5-star) reviews are not evaluations of the Google Maps app at all -- they read as reviews of local businesses (restaurants, contractors, medical offices, car dealerships) seemingly submitted through Google Maps' in-app 'write a review for this place' flow and miscategorized into the App Store review feed. These were identified by content and excluded from thematic evidence about the app's own product experience; this means the raw 36% five-star share should not be read as a reliable measure of app satisfaction.",
+      "App Store reviewers are self-selected and are not a random or complete sample of Google Maps' user base; prevalence in this sample is not the same as prevalence across all users.",
+      "This is a single point-in-time snapshot with no historical or version-linked data, so no statement in this report describes a trend, spike, or regression over time -- only what this specific 200-review sample contains, even where reviewers themselves describe a change ('used to be good,' 'since the last update').",
+      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
+      "A small number of reviews referencing geopolitical topics (map labeling of disputed territories) were read but excluded from thematic evidence -- a single-digit handful of reviews on a sensitive, unverifiable topic is not a sufficient basis for a product theme.",
+      "Internal engineering effort is intentionally not estimated anywhere in this report -- public reviews reveal user-facing symptoms, not Google's internal architecture, codebase, or engineering capacity.",
+      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Google's actual internal team structure or codebase."
+    ],
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file (see _tools/app-store-analyzer/scripts/compute-stats.mjs) and are exactly reproducible from that file. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to specific review IDs, and why the off-topic business-review pattern above was identified and excluded by reading content rather than assumed.",
+    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports, not RICE/ICE or an invented numeric score: Frequency (share of the 200-review sample), User Impact (Critical/High/Moderate/Low), Strategic Relevance (Core/Important/Adjacent/Peripheral), and Evidence Confidence (High/Medium/Low). A formal theme represents one coherent, investigable product question (the Theme Cohesion Rule) -- for example, routing-preference overrides and route-quality complaints are kept as two separate pain points here because they point at two different product levers, even though both relate to 'routing' broadly."
+  },
+  "evidenceIndex": {
+    "14467404188": {
+      "rating": 5,
+      "date": "2026-08-24T11:24:41-07:00",
+      "title": "Love",
+      "body": "Love this app, works better than Apple Maps in my opinion."
+    },
+    "14460050598": {
+      "rating": 5,
+      "date": "2026-08-22T13:30:33-07:00",
+      "title": "Better than apple maps",
+      "body": "Very very good, first time taking the bus today and it was very worth it to use google maps instead of apple maps, apple pls dont nuke me"
+    },
+    "14459074775": {
+      "rating": 5,
+      "date": "2026-08-22T08:13:18-07:00",
+      "title": "与Apple map 比较过，",
+      "body": "与Apple map比较过，google maps好得太多！"
+    },
+    "14455402338": {
+      "rating": 5,
+      "date": "2026-08-21T09:15:18-07:00",
+      "title": "Way better than Apple Maps🥹",
+      "body": "🥹"
+    },
+    "14464140861": {
+      "rating": 5,
+      "date": "2026-08-23T14:59:35-07:00",
+      "title": "Direct address to get to your location",
+      "body": "A great app to use to get around town, especially when you’re lost very helpful very straight to the point. Very easy to use."
+    },
+    "14459266010": {
+      "rating": 5,
+      "date": "2026-08-22T09:09:46-07:00",
+      "title": "Best app",
+      "body": "Love this app helps me so much and it’s just such a good app in general love u Google Maps"
+    },
+    "14439538571": {
+      "rating": 5,
+      "date": "2026-08-17T10:04:24-07:00",
+      "title": "Google Maps is amazing",
+      "body": "It is my favorite mapping app it is so easy to follow and use"
+    },
+    "14460223569": {
+      "rating": 5,
+      "date": "2026-08-22T14:37:15-07:00",
+      "title": "I love google maps",
+      "body": "I love google maps it’s just so great to me if this app ever get deleted I will be sad but I LOVE GOOLE MAPS"
+    },
+    "14435258331": {
+      "rating": 5,
+      "date": "2026-08-16T08:43:38-07:00",
+      "title": "Amazing product",
+      "body": "Thank you for this amazing app & maps!"
+    },
+    "14463181684": {
+      "rating": 1,
+      "date": "2026-08-23T09:31:46-07:00",
+      "title": "bad at giving directions",
+      "body": "just not good, telling me to do u turns and left hand turns when it’s literally a straight drive with a right hand turn at the end. i looked at the map and was like “yah okay i know that area/where it is” and then this gps gave me so many bad directions it could have added like fifteen minutes to my drive if i hadn’t have just ignored it."
+    },
+    "14459706921": {
+      "rating": 1,
+      "date": "2026-08-22T11:29:02-07:00",
+      "title": "Horrible",
+      "body": "This app is a complete disaster. The algorithm sends you on absolutely ridiculous detours across toll roads, side streets  and bridges because it thinks it will save you 30 seconds of time. Utterly useless."
+    },
+    "14456810101": {
+      "rating": 1,
+      "date": "2026-08-21T17:48:10-07:00",
+      "title": "Trash",
+      "body": "For the last month Google Maps has been sending me through the DUMBEST least effective routes. The app is currently worse than Apple Maps was when it first dropped. This is TERRIBLE"
+    },
+    "14458613739": {
+      "rating": 1,
+      "date": "2026-08-22T05:57:53-07:00",
+      "title": "Terrible",
+      "body": "The map Is inaccurate. Use Wayz instead of this app."
+    },
+    "14457428366": {
+      "rating": 1,
+      "date": "2026-08-21T22:02:02-07:00",
+      "title": "Trash",
+      "body": "Routes have become nonsensical garbage."
+    },
+    "14443574461": {
+      "rating": 1,
+      "date": "2026-08-18T10:08:13-07:00",
+      "title": "Brought me the wrong way three times",
+      "body": "I put in Starbucks in Google Maps and it took me to a random street with an independent coffee house but no Starbucks. I then tried to drive to the train station and was sent into a weird loop-de-loop that it took me the opposite way it was supposed to go. Then, it tried to bring me through a construction zone. TWICE. If I could leave a zero review I would."
+    },
+    "14443526066": {
+      "rating": 1,
+      "date": "2026-08-18T09:53:23-07:00",
+      "title": "CAUTION! This app could cost you your life!",
+      "body": "This app will rout you over curbs, and through illegal paths and could cost you your life."
+    },
+    "14441374951": {
+      "rating": 1,
+      "date": "2026-08-17T21:16:29-07:00",
+      "title": "Custom order for lists is downright broken",
+      "body": "Why even offer the option to arrange saved locations in a list if it doesn’t work? Dragging each item around results in randomized placement. Locations don’t stay where I left them. This app gets worse and worse with each update, it’s downright unusable at times. As someone who relies on Google Maps for both of my driving jobs, I’m so fed up with how unreliable this app has become."
+    },
+    "14436674216": {
+      "rating": 1,
+      "date": "2026-08-16T16:44:29-07:00",
+      "title": "Used to be reliable, now unusable",
+      "body": "For years I had no problems with the navigation, but for my last two road trips I used Google Maps to navigate and will not be using it again. It showed noticeably less routes than previously before (none of which were my preferred route), and continued to try and force me to use mountainous backroads late at night despite having negligible time differences in comparison to the route I had previously taken (the avoid highway setting was not turned on). In addition, the audio directions essentially happen exactly when you need to execute the turn, creating an incredibly unreliable driving experience (missing turns that were not said early enough added 30 minutes to my trip). Despite saying avoid tolls, it also suggested 2 toll routes and 1 non-toll route, again despite me knowing that it had previously navigated me to the location without any tolls or any winding backroads. Used to love Google Maps, but now I'm forced to try alternatives."
+    },
+    "14435276050": {
+      "rating": 1,
+      "date": "2026-08-16T08:48:43-07:00",
+      "title": "Getting worse",
+      "body": "Booking restaurants is getting more confusing and very easy to book the next days for no reason. Guidelines of map let you walk across a river. What are those Google genius doing?"
+    },
+    "14459340243": {
+      "rating": 1,
+      "date": "2026-08-22T09:32:21-07:00",
+      "title": "No tolls",
+      "body": "Every time I put no tolls it literally takes me straight there I’ve wasted more than $50 on unnecessary tolls, why it it an option if it doesn’t work ?"
+    },
+    "14455708858": {
+      "rating": 1,
+      "date": "2026-08-21T10:52:17-07:00",
+      "title": "Avoid toll but still guide me to the express toll road",
+      "body": "Selected avoid toll option but still guide me onto the express lane of highway"
+    },
+    "14463113896": {
+      "rating": 1,
+      "date": "2026-08-23T09:11:41-07:00",
+      "title": "Needs a new setting",
+      "body": "There should be a setting where the app takes you on the route that is actually the fastest, instead of constantly giving you a fake “fastest route” with a fake ETA that increases drastically with no warning as the app brings you directly into a slowdown. The setting could also update your route as you go to avoid slowdowns that develop during your drives.\n\nWithout these features, this app is useless trash."
+    },
+    "14449098507": {
+      "rating": 2,
+      "date": "2026-08-19T19:19:14-07:00",
+      "title": "Functional, but bad with toll roads",
+      "body": "App works fine, less well than it used to. But for the love of all that’s holy, it needs more than a “toll” or “no toll” option. I’ve been fined more times than I can count for using a fast lane because Google automatically recommends them. On testing even if the time distance is basically the same, it’ll recommend a fast lane with a toll for a transponder I don’t have. Treacherous. Turning off tolls can mess up all kinds of navigation. There has to be an “ignore fast lanes” option or this will keep being the most expensive free app on my phone. This has been a known issue for years."
+    },
+    "14449347061": {
+      "rating": 3,
+      "date": "2026-08-19T20:57:55-07:00",
+      "title": "Helpful except for mandatory rerouting.",
+      "body": "Generally a good app but I really don’t like that after selecting your preferred route it will reroute you onto another route without giving an option not to change. Sometimes it will take me somewhere I don’t want to go and sometimes it will take me somewhere not safe. The cheerful voice telling me in other words that she just put my life in danger is then really frustrating. To then hear it repeated no mater how many times I try reroute adds to the irritation and has been forcing me to migrate to another app. Hope this gets fixed."
+    },
+    "14459692293": {
+      "rating": 1,
+      "date": "2026-08-22T11:24:10-07:00",
+      "title": "Latest update screwed up directions in DC/MD/VA",
+      "body": "Latest update can no longer accurately provide directions for toll/no toll on 66 and keeps provoking phantom directions"
+    },
+    "14448157674": {
+      "rating": 1,
+      "date": "2026-08-19T13:20:27-07:00",
+      "title": "My review",
+      "body": "Every time I go to look for a review that I did it brings me to this app. Than nothing! 😡😡😡😡😡 This is stupid!"
+    },
+    "14438767628": {
+      "rating": 3,
+      "date": "2026-08-17T06:20:54-07:00",
+      "title": "Need to stop rerouting!!!",
+      "body": "I’ve always had better experiences with Google Maps vs Apple, but I’m considering switching my allegiance… Navigation is just plain dumb sometimes, but my biggest grievance is the auto rerouting. If you are navigating on your own and select a specific route, but Google decides to play god and switch your route, there’s nothing you can do about it. I have more than once selected the route I preferred due to known issues on alternate routes, but Google suddenly decides to reroute because they think they know everything. It asks if you want to change to the “better” route, but if you’re driving and not staring at your phone, it will eventually just change on its own. This is, on occasion, infuriating. There should at least be an option to turn that feature off."
+    },
+    "14437875398": {
+      "rating": 1,
+      "date": "2026-08-17T00:59:53-07:00",
+      "title": "Never in one spot",
+      "body": "There needs to be a setting put a direction it locks it in and it doesn’t change the route and the route you pick"
+    },
+    "14464076752": {
+      "rating": 1,
+      "date": "2026-08-23T14:34:07-07:00",
+      "title": "Placing the AI button incorrectly",
+      "body": "It seems like Google is forcing Gemini down people’s throats with this button placement. Is it just me? Did they really replace the exit button with the Gemini button?"
+    },
+    "14461610505": {
+      "rating": 1,
+      "date": "2026-08-23T00:22:45-07:00",
+      "title": "AI sucks",
+      "body": "Doesn’t do what you ask it to. Was trying to search for restaurants open now (1230am) to find a place to go to and it showed places that open around 8-11am"
+    },
+    "14458657040": {
+      "rating": 1,
+      "date": "2026-08-22T06:11:20-07:00",
+      "title": "Very disappointing",
+      "body": "It’s ridiculous and frustrating that you can’t turn off the generative AI features. When I’m searching for a place, now the important details like address and business hours are all the way at the bottom of the page after a long “AI summary” - that you can’t disable. I didn’t ask for this feature. Many people do not want this. You should be able to turn this off, or rearrange the layout but Google is clearly pushing AI onto people because it’s not yet profitable so the more embedded it becomes and the more we start to rely on it, the more we’ll be willing to pay for it in the future. Stop forcing AI onto everyone!"
+    },
+    "14457007120": {
+      "rating": 1,
+      "date": "2026-08-21T19:05:46-07:00",
+      "title": "Hours of Operations Too Hard To Find Now",
+      "body": "Why did y’all get rid of making the hours of operations of business so hard to find now?!  Change it back y’all are insane.  No one wants to read and AI overview."
+    },
+    "14451471411": {
+      "rating": 1,
+      "date": "2026-08-20T09:28:49-07:00",
+      "title": "It’s AI WHACKED",
+      "body": "Why do we make runs better by breaking them? I’ve been dealing with city names not displaying for months, after an update. Now the useful navigation information, my vehicle, my route, and my next turn are all pushed up under the text direction bubble. So I’ve got nothing to see. Too much, too quick, not vetted for function.   Would love to share a screen recording of the error. \n\niPhone 13PM running current software update."
+    },
+    "14448464557": {
+      "rating": 1,
+      "date": "2026-08-19T15:14:35-07:00",
+      "title": "Used to be good",
+      "body": "Google Maps has been awful the last 6 months, showing awful routes, being stuck in traffic, and not showing restaurants and shops when searching for food near by. It’s become very frustrating! I was told they began integrating AI, go back to the old way."
+    },
+    "14441553244": {
+      "rating": 1,
+      "date": "2026-08-17T22:35:24-07:00",
+      "title": "Switch to Waze",
+      "body": "Google decided that our navigation wasn’t smart enough so lets shove AI down everyone’s throats. Well Google I lost complete respect for you and only use you for gmail. I kept trying to tell your ai that the route I wanted to go was closed and it insisted on putting me in a traffic jam. So I uninstalled this AI slop app"
+    },
+    "14436404982": {
+      "rating": 1,
+      "date": "2026-08-16T14:57:16-07:00",
+      "title": "stop shoving ai down my throat",
+      "body": "i used to be able to filter restaurants by “open now.” now it only lets me “ask maps.” just show me what’s open now i don’t want to have a conversation with silicon while trying to figure out where to eat late at night!!!!!!"
+    },
+    "14435166922": {
+      "rating": 1,
+      "date": "2026-08-16T08:17:51-07:00",
+      "title": "Used to be good but ai features and ads",
+      "body": "The navigation actually is pretty accurate however they have implemented an ask maps feature which is horrible, this would probably give someone a stroke, and they have ads now, it’s almost impossible to navigate through the app"
+    },
+    "14435050015": {
+      "rating": 4,
+      "date": "2026-08-16T07:45:13-07:00",
+      "title": "The “open now” button",
+      "body": "The “open now” button used while searching for restaurants was like 90% of my use case for this app. It going from a 1 button press on the header to 3 button presses in the filter section was offensive enough to get me here, since every time you change your search you have to re-enable it. The AI suggestions now on the header are hot garbage, “open late”?, who cares?! It’s 7:42 in the morning. Stop changing things simply for the sake of changing things."
+    },
+    "14468696952": {
+      "rating": 1,
+      "date": "2026-08-24T19:35:08-07:00",
+      "title": "Unable to use after update",
+      "body": "It keeps on crashing even after restarting and shutting down and turning on my phone again."
+    },
+    "14466098659": {
+      "rating": 1,
+      "date": "2026-08-24T04:37:45-07:00",
+      "title": "Bad",
+      "body": "App keeps freezing"
+    },
+    "14461675608": {
+      "rating": 1,
+      "date": "2026-08-23T00:50:55-07:00",
+      "title": "Does not work",
+      "body": "Idk why but it just doesn’t work ive tried everything but it just won’t"
+    },
+    "14459247664": {
+      "rating": 1,
+      "date": "2026-08-22T09:04:21-07:00",
+      "title": "Takes 3 minutes to map 0.2-miles trip",
+      "body": "Takes 3 minutes to map 0.2-miles trip, this is after latest roll out Version 26.33.1 . Before was 15 seconds. Now 3 minutes. No connection issues, no internet or GPS issues; this is strictly Google Maps app performance. Disgraceful roll out."
+    },
+    "14456768594": {
+      "rating": 1,
+      "date": "2026-08-21T17:31:47-07:00",
+      "title": "Acting weird these days",
+      "body": "Buggy app"
+    },
+    "14453143963": {
+      "rating": 5,
+      "date": "2026-08-20T19:37:59-07:00",
+      "title": "five star",
+      "body": "takes so long to download"
+    },
+    "14452621554": {
+      "rating": 1,
+      "date": "2026-08-20T16:15:50-07:00",
+      "title": "HORRIBLE !!!!!",
+      "body": "Ever since the most recent update the app has been awful!!! Change it back!!!!! It lags HORRIBLY and directions are NOT accurate."
+    },
+    "14445924861": {
+      "rating": 1,
+      "date": "2026-08-19T01:11:42-07:00",
+      "title": "Bugged",
+      "body": "Impossible to use"
+    },
+    "14443099168": {
+      "rating": 2,
+      "date": "2026-08-18T07:48:26-07:00",
+      "title": "Quality is getting WORSE!!!",
+      "body": "Search results haven’t been showing on the map for days.  The touchpoint on an IPad screen is inches away from where it lands on the map.  This is the only app doing this, and it’s been this way for months (new iPad Pro). It seems that bugs are getting increasingly common and they’re not getting fixed."
+    },
+    "14439360430": {
+      "rating": 1,
+      "date": "2026-08-17T09:11:10-07:00",
+      "title": "New update is awful",
+      "body": "The new update (or bug!) sucks! It doesn’t show the directions precisely and always makes me confused and distracted while driving, and when you re-center it zooms out and shows directions opposite of the road OMG so annoying"
+    },
+    "14467243195": {
+      "rating": 3,
+      "date": "2026-08-24T10:31:36-07:00",
+      "title": "Tracking issues",
+      "body": "I like to use this app, as I feel it suggests good routes, shows traffic locations and time/delays, and notifies hazards along the route. However, lately this app has not been working. It doesn’t track or show my active driving as I’m on my route destination the way it has before… it also shows my active location on other streets than where I actually am on my route. I have already checked for updates, but it shows it’s already up to date. I have deleted and reinstalled the app a few times, and it’s still not working. Although the app has been great before, it’s been annoying lately on the tracking which is the reason I took off a couple stars. PLEASE FIX THIS. Thanks."
+    },
+    "14455918598": {
+      "rating": 1,
+      "date": "2026-08-21T12:03:10-07:00",
+      "title": "They have ruined this app",
+      "body": "Google Maps no longer functions as a navigational tool. Since the last update it is constantly losing my position, either placing me about a half to a whole mile behind where I am or just hallucinating my location entirely. Frequently it will give me contradictory directions such as telling me to turn at a light and then saying to continue straight through. Whatever you did (replacing perfectly functional systems with AI, am assuming)"
+    },
+    "14455412265": {
+      "rating": 1,
+      "date": "2026-08-21T09:18:18-07:00",
+      "title": "Traffic stopped working on default",
+      "body": "Traffic stopped working on default"
+    },
+    "14453136929": {
+      "rating": 1,
+      "date": "2026-08-20T19:35:17-07:00",
+      "title": "Terrible app gives you directions to the wrong place constantly.",
+      "body": "constantly claiming to take me to a location when it’s taking me to a different location, wasting gas wasting time wasting energy do not download this app."
+    },
+    "14448636594": {
+      "rating": 3,
+      "date": "2026-08-19T16:22:26-07:00",
+      "title": "Position not updating",
+      "body": "I just missed my destination in maps because the position was not updating and the instructions is not updated but I had Serviss"
+    },
+    "14443602324": {
+      "rating": 1,
+      "date": "2026-08-18T10:16:49-07:00",
+      "title": "Not helpful for buses",
+      "body": "Good luck if you want to take public transport. It’ll tell you where the bus stop is but guide you to the one going in the opposite direction. I did like Google Maps better for train schedules but it will constantly guide me to the wrong side of the street.better off flipping a coin"
+    },
+    "14439898850": {
+      "rating": 1,
+      "date": "2026-08-17T11:59:52-07:00",
+      "title": "Gives the wrong addresses",
+      "body": "I used Google Maps for years but finally had to delete. After multiple wrong addresses which are not even the right street or side of town. Work on your map accuracy!"
+    },
+    "14435194134": {
+      "rating": 1,
+      "date": "2026-08-16T08:25:23-07:00",
+      "title": "no road names after starting nav",
+      "body": "No longer shows road names regardless of zoom level AFTER you start a navigation.\nThis renders the app completely useless."
+    },
+    "14446938027": {
+      "rating": 5,
+      "date": "2026-08-19T07:00:13-07:00",
+      "title": "Great camping spot",
+      "body": "We recently stayed at Hickory Hills and had one of the best trips ever.  The campground can accommodate everyone from tents to popups and big RVs.  They even have cabins for those who prefer that type of stay.  Very family friendly, peaceful and relaxing.  The staff are friendly and welcoming too.  We’re already planning ahead to next year."
+    },
+    "14460690825": {
+      "rating": 2,
+      "date": "2026-08-22T17:50:48-07:00",
+      "title": "Add road closures reports",
+      "body": "Too often I hit a street you want me to turn on, but the road is closed. This is not the same thing as a lane closure. The whole road is closed. I can’t make this left. I can’t go straight. Often due to construction or events. I live in LA and this happens frequentlyyyyy. Please add the ability for us to add road closures under “add a report” - thanks"
+    },
+    "14456968972": {
+      "rating": 3,
+      "date": "2026-08-21T18:50:48-07:00",
+      "title": "Why no traffic camera alerts?",
+      "body": "This is the only reason I refuse to use this app. Waze knows where cameras are, why can’t Google?"
+    },
+    "14438348104": {
+      "rating": 2,
+      "date": "2026-08-17T04:06:24-07:00",
+      "title": "Waze is so much better",
+      "body": "Google should study the Waze app and make improvements. I have gotten so messed up with the way that orientates itself and keeps flipping the map as you drive. It drives me crazy Waze alerts me to everything pothole on road. Tire on road ahead I couldn’t believe I saw a tire come off a car roll under a car. I thought the car’s gonna know scared or whatever there was no rim on it and it came out the other side, but I had already moved over and was safely out of the way. Waze is a fantastic the best app on the try it"
+    }
+  }
+}

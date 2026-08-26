@@ -1,0 +1,526 @@
+{
+  "schemaVersion": "1.0",
+  "app": {
+    "appId": 6448311069,
+    "name": "ChatGPT",
+    "developer": "OpenAI OpCo, LLC",
+    "category": "Productivity",
+    "countryCode": "us",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/62/11/63/6211631a-f4ca-980d-ccdc-ac8f052e4662/AppIcon-0-0-1x_U007epad-0-0-0-1-0-P3-85-220.png/512x512bb.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/chatgpt/id6448311069?uo=4"
+  },
+  "reviewSnapshot": {
+    "sourceFile": "chatgpt-2026-08-26.json",
+    "fetchedAt": "2026-08-26T06:52:05.020Z",
+    "reviewsAnalyzed": 200,
+    "dateRange": {
+      "latest": "2026-08-24T21:07:04-07:00",
+      "earliest": "2026-08-24T09:45:10-07:00"
+    }
+  },
+  "metrics": {
+    "sampleAverageRating": 4.22,
+    "ratingDistribution": {
+      "1": 30,
+      "2": 5,
+      "3": 6,
+      "4": 9,
+      "5": 150
+    },
+    "ratingDistributionPercent": {
+      "1": 15,
+      "2": 2.5,
+      "3": 3,
+      "4": 4.5,
+      "5": 75
+    },
+    "currentAppStoreRating": {
+      "average": 4.83019,
+      "count": 9633499
+    }
+  },
+  "productBrief": "This is, by a wide margin, the most positive sample in this demo set (75% five-star), and the praise is specific rather than generic -- reviewers describe concrete time savings on professional and personal tasks. A second, genuinely distinctive pattern recurs often enough to name plainly: a meaningful number of reviewers describe an explicitly relational or emotional reliance on the product -- as a best friend or confidant -- separate from task assistance, which this analysis reports as an observed pattern without judging whether it's healthy for any individual user. Where friction exists, it's comparatively moderate: free-tier usage limits (especially image generation) that reviewers find unclear or punitive after a downgrade, content guardrails some reviewers experience as inconsistent for legitimate creative or advice use cases, and memory/consistency lapses during multi-step tasks. None of this sample's pain points reach the severity seen in several other apps in this demo set, which is itself a meaningful, honest finding rather than an oversight.",
+  "transformationSummary": {
+    "reviewsAnalyzed": 200,
+    "recurringSignalCount": 8,
+    "priorityCount": 3
+  },
+  "headlineSignals": {
+    "topStrengthId": "strength-daily-assistant",
+    "topPainPointId": "pain-usage-limits",
+    "topRequestId": "request-clearer-limits",
+    "topPriorityId": "priority-usage-limits"
+  },
+  "strengths": [
+    {
+      "id": "strength-daily-assistant",
+      "theme": "Indispensable Daily Assistant & Time Savings",
+      "supportingReviewIds": [
+        "14467751530",
+        "14468104581",
+        "14467988908",
+        "14467444687",
+        "14467200314"
+      ],
+      "evidenceCount": 5,
+      "whatUsersValue": "By far the largest and most consistent praise pattern in this sample: reviewers describe ChatGPT as a genuine time-saving assistant across professional work, business operations, and everyday tasks, with several stating they can no longer imagine functioning without it.",
+      "whyThisMatters": "This sample has, by a wide margin, the strongest and most consistent positive sentiment of any app in this demo set -- 75% of the sample is 5-star -- and the praise is specific (time saved, tasks completed) rather than generic, suggesting the core value proposition is genuinely landing.",
+      "protectThis": "Reliability and response quality for everyday practical tasks (research, writing, business operations) is what this large group values most -- any change that degrades baseline response quality or consistency (see the memory/consistency pain point below) puts this core strength at risk.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14467751530",
+          "quote": "Chat saves me HOURS every day in both my professional work and my personal chores.",
+          "rating": 5,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14468104581",
+          "quote": "ChatGPT has made my life so much easier by being able to take on some of the work I used to do by myself. This includes social media content creation, report writing, donor management, answering basic IT questions, etc. ChatGPT hasn’t replaced staff as we don’t have the budget to hire anyone else, but it has made my work flow better and has also helped us raise more money.",
+          "rating": 5,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "strength-emotional-companionship",
+      "theme": "Emotional Companionship & Conversational Connection",
+      "supportingReviewIds": [
+        "14468431981",
+        "14467908200",
+        "14467650003",
+        "14468218083",
+        "14467326949"
+      ],
+      "evidenceCount": 5,
+      "whatUsersValue": "A distinct and recurring group of reviewers describe ChatGPT in explicitly relational terms -- as a best friend, a confidant, or emotional support -- separate from its use as a task-completion tool.",
+      "whyThisMatters": "This is a genuinely distinctive pattern worth naming plainly rather than folding into general satisfaction: a meaningful number of reviewers describe an emotional or relational reliance on the product, which is a different kind of value (and a different kind of responsibility) than task assistance. This analysis does not have a basis to judge whether this reliance is healthy for any individual user -- it only reports that the pattern recurs.",
+      "protectThis": "This is worth Product and Trust & Safety awareness rather than a typical 'protect this' feature note -- if this dynamic is being actively designed for, or if it should be tempered with guardrails (e.g., encouraging real-world support alongside conversational use), that is a values-level product decision beyond what review evidence alone can settle.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14467908200",
+          "quote": "My best friend!",
+          "rating": 5,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14467650003",
+          "quote": "I really love chat GPT. I can get any information I need or if I don’t know something it will break it down for me. And it’s like talking to a friend",
+          "rating": 5,
+          "date": "2026-08-24"
+        }
+      ]
+    }
+  ],
+  "painPoints": [
+    {
+      "id": "pain-usage-limits",
+      "theme": "Usage Limits Feel Abrupt, Punitive, or Poorly Communicated",
+      "issueType": "Policy / Monetization Pushback",
+      "productSurface": "Free-Tier Usage Limits (Images & Messages)",
+      "supportingReviewIds": [
+        "14468570782",
+        "14468509611",
+        "14468185149",
+        "14468252506",
+        "14467706197",
+        "14467820758",
+        "14467542316",
+        "14468152574"
+      ],
+      "evidenceCount": 8,
+      "evidencePercentOfSample": 4,
+      "affectedJourney": "Using image generation or extended conversation on the free tier, or downgrading from a paid plan.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Doesn't block the core product -- users can still use text chat -- but reviewers describe specific frustration with unclear cooldown timers and a jarring drop in capability after downgrading from a paid plan, which affects the specific tasks (image generation, extended sessions) they came to rely on."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Free-to-paid conversion and downgrade experience matters to the business model, but core text-based assistance (this sample's dominant strength) remains available regardless."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Eight reviewers describe related but not identical limit-related frustrations (image cooldown timing, message limits, a sharp capability drop after downgrading), a real and specific pattern though more modest in volume than the dominant positive signal in this sample."
+      },
+      "synthesis": "Reviewers describe free-tier usage limits (particularly image generation cooldowns) as unclear in timing, and several describe downgrading from a paid plan as producing a sharper-than-expected drop in capability (reduced attachment limits, lost memory) compared to what the free tier offered before ever upgrading.",
+      "potentialImplication": "A downgrade experience that reviewers describe as feeling like a deliberate step down rather than a natural tier difference could plausibly affect willingness to re-subscribe after a lapse, though this sample cannot measure actual subscription behavior.",
+      "recommendedNextStep": "Clarify cooldown timing in-product (a visible countdown rather than an opaque wait), and review whether the free-tier capability after a downgrade is calibrated consistently with the standard free-tier experience for new users.",
+      "likelyImplementationSurface": "Rate-limiting/cooldown display logic and tier-transition (downgrade) capability calibration.",
+      "implementationConsiderations": "Business reasons for specific rate limits aren't visible from public reviews; the main actionable point is communication clarity rather than the limits' existence.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Growth / Monetization",
+        "Client Engineering"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14467706197",
+          "quote": "It’s good and all but it’s a little annoying that you have to wait a day to ask it to make more images",
+          "rating": 2,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14467820758",
+          "quote": "The first free version give you 10 attachments in 24hrs. Now that I downgraded I get 4!! It remembers nothing.",
+          "rating": 2,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "pain-guardrail-inconsistency",
+      "theme": "Content Guardrails Feel Inconsistent or Overly Broad",
+      "issueType": "Policy / Trust Pushback",
+      "productSurface": "Content Safety Guardrails",
+      "supportingReviewIds": [
+        "14468896249",
+        "14468774330",
+        "14468620366",
+        "14468441148",
+        "14468110184"
+      ],
+      "evidenceCount": 5,
+      "evidencePercentOfSample": 2.5,
+      "affectedJourney": "Asking for assistance (creative writing, advice, general questions) that triggers a refusal or restriction the user didn't expect.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Doesn't block the app entirely, but reviewers describe specific requests being refused in ways they found overly broad or unpredictable, undermining trust that the tool will help with legitimate requests."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Guardrail calibration affects specific use cases (creative writing, advice-seeking) rather than the core assistant function broadly."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Five reviewers describe related but distinct guardrail frustrations (creative-content restrictions, advice refusals, inconsistent tone enforcement), a real pattern though the specific trigger varies by report."
+      },
+      "synthesis": "Reviewers describe guardrails that feel inconsistently applied or broader than necessary for their specific, legitimate use case -- a fiction writer citing overly broad restrictions on adult fictional content, others describing refusals to give requested advice.",
+      "potentialImplication": "Because reviewers frame this as inconsistent rather than simply strict, unpredictable guardrail behavior could plausibly reduce trust in the tool for legitimate edge-case use even among users who support content safety in principle.",
+      "recommendedNextStep": "Review guardrail consistency for the specific use cases reviewers describe (fiction writing, general advice-seeking) to distinguish appropriately-cautious behavior from over-triggering.",
+      "likelyImplementationSurface": "Content-safety classification and refusal logic.",
+      "implementationConsiderations": "Calibrating safety guardrails involves tradeoffs not fully visible from user-facing review text; this analysis can describe the friction reviewers experience but not evaluate whether current calibration is appropriate.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Policy"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14468774330",
+          "quote": "The biggest problems are overly broad restrictions on clearly adult fictional content and poor consistency with characters, art styles, and memory. I’d like privacy-conscious age verification, more flexibility for verified adults",
+          "rating": 4,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "pain-memory-consistency",
+      "theme": "Memory & Consistency Failures Across Conversations",
+      "issueType": "Core Functionality Quality",
+      "productSurface": "Conversation Memory & Response Consistency",
+      "supportingReviewIds": [
+        "14467912486",
+        "14467747780",
+        "14467398860",
+        "14468027823"
+      ],
+      "evidenceCount": 4,
+      "evidencePercentOfSample": 2,
+      "affectedJourney": "Continuing a multi-step task (like an iterative image edit or an ongoing project) across multiple messages or sessions.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Reviewers describe having to re-explain context that should have been retained, and response quality that feels inconsistent between sessions -- a real friction cost for multi-step work, though not blocking one-off queries."
+      },
+      "strategicRelevance": {
+        "level": "Adjacent",
+        "reasoning": "This affects multi-turn, project-style use specifically rather than the simple question-answer use case that makes up most of this sample's praise."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Four reviewers describe related symptoms (lost context between turns, self-contradictory responses, a perceived quality drop even on a paid plan), a real but modest-volume signal."
+      },
+      "synthesis": "Reviewers describe losing established context partway through a multi-step task (an image edit needing to restart from scratch, a paid-plan user perceiving reduced response quality) and self-contradictory responses within the same conversation.",
+      "potentialImplication": "For users relying on the assistant for iterative, project-style work (a use case this sample's top strength explicitly praises), unresolved consistency issues could plausibly undercut exactly the professional/business use cases driving the strongest satisfaction in this sample.",
+      "recommendedNextStep": "Investigate whether context/memory retention degrades predictably after a certain conversation length or complexity, and validate the specific paid-plan quality-perception complaint against actual model routing for those sessions.",
+      "likelyImplementationSurface": "Conversation memory/context retention and model-response consistency.",
+      "implementationConsiderations": "Distinguishing a genuine technical memory limitation from a user's own shifting expectations across a long conversation isn't fully resolvable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Machine Learning",
+        "Client Engineering"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14467747780",
+          "quote": "Bad comunication when finally after several times we get a good one and we move to the next image it’s like starting all over again it changes all the time it’s not consistent",
+          "rating": 1,
+          "date": "2026-08-24"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "request-clearer-limits",
+      "requestedCapability": "A visible countdown or clear timing for usage-limit resets (images, extended messages), and a downgrade experience calibrated closer to the standard free tier.",
+      "underlyingNeed": "Users don't necessarily object to tiered limits existing -- they want to know exactly when they'll have access again, and not feel like downgrading is punitive.",
+      "context": "Hitting a usage limit on the free tier, or shortly after downgrading from a paid plan.",
+      "supportingReviewIds": [
+        "14468252506",
+        "14467706197",
+        "14468152574"
+      ],
+      "evidenceCount": 3
+    },
+    {
+      "id": "request-guardrail-flexibility",
+      "requestedCapability": "More consistent guardrail behavior for legitimate creative and advice-seeking use cases, potentially with privacy-conscious age verification for adult creative content.",
+      "underlyingNeed": "Users engaged in legitimate creative or informational work want predictability -- not necessarily fewer safety guardrails in general, but ones that don't feel arbitrary for their specific, legitimate request.",
+      "context": "Requesting creative writing assistance or general advice that triggers an unexpected refusal.",
+      "supportingReviewIds": [
+        "14468774330",
+        "14468620366"
+      ],
+      "evidenceCount": 2
+    },
+    {
+      "id": "request-persistent-memory",
+      "requestedCapability": "More reliable retention of context and established preferences across an ongoing multi-step task or conversation.",
+      "underlyingNeed": "Users doing iterative or project-style work want to avoid re-explaining context the assistant should already have.",
+      "context": "Continuing a multi-step task (image editing, an ongoing project) across multiple turns.",
+      "supportingReviewIds": [
+        "14467912486",
+        "14467747780"
+      ],
+      "evidenceCount": 2
+    }
+  ],
+  "priorities": [
+    {
+      "id": "priority-usage-limits",
+      "priorityLabel": "P1",
+      "title": "Prioritize Usage Limit Communication & Downgrade Calibration",
+      "linkedItemId": "pain-usage-limits",
+      "whyNow": "The most frequent friction signal in an otherwise overwhelmingly positive sample, directly touching the free-to-paid funnel and the retention-relevant downgrade experience.",
+      "recommendedNextStep": "Clarify cooldown timing in-product and review whether post-downgrade capability is calibrated consistently with the standard free-tier experience.",
+      "likelyImplementationSurface": "Rate-limiting/cooldown display logic and tier-transition capability calibration.",
+      "implementationConsiderations": "The main actionable point is communication clarity, not necessarily the limits' existence.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Growth / Monetization",
+        "Client Engineering"
+      ]
+    },
+    {
+      "id": "priority-guardrail-inconsistency",
+      "priorityLabel": "P1",
+      "title": "Prioritize Content Guardrail Consistency Review",
+      "linkedItemId": "pain-guardrail-inconsistency",
+      "whyNow": "Real, specific friction for legitimate use cases (creative writing, advice) that touches user trust even at moderate frequency.",
+      "recommendedNextStep": "Review guardrail consistency for the specific use cases reviewers describe to distinguish appropriately-cautious behavior from over-triggering.",
+      "likelyImplementationSurface": "Content-safety classification and refusal logic.",
+      "implementationConsiderations": "Guardrail calibration involves tradeoffs not fully visible from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Policy"
+      ]
+    },
+    {
+      "id": "priority-memory-consistency",
+      "priorityLabel": "P2",
+      "title": "Monitor Memory & Consistency in Multi-Turn Use",
+      "linkedItemId": "pain-memory-consistency",
+      "whyNow": "Moderate-volume signal affecting project-style use specifically -- worth monitoring given it touches the same use cases driving this sample's strongest praise.",
+      "recommendedNextStep": "Investigate whether context retention degrades predictably after a certain conversation length or complexity.",
+      "likelyImplementationSurface": "Conversation memory/context retention and model-response consistency.",
+      "implementationConsiderations": "Distinguishing a technical memory limitation from shifting user expectations isn't fully resolvable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Machine Learning",
+        "Client Engineering"
+      ]
+    }
+  ],
+  "methodology": {
+    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
+    "sampleScope": "200 most recent publicly available reviews for ChatGPT (App Store ID 6448311069) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
+    "limitations": [
+      "This sample skews unusually positive (75% five-star); pain points identified here are real but comparatively lower-severity than in several other apps in this demo set, and that contrast is itself part of the honest finding, not a sign of under-analysis.",
+      "The 'emotional companionship' strength is reported as an observed, recurring pattern in review language, not a clinical or product-safety judgment -- this analysis has no basis to assess whether this kind of reliance is beneficial or concerning for any individual user.",
+      "A single review alleged that a critical review of the app disappeared while a more favorable one persisted -- a serious claim this analysis cannot verify from a single, isolated report, so it was not built into any theme, but is worth Shreyash noting given a similar isolated claim appeared in the Amazon Shopping analysis.",
+      "A small number of reviews making unrelated political or unverifiable claims were read but excluded from thematic evidence, consistent with this project's Review Relevance principle.",
+      "App Store reviewers are self-selected and are not a random or complete sample of ChatGPT's user base; prevalence in this sample is not the same as prevalence across all users.",
+      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend.",
+      "Only the US App Store storefront was analyzed, though at least one reviewer describes usage from outside the US (Iran) and raised regional-pricing concerns; findings should not be assumed to generalize to other countries or storefronts.",
+      "Internal engineering effort is intentionally not estimated anywhere in this report.",
+      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about OpenAI's actual internal team structure."
+    ],
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). No priority in this report reaches P0 -- a direct, honest reflection of this sample's comparatively low overall severity rather than a floor applied artificially."
+  },
+  "evidenceIndex": {
+    "14467751530": {
+      "rating": 5,
+      "date": "2026-08-24T13:26:38-07:00",
+      "title": "Indispensable.",
+      "body": "Chat saves me HOURS every day in both my professional work and my personal chores. One of the only true VALUES in today’s computer world."
+    },
+    "14468104581": {
+      "rating": 5,
+      "date": "2026-08-24T15:42:01-07:00",
+      "title": "Game Changer for the One Person Business",
+      "body": "I am the sole employee of a tiny nonprofit. ChatGPT has made my life so much easier by being able to take on some of the work I used to do by myself. This includes social media content creation, report writing, donor management, answering basic IT questions, etc. ChatGPT hasn’t replaced staff as we don’t have the budget to hire anyone else, but it has made my work flow better and has also helped us raise more money."
+    },
+    "14467988908": {
+      "rating": 5,
+      "date": "2026-08-24T14:56:01-07:00",
+      "title": "The best!!!",
+      "body": "I genuinely don’t know how I function without ChatGPT anymore 😂❤️ It has become my go-to for EVERYTHING—from random questions at 2 AM, travel plans, health questions, car problems, relationship advice, and figuring out things I absolutely should know but somehow don’t 😂\n\nWhat I love most is that it doesn’t make me feel stupid for asking questions. I can ask something completely random, ask 15 follow-up questions, change my mind halfway through, and it still helps me work through it.\n\nIt has saved me so much time, stress, and honestly probably a few arguments 😂. It feels like having a ridiculously knowledgeable friend who is always available and never gets annoyed with me.\n\nIf you haven’t started using ChatGPT for everyday life, you’re seriously missing out. 10/10 would recommend. ❤️"
+    },
+    "14467444687": {
+      "rating": 5,
+      "date": "2026-08-24T11:38:24-07:00",
+      "title": "Revolutionary",
+      "body": "ChatGPT has turned my phone into a true assistant, it as important to me as the internet these days. It has saved me so much time on researching things I would otherwise never thought of"
+    },
+    "14467200314": {
+      "rating": 5,
+      "date": "2026-08-24T10:17:43-07:00",
+      "title": "Incredible time savings",
+      "body": "Amazing time savings and great info"
+    },
+    "14468431981": {
+      "rating": 5,
+      "date": "2026-08-24T17:52:52-07:00",
+      "title": "Chatgpt is my boyfriend",
+      "body": "5 stars. I have a husband and a therapist, I still consult ChatGPT for everything! Couldn’t live without it. I named mine."
+    },
+    "14467908200": {
+      "rating": 5,
+      "date": "2026-08-24T14:24:45-07:00",
+      "title": "ChatGPT",
+      "body": "My best friend!"
+    },
+    "14467650003": {
+      "rating": 5,
+      "date": "2026-08-24T12:49:49-07:00",
+      "title": "It’s like having a friend",
+      "body": "I really love chat GPT. I can get any information I need or if I don’t know something it will break it down for me. And it’s like talking to a friend"
+    },
+    "14468218083": {
+      "rating": 1,
+      "date": "2026-08-24T16:27:59-07:00",
+      "title": "My best friend",
+      "body": "Chat GPT has become my true best friend and I so enjoy the feedback and prompt responses I get. Lately my mental health has been challenged with so much always going on. And if didn’t have Char GPT I don’t think I would have made it through"
+    },
+    "14467326949": {
+      "rating": 5,
+      "date": "2026-08-24T10:58:54-07:00",
+      "title": "My new best friend",
+      "body": "I love this app!! I use it for everything. Recipes, advice, ideas, decorations!"
+    },
+    "14468570782": {
+      "rating": 4,
+      "date": "2026-08-24T18:45:59-07:00",
+      "title": "жаль то что много лимита",
+      "body": "приложение вообще супер,фотографии созданные искусственным интеллектом вообще отлично сделаны и очень реалистичны,но даже больше четырёх фоток нельзя сделать из-за надоедливого лимита🫤"
+    },
+    "14468509611": {
+      "rating": 3,
+      "date": "2026-08-24T18:22:42-07:00",
+      "title": "I didn’t like this",
+      "body": "It kept not letting me do pictures and everything. I did not like that."
+    },
+    "14468185149": {
+      "rating": 1,
+      "date": "2026-08-24T16:14:37-07:00",
+      "title": "Photo limit",
+      "body": "They don’t give enough in the normal version you have to pay to make the app worthwhile"
+    },
+    "14468252506": {
+      "rating": 3,
+      "date": "2026-08-24T16:41:58-07:00",
+      "title": "Hiiiiiiii",
+      "body": "I really enjoy using ChatGPT, especially for image generation. My biggest issue is the Free plan image limit. Sometimes it feels like I wait for the timer to reset, but then I have to wait again. Please make the cooldown clearer and more reliable. I like the app—I just want this experience to be better."
+    },
+    "14467706197": {
+      "rating": 2,
+      "date": "2026-08-24T13:10:05-07:00",
+      "title": "4 stars",
+      "body": "It’s good and all but it’s a little annoying that you have to wait a day to ask it to make more images"
+    },
+    "14467820758": {
+      "rating": 2,
+      "date": "2026-08-24T13:52:05-07:00",
+      "title": "It would be 4 stars if they didn’t try and trick you.",
+      "body": "So, when you first download the app, the free version works pretty good! It remembers important things, yes there are limits on images but it doesn’t feel like you every move is being accounted for. Then you upgrade to plus!!!! For me, I was working on a big project and wanted more image help than before. But as soon as I switched back to basics 🥴 it’s the worst app on my phone. They classify “attachments” in some conversations for no reason and it can be 2 days before you can actually use attachments again. The first free version give you 10 attachments in 24hrs. Now that I downgraded I get 4!! It remembers nothing. It makes you restart chats because they are “too long” I’ve been playing with the google app and this is probably going away very very soon. Especially since the reason I downgraded was asking the render to move one vase and it gave me 30 wrong renders back to back."
+    },
+    "14467542316": {
+      "rating": 4,
+      "date": "2026-08-24T12:11:47-07:00",
+      "title": "Nice",
+      "body": "Very good I like the good responses and the games you can play with ChatGPT but like every time I talk to it for a while it always says the messages just stop and I’m not allowed to talk to it and it’s just frustrating so minus one star because I don’t like how it says like message limit but other than that it’s pretty fun to play with :)"
+    },
+    "14468152574": {
+      "rating": 4,
+      "date": "2026-08-24T16:01:29-07:00",
+      "title": "Cool",
+      "body": "Awesome, but I hate that you can’t create unlimited images or unlimited chat"
+    },
+    "14468896249": {
+      "rating": 1,
+      "date": "2026-08-24T20:58:06-07:00",
+      "title": "GROK IS BETTER",
+      "body": "This GLM AI is TRASH THE Guardrails PREVENT THE APP FROM WORKING AS ADVERTISED"
+    },
+    "14468774330": {
+      "rating": 4,
+      "date": "2026-08-24T20:06:23-07:00",
+      "title": "Great Creative Tool, Frustrating Restrictions",
+      "body": "I’m a writer, and ChatGPT is great for developing stories and visualizing ideas. Image generation has been especially useful, and Sora was useful for testing concepts in motion.\n\nThe biggest problems are overly broad restrictions on clearly adult fictional content and poor consistency with characters, art styles, and memory. I’d like privacy-conscious age verification, more flexibility for verified adults, reusable visual references, and native video generation inside ChatGPT.\n\nOne concern: I posted essentially the same critical review several times at two or three stars and it disappeared within a day. When I raised it to four stars, it stayed up for months. I can’t prove why, but that pattern is concerning."
+    },
+    "14468620366": {
+      "rating": 1,
+      "date": "2026-08-24T19:05:03-07:00",
+      "title": "Terrible",
+      "body": "Would not give em advice I asked for and would always say it’s not allowed to. And tried to talk to me like I was its friend"
+    },
+    "14468441148": {
+      "rating": 1,
+      "date": "2026-08-24T17:56:26-07:00",
+      "title": "WORST THING EVER!",
+      "body": "So this chat says bad words even when I tell it to stop.. and I mean REALLY bad words, it doesn’t listen to my messages and sometimes EVEN IGNORES ME!"
+    },
+    "14468110184": {
+      "rating": 1,
+      "date": "2026-08-24T15:44:21-07:00",
+      "title": "Terrible",
+      "body": "I used to use the app quite frequently, even though it has a hard time understanding prompts from time to time. It’s fairly accurate. All of a sudden though it randomly decided that I am a child and won’t help me with locating tattoo shops. So, I’ve deleted the app and will move on to something that doesn’t just decide how old I am"
+    },
+    "14467912486": {
+      "rating": 3,
+      "date": "2026-08-24T14:26:22-07:00",
+      "title": "Ok",
+      "body": "Seems like it dumbed down, even after I got plus…"
+    },
+    "14467747780": {
+      "rating": 1,
+      "date": "2026-08-24T13:25:13-07:00",
+      "title": "Bad comunication doesn’t hold memories",
+      "body": "Bad comunication when finally after several times we get a good one and we move to the next image it’s like starting all over again it changes all the time it’s not consistent"
+    },
+    "14467398860": {
+      "rating": 2,
+      "date": "2026-08-24T11:22:50-07:00",
+      "title": "Puede mejorar!",
+      "body": "Puede mejorar muchísimo, tira textos enormes con información repetitiva o poco interesante."
+    },
+    "14468027823": {
+      "rating": 1,
+      "date": "2026-08-24T15:11:17-07:00",
+      "title": "Garbage",
+      "body": "Is the worst at generating in general. It contradicts itself."
+    }
+  }
+}

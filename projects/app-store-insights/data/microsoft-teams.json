@@ -1,0 +1,781 @@
+{
+  "schemaVersion": "1.0",
+  "app": {
+    "appId": 1113153706,
+    "name": "Microsoft Teams",
+    "developer": "Microsoft Corporation",
+    "category": "Business",
+    "countryCode": "us",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fa/7b/87/fa7b87d4-cd47-baa8-62e0-6c9043d87592/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/microsoft-teams/id1113153706?uo=4"
+  },
+  "reviewSnapshot": {
+    "sourceFile": "microsoft-teams-2026-08-26.json",
+    "fetchedAt": "2026-08-26T06:53:17.494Z",
+    "reviewsAnalyzed": 200,
+    "dateRange": {
+      "latest": "2026-08-24T19:28:45-07:00",
+      "earliest": "2026-05-04T15:34:48-07:00"
+    }
+  },
+  "metrics": {
+    "sampleAverageRating": 2.29,
+    "ratingDistribution": {
+      "1": 103,
+      "2": 28,
+      "3": 21,
+      "4": 5,
+      "5": 43
+    },
+    "ratingDistributionPercent": {
+      "1": 51.5,
+      "2": 14,
+      "3": 10.5,
+      "4": 2.5,
+      "5": 21.5
+    },
+    "currentAppStoreRating": {
+      "average": 4.80081,
+      "count": 3371120
+    }
+  },
+  "productBrief": "The single most frequent and specific complaint in this sample is a long-standing notification badge bug: unread-message counts that don't clear after reading or don't sync across devices, with several reviewers noting this has persisted across years and multiple updates. A separate, similarly frequent pattern describes the app failing to launch or connect reliably, in several cases causing reviewers to miss actual work meetings. A smaller but distinctive and highly consistent cluster describes Teams intercepting native iPhone FaceTime call attempts and redirecting them into Teams without the user changing any setting. A further pattern describes authentication friction, including a circular failure mode where the Authenticator app itself becomes required to authenticate the Authenticator app. Where users do praise the app, it's largely for straightforward core collaboration value -- chat, meetings, file sharing working adequately for daily work -- with a smaller, notable positive signal around Copilot-generated meeting recaps specifically, a contrast to how AI features were received in several other apps in this demo set.",
+  "transformationSummary": {
+    "reviewsAnalyzed": 200,
+    "recurringSignalCount": 10,
+    "priorityCount": 4
+  },
+  "headlineSignals": {
+    "topStrengthId": "strength-core-collaboration",
+    "topPainPointId": "pain-notification-accuracy",
+    "topRequestId": "request-fix-notification-sync",
+    "topPriorityId": "priority-notification-accuracy"
+  },
+  "strengths": [
+    {
+      "id": "strength-core-collaboration",
+      "theme": "Reliable Core Collaboration Tool for Work",
+      "supportingReviewIds": [
+        "14447722791",
+        "14366385077",
+        "14331631541",
+        "14212910768",
+        "14029572901"
+      ],
+      "evidenceCount": 5,
+      "whatUsersValue": "Reviewers describe Teams as a functional, adequate day-to-day tool for chat, meetings, and file sharing at work -- straightforward, practical value rather than enthusiasm for a specific feature.",
+      "whyThisMatters": "For a workplace-mandated collaboration tool, this kind of quiet functional adequacy is arguably more meaningful than effusive praise -- reviewers are describing it doing its basic job, which is what most users actually need from it.",
+      "protectThis": "The basic chat/meeting/file-sharing workflow that reviewers describe as working should be protected as notification and reliability issues elsewhere in this sample are addressed, since that basic workflow is what's actually keeping the app usable for daily work.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14447722791",
+          "quote": "Microsoft Teams is useful for my online meetings, communication, and sharing files. The features are well organized and it works well for teamwork and study",
+          "rating": 5,
+          "date": "2026-08-19"
+        },
+        {
+          "reviewId": "14331631541",
+          "quote": "Microsoft Teams is a very useful collaboration platform that makes it easy to chat, join video meetings, share files, and work together in real time.",
+          "rating": 5,
+          "date": "2026-07-21"
+        }
+      ]
+    },
+    {
+      "id": "strength-ai-meeting-recap",
+      "theme": "AI-Powered Meeting Recaps (Copilot)",
+      "supportingReviewIds": [
+        "14048403689",
+        "14029572901"
+      ],
+      "evidenceCount": 2,
+      "whatUsersValue": "A small but distinct group of reviewers specifically credit Copilot-generated meeting summaries and action items as useful for catching up on missed meetings.",
+      "whyThisMatters": "This is a notable contrast to the AI reception seen in other apps in this demo set (where AI features were frequently unwanted) -- here, an AI feature applied to a specific, well-scoped task (summarizing a meeting the user missed) is described positively.",
+      "protectThis": "This suggests AI features framed around a specific, well-defined task (summarize what I missed) land better with users than general-purpose AI insertion -- worth keeping in mind as a contrast case.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14048403689",
+          "quote": "especially now with CoPilot, I never cease to be amazed and impressed.",
+          "rating": 5,
+          "date": "2026-05-10"
+        },
+        {
+          "reviewId": "14029572901",
+          "quote": "I like the copilot integration where all the meeting summaries, action items were presented.",
+          "rating": 5,
+          "date": "2026-05-04"
+        }
+      ]
+    }
+  ],
+  "painPoints": [
+    {
+      "id": "pain-notification-accuracy",
+      "theme": "Persistently Inaccurate Notification Badges",
+      "issueType": "Bug / Stability",
+      "productSurface": "Notifications & Unread Message Counts",
+      "supportingReviewIds": [
+        "14422794148",
+        "14344752029",
+        "14274929693",
+        "14255667192",
+        "14217368815",
+        "14105617400",
+        "14104639834",
+        "14094228093",
+        "14093119727",
+        "14079344530",
+        "14078466036",
+        "14068156527",
+        "14060782294"
+      ],
+      "evidenceCount": 13,
+      "evidencePercentOfSample": 6.5,
+      "affectedJourney": "Relying on the notification badge/unread count to know whether a work message needs attention.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Doesn't block sending or receiving messages, but reviewers describe genuinely not being able to trust whether they have unread work communications -- a real productivity and peace-of-mind cost for a tool used specifically to stay responsive at work."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Knowing when you have an unread work message is a core, foundational function of a workplace messaging app, not a secondary feature."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "This is the single largest, most specific, and most consistently worded complaint pattern in this sample -- thirteen reviewers independently describe the identical symptom (a badge count that doesn't clear after reading, or shows a number unrelated to actual unread messages), several explicitly noting this has persisted across multiple app versions and years."
+      },
+      "synthesis": "An overwhelming and highly specific pattern: reviewers report the notification badge showing unread counts that don't match reality -- persisting after messages are read, failing to sync when read on another device, or showing an inflated number unrelated to actual unread messages. Several reviewers explicitly note this bug has persisted across multiple updates and years, not a one-time regression.",
+      "potentialImplication": "Because this specifically undermines trust in the tool's core notification function, sustained inaccuracy could plausibly cause users to miss genuinely important messages (having learned to distrust the badge) or waste time repeatedly checking for messages that don't exist.",
+      "recommendedNextStep": "Given how long-standing and specific this pattern is (several reviewers cite it persisting for years), prioritize root-causing the cross-device notification-state sync logic directly rather than treating it as a routine bug report.",
+      "likelyImplementationSurface": "Cross-device notification-state synchronization and badge-count calculation.",
+      "implementationConsiderations": "Multi-account sync (personal + work accounts on one device) is mentioned by several reviewers as a specific trigger, which may narrow the likely root cause, though this can't be confirmed from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "Notifications / Messaging Infrastructure"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14344752029",
+          "quote": "I constantly have phantom notifications. If I have 1 unread message the app will often say I have 6.",
+          "rating": 1,
+          "date": "2026-07-24"
+        },
+        {
+          "reviewId": "14060782294",
+          "quote": "Always has a bug where it says I have “34” unread messages but when I open and launch the app I never have any.",
+          "rating": 1,
+          "date": "2026-05-13"
+        }
+      ]
+    },
+    {
+      "id": "pain-app-reliability",
+      "theme": "App Crashes, Freezes & Won't-Launch Failures",
+      "issueType": "Bug / Stability",
+      "productSurface": "App Launch & General Stability",
+      "supportingReviewIds": [
+        "14468680879",
+        "14395975764",
+        "14383581948",
+        "14363525295",
+        "14306935342",
+        "14271283550",
+        "14243329392",
+        "14233443568",
+        "14209229981",
+        "14046630088",
+        "14030669925"
+      ],
+      "evidenceCount": 11,
+      "evidencePercentOfSample": 5.5,
+      "affectedJourney": "Opening the app or joining a meeting when it's needed for work.",
+      "userImpact": {
+        "level": "Critical",
+        "reasoning": "Reviewers describe missing meetings entirely because the app wouldn't connect or launch, and describe uninstall/reinstall as the only recovery step -- a full block on a work-required tool at the moment it's needed most."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Being able to open the app and join a meeting is the most basic precondition for using it at all."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Eleven reviewers describe overlapping but somewhat varied specific failures (stuck on launch screen, won't connect, crashes mid-use), consistently pointing at general instability rather than one isolated bug, though the exact trigger varies by report."
+      },
+      "synthesis": "Reviewers describe the app failing to launch (stuck on a splash screen), failing to connect to meetings, or crashing during use, with uninstalling and reinstalling as the only reported workaround -- and several noting this recurs after every attempted fix.",
+      "potentialImplication": "Because several reviewers describe missing an actual work meeting as a direct result, unresolved instability could plausibly have direct professional consequences for affected users, beyond ordinary app frustration.",
+      "recommendedNextStep": "Cluster crash/launch-failure reports by iOS version and device model to determine whether specific combinations are disproportionately affected before prioritizing a general stability investigation.",
+      "likelyImplementationSurface": "App launch sequence and connection/session establishment.",
+      "implementationConsiderations": "Symptoms are varied enough (launch failure vs. mid-session crash vs. connection failure) that this may represent multiple distinct issues rather than one root cause.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "Quality Engineering"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14395975764",
+          "quote": "Missed my meeting because this won’t connect to it no matter what.",
+          "rating": 1,
+          "date": "2026-08-06"
+        },
+        {
+          "reviewId": "14363525295",
+          "quote": "2 days ago app suddenly stops loading. Just stuck on the Team image. I deleted and reinstalled the app.",
+          "rating": 1,
+          "date": "2026-07-29"
+        }
+      ]
+    },
+    {
+      "id": "pain-facetime-hijack",
+      "theme": "Teams Intercepts Native FaceTime/Video Call Actions on iPhone",
+      "issueType": "Bug / Stability",
+      "productSurface": "iOS System Integration (Default Call Handling)",
+      "supportingReviewIds": [
+        "14455707487",
+        "14242623055",
+        "14223007806",
+        "14089693445",
+        "14051432858"
+      ],
+      "evidenceCount": 5,
+      "evidencePercentOfSample": 2.5,
+      "affectedJourney": "Placing a personal FaceTime or video call to a contact, unrelated to any Teams meeting.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe being unable to complete an unrelated, personal FaceTime call -- the app redirects a native iOS action to Teams instead, which several describe as happening without any setting change on their part."
+      },
+      "strategicRelevance": {
+        "level": "Adjacent",
+        "reasoning": "This affects a different app's core function (FaceTime) rather than a core Teams workflow, but it's severe enough and specific enough to warrant attention given it actively breaks another expected iOS behavior."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Five reviewers independently describe the identical, specific, and unusual symptom -- a personal FaceTime call attempt being intercepted and redirected into Teams -- which is distinctive enough that independent reviewers describing it the same way is a strong signal."
+      },
+      "synthesis": "Reviewers describe Teams becoming the default handler for video call actions on their iPhone without having changed any setting themselves, intercepting attempts to place a personal FaceTime call and redirecting to Teams instead, where the call typically fails to complete.",
+      "potentialImplication": "Because this affects a core iOS system behavior (FaceTime) unrelated to actual Teams usage, it could plausibly be read by affected users as a more invasive or aggressive behavior than a typical in-app bug, even though it's likely an unintended default-handler side effect rather than deliberate.",
+      "recommendedNextStep": "Validate whether Teams is unintentionally registering as a default call handler during installation or an update, and confirm whether this is reproducible and tied to a specific iOS or app version.",
+      "likelyImplementationSurface": "iOS call-handling registration (CallKit integration) during app install/update.",
+      "implementationConsiderations": "This looks like an unintended side effect of system-level call integration rather than a deliberate behavior, but that can't be confirmed from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "iOS Platform Integration"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14051432858",
+          "quote": "This garbage app hijacks video call button on iPhone so instead of using FaceTime it tries (and unable) to make Teams video call.",
+          "rating": 1,
+          "date": "2026-05-10"
+        },
+        {
+          "reviewId": "14223007806",
+          "quote": "Every time I FaceTime someone it opens up teams when I never changed any of the settings!",
+          "rating": 1,
+          "date": "2026-06-24"
+        }
+      ]
+    },
+    {
+      "id": "pain-authentication-friction",
+      "theme": "Excessive Authentication Friction & Sign-In Failures",
+      "issueType": "UI/UX Friction",
+      "productSurface": "Sign-In & Multi-Factor Authentication",
+      "supportingReviewIds": [
+        "14423429587",
+        "14332501075",
+        "14265886314",
+        "14260048053",
+        "14209194704",
+        "14199855904",
+        "14086874849",
+        "14041720804",
+        "14031178640"
+      ],
+      "evidenceCount": 9,
+      "evidencePercentOfSample": 4.5,
+      "affectedJourney": "Signing into the app, especially after being signed out or when switching devices.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Several reviewers describe being fully locked out of a needed work session by a circular authentication requirement (needing the Authenticator app to authenticate the Authenticator app) with no alternative path or accessible support."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Sign-in is a precondition for using the app, but this is specifically about the authentication flow's design rather than the core collaboration features themselves."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Nine reviewers describe related but not identical authentication issues (circular Authenticator dependency, passkey confusion, general sign-in failures), a coherent theme though with some variation in the specific failure point."
+      },
+      "synthesis": "Reviewers describe authentication as excessively layered (passkeys, MFA, facial recognition) for their actual need, and several describe a specific circular failure where the app requires the Authenticator app to complete sign-in, which itself fails or isn't available, leaving them locked out with no alternative and, in one case, no accessible support without a business account.",
+      "potentialImplication": "Because this can fully block access to a work-required tool, unresolved authentication failures could plausibly have direct professional consequences for affected users at the moment they need to join something time-sensitive.",
+      "recommendedNextStep": "Validate whether an alternative authentication path exists when the Authenticator app itself is unavailable or fails, and clarify support options for consumer/individual accounts locked out of authentication.",
+      "likelyImplementationSurface": "Multi-factor authentication flow and its dependency on a separate Authenticator app.",
+      "implementationConsiderations": "Security requirements must be balanced against accessibility; internal fraud/security data would be needed to evaluate whether current friction is appropriately calibrated.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Identity & Security Engineering",
+        "Customer Support Operations"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14260048053",
+          "quote": "It will trap you in an endless loop of needing to use the Authenticator app to authenticate that you’re using the Authenticator app so you can authenticate teams.",
+          "rating": 1,
+          "date": "2026-07-03"
+        },
+        {
+          "reviewId": "14423429587",
+          "quote": "I’m not protecting nuclear launch codes, I’m trying to send a message to Becky about break times.",
+          "rating": 1,
+          "date": "2026-08-13"
+        }
+      ]
+    },
+    {
+      "id": "pain-lan-privacy",
+      "theme": "Required Local-Network Access Raises Privacy Concerns",
+      "issueType": "Policy / Trust Pushback",
+      "productSurface": "Meeting Join Permissions",
+      "supportingReviewIds": [
+        "14447729801",
+        "14421130834",
+        "14413980172"
+      ],
+      "evidenceCount": 3,
+      "evidencePercentOfSample": 1.5,
+      "affectedJourney": "Joining a meeting, being required to grant local-network (LAN) scanning access first.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "The app remains usable if permission is granted, but reviewers describe feeling forced into a permission they don't understand the need for, with meetings simply refusing to start otherwise."
+      },
+      "strategicRelevance": {
+        "level": "Adjacent",
+        "reasoning": "This is a trust/permissions question at the edge of the core meeting-join flow, not the meeting experience itself."
+      },
+      "evidenceConfidence": {
+        "level": "Low",
+        "reasoning": "Only three reviewers raise this specific concern -- a real and specific complaint, but too sparse to treat as more than a signal worth watching."
+      },
+      "synthesis": "A small number of reviewers object to being required to grant local-network scanning access before a meeting will start, describing the stated justification as unclear and comparing it unfavorably to competitors that don't require it.",
+      "potentialImplication": "If this concern is more widespread than this small sample suggests, it could plausibly affect trust in the app among privacy-conscious users or in security-sensitive workplaces.",
+      "recommendedNextStep": "Clarify and better communicate the specific technical reason local-network access is requested (e.g. for local device discovery for casting/audio), since reviewers describe the current explanation as unclear.",
+      "likelyImplementationSurface": "Meeting-join permission flow and its stated justification for network access.",
+      "implementationConsiderations": "Given the low evidence volume, this is better scoped as a monitoring item and a communications fix than a priority investigation.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Privacy Engineering"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14421130834",
+          "quote": "This app forces users to enable local network access when I will never need the obscure features they claim this access enables.\n\nThe UX is garbage. This is only a #1 app because it’s either free or very low cost",
+          "rating": 1,
+          "date": "2026-08-12"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "request-fix-notification-sync",
+      "requestedCapability": "A notification badge that accurately reflects unread messages and clears correctly when read on any device.",
+      "underlyingNeed": "Users need to trust the badge enough to rely on it as their signal for whether something needs attention, especially across multiple synced accounts/devices.",
+      "context": "Checking the app after seeing a notification, or after reading messages on a different device.",
+      "supportingReviewIds": [
+        "14344752029",
+        "14104639834",
+        "14079344530"
+      ],
+      "evidenceCount": 3
+    },
+    {
+      "id": "request-restore-facetime",
+      "requestedCapability": "A way to prevent Teams from intercepting native FaceTime/video call actions, or an explicit setting controlling default call-handling.",
+      "underlyingNeed": "Users want their phone's built-in call features to work as expected without an installed work app silently taking over that function.",
+      "context": "Attempting to place a personal FaceTime call.",
+      "supportingReviewIds": [
+        "14455707487",
+        "14223007806",
+        "14051432858"
+      ],
+      "evidenceCount": 3
+    },
+    {
+      "id": "request-simpler-auth",
+      "requestedCapability": "A simpler sign-in flow with a working fallback when the Authenticator app is unavailable, and clearer explanation of passkeys/MFA steps.",
+      "underlyingNeed": "Users want to be confident they can always get back into a work-required tool, without depending on a second app that can itself fail.",
+      "context": "Signing in after being logged out, switching devices, or losing access to the Authenticator app.",
+      "supportingReviewIds": [
+        "14265886314",
+        "14260048053",
+        "14041720804"
+      ],
+      "evidenceCount": 3
+    }
+  ],
+  "priorities": [
+    {
+      "id": "priority-notification-accuracy",
+      "priorityLabel": "P0",
+      "title": "Root-Cause Notification Badge Inaccuracy",
+      "linkedItemId": "pain-notification-accuracy",
+      "whyNow": "The single largest, most specific, and longest-standing complaint pattern in this sample -- reviewers describe it persisting across years and multiple app versions, directly undermining trust in the app's core notification function.",
+      "recommendedNextStep": "Prioritize root-causing cross-device notification-state sync logic directly, given how long-standing and specific this pattern is; multi-account sync is a frequently-cited trigger worth investigating first.",
+      "likelyImplementationSurface": "Cross-device notification-state synchronization and badge-count calculation.",
+      "implementationConsiderations": "Multi-account sync may narrow the likely root cause but can't be confirmed from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "Notifications / Messaging Infrastructure"
+      ]
+    },
+    {
+      "id": "priority-app-reliability",
+      "priorityLabel": "P1",
+      "title": "Prioritize App Launch & Connection Stability",
+      "linkedItemId": "pain-app-reliability",
+      "whyNow": "High-frequency, high-severity pattern with reviewers describing missed work meetings as a direct consequence -- a full block on the app's core purpose at the moment it matters most.",
+      "recommendedNextStep": "Cluster crash/launch-failure reports by iOS version and device model before prioritizing a general stability investigation.",
+      "likelyImplementationSurface": "App launch sequence and connection/session establishment.",
+      "implementationConsiderations": "May represent multiple distinct issues rather than one root cause.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "Quality Engineering"
+      ]
+    },
+    {
+      "id": "priority-facetime-hijack",
+      "priorityLabel": "P1",
+      "title": "Prioritize Fixing FaceTime Call Interception",
+      "linkedItemId": "pain-facetime-hijack",
+      "whyNow": "A distinctive, highly consistent, high-confidence bug that breaks a different core iOS function entirely -- likely to be perceived as unusually invasive even though it's probably an unintended side effect.",
+      "recommendedNextStep": "Validate whether Teams is unintentionally registering as a default call handler during install/update, and confirm reproducibility against specific iOS/app versions.",
+      "likelyImplementationSurface": "iOS call-handling registration (CallKit integration) during app install/update.",
+      "implementationConsiderations": "Likely an unintended side effect of system-level call integration rather than deliberate behavior.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "iOS Platform Integration"
+      ]
+    },
+    {
+      "id": "priority-auth-friction",
+      "priorityLabel": "P2",
+      "title": "Monitor & Simplify Authentication Friction",
+      "linkedItemId": "pain-authentication-friction",
+      "whyNow": "Real and occasionally severe (full lockout), but Medium confidence given some variation in specific failure points -- suited to a design review rather than urgent escalation.",
+      "recommendedNextStep": "Validate whether an alternative authentication path exists when the Authenticator app is unavailable, and clarify support options for locked-out individual accounts.",
+      "likelyImplementationSurface": "Multi-factor authentication flow and its Authenticator-app dependency.",
+      "implementationConsiderations": "Security requirements must be balanced against accessibility.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Identity & Security Engineering",
+        "Customer Support Operations"
+      ]
+    }
+  ],
+  "methodology": {
+    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
+    "sampleScope": "200 most recent publicly available reviews for Microsoft Teams (App Store ID 1113153706) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
+    "limitations": [
+      "A small number of reviews making unverifiable technical accusations (e.g. claims of deliberate data manipulation or government surveillance) were read but excluded from thematic evidence, consistent with this project's Review Relevance principle -- a single unverifiable technical accusation is not a sound basis for a product theme.",
+      "App Store reviewers are self-selected, and this app's user base is largely workplace-mandated rather than opt-in, which may affect how representative self-selected reviewers are of the full user base.",
+      "This is a single point-in-time snapshot with no historical or version-linked data; several reviewers describe the notification bug as multi-year, but this analysis cannot independently verify duration, only that it's a described characteristic of the current complaint pattern.",
+      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
+      "Internal engineering effort is intentionally not estimated anywhere in this report.",
+      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Microsoft's actual internal team structure."
+    ],
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Notification accuracy, app reliability, FaceTime interception, and authentication friction are kept as separate pain points because each represents a distinct product mechanism, even though several co-occur in the same reviews."
+  },
+  "evidenceIndex": {
+    "14447722791": {
+      "rating": 5,
+      "date": "2026-08-19T10:52:31-07:00",
+      "title": "Good choice",
+      "body": "Microsoft Teams is useful for my online meetings, communication, and sharing files. The features are well organized and it works well for teamwork and study"
+    },
+    "14366385077": {
+      "rating": 5,
+      "date": "2026-07-30T05:51:16-07:00",
+      "title": "Great communications app",
+      "body": "This tool is key to maintain communication with colleagues at work. I love being able to see their status to text when they are available. I can also send files and set up group chats."
+    },
+    "14331631541": {
+      "rating": 5,
+      "date": "2026-07-21T12:58:07-07:00",
+      "title": "Microsoft Teams",
+      "body": "Microsoft Teams is a very useful collaboration platform that makes it easy to chat, join video meetings, share files, and work together in real time."
+    },
+    "14212910768": {
+      "rating": 5,
+      "date": "2026-06-22T06:43:25-07:00",
+      "title": "Better than anything",
+      "body": "I’ve used them for a while now and I like how everything is setup. The chat, calls, video."
+    },
+    "14029572901": {
+      "rating": 5,
+      "date": "2026-05-04T20:21:54-07:00",
+      "title": "Easy and functional",
+      "body": "Teams was easy to use chat, channels, meetings. The recordings are great to catch up when I miss the meetings due to conflicts. I like the copilot integration where all the meeting summaries, action items were presented. It’s great communication tool from MS."
+    },
+    "14048403689": {
+      "rating": 5,
+      "date": "2026-05-10T03:04:49-07:00",
+      "title": "Teams Rules",
+      "body": "Microsoft Teams sets the standard and sets it high for the most integrative and functional collaboration software, in my opinion. When combined within the greater Microsoft 365 platform experience, especially now with CoPilot, I never cease to be amazed and impressed. And Microsoft is always improving everything. Can’t beat it!"
+    },
+    "14422794148": {
+      "rating": 1,
+      "date": "2026-08-13T06:51:12-07:00",
+      "title": "Fix the unread message notification",
+      "body": "Constantly shows an unread message even though all messages are read"
+    },
+    "14344752029": {
+      "rating": 1,
+      "date": "2026-07-24T19:25:21-07:00",
+      "title": "Phantom Notifications",
+      "body": "I constantly have phantom notifications. If I have 1 unread message the app will often say I have 6. Tried clearing cache and uninstalling and reinstalling. Notifications work properly on my computer."
+    },
+    "14274929693": {
+      "rating": 2,
+      "date": "2026-07-07T10:53:38-07:00",
+      "title": "Notifications/badges are still not working correctly",
+      "body": "Notifications/badges are still not working correctly. If I’ve read a message on my MacBook or PC it’s still not updating the app badges as expected. This broke 3-4 updates ago! Please fix. It’s annoying and misleading."
+    },
+    "14255667192": {
+      "rating": 1,
+      "date": "2026-07-02T16:25:16-07:00",
+      "title": "Notifications",
+      "body": "Recent updates to the phone not clearing notifications once you have seen them. Extremely frustrating now as it shows I have notifications that I thought I missed when that is not the case."
+    },
+    "14217368815": {
+      "rating": 1,
+      "date": "2026-06-23T09:45:43-07:00",
+      "title": "Notifications",
+      "body": "Badge count is wrong a lot. Have to manually mark messages as read."
+    },
+    "14105617400": {
+      "rating": 2,
+      "date": "2026-05-25T13:02:59-07:00",
+      "title": "Notification badge Issue",
+      "body": "After reviewing notifications badge never goes, i have attached multiple accounts same issue"
+    },
+    "14104639834": {
+      "rating": 3,
+      "date": "2026-05-25T07:51:45-07:00",
+      "title": "Phantom notifications",
+      "body": "When there are 2 accounts synced (one work and one personal) the notification badge does not clear up. I have all messages as read. But still shows the other account having notifications. I have tried clearing the app data, re installing the app etc. This is basic and the app fails to address this issue in 2026"
+    },
+    "14094228093": {
+      "rating": 2,
+      "date": "2026-05-22T13:30:25-07:00",
+      "title": "Inaccurate Notifications",
+      "body": "Several versions of the app display wildly inaccurate notification numbers and seem to recursively add them to the previous number. Deleting and re-installing the app never helps and it’s happened on a few different versions. Disappointing that basic features don’t work reliably."
+    },
+    "14093119727": {
+      "rating": 3,
+      "date": "2026-05-22T07:24:12-07:00",
+      "title": "Incorrect # of unread messages",
+      "body": "Why does it always show that I have multiple unread messages when I only have 1. Its so inconsistent and not reliable."
+    },
+    "14079344530": {
+      "rating": 4,
+      "date": "2026-05-18T11:25:05-07:00",
+      "title": "Notification Badge issue and not syncing to other devices",
+      "body": "Teams appears to have an issue with displaying the actual number of unread chats and is showing multiples when there is only one.\nIn addition, Teams doesn’t appear to be syncing with other devices and adjusting the number of unread chats when they are read on another devise."
+    },
+    "14078466036": {
+      "rating": 3,
+      "date": "2026-05-18T06:40:37-07:00",
+      "title": "Fix the ghost notification bug",
+      "body": "Is someone going to fix the extremely annoying bug with the app badge showing a bogus notification count? This has been a bug for years now."
+    },
+    "14068156527": {
+      "rating": 1,
+      "date": "2026-05-15T11:37:57-07:00",
+      "title": "Notification badge wrong",
+      "body": "Keep getting a notification badge even when the notification has been opened/read on my laptop or a different device"
+    },
+    "14060782294": {
+      "rating": 1,
+      "date": "2026-05-13T11:22:40-07:00",
+      "title": "Bug for notifications",
+      "body": "Always has a bug where it says I have “34” unread messages but when I open and launch the app I never have any. \n\nPlease fix."
+    },
+    "14468680879": {
+      "rating": 2,
+      "date": "2026-08-24T19:28:45-07:00",
+      "title": "Not reliable",
+      "body": "If you get disconnected, the only way to reconnect is to uninstall and reinstall the app, otherwise you’re stuck in a “can’t make calls” loop. Pretty terrible experience…"
+    },
+    "14395975764": {
+      "rating": 1,
+      "date": "2026-08-06T11:27:39-07:00",
+      "title": "Does not work",
+      "body": "Missed my meeting because this won’t connect to it no matter what."
+    },
+    "14383581948": {
+      "rating": 1,
+      "date": "2026-08-03T10:31:33-07:00",
+      "title": "App is busted",
+      "body": "This is app is busted chats don’t work at times, app loses the sidebar, and sometimes just crashes. Don’t know what they did to this app but been happening for months now."
+    },
+    "14363525295": {
+      "rating": 1,
+      "date": "2026-07-29T11:45:04-07:00",
+      "title": "App won’t load",
+      "body": "2 days ago app suddenly stops loading. Just stuck on the Team image. I deleted and reinstalled the app. Now it’s stuck on select account. iPhone 15. Apps updated and so is IOS."
+    },
+    "14306935342": {
+      "rating": 2,
+      "date": "2026-07-15T10:08:23-07:00",
+      "title": "Cumbersome",
+      "body": "Logging in can be very cumbersome and tedious. Often requiring multiple attempts before able to connect.  Freezes up on my iPad.  Disappointed that so many businesses have moved to this platform."
+    },
+    "14271283550": {
+      "rating": 1,
+      "date": "2026-07-06T12:57:51-07:00",
+      "title": "Worst app",
+      "body": "Worst app ever nothing works. Unable to create new account or even login I was logged out and the since it been a shame. This is very low quality. Wrong app, WORST !!!!"
+    },
+    "14243329392": {
+      "rating": 1,
+      "date": "2026-06-29T19:36:02-07:00",
+      "title": "Teams stuck at launch",
+      "body": "Teams stuck at launch with a black screen. Reinstall and restart did not work. Other Microsoft apps are working fine."
+    },
+    "14233443568": {
+      "rating": 1,
+      "date": "2026-06-27T09:33:30-07:00",
+      "title": "App not working after ios 26.5 upgrade",
+      "body": "After I upgraded my iPhone to iOS 26.5, have been facing a LOT of issues with teams app. When I open this app, it shows logo for close to 20 seconds and then crash. There is no surity if this app will work when I need it most to send a message to my team members. I deleted this app, restarted my phone and then have been trying to download it again from app store. Now it stays at waiting state and nothing happens. There is more than 15 gb space left on my iPhone. Ridiculous way of upgrading a functioning app. Please fix it ASAP."
+    },
+    "14209229981": {
+      "rating": 1,
+      "date": "2026-06-21T07:14:41-07:00",
+      "title": "Typical Microsoft",
+      "body": "Can’t even open the app anymore it crashes. Typical Microsoft garbage."
+    },
+    "14046630088": {
+      "rating": 1,
+      "date": "2026-05-09T14:26:28-07:00",
+      "title": "Was reliable",
+      "body": "Most recent update has destroyed the performance of the App"
+    },
+    "14030669925": {
+      "rating": 1,
+      "date": "2026-05-05T04:59:22-07:00",
+      "title": "Terrible app",
+      "body": "If I could leave 0 stars I would. Microsoft consistently has a terrible user interface and teams is no different. Super confusing, glitchy, and riddled with problems. Not sure why anyone uses this program at all. It’s actually impressive that in 2026 an app can be this dysfunctional."
+    },
+    "14455707487": {
+      "rating": 1,
+      "date": "2026-08-21T10:51:50-07:00",
+      "title": "Horrible, and a virus",
+      "body": "Took over my ability to FaceTime and normally call anyone on my phone, everything reroutes through this app. Horrible"
+    },
+    "14242623055": {
+      "rating": 1,
+      "date": "2026-06-29T15:07:46-07:00",
+      "title": "No More FaceTime",
+      "body": "Recently teams has taken over as the default video call method on my phone making it so I can’t make a FaceTime call from the iMessage app"
+    },
+    "14223007806": {
+      "rating": 1,
+      "date": "2026-06-24T19:58:56-07:00",
+      "title": "This apps hijacks your phone",
+      "body": "Every time I FaceTime someone it opens up teams when I never changed any of the settings!"
+    },
+    "14089693445": {
+      "rating": 2,
+      "date": "2026-05-21T08:31:14-07:00",
+      "title": "FaceTime Issues",
+      "body": "Ever since this update went into effect, I have had sporadic FaceTime capabilities. At times when attempting to FaceTime I am directed to the Microsoft Teams site that is linked to my company portal and am notified that I am not licensed to receive FaceTime. I have never had this issue before and my IT people believe that it is a TEAMS issue."
+    },
+    "14051432858": {
+      "rating": 1,
+      "date": "2026-05-10T21:50:02-07:00",
+      "title": "Hijacks video calls on iPhone from FaceTime",
+      "body": "This garbage app hijacks video call button on iPhone so instead of using FaceTime it tries (and unable) to make Teams video call. Idiots…"
+    },
+    "14423429587": {
+      "rating": 1,
+      "date": "2026-08-13T09:53:59-07:00",
+      "title": "No nuclear secrets",
+      "body": "Too many MFAs, 2 factors, passkeys, facial recognition. It’s getting out of hand and it’s ridiculous. I’m not protecting nuclear launch codes, I’m trying to send a message to Becky about break times. Maybe companies should be able to choose if all this protective junk is necessary for them or not. Instead of it being forced on all of us."
+    },
+    "14332501075": {
+      "rating": 5,
+      "date": "2026-07-21T18:27:56-07:00",
+      "title": "Teams una app demasiada segura tanto k no me deja usar mi teams con mi contraseña",
+      "body": "Siempre fue un servicio muy efeciente en skype pero ahora fui de paseo a mi pais  y no puedo entrar con la contraseña y lo peor no recuerdo el correo de mi usuario pero si mi contraseña y no me deja entrar 🥹"
+    },
+    "14265886314": {
+      "rating": 1,
+      "date": "2026-07-05T05:55:47-07:00",
+      "title": "Authentication is atrocious",
+      "body": "If you use this on mobile they make it impossible to authenticate on a single device, the app tries to authenticate on the authentication app via the authentication app. If you have a meeting to get to on mobile and you get signed out good luck. Also the outlook sign in solution also failed. This process all around is a failure."
+    },
+    "14260048053": {
+      "rating": 1,
+      "date": "2026-07-03T17:46:11-07:00",
+      "title": "Richest poor software in the world",
+      "body": "The application functions just like any other email application with the added side effect that you will randomly not be able to sign in due to their Authenticator app being complete and total garbage. It will trap you in an endless loop of needing to use the Authenticator app to authenticate that you’re using the Authenticator app so you can authenticate teams. Then I go to look for a contact for help. THEY DONT HAVE ONE! “unless you are a business account” really goes to show their care for customers. Honestly just a bad product."
+    },
+    "14209194704": {
+      "rating": 1,
+      "date": "2026-06-21T07:04:03-07:00",
+      "title": "Useless",
+      "body": "They are useless as their hands are tied when you are locked out of your account. Might as well start over with gmail or any other email account that has a better system in place to authenticate you.  \nI created a secondary account within my main account for my business and everything was fine. It never asked for a password so I figured the account used the same password as my main account. But a year later, it stopped letting me access my email and when I try to reset the password it asks me questions regarding the last email addresses I used to send mail and the subject line. Impossible to remember. I had to start over with gmail and ask all my contacts to no longer use my outlook address!!"
+    },
+    "14199855904": {
+      "rating": 1,
+      "date": "2026-06-18T20:53:21-07:00",
+      "title": "Stupid app",
+      "body": "Sign-in error\nYou'll need to accept the invitation to join this Teams org. Don’t know what to do."
+    },
+    "14086874849": {
+      "rating": 1,
+      "date": "2026-05-20T13:12:40-07:00",
+      "title": "Doesn’t work",
+      "body": "Absolute trash. The human verification does not work and will not allow me to crate a new account. Waste of time."
+    },
+    "14041720804": {
+      "rating": 2,
+      "date": "2026-05-08T07:19:44-07:00",
+      "title": "Log in",
+      "body": "Why is logging in so difficult? What is a passkey? Why are you making things so complicated?"
+    },
+    "14031178640": {
+      "rating": 1,
+      "date": "2026-05-05T07:50:46-07:00",
+      "title": "Poor usability; don’t upgrade",
+      "body": "Unable to join live stream meetings, otherwise ok. Klunky login which requires copying the digits from an Authenticator app; why is this not integrated?\n2026 update: upgrading breaks authentication which seems to require Microsoft edge app on iPhone."
+    },
+    "14447729801": {
+      "rating": 1,
+      "date": "2026-08-19T10:54:49-07:00",
+      "title": "Harmful and Deceitful Privacy Policy",
+      "body": "This app engages in scammy behavior by refusing to run if you deny it access to crawl your LAN over wi-fi. This gives it data on other devices you own, and MS can then do whatever (sell or use for marketing) they want with that data. Specifically it shows a misleading error saying it can’t run without network access, making it sound like you’ve blocked the internet at large, when in reality you’re just telling the app to mind its own business and stay in its lane on your LAN. There is no workaround unless you have a guest Wi-Fi or something. The app simply won’t join a meeting if you don’t grant it LAN access. Zoom doesn’t have this issue. Disappointed that Apple would approve such a deceitful and invasive app for distribution in the app store."
+    },
+    "14421130834": {
+      "rating": 1,
+      "date": "2026-08-12T20:31:19-07:00",
+      "title": "Local network requirement",
+      "body": "This app forces users to enable local network access when I will never need the obscure features they claim this access enables.\n\nThe UX is garbage. This is only a #1 app because it’s either free or very low cost for customers already overpaying for MSFT products."
+    },
+    "14413980172": {
+      "rating": 1,
+      "date": "2026-08-11T03:13:09-07:00",
+      "title": "Refuses to join calls without being able to scan my network, ignores quiet hours.",
+      "body": "This app, from a multibillion dollar company, refuses to join calls without being able to scan my network. This is NOT NEEDED and a privacy concern. You run just fine on LTE, so you don't need to scan my network nor know my location with that much precision. Apple should pull this until you fix that.\n\nThen I set DON'T MAKE ANY SOUNDS BETWEEN 5pm and 8am, AND IT MAKES SOUNDS! Even if I set it to the time zone for my account. TERRIBLE GARBAGE!"
+    }
+  }
+}

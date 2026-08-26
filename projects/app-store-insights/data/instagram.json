@@ -1,0 +1,687 @@
+{
+  "schemaVersion": "1.0",
+  "app": {
+    "appId": 389801252,
+    "name": "Instagram",
+    "developer": "Instagram, Inc.",
+    "category": "Photo & Video",
+    "countryCode": "us",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/23/59/e9/2359e92d-376c-cc29-b9e6-ab9a4a00fcf4/Prod-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/instagram/id389801252?uo=4"
+  },
+  "reviewSnapshot": {
+    "sourceFile": "instagram-2026-08-26.json",
+    "fetchedAt": "2026-08-26T06:53:17.033Z",
+    "reviewsAnalyzed": 200,
+    "dateRange": {
+      "latest": "2026-08-24T21:00:15-07:00",
+      "earliest": "2026-08-22T13:53:35-07:00"
+    }
+  },
+  "metrics": {
+    "sampleAverageRating": 2.86,
+    "ratingDistribution": {
+      "1": 86,
+      "2": 16,
+      "3": 13,
+      "4": 10,
+      "5": 75
+    },
+    "ratingDistributionPercent": {
+      "1": 43,
+      "2": 8,
+      "3": 6.5,
+      "4": 5,
+      "5": 37.5
+    },
+    "currentAppStoreRating": {
+      "average": 4.69059,
+      "count": 29403386
+    }
+  },
+  "productBrief": "The single largest and most severe pattern in this sample is accounts -- some held for a decade or more -- being suspended or permanently banned with no stated reason and no reachable human reviewer, which several reviewers attribute to increased automated moderation. A related but mechanically distinct issue affects legitimate account owners who are not accused of any violation: a recovery/login flow that traps them out when they've lost an old device or phone number, with no fallback path. Separately, a frequent complaint describes the feed -- including the 'Following' filter meant to show only followed accounts -- increasingly dominated by ads and suggested content. Where users do praise the app, it's mostly simple, specific relational value: staying connected to friends and family, and a smaller group crediting the platform with helping grow a creative or business audience.",
+  "transformationSummary": {
+    "reviewsAnalyzed": 200,
+    "recurringSignalCount": 9,
+    "priorityCount": 4
+  },
+  "headlineSignals": {
+    "topStrengthId": "strength-social-connection",
+    "topPainPointId": "pain-account-bans",
+    "topRequestId": "request-human-appeal",
+    "topPriorityId": "priority-account-bans"
+  },
+  "strengths": [
+    {
+      "id": "strength-social-connection",
+      "theme": "Staying Connected With Friends & Family",
+      "supportingReviewIds": [
+        "14468831356",
+        "14468603099",
+        "14464869868",
+        "14462969170",
+        "14460920449"
+      ],
+      "evidenceCount": 5,
+      "whatUsersValue": "A recurring group of reviewers describe Instagram in simple relational terms -- a way to stay in touch with friends and family and feel connected -- rather than describing any single feature.",
+      "whyThisMatters": "This is the app's most basic value proposition and, in a sample otherwise dominated by account-access and moderation complaints, it's notable that the core social function itself is still what satisfied reviewers point to.",
+      "protectThis": "Whatever currently makes the app feel personally connective (seeing friends' posts, messaging) should be protected as feed-algorithm and moderation changes are made in response to the pain points below -- several pain points below directly describe this connective experience being crowded out by ads and suggested content.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14468603099",
+          "quote": "Came here after leaving facebook. This is a much better place. Good job. Instagram.",
+          "rating": 5,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14462969170",
+          "quote": "I love Instagram",
+          "rating": 5,
+          "date": "2026-08-23"
+        }
+      ]
+    },
+    {
+      "id": "strength-creator-growth",
+      "theme": "Platform for Creative & Business Growth",
+      "supportingReviewIds": [
+        "14468039580",
+        "14467938832",
+        "14467903472"
+      ],
+      "evidenceCount": 3,
+      "whatUsersValue": "A smaller group of reviewers specifically credit Instagram with helping them grow a personal brand, creative practice, or small business, distinct from the general social-connection praise above.",
+      "whyThisMatters": "This points at a second, distinct value driver (creator/business tooling) alongside personal social use -- worth tracking separately since the two audiences may care about different things.",
+      "protectThis": "Discoverability and reach for creators/businesses is what this group values; the feed-algorithm complaints elsewhere in this sample (accounts not reaching people who already follow them) are a direct risk to this specific value driver.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14468039580",
+          "quote": "Instagram es una plataforma que me ayuda a crecer como persona emprendedora.",
+          "rating": 5,
+          "date": "2026-08-24"
+        }
+      ]
+    }
+  ],
+  "painPoints": [
+    {
+      "id": "pain-account-bans",
+      "theme": "Account Bans & Suspensions Without Clear Cause or Appeal",
+      "issueType": "Policy / Trust Pushback",
+      "productSurface": "Account Moderation & Enforcement",
+      "supportingReviewIds": [
+        "14468901085",
+        "14468803536",
+        "14468771497",
+        "14468711149",
+        "14467882061",
+        "14468452720",
+        "14467561756",
+        "14463648389",
+        "14463133161",
+        "14461655756",
+        "14460927441",
+        "14461655987",
+        "14461038057"
+      ],
+      "evidenceCount": 13,
+      "evidencePercentOfSample": 6.5,
+      "affectedJourney": "Using an existing account, or creating a new one, without triggering an automated suspension or permanent ban.",
+      "userImpact": {
+        "level": "Critical",
+        "reasoning": "Reviewers describe losing access to accounts held for years -- along with photos, messages, and social connections -- with no explanation of the specific violation and no way to reach a person to appeal, which fully blocks continued use of the app for those affected rather than degrading it."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "An account is the precondition for every other feature; losing access to it without recourse is as core a failure as a navigation app routing you nowhere."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Thirteen reviewers independently describe the same pattern -- an account suspended or banned with no stated reason, no access to a human reviewer, and repeated failure of new accounts to survive -- with enough consistency (many explicitly say 'no reason given') that this reads as a systemic pattern rather than isolated moderation misses."
+      },
+      "synthesis": "A large and consistent group of reviewers describe accounts -- some held for many years -- being suspended or permanently banned with no specific reason given, no accessible human reviewer, and in several cases new replacement accounts being suspended again shortly after creation. Several reviewers explicitly attribute this to increased automated (AI) moderation without human oversight, though that attribution is the reviewers' own theory, not something this analysis can independently verify.",
+      "potentialImplication": "Because this affects the precondition for using the app at all, and several reviewers describe it recurring across repeated account-creation attempts, unresolved instances could plausibly drive affected users to competing platforms entirely, not just reduce engagement.",
+      "recommendedNextStep": "Audit a sample of suspended/banned accounts against the specific policy violation cited (if any), and validate whether an accessible human-appeal path currently exists and how long it takes to reach a resolution.",
+      "likelyImplementationSurface": "Automated content/account moderation systems and the appeal/support routing flow.",
+      "implementationConsiderations": "Whether enforcement is genuinely over-triggering versus users under-recalling a real violation can't be determined from review text alone; the more verifiable and actionable part of this pattern is the reported absence of a reachable human appeal path.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Customer Support Operations"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14467561756",
+          "quote": "NO HUMAN EMPLOYEES WHATSOEVER only stupid ai that bans ppl for made up reasons I got all my accounts banned for “adult s3xu4l exploitation” I’m not an adult nor do I post anything other than my face I’m old enough to have instagram just not an adult. This sucks…",
+          "rating": 1,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14468452720",
+          "quote": "instagram started automatically suspending my accounts for no reason whatsoever and whenever I try to get help, it’s extremely unhelpful and useless.",
+          "rating": 2,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "pain-account-recovery",
+      "theme": "Account Recovery & Login Authentication Lockouts",
+      "issueType": "Bug / Stability",
+      "productSurface": "Account Recovery & Authentication",
+      "supportingReviewIds": [
+        "14467587057",
+        "14464647286",
+        "14463202938",
+        "14463072280",
+        "14463065474",
+        "14460172090"
+      ],
+      "evidenceCount": 6,
+      "evidencePercentOfSample": 3,
+      "affectedJourney": "Recovering access to an existing, non-banned account after a lost device, forgotten password, or routine security prompt.",
+      "userImpact": {
+        "level": "Critical",
+        "reasoning": "Distinct from the moderation pain point above, this is about legitimate account owners -- not accused of any violation -- being unable to complete the recovery flow at all, permanently losing access to accounts held for years."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "A broken recovery flow fails the same precondition (account access) as a wrongful ban, just via a different mechanism -- a technical/flow defect rather than a moderation decision."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Six reviewers describe related but not identical recovery failures (video-selfie verification looping, SMS codes never arriving, being required to use an authenticator app with no alternative, old-device dependency), which is a coherent theme but with somewhat varied specific failure points."
+      },
+      "synthesis": "Reviewers describe being unable to regain access to legitimate, long-held accounts because the recovery flow requires something they no longer have -- access to an old device, a working SMS code, or an authenticator app -- with no alternative path offered and, in several cases, an AI chat assistant unable to help with account-specific problems.",
+      "potentialImplication": "Because these reviewers explicitly distinguish themselves from rule-breakers ('I've done nothing wrong'), a broken recovery flow could plausibly be read as a trust failure distinct from moderation policy -- a purely technical gap rather than an enforcement judgment call.",
+      "recommendedNextStep": "Validate whether the recovery flow has a fallback path for users who can no longer access their original device, phone number, or authenticator app, and confirm whether AI-assisted support can currently escalate unresolved cases to a human.",
+      "likelyImplementationSurface": "Account recovery and two-factor authentication flow.",
+      "implementationConsiderations": "Recovery flows must balance security against accessibility; without internal visibility into fraud rates, it's not possible to say from reviews alone whether the current flow is miscalibrated or appropriately strict.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Identity & Security Engineering",
+        "Customer Support Operations"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14463072280",
+          "quote": "I had a Instagram account since 2018. My whole life is on there. I have been getting no answers.",
+          "rating": 1,
+          "date": "2026-08-23"
+        },
+        {
+          "reviewId": "14460172090",
+          "quote": "I have been physically unable to access my account on any Apple device. It gives me error codes and tells me my password is wrong or sends me an email code to type in where I get blank error codes.\n\nHowever I’m perfectly able to sign into any Android or on the website.",
+          "rating": 1,
+          "date": "2026-08-22"
+        }
+      ]
+    },
+    {
+      "id": "pain-feed-algorithm",
+      "theme": "Feed Prioritizes Ads & Suggested Content Over Followed Accounts",
+      "issueType": "UI/UX Friction",
+      "productSurface": "Home Feed & Content Ranking",
+      "supportingReviewIds": [
+        "14468777363",
+        "14468739669",
+        "14467887920",
+        "14467531491",
+        "14460843496",
+        "14460343144"
+      ],
+      "evidenceCount": 6,
+      "evidencePercentOfSample": 3,
+      "affectedJourney": "Opening the app to see updates from accounts the user actually follows.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Doesn't block use of the app, but reviewers describe the core browsing experience becoming actively unpleasant -- ads and suggested content crowding out the people they intentionally follow, including within the 'Following' filter meant to avoid exactly that."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "The feed is the primary surface for the app's core browsing/connection experience; its composition directly shapes daily use."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Six reviewers independently describe the same specific pattern -- ads and suggested/unfollowed content interleaved with or replacing followed-account posts, including in the supposedly-filtered 'Following' view -- with concrete before/after comparisons."
+      },
+      "synthesis": "Reviewers describe the feed -- including the 'Following' filter specifically meant to show only followed accounts -- increasingly interleaved with ads and algorithmically suggested content, to the point that posts from people they actually follow become hard to find.",
+      "potentialImplication": "Because several reviewers frame this as the reason they're reducing use or considering leaving, sustained ad/suggestion density could plausibly suppress time spent with the app's core social-connection value, though this sample can't measure actual usage change.",
+      "recommendedNextStep": "Validate the actual ad/suggested-content ratio currently shown in the 'Following' feed view specifically against its intended design, since reviewers report ads appearing there despite the filter's purpose.",
+      "likelyImplementationSurface": "Feed ranking algorithm and the 'Following'-filtered feed view specifically.",
+      "implementationConsiderations": "Whether this reflects a recent ranking change or a 'Following' filter that never fully excluded ads is not determinable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Ranking / Feed Engineering",
+        "Growth / Monetization"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14460343144",
+          "quote": "I used to be able to go to “following” and just see the people I follow. Then I would go to the regular feed and look at random stuff and be subjected to ads every 5 or 6 posts, but whatever. NOW, if I go to “following,” there are SO MANY ADS!!!! I’ll bet DOUBLE than in the regular feed. Today, there were THREE ADS IN A ROW.",
+          "rating": 2,
+          "date": "2026-08-22"
+        },
+        {
+          "reviewId": "14468777363",
+          "quote": "as soon as I follow these suggested people , I no longer see them. So you just flood my timeline with someone and when I finally follow them, you stop showing them to me?",
+          "rating": 2,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "pain-general-bugs",
+      "theme": "App Bugs & Feature Regressions",
+      "issueType": "Bug / Stability",
+      "productSurface": "App Performance (general)",
+      "supportingReviewIds": [
+        "14468670532",
+        "14468599057",
+        "14463464163",
+        "14462180449",
+        "14461506151",
+        "14460700145",
+        "14460111893"
+      ],
+      "evidenceCount": 7,
+      "evidencePercentOfSample": 3.5,
+      "affectedJourney": "General day-to-day use -- posting stories, editing a bio, receiving notifications, viewing saved content.",
+      "userImpact": {
+        "level": "Moderate",
+        "reasoning": "Individually disruptive but narrow in scope (a stuck translation setting, missing notifications, a broken cancel button) -- annoying rather than blocking for most reviewers."
+      },
+      "strategicRelevance": {
+        "level": "Adjacent",
+        "reasoning": "These are real defects but scattered across secondary features rather than the core feed, posting, or messaging experience."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Seven reviewers describe genuinely different bugs (translation stuck on one language, missing story highlights, freezing, notifications not firing), which is real but heterogeneous -- likely several small independent defects rather than one root cause."
+      },
+      "synthesis": "A scattered set of specific bugs recur: the app freezing shortly after opening, notifications silently not firing despite correct settings, translation locked to one language, and story highlights missing on mobile but present on web.",
+      "potentialImplication": "Accumulated small defects across secondary features could plausibly erode confidence in overall app quality even without one severe failure.",
+      "recommendedNextStep": "Log and cluster these by app version and platform (iOS-specific effects are mentioned in some reports) to determine which are still live versus already fixed in a more recent release.",
+      "likelyImplementationSurface": "Several independent client-side features (notifications, localization, story highlights, media caching).",
+      "implementationConsiderations": "Heterogeneous symptoms make a single fix unlikely.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "Quality Engineering"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14463464163",
+          "quote": "Last update keep freezing after very short time ! Fix it",
+          "rating": 1,
+          "date": "2026-08-23"
+        },
+        {
+          "reviewId": "14460111893",
+          "quote": "I’ve updated the app, checked setting a million times, sent reports, everything but nothing works and it’s still not giving me notifications.",
+          "rating": 1,
+          "date": "2026-08-22"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "request-feed-control",
+      "requestedCapability": "A genuinely followed-only feed option (including in 'Following' view) and a way to turn off forced autoplay/suggested content.",
+      "underlyingNeed": "Control over what appears in the primary browsing surface, and confidence that a filter meant to show only followed accounts actually does.",
+      "context": "Opening the app to check on friends/accounts the user follows, including when using the 'Following' filter specifically.",
+      "supportingReviewIds": [
+        "14468739669",
+        "14467887920",
+        "14460843496",
+        "14460343144"
+      ],
+      "evidenceCount": 4
+    },
+    {
+      "id": "request-human-appeal",
+      "requestedCapability": "A reachable human reviewer for account suspensions and bans, with a specific stated reason, before or instead of automated permanent enforcement.",
+      "underlyingNeed": "Users don't necessarily dispute that enforcement should exist -- they want to know specifically why, and to have a real path to contest a mistake, especially for long-held accounts.",
+      "context": "Immediately after an account suspension or ban notice.",
+      "supportingReviewIds": [
+        "14468901085",
+        "14468452720",
+        "14461655987"
+      ],
+      "evidenceCount": 3
+    },
+    {
+      "id": "request-recovery-fallback",
+      "requestedCapability": "A working account-recovery fallback for users who no longer have their original device, phone number, or authenticator app.",
+      "underlyingNeed": "Legitimate long-time account owners want a path back into their own account that doesn't assume permanent access to a specific device or number.",
+      "context": "After losing a device or changing phone numbers, attempting to log back into an existing account.",
+      "supportingReviewIds": [
+        "14464647286",
+        "14463065474",
+        "14460172090"
+      ],
+      "evidenceCount": 3
+    }
+  ],
+  "priorities": [
+    {
+      "id": "priority-account-bans",
+      "priorityLabel": "P0",
+      "title": "Investigate Account Ban & Suspension Appeal Path",
+      "linkedItemId": "pain-account-bans",
+      "whyNow": "The most frequent and severe signal in the sample -- years-long accounts lost with no stated reason and no reachable human reviewer -- directly blocking the precondition for using the app at all.",
+      "recommendedNextStep": "Audit a sample of suspended/banned accounts against the cited policy violation, and validate whether an accessible human-appeal path currently exists.",
+      "likelyImplementationSurface": "Automated content/account moderation systems and the appeal/support routing flow.",
+      "implementationConsiderations": "The reported absence of a reachable human appeal path is the most verifiable and actionable part of this pattern.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Trust & Safety",
+        "Customer Support Operations"
+      ]
+    },
+    {
+      "id": "priority-feed-algorithm",
+      "priorityLabel": "P1",
+      "title": "Prioritize Restoring a Genuinely Followed-Only Feed",
+      "linkedItemId": "pain-feed-algorithm",
+      "whyNow": "High-confidence, high-frequency complaint that directly touches the core feed experience, including reviewers reporting the dedicated 'Following' filter itself no longer behaves as designed.",
+      "recommendedNextStep": "Validate the actual ad/suggested-content ratio in the 'Following' feed view against its intended design.",
+      "likelyImplementationSurface": "Feed ranking algorithm and the 'Following'-filtered feed view.",
+      "implementationConsiderations": "Whether this is a recent ranking change or a filter that never fully excluded ads isn't determinable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Ranking / Feed Engineering",
+        "Growth / Monetization"
+      ]
+    },
+    {
+      "id": "priority-account-recovery",
+      "priorityLabel": "P1",
+      "title": "Prioritize Account Recovery Flow Fallbacks",
+      "linkedItemId": "pain-account-recovery",
+      "whyNow": "Distinct from moderation bans, this affects legitimate account owners with no violation, and is a narrower technical/flow fix rather than a policy judgment call.",
+      "recommendedNextStep": "Validate whether the recovery flow has a fallback for users without their original device, phone number, or authenticator app.",
+      "likelyImplementationSurface": "Account recovery and two-factor authentication flow.",
+      "implementationConsiderations": "Recovery flows must balance security against accessibility; internal fraud-rate data would be needed to calibrate any change.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Identity & Security Engineering",
+        "Customer Support Operations"
+      ]
+    },
+    {
+      "id": "priority-general-bugs",
+      "priorityLabel": "P2",
+      "title": "Monitor App Bugs & Feature Regressions",
+      "linkedItemId": "pain-general-bugs",
+      "whyNow": "Real but heterogeneous and narrower in scope than the top three issues -- better suited to monitoring and triage than immediate deep investigation.",
+      "recommendedNextStep": "Cluster reports by app version and platform to determine which are still live.",
+      "likelyImplementationSurface": "Several independent client-side features.",
+      "implementationConsiderations": "Heterogeneous symptoms make a single fix unlikely.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Client Engineering",
+        "Quality Engineering"
+      ]
+    }
+  ],
+  "methodology": {
+    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
+    "sampleScope": "200 most recent publicly available reviews for Instagram (App Store ID 389801252) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
+    "limitations": [
+      "A number of reviews referencing geopolitical conflicts, conspiracy-style claims about coordinated harassment, or personal attacks on named executives were read but excluded from thematic evidence, consistent with this project's Review Relevance principle -- these are not a sound basis for a product theme regardless of how the reviewer frames them.",
+      "A small number of reviews read as testimonials for a third-party business or creator (e.g. a photographer, a cooking class) rather than feedback about Instagram itself, similar to the pattern first observed in the Google Maps analysis, and were excluded on the same basis.",
+      "Several reviewers attribute account bans specifically to increased AI-driven moderation; this is the reviewers' own theory about cause, not something independently verifiable from public review text, and is presented as such rather than as a confirmed fact.",
+      "App Store reviewers are self-selected and are not a random or complete sample of Instagram's user base; prevalence in this sample is not the same as prevalence across all users.",
+      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend, even where reviewers reference a change ('used to be good').",
+      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
+      "Internal engineering effort is intentionally not estimated anywhere in this report.",
+      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Meta's actual internal team structure."
+    ],
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence), applying the Theme Cohesion Rule throughout -- account bans/suspensions (a moderation-policy question) and account-recovery lockouts (an authentication-flow question) are kept as two separate pain points despite both resulting in lost account access, because they point at different product mechanisms with different owners and fixes."
+  },
+  "evidenceIndex": {
+    "14468831356": {
+      "rating": 5,
+      "date": "2026-08-24T20:30:15-07:00",
+      "title": ".",
+      "body": "Me encanta Puedo platicar con mis amigos y familiares 💗"
+    },
+    "14468603099": {
+      "rating": 5,
+      "date": "2026-08-24T18:58:20-07:00",
+      "title": "Good job!",
+      "body": "Came here after leaving facebook. This is a much better place. Good job. Instagram."
+    },
+    "14464869868": {
+      "rating": 5,
+      "date": "2026-08-23T19:54:54-07:00",
+      "title": "IG",
+      "body": "Is one of the best platform"
+    },
+    "14462969170": {
+      "rating": 5,
+      "date": "2026-08-23T08:29:13-07:00",
+      "title": "Me encanta como interactúa con mis amigos !! Funciona muy bien Gracias",
+      "body": "I love Instagram"
+    },
+    "14460920449": {
+      "rating": 5,
+      "date": "2026-08-22T19:22:25-07:00",
+      "title": "I love instagram",
+      "body": "I love instagram I recommend 100% because I can connect with my family, friends and and others platforms"
+    },
+    "14468039580": {
+      "rating": 5,
+      "date": "2026-08-24T15:15:57-07:00",
+      "title": "Me encanta!",
+      "body": "Instagram es una plataforma que me ayuda a crecer como persona emprendedora. GRACIAS! Voy a seguir creciendo ❤️"
+    },
+    "14467938832": {
+      "rating": 5,
+      "date": "2026-08-24T14:36:32-07:00",
+      "title": "I love this app",
+      "body": "I think this app offers so many tools to grow your brand"
+    },
+    "14467903472": {
+      "rating": 1,
+      "date": "2026-08-24T14:22:56-07:00",
+      "title": "Unable to grow",
+      "body": "My content is being stifled, hashtags never worked"
+    },
+    "14468901085": {
+      "rating": 1,
+      "date": "2026-08-24T21:00:15-07:00",
+      "title": "Fix this please",
+      "body": "Meta AI Ban 3 accounts & my Facebook for no reason and accused me with false accusations I never committed, lost my account that I been having over 14+ yrs. I can’t make another because I’m IP banned which is ridiculous. Fix this bug very soon if it is a bug and return my accounts back and billions of ppl that are getting affected by this. No support to reach out from real people working for meta/Instagram & Facebook. Definitely going to file a lawsuit for this."
+    },
+    "14468803536": {
+      "rating": 1,
+      "date": "2026-08-24T20:18:29-07:00",
+      "title": "Doesn’t care about its users.",
+      "body": "I’ve been trying to contact support for about 7 months now. Their forum that comes up with you ask their ai for help just comes up with.a page not found error, I no longer have access to an account I had since I was a kid over being hacked. The email and phone number on the account isn’t mine anymore so I can’t recover it. Support does nothing. I feel like I’ve lost an entire part of my life, friends I can no longer contact, photos I’ll never see again. Instagram simply just doesn’t care about their users and how difficult it is just to find someone to fix anything speaks volumes about how much they really do care."
+    },
+    "14468771497": {
+      "rating": 1,
+      "date": "2026-08-24T20:05:14-07:00",
+      "title": "Best app ever",
+      "body": "its great if you love to be censored and they take your account down for dumb reasons and make you send a photo of your IF OR A 40second video of yourself to verify you're a human instead of having a customer support line o and be careful once ur banned on instagram your banned on facebook as well"
+    },
+    "14468711149": {
+      "rating": 1,
+      "date": "2026-08-24T19:40:47-07:00",
+      "title": "Account suspensions",
+      "body": "I got my account IP banned last year in october 6th, for no logical reason at all. They said i exploited images of children when I was the literal minor running the account. I’m getting tired of trying to make new accounts and getting banned left and right."
+    },
+    "14467882061": {
+      "rating": 1,
+      "date": "2026-08-24T14:14:50-07:00",
+      "title": "disabling",
+      "body": "literally always disabling my accounts for NO reason but they let these porn accounts stay up?? like wtf"
+    },
+    "14468452720": {
+      "rating": 2,
+      "date": "2026-08-24T18:00:52-07:00",
+      "title": "Disappointing",
+      "body": "I am not one to make a review, especially for an app that I have used with no issue for years but I guess the time has come. I have been using this app since I was 14 I am 20 now and have never had any issues. Now all of a sudden when the meta ai update happened, instagram started automatically suspending my accounts for no reason whatsoever and whenever I try to get help, it’s extremely unhelpful and useless. My account I had for 4 years was banned two months ago and I tried to reach out- absolutely no way to at all. I just tried making a new secondary account and it repeatedly suspended me over and over again, even if I was just done making the account or switching to it. Again, I have tried to get help. Nothing helps and I just want to be able to make a new account without automatically being suspended within 5 minutes."
+    },
+    "14467561756": {
+      "rating": 1,
+      "date": "2026-08-24T12:18:33-07:00",
+      "title": "Banned my accounts for no reason",
+      "body": "NO HUMAN EMPLOYEES WHATSOEVER only stupid ai that bans ppl for made up reasons I got all my accounts banned for “adult s3xu4l exploitation” I’m not an adult nor do I post anything other than my face I’m old enough to have instagram just not an adult. This sucks…"
+    },
+    "14463648389": {
+      "rating": 1,
+      "date": "2026-08-23T11:59:57-07:00",
+      "title": "Got banned",
+      "body": "Got banned for no reason ai is banned alot of people for no reason they should fix that error I’m goin to tik tok or another social media with no meta cuz they banned my ig and facebook account l, have it for years"
+    },
+    "14463133161": {
+      "rating": 1,
+      "date": "2026-08-23T09:17:20-07:00",
+      "title": "Suspended me for no reason",
+      "body": "You all accused me in June 2025, never returned my account, and wrongfully accused me of something I never did or would do. I hope Instagram is gone because it’s not fair to others how they get falsely accused of things they didn't do, and you all don't respond to people; you just take it away."
+    },
+    "14461655756": {
+      "rating": 1,
+      "date": "2026-08-23T00:42:20-07:00",
+      "title": "Banned for no reason",
+      "body": "I got wrongfully perm banned for exactly no reason. A lot of people are actually getting banned for no reason. You need to fix this and there’s no way of contacting instagram support."
+    },
+    "14460927441": {
+      "rating": 1,
+      "date": "2026-08-22T19:25:15-07:00",
+      "title": "False suspension",
+      "body": "Giving insta a 1 star because for no apparent reason my 2 accounts got falsely suspended for nothing"
+    },
+    "14461655987": {
+      "rating": 5,
+      "date": "2026-08-23T00:42:26-07:00",
+      "title": "ATTENTION ‼️‼️",
+      "body": "Instagram, please stop removing followers and suspending people’s accounts all in the name of community guidelines. These accounts hold years of memorable moments that can’t simply be replaced. If an account has been active for more than 10 years, please show some respect and consideration. Instead of banning or suspending the account immediately, send the user an email if there’s any violation or suspicious activity"
+    },
+    "14461038057": {
+      "rating": 1,
+      "date": "2026-08-22T20:09:54-07:00",
+      "title": "KEEPS BANNING ME",
+      "body": "KEEPS BANNING ME"
+    },
+    "14467587057": {
+      "rating": 1,
+      "date": "2026-08-24T12:27:28-07:00",
+      "title": "There’s a bug that doesn’t allow me to login",
+      "body": "The recover account page has multiple bugs that prevent users from logging in. 1, is that if you do a video selfie to prove identity, afterwards it opens IG and it says “instagram user” not your account. 2, instead of video selfie, if you want to verify account through text message you can put in your phone number, but it will never actually send you a verification text. And then if you repeatedly ask for a new code. It will lock you out of your account.\n\nI work as a software engineer in testing professionally. This definitely a bug they want to check out."
+    },
+    "14464647286": {
+      "rating": 1,
+      "date": "2026-08-23T18:26:25-07:00",
+      "title": "LOS ACCESS",
+      "body": "I opened my account back in 2013. Always kept it private as I am not a public figure. \nToday I received a notification for the first time ever. “Your password may have been shared online” \nI immediately hoped on IG and changed my professional instagram and my personal private one. While I’m changing the password I clicked “log out all other devices” to avoid a hacker or anything from changing my email on the account. GUESS WHAT NOW IT KEEPS ASKING TO “VERIFY USING A DIFFERENT DEVICE”. The instagram help center does not help at all. I am not even given the option to submit ID to verify credentials. This is so frustrating because I cannot even contact anyone to help. I have lots of memories in this account."
+    },
+    "14463202938": {
+      "rating": 4,
+      "date": "2026-08-23T09:38:10-07:00",
+      "title": "у меня все время какое-то обжалование",
+      "body": "у меня было 3 аккаунта, и на каждый из этих аккаунтов пришло какое-то обжалование, и просит сфоткать паспорт,я фоткаю, а там пишет «мы сравним вашу фотография на паспорте и на аватарке», хотя у меня на аватарке не я т.к. у меня был фан аккаунт, а еще он хочет код который придет мне на почту айклауд, но этого приложения у меня нет т.к. его удалили в аппсторе, из-за чего я не могу вернуть доступ, а еще я создала еще 1 аккаунт чуть позже, и на этот аккаунт пришло обжалование, в чем проблема? решите пожалуйста этот вопрос. А так приложение мне очень нравится"
+    },
+    "14463072280": {
+      "rating": 1,
+      "date": "2026-08-23T08:59:20-07:00",
+      "title": "Wow",
+      "body": "I had a Instagram account since 2018. My whole life is on there. I have been getting no answers. I had my device changed and I cannot get back into my account it for years a media verified you get no real people Help and I have all my work that I made during the years account it’s like they’re holding my account hostage. I need some real help if the developers are reading this. To me this is crazy."
+    },
+    "14463065474": {
+      "rating": 1,
+      "date": "2026-08-23T08:57:21-07:00",
+      "title": "bad customer support & bugs",
+      "body": "loss access to an important account i had. i had broken my phone and recently purchased a new one. i was trying to reset my password on instagram because i wasn’t logged in anymore, didn’t remember the password. any solution i tried, didn’t work. basically its telling me to use an authenticator app to verify my login when i no longer have any access to that app, tried using my gmail, face scan, everything, but it kept bringing me back to using an authenticator app, with no other options listed, couldn’t even select an option that said i didn’t have access to those apps anymore. this isn’t the first time i’ve had an issue with not being able to login to my accounts because of instagrams not very logical security system. i’ve been able to contact instagram support before through gmail when i had loss access to an account before,  but now they no longer give you the option to, and they let you talk to meta AI instead, which is in no way helpful at all. had multiple conversations with meta AI and they couldn’t give me any helpful solution for my very specific situation. the meta AI kept telling me to try to access my account using a device i previously was logged in, obviously my old phone is broken i have absolutely no access at all to this account? another thing too is along with the option of two factor authentication when trying to log in, it also gives me an option of backup codes, which you need to be logged in to the account on a device to see, no i did not save any back up codes in the past because why would i think this would happen? to be only given two very specific options to login and none of them work? have no idea why the app is doing this when it’s never had me ONLY be able to use the authenticator app before. once again i tried resetting my password multiple times through email, yes it did go through my email and i put the verification code and everything, then it still led me to two factor authentication and back up codes in the end. spent about 30mins just trying to access my account for it to just be a dead end. and again, not the first time instagram has given me issues with logging into accounts. very complicated process, frustrating, annoying, and the use of AI as customer support is not realistic or reasonable for specific services, it’s unsustainable. deleting this app because my account i worked hard on building i can no longer access. so what’s the point of having this app anymore."
+    },
+    "14460172090": {
+      "rating": 1,
+      "date": "2026-08-22T14:17:03-07:00",
+      "title": "No customer service with a bug on iOS.",
+      "body": "I’ve had Instagram for about 8 years. In the past 3 years, I have been physically unable to access my account on any Apple device. It gives me error codes and tells me my password is wrong or sends me an email code to type in where I get blank error codes.\n\nHowever I’m perfectly able to sign into any Android or on the website.\n\nThere is no customer service. You cannot get help. It’s been years."
+    },
+    "14468777363": {
+      "rating": 2,
+      "date": "2026-08-24T20:07:38-07:00",
+      "title": "Feed got very bad all of a sudden",
+      "body": "I an ad. A suggested follow. Suggested reels. Then an account I follow. Then a suggested follow. An ad. More anything that isn’t anyone I follow. In fact, as soon as I follow these suggested people , I no longer see them. So you just flood my timeline with someone and when I finally follow them, you stop showing them to me? What’s the point? Hope you’re making more money, seems like it’s soooooo many more ads. Anyway, I’m gonna explore other apps."
+    },
+    "14468739669": {
+      "rating": 1,
+      "date": "2026-08-24T19:52:16-07:00",
+      "title": "suggestedposts-agram, oversaturated, too much autoplaying videos",
+      "body": "Constantly shoves suggested posts in my face and it make me sick, it makes me not even want to be on app. Also is just so oversaturated with \"content\". reels button, autoplay reels in search page, and forced reels from randoms that no one wants in home tl. I get more ads and suggested posts than i see my actual friends i follow. Give us an option to make \"following\" our default timeline without having to switch every single time from instagram suggested slop timeline, and put the stories in the following timeline too. And also give us an option to toggle OFF autoplaying videos in the app, it's literally so insufferable and headache inducing."
+    },
+    "14467887920": {
+      "rating": 1,
+      "date": "2026-08-24T14:17:05-07:00",
+      "title": "You Can Feel Yourself Rotting",
+      "body": "It’s hard to imagine the Instagram of 10+ years ago compared to the Instagram of today. \n\n10 years ago you could scroll through your feed and see posts from your friends only, in chronological order, and once you were caught up there was no more feed. No endless scroll to suck you in and consume your thoughts and precious time. \n\nToday, Instagram has become an all seeing all consuming entity, determined to harvest your data and your energy at every possibly opportunity. \n\nOpen your feed. First post from a friend. Next post is an ad. Next post is an ad. Next post is someone you don’t know, but it’s recommended for you. Next post is an ad. Next post if your friend, sharing a video from a few days ago. You click the video to make it full screen. You finish the video and give it a like, then mindlessly scroll down. Now it’s an hour later, you find yourself scrolling through reels endlessly. You aren’t even sure why you ended up in reels in the first place, or why you’ve wasted such time scrolling and scrolling. All the while you are being advertised to. Aggressively. Somehow Instagram knows that you did a google search for hair growth tips yesterday, now you’re seeing ads for hair transplants, hair growth medicines. \n\nThere is almost a hypnotic effect at play here. Many times I have *snapped* out of the endless scroll and thought to myself “what am I doing? why am I doing this?”. It feels very gross. It has been designed to consume you while you consume it.  \n\nWhat inspired me to leave this review was the ads. Over the last few days my ads have suddenly shifted. I have been BOMBARDED with military propaganda. Every single ad has been for either a branch of the military, or an org supporting the military, or a local credit union for the military, or it’s a wife showing you how great it is to be a military spouse. It’s all so sick, especially for someone with ANY awareness of what is going on in this country and in the world right now. \n\nI’m so sick of it all. This is a sick app, designed by sick people. It is meant to harvest every detail about your life while simultaneously enslaving you to…. anything. To scrolling. To envy. To propaganda."
+    },
+    "14467531491": {
+      "rating": 1,
+      "date": "2026-08-24T12:08:02-07:00",
+      "title": "Algorithm",
+      "body": "My explore page has nothing related to my content or what I’m interested in despite liking and pressing suggest more like this buttons for months. My content has nothing related reach unless I pay. Trash every since Facebook/Meta took over"
+    },
+    "14460843496": {
+      "rating": 1,
+      "date": "2026-08-22T18:51:48-07:00",
+      "title": "I wish instagram had never been bought by Facebook/meta",
+      "body": "I want to read the comments trolling awful advertisements, not keep accidentally hit a link taking me to the pages for the products being advertised in the awful advertisements. Also I do not want to have to keep snoozing suggested posts. Algorithms made social media so much worse than they used to be, I want to follow what I follow. And the freaking ads are way too much."
+    },
+    "14460343144": {
+      "rating": 2,
+      "date": "2026-08-22T15:26:06-07:00",
+      "title": "So sad",
+      "body": "I’m so disappointed. I used to be able to go to “following” and just see the people I follow. Then I would go to the regular feed and look at random stuff and be subjected to ads every 5 or 6 posts, but whatever. NOW, if I go to “following,” there are SO MANY ADS!!!! I’ll bet DOUBLE than in the regular feed. Today, there were THREE ADS IN A ROW. Good grief. It’s horrible. I’m so sad, because Instagram used to be so enjoyable. I think I’d even pay to have an option to only see who I follow without any ads (or even one ad per 10-15 posts I follow!). So, so sad."
+    },
+    "14468670532": {
+      "rating": 3,
+      "date": "2026-08-24T19:24:45-07:00",
+      "title": "Canceling a story",
+      "body": "What’s the point of having a “cancel upload” button if it never works? Genuinely asking what is the point"
+    },
+    "14468599057": {
+      "rating": 1,
+      "date": "2026-08-24T18:56:47-07:00",
+      "title": "Bio limits!!!",
+      "body": "hey when the limits is 150 characters, and it doesn’t work when i’m at 142 that’s really annoying, please fix this?? you can add all of these new things but not little bugs like this?"
+    },
+    "14463464163": {
+      "rating": 1,
+      "date": "2026-08-23T10:59:45-07:00",
+      "title": "Freezing after 15 sec !",
+      "body": "Last update keep freezing after very short time ! Fix it"
+    },
+    "14462180449": {
+      "rating": 1,
+      "date": "2026-08-23T04:19:35-07:00",
+      "title": "Translation Bug",
+      "body": "For some reason for the last month Instagram will only translate content and comments into Spanish. It will not let me change the preferred language. I have changed the app language but no result. It’s been very aggravating and I’m deleting the app."
+    },
+    "14461506151": {
+      "rating": 1,
+      "date": "2026-08-22T23:36:55-07:00",
+      "title": "Highlights don’t show",
+      "body": "story highlights are missing on the mobile app but visible on the web, this is a 3 month issue"
+    },
+    "14460700145": {
+      "rating": 2,
+      "date": "2026-08-22T17:54:36-07:00",
+      "title": "Repost?",
+      "body": "Unsure why but after several updates I still haven’t received the repost function."
+    },
+    "14460111893": {
+      "rating": 1,
+      "date": "2026-08-22T13:53:35-07:00",
+      "title": "Not giving notifications",
+      "body": "I’ve updated the app, checked setting a million times, sent reports, everything but nothing works and it’s still not giving me notifications."
+    }
+  }
+}

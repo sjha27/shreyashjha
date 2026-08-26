@@ -1,0 +1,586 @@
+{
+  "schemaVersion": "1.0",
+  "app": {
+    "appId": 368677368,
+    "name": "Uber - Request a ride",
+    "developer": "Uber Technologies, Inc.",
+    "category": "Travel",
+    "countryCode": "us",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/e8/04/67e804e4-d3b7-f7a0-2392-cbf1108b3963/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/512x512bb.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/uber-request-a-ride/id368677368?uo=4"
+  },
+  "reviewSnapshot": {
+    "sourceFile": "uber-2026-08-26.json",
+    "fetchedAt": "2026-08-26T06:51:57.163Z",
+    "reviewsAnalyzed": 200,
+    "dateRange": {
+      "latest": "2026-08-24T21:02:50-07:00",
+      "earliest": "2026-08-23T04:01:51-07:00"
+    }
+  },
+  "metrics": {
+    "sampleAverageRating": 3.93,
+    "ratingDistribution": {
+      "1": 44,
+      "2": 5,
+      "3": 10,
+      "4": 4,
+      "5": 137
+    },
+    "ratingDistributionPercent": {
+      "1": 22,
+      "2": 2.5,
+      "3": 5,
+      "4": 2,
+      "5": 68.5
+    },
+    "currentAppStoreRating": {
+      "average": 4.89562,
+      "count": 16688471
+    }
+  },
+  "productBrief": "This sample's positive reviews are dominated by specific, named praise for individual drivers -- punctuality, cleanliness, safety, and accessibility support -- suggesting driver quality is a genuine operational strength rather than generic satisfaction. The most frequent complaint is that the pickup-time estimate shown before booking is unreliable, sometimes expanding from '5 minutes' to 20-45 minutes after the ride is requested, including for advance-scheduled rides, with real consequences like missed flights. A closely related volume of reviews describe unexpected or disputed charges -- surge-price jumps, cancellation fees applied despite documented delays, double charges, and undisclosed international fees -- compounded by a smaller but consistent pattern of support being effectively unreachable when an automated flow doesn't resolve the issue. Together, these suggest the core ride experience (via drivers) remains strong, while trust in the platform's own estimates, billing, and support is the more pressing set of questions in this sample.",
+  "transformationSummary": {
+    "reviewsAnalyzed": 200,
+    "recurringSignalCount": 8,
+    "priorityCount": 3
+  },
+  "headlineSignals": {
+    "topStrengthId": "strength-driver-quality",
+    "topPainPointId": "pain-eta-reliability",
+    "topRequestId": "request-accurate-eta",
+    "topPriorityId": "priority-eta-reliability"
+  },
+  "strengths": [
+    {
+      "id": "strength-driver-quality",
+      "theme": "Driver Professionalism & Quality",
+      "supportingReviewIds": [
+        "14468498361",
+        "14468167342",
+        "14467773415",
+        "14466433250",
+        "14465272807"
+      ],
+      "evidenceCount": 5,
+      "whatUsersValue": "By far the largest volume of positive reviews in this sample praise a specific driver by name -- for punctuality, cleanliness, safe driving, and going out of their way to help (e.g. with luggage or a difficult pickup location).",
+      "whyThisMatters": "Driver quality is the direct point of contact for the entire service, and the sheer volume and specificity of this praise (real names, specific helpful actions) suggests it's a genuine, consistent operational strength rather than generic satisfaction.",
+      "protectThis": "Whatever currently drives consistent driver quality (vetting, incentives, ratings) should be protected, especially as pricing and support issues elsewhere in this sample are addressed -- driver quality appears to be the main thing currently keeping riders loyal despite those issues.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14468498361",
+          "quote": "Absolutely top notch driver, clean vehicle and friendly conversation. This gentleman goes above and beyond to ensure the best possible ride. My most heartfelt recommendation!",
+          "rating": 5,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14467773415",
+          "quote": "Car was immaculate. Hakim was polite, considerate, very professional.",
+          "rating": 5,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "strength-accessibility-trust",
+      "theme": "Trusted Option for Accessibility & Vulnerable Riders",
+      "supportingReviewIds": [
+        "14468906897",
+        "14468274323",
+        "14463645925"
+      ],
+      "evidenceCount": 3,
+      "whatUsersValue": "A smaller but distinct group of reviewers describe Uber as a trusted transportation option specifically because of accessibility support (wheelchair assistance, a requested woman driver for a teenager, being a primary mode of transport for a rider with a disability).",
+      "whyThisMatters": "This points at a specific, differentiated trust dimension beyond general ride quality -- riders with particular safety or accessibility needs describing the service as reliably meeting them.",
+      "protectThis": "Accessibility-aware driver training and features (like requesting a driver of a specific gender) should be protected as a specific trust dimension, separate from general ride quality.",
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14468906897",
+          "quote": "He is fully committed in providing excellent customer service and is well trained in providing assistance to customers with special needs",
+          "rating": 5,
+          "date": "2026-08-24"
+        },
+        {
+          "reviewId": "14463645925",
+          "quote": "I was born with Cerebral Palsy, & I SO WISH I COULD DRIVE, but as I can’t Uber remains my Go-To mode of Transportation.",
+          "rating": 5,
+          "date": "2026-08-23"
+        }
+      ]
+    }
+  ],
+  "painPoints": [
+    {
+      "id": "pain-eta-reliability",
+      "theme": "Unreliable Wait-Time Estimates & Driver Matching",
+      "issueType": "Core Functionality Quality",
+      "productSurface": "Ride Matching & ETA Display",
+      "supportingReviewIds": [
+        "14466878565",
+        "14466801019",
+        "14466748721",
+        "14466313130",
+        "14466298788",
+        "14466220795",
+        "14465951096",
+        "14465638954",
+        "14465223237",
+        "14463322223",
+        "14466173011"
+      ],
+      "evidenceCount": 11,
+      "evidencePercentOfSample": 5.5,
+      "affectedJourney": "Requesting a ride and trusting the displayed pickup-time estimate, including advance-scheduled rides.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe missed flights, being late to work, and being stranded when a displayed short wait time turns into 20-45 minutes or a driver cancels after a long wait -- a direct failure of the core promise (a timely ride), though a workaround (switching to a competitor or a taxi) exists."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "An accurate pickup-time estimate and a driver reliably being matched and arriving is the core transaction of a ride-hailing app -- this isn't a secondary feature."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Eleven reviewers independently describe the same specific pattern -- a short ETA shown before booking that expands substantially after the ride is requested -- including for pre-scheduled rides, with concrete numbers (5 minutes shown, 15-45 minutes actual) that corroborate each other."
+      },
+      "synthesis": "Reviewers consistently describe the pickup-time estimate shown before requesting a ride as unreliable -- a driver shown as '5 minutes away' becomes a 15-45 minute wait once the ride is booked, drivers who accepted a ride sometimes don't move for several minutes before cancelling, and even rides scheduled in advance aren't reliably matched to a driver on time.",
+      "potentialImplication": "For time-sensitive trips (flights, work, medical appointments), an unreliable ETA could plausibly push riders to a competitor for exactly the trips where reliability matters most, since several reviewers explicitly describe switching to Lyft for this reason.",
+      "recommendedNextStep": "Audit the gap between the pre-booking ETA estimate and actual driver arrival time for a sample of affected trip types (immediate vs. advance-scheduled), and validate whether the discrepancy is concentrated in specific markets or times of day.",
+      "likelyImplementationSurface": "Pre-booking ETA estimation and the driver-matching/dispatch algorithm.",
+      "implementationConsiderations": "Whether the gap reflects an overly optimistic estimation model, a driver-supply issue in specific areas, or both is not determinable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Marketplace / Dispatch Engineering",
+        "Data Science"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14463322223",
+          "quote": "it says something like “pickup in 5 minutes” and shows plenty of drivers nearby. Then the second I actually request the ride and get matched with a driver, surprise — the driver is 15–20 minutes away, sometimes practically 20 miles away.\n\nThen what exactly does “pickup in 5 minutes” mean? Why show me all these supposedly nearby drivers if you’re going to match me with someone coming from the other side of the planet?\n\nThis happens CONSTANTLY. At this point, the estimated pickup time before booking feels completely meaningless and borderline deceptive.",
+          "rating": 1,
+          "date": "2026-08-23"
+        },
+        {
+          "reviewId": "14466220795",
+          "quote": "here I am almost 20 minutes after my scheduled pickup standing outside at 5:19am like a jerk. Still no driver assigned.",
+          "rating": 2,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "pain-billing-charges",
+      "theme": "Unexpected Charges & Fee Disputes",
+      "issueType": "Policy / Monetization Pushback",
+      "productSurface": "Pricing & Billing",
+      "supportingReviewIds": [
+        "14468530442",
+        "14467410796",
+        "14466843197",
+        "14466815065",
+        "14464447957",
+        "14463522587",
+        "14462474868",
+        "14462251352",
+        "14462134139",
+        "14464226498"
+      ],
+      "evidenceCount": 10,
+      "evidencePercentOfSample": 5,
+      "affectedJourney": "Being charged an amount the rider considers unexpected, unfair, or erroneous -- surge pricing jumps, cancellation fees, double charges, or undisclosed fees in a different country.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe real financial harm -- being charged twice, charged a cancellation fee while waiting through no fault of their own, or hit with undisclosed fees abroad -- with several describing an inability to get the charge reviewed or reversed."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Trust in accurate, fair billing is foundational to a payment-first transportation service; billing disputes go directly at that trust."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Ten reviewers describe related but distinct billing complaints (surge shock, cancellation fees charged despite the rider not causing the cancellation, double charges, undisclosed international fees) that together form a consistent pattern of charges reviewers experience as unfair or unexplained."
+      },
+      "synthesis": "Reviewers describe a range of billing situations they experience as unfair: sudden, large surge-price jumps between checking and booking; being charged a cancellation fee while waiting for weather-delayed luggage or for a driver who never arrived; being charged twice for one ride; and undisclosed fees when using the app internationally.",
+      "potentialImplication": "Because several reviewers describe these as one-time incidents that ended their use of the app entirely ('lost me as a customer for life'), unresolved billing disputes could plausibly have an outsized effect on retention relative to their individual dollar value.",
+      "recommendedNextStep": "Audit cancellation-fee logic specifically for cases where the rider's delay was disclosed in-app (e.g. a flight/luggage delay) or the driver was at fault, and validate whether the international fee-disclosure flow meets the same standard as the US app.",
+      "likelyImplementationSurface": "Cancellation-fee logic, surge-pricing display, and international fee disclosure.",
+      "implementationConsiderations": "Distinguishing a policy the company intends (e.g. cancellation fees generally) from cases reviewers describe as clearly unfair requires case-level review not available from public reviews alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Pricing / Business Strategy",
+        "Customer Support Operations"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14462474868",
+          "quote": "Uber cancelled my ride AND charged me a fee, without my knowing! That is essentially the same as stealing from me.",
+          "rating": 1,
+          "date": "2026-08-23"
+        },
+        {
+          "reviewId": "14468530442",
+          "quote": "Uber price surged to $80 from the airport at 12:00pm when it was $40 at 11:00am.",
+          "rating": 1,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "pain-support-access",
+      "theme": "Inaccessible, Unhelpful Customer Support",
+      "issueType": "Policy / Trust Pushback",
+      "productSurface": "Customer Support",
+      "supportingReviewIds": [
+        "14466906634",
+        "14465066665",
+        "14464725282",
+        "14463028778",
+        "14462549536"
+      ],
+      "evidenceCount": 5,
+      "evidencePercentOfSample": 2.5,
+      "affectedJourney": "Trying to resolve a problem (a billing dispute, a ride issue) after the automated/AI support flow doesn't address it.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe being unable to reach a human at all, receiving the same scripted response repeatedly, or having a support chat end mid-conversation -- fully blocking resolution of whatever underlying issue (often a billing dispute from the pain point above) prompted the contact."
+      },
+      "strategicRelevance": {
+        "level": "Important",
+        "reasoning": "Support quality matters specifically when something has already gone wrong elsewhere -- it compounds other pain points rather than being a standalone core journey."
+      },
+      "evidenceConfidence": {
+        "level": "Medium",
+        "reasoning": "Five reviewers describe a consistent pattern (no accessible human, repetitive scripted responses, chat disconnection), a real and specific signal though a more modest volume than the top two pain points."
+      },
+      "synthesis": "Reviewers describe support as effectively unreachable for issues the automated/AI flow doesn't resolve -- repeated identical scripted responses, chats that end before the issue is resolved, and no phone-based option in some regions.",
+      "potentialImplication": "Because this pain point compounds the billing-dispute pain point above (reviewers describe both problems together), unresolved support access could plausibly make otherwise-recoverable billing complaints permanently damaging to retention.",
+      "recommendedNextStep": "Validate whether a genuine human-escalation path exists for billing disputes specifically, and audit reported cases of scripted-response loops and mid-conversation chat termination.",
+      "likelyImplementationSurface": "Support-routing logic and the AI/automated support flow's escalation triggers.",
+      "implementationConsiderations": "Distinguishing an appropriately-scoped automated flow from one that's under-escalating requires internal support-volume and resolution data not available from public reviews.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Customer Support Operations",
+        "Trust & Safety"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14465066665",
+          "quote": "they have copy and pasted the same response ten times now every other day I get the same message from them.  It isn’t helpful and it’s borderline harassment",
+          "rating": 1,
+          "date": "2026-08-23"
+        },
+        {
+          "reviewId": "14466906634",
+          "quote": "They’ve fully transitioned to AI!! Their drivers use their phones and endanger lives, but they only thing they can do is restrict access. Absolutely horrible. Wait time to speak with someone is 3 hours!!",
+          "rating": 1,
+          "date": "2026-08-24"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "id": "request-accurate-eta",
+      "requestedCapability": "An honest pickup-time estimate shown before booking, even if the accurate number is less impressive than 'five minutes.'",
+      "underlyingNeed": "Riders want to make an informed decision (book now, wait, or use another option) based on a real estimate, not one that changes the moment they commit.",
+      "context": "Before requesting a ride, comparing the displayed ETA to what actually happens after booking.",
+      "supportingReviewIds": [
+        "14463322223",
+        "14466220795",
+        "14466173011"
+      ],
+      "evidenceCount": 3
+    },
+    {
+      "id": "request-fair-billing-review",
+      "requestedCapability": "A fair, evidence-based review process for disputed charges (cancellation fees, double charges, international fees), not an automatic denial.",
+      "underlyingNeed": "Riders who believe they were charged in error want their side actually considered, especially when they have supporting evidence (e.g. a documented flight delay).",
+      "context": "After being charged a fee the rider believes was applied unfairly or in error.",
+      "supportingReviewIds": [
+        "14462474868",
+        "14462251352",
+        "14462134139"
+      ],
+      "evidenceCount": 3
+    },
+    {
+      "id": "request-human-support",
+      "requestedCapability": "A real path to a human support agent when the automated/AI flow doesn't resolve the issue.",
+      "underlyingNeed": "Riders don't necessarily object to automated support as a first step, but want an actual escalation path rather than a repeating script or a dead-ended chat.",
+      "context": "After the automated support flow fails to resolve a billing or ride issue.",
+      "supportingReviewIds": [
+        "14465066665",
+        "14464725282",
+        "14462549536"
+      ],
+      "evidenceCount": 3
+    }
+  ],
+  "priorities": [
+    {
+      "id": "priority-eta-reliability",
+      "priorityLabel": "P0",
+      "title": "Investigate ETA & Driver-Matching Reliability",
+      "linkedItemId": "pain-eta-reliability",
+      "whyNow": "The highest-frequency, highest-confidence signal in the sample, directly touching the core transaction (a timely ride) with concrete, corroborating examples including missed flights and work lateness.",
+      "recommendedNextStep": "Audit the gap between pre-booking ETA and actual arrival time across trip types, and validate whether it concentrates in specific markets or times of day.",
+      "likelyImplementationSurface": "Pre-booking ETA estimation and the driver-matching/dispatch algorithm.",
+      "implementationConsiderations": "Whether this reflects an overly optimistic estimation model, a supply issue, or both isn't determinable from review text alone.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Marketplace / Dispatch Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "priority-billing-charges",
+      "priorityLabel": "P1",
+      "title": "Prioritize Billing Dispute Fairness",
+      "linkedItemId": "pain-billing-charges",
+      "whyNow": "High-frequency, high-confidence pattern of reviewers describing real financial harm and several stating the incident ended their use of the app entirely.",
+      "recommendedNextStep": "Audit cancellation-fee logic for cases with a disclosed rider-side delay, and validate the international fee-disclosure flow.",
+      "likelyImplementationSurface": "Cancellation-fee logic, surge-pricing display, and international fee disclosure.",
+      "implementationConsiderations": "Distinguishing intended policy from cases reviewers describe as clearly unfair requires case-level review.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Pricing / Business Strategy",
+        "Customer Support Operations"
+      ]
+    },
+    {
+      "id": "priority-support-access",
+      "priorityLabel": "P1",
+      "title": "Prioritize a Genuine Human Support Escalation Path",
+      "linkedItemId": "pain-support-access",
+      "whyNow": "Compounds the billing pain point above -- an otherwise-recoverable dispute becomes a permanent loss of trust when support is unreachable.",
+      "recommendedNextStep": "Validate whether a genuine human-escalation path exists for billing disputes, and audit reported scripted-response loops and chat termination.",
+      "likelyImplementationSurface": "Support-routing logic and the AI/automated support flow's escalation triggers.",
+      "implementationConsiderations": "Requires internal support-volume and resolution data not available from public reviews.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Customer Support Operations",
+        "Trust & Safety"
+      ]
+    }
+  ],
+  "methodology": {
+    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
+    "sampleScope": "200 most recent publicly available reviews for Uber (App Store ID 368677368) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
+    "limitations": [
+      "A number of driver-specific reviews were excluded from thematic evidence where the complaint was a single, unverifiable claim about an individual driver's conduct rather than a recurring pattern about the app or platform, consistent with this project's Review Relevance principle.",
+      "App Store reviewers are self-selected and are not a random or complete sample of Uber's user base; prevalence in this sample is not the same as prevalence across all users.",
+      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend over time.",
+      "Only the US App Store storefront was analyzed, though one review describes an international (Japan) trip; findings should not be assumed to generalize to other countries or storefronts.",
+      "Internal engineering effort is intentionally not estimated anywhere in this report.",
+      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Uber's actual internal team structure."
+    ],
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). ETA reliability, billing disputes, and support access are kept as three separate pain points despite frequently co-occurring in the same reviews, because they represent three distinct product mechanisms (dispatch/estimation, pricing/billing, and support routing) with different owners and fixes."
+  },
+  "evidenceIndex": {
+    "14468498361": {
+      "rating": 5,
+      "date": "2026-08-24T18:18:22-07:00",
+      "title": "Awesome Driver and experience!",
+      "body": "Absolutely top notch driver, clean vehicle and friendly conversation. This gentleman goes above and beyond to ensure the best possible ride. My most heartfelt recommendation!"
+    },
+    "14468167342": {
+      "rating": 5,
+      "date": "2026-08-24T16:07:23-07:00",
+      "title": "Safe trip/great driver",
+      "body": "Driver was able to accommodate our family of 5 with 2 large suitcases and multiple backpacks. Safe and secure driving, no hassle, and he knew the roads well. Quiet trip and clean car. Thank you!"
+    },
+    "14467773415": {
+      "rating": 5,
+      "date": "2026-08-24T13:34:39-07:00",
+      "title": "Clean, on time, pro",
+      "body": "Car was immaculate. Hakim was polite, considerate, very professional. Gave me the space I needed at my ungodly hour ride. Fantastic ride,"
+    },
+    "14466433250": {
+      "rating": 5,
+      "date": "2026-08-24T06:25:26-07:00",
+      "title": "Richard  - XXL Sienna van",
+      "body": "Richard was an excellent, compassionate host and driver.  Recommend him highly 5+ Stars - he showed up for MD Anderson Cancer Center for discharged patient when others just canceled and charged $6 rather than than circle around to pick up."
+    },
+    "14465272807": {
+      "rating": 5,
+      "date": "2026-08-23T22:54:53-07:00",
+      "title": "Great Service!",
+      "body": "We were lost and couldn’t find our driver Abraham. He messaged with me and patiently waited for us to find him in the correct pick up area. Then he helped us load all of our ridiculous luggage into his vehicle. We told him we were so tired and he told us to rest and that he would get us home safely – – but said we had very pleasant conversation during the ride and then he helped us unload all of our ridiculous luggage when we got home! Thanks, Abraham, you were great!"
+    },
+    "14468906897": {
+      "rating": 5,
+      "date": "2026-08-24T21:02:50-07:00",
+      "title": "Excellent Uber Assist Driver",
+      "body": "Oscar is the best Uber driver I ever had. He is fully committed in providing excellent customer service and is well trained in providing assistance to customers with special needs and asks how he can assist in helping the customer get inside the vehicle as well as with the wheelchair.! He is super helpful and extremely patient..!"
+    },
+    "14468274323": {
+      "rating": 5,
+      "date": "2026-08-24T16:50:51-07:00",
+      "title": "Krogers pick up",
+      "body": "I got an uber for my teenager, it was her first time, I was very nervous especially with so much evil happening in this world, I req a woman only driver and  my teenager said she was very sweet and kind also professional, I hope we get more woman drivers like Clarissa . Thank you for getting my daughter home safe from Krogers , God bless you sweetie!"
+    },
+    "14463645925": {
+      "rating": 5,
+      "date": "2026-08-23T11:59:07-07:00",
+      "title": "Solid App",
+      "body": "The Uber App a Solid App — I have very few complaints, except sometimes it does FREEZE & CRASH 💥. I was born with Cerebral Palsy, & I SO WISH I COULD DRIVE, but as I can’t Uber remains my Go-To mode of Transportation."
+    },
+    "14466878565": {
+      "rating": 1,
+      "date": "2026-08-24T08:37:54-07:00",
+      "title": "Drivers take way too long to start driving",
+      "body": "I have no idea why uber allows drivers who are sitting at home to accept rides. I’ve waited over 15 mins before for an uber to start driving, and no movement at all. Then the driver canceled my ride after I waited 15 mins for them to start driving. I was insanely late to work, & there was no compensation on ubers end. This app SUCKS!"
+    },
+    "14466801019": {
+      "rating": 3,
+      "date": "2026-08-24T08:14:37-07:00",
+      "title": "False Waiting Times",
+      "body": "Please don’t offer a waiting time and then once the ride is payed for , almost double the waiting time , if you tell me the wait is gonna be around 8 minutes then once I pay the wait time it increases to 20 minutes, then we are not being truthful. And I Understand that  Traffic exists but if that traffic was reflected in the actual wait time I would not be as disappointed. This is one thing Lyft has over uber there wait times are more reflective of there actual wait time"
+    },
+    "14466748721": {
+      "rating": 1,
+      "date": "2026-08-24T07:59:14-07:00",
+      "title": "Ridiculous!",
+      "body": "I paid premier price to get a quicker ride then that took 20 minutes to arrive and it costed me $16 to go 5 blocks I’ll never take an Uber again ever!"
+    },
+    "14466313130": {
+      "rating": 1,
+      "date": "2026-08-24T05:48:22-07:00",
+      "title": "Suck",
+      "body": "These guys suck they make you pay they make you wait stupidly long wait times the fact that this white app got 4.9 out of five stars is ridiculous. You guys suck as an app. You guys suck as a company you guys suck in general."
+    },
+    "14466298788": {
+      "rating": 1,
+      "date": "2026-08-24T05:43:49-07:00",
+      "title": "Just call a taxi",
+      "body": "Why even show a driver is 5 minutes away when you don’t have a driver and you keep people waiting 10-30 minutes for a driver to be selected? The amount of times I’ve given up and called a taxi is absurd."
+    },
+    "14466220795": {
+      "rating": 2,
+      "date": "2026-08-24T05:18:51-07:00",
+      "title": "Arranging a ride in advance is a joke.",
+      "body": "Arranged my ride to LAX in advance. The app shows multiple available UberX cars around me, but here I am almost 20 minutes after my scheduled pickup standing outside at 5:19am like a jerk. Still no driver assigned. Uber has been good over the years, but epic fail when I need them to show up the most. I’m going to cancel my ride since a driver isn’t assigned and probably go with Lyft. I’ve never used them before, but if they at least show up then they’ve poached a loyal Uber customer."
+    },
+    "14465951096": {
+      "rating": 1,
+      "date": "2026-08-24T03:44:08-07:00",
+      "title": "poor service",
+      "body": "Lyft is much better than Uber, if I order a Lyft Wait n Save i automatically get a ride even though its wait and save. For uber if you order a wait n save you will almost certainly 100% be getting your ride cancelled, same with Uberx, everytime I order a Uberx they tell me they will find a ride by X amount of time to only inevitably tell me there isnt anh drivers and cancels my ride. With Lyft, u get a ride fast, with Uber you’ll wait 10-15 minutes just to be told there isnt drivers but they show u there is drivers near 🫩"
+    },
+    "14465638954": {
+      "rating": 3,
+      "date": "2026-08-24T01:36:52-07:00",
+      "title": "Time and how far they are",
+      "body": "They lie about the time they pick you up and get to a place  so if you call uber call 5 min ahead of time"
+    },
+    "14465223237": {
+      "rating": 1,
+      "date": "2026-08-23T22:32:05-07:00",
+      "title": "Thieves",
+      "body": "Uber allows their drivers to accept ride, make you wait 20 minutes, cancel the ride, and make you pay the cancellation fee while being stranded at the airport."
+    },
+    "14463322223": {
+      "rating": 1,
+      "date": "2026-08-23T10:14:43-07:00",
+      "title": "Misleading pickup times every single time",
+      "body": "Every single time I open Uber, it says something like “pickup in 5 minutes” and shows plenty of drivers nearby. Then the second I actually request the ride and get matched with a driver, surprise — the driver is 15–20 minutes away, sometimes practically 20 miles away.\n\nThen what exactly does “pickup in 5 minutes” mean? Why show me all these supposedly nearby drivers if you’re going to match me with someone coming from the other side of the planet?\n\nThis happens CONSTANTLY. At this point, the estimated pickup time before booking feels completely meaningless and borderline deceptive. If it’s going to take 20 minutes, just tell me it’s going to take 20 minutes. Stop showing “5 min” just to get people to request the ride.\n\nAbsolutely ridiculous. One star."
+    },
+    "14466173011": {
+      "rating": 1,
+      "date": "2026-08-24T05:03:03-07:00",
+      "title": "Late at work",
+      "body": "They changed the route and made go late at work"
+    },
+    "14468530442": {
+      "rating": 1,
+      "date": "2026-08-24T18:30:41-07:00",
+      "title": "Lyft is way cheaper with a better experience",
+      "body": "Uber price surged to $80 from the airport at 12:00pm when it was $40 at 11:00am. Downloaded Lyft and the ride was $23. Never using Uber again"
+    },
+    "14467410796": {
+      "rating": 1,
+      "date": "2026-08-24T11:26:54-07:00",
+      "title": "Expensive is an understatement",
+      "body": "You used to offer an affordable service to get a safe ride home, but you have ruined your company because of greed. The initial fare is a decent price but when you are ready to go home it doubles even triples the fare price. Doesn’t matter what time you request the ride it will always be more expensive. Your surge pricing is just another way to increase fares and price gouge your customers. You have ruined your own company because you are trying to get more money out people who built your business."
+    },
+    "14466843197": {
+      "rating": 1,
+      "date": "2026-08-24T08:27:13-07:00",
+      "title": "prices are out of hand!",
+      "body": "prices for delivery have gotten disgustingly stupid. $50 for 2 cousin subs. only $35 through their actual site. i ordered a special shampoo one day from pick n save. was like $60. just insane."
+    },
+    "14466815065": {
+      "rating": 1,
+      "date": "2026-08-24T08:18:46-07:00",
+      "title": "scam",
+      "body": "made it’s own membership into charging my card ever month when i never even made an account. wasted money on its own monthly while barely even using any rides"
+    },
+    "14464447957": {
+      "rating": 1,
+      "date": "2026-08-23T17:06:30-07:00",
+      "title": "Fired",
+      "body": "Steal my 28 $ . That was my girls money, and I don’t take too politely to you robbing her."
+    },
+    "14463522587": {
+      "rating": 3,
+      "date": "2026-08-23T11:18:35-07:00",
+      "title": "Overcharge",
+      "body": "I was charged $68 while Lyft was giving $20-30.  It was too late for me to switch.  I will choose Lyft first.  This is bad enough experience."
+    },
+    "14462474868": {
+      "rating": 1,
+      "date": "2026-08-23T06:01:51-07:00",
+      "title": "Charged Cancelation Fee while waiting for luggage",
+      "body": "In my first ever Uber experience, while waiting for luggage delayed multiple times due to lightning, Uber cancelled my ride AND charged me a fee, without my knowing! That is essentially the same as stealing from me.  I had to wait on luggage and my plane had also been delayed due to lightning strikes. No one asked me what was going on. That’s unethical."
+    },
+    "14462251352": {
+      "rating": 1,
+      "date": "2026-08-23T04:46:00-07:00",
+      "title": "Double Charged",
+      "body": "Haven’t used Uber in years. I’m not a big fan of the company considering they still their workers wages. But I decided to use it yesterday and Uber already has double charged me. Getting in contact with Uber to submit a request requires a bunch of unnecessary hoops. If even this is an accident or error. I’m highly disappointed in ANOTHER company attempting to scam customers. In this economy the average person might not be able to afford being double charged. Lost me as a customer for life."
+    },
+    "14462134139": {
+      "rating": 1,
+      "date": "2026-08-23T04:01:51-07:00",
+      "title": "Absolute Scammers",
+      "body": "I used the app in Japan. Charged all sorts of hidden fees, absolute scam. Your US app should not work there or prompt you about extra fees. Cheaper to just take a taxi"
+    },
+    "14464226498": {
+      "rating": 1,
+      "date": "2026-08-23T15:34:15-07:00",
+      "title": "TOO EXPENSIVE",
+      "body": "Don’t reep people off"
+    },
+    "14466906634": {
+      "rating": 1,
+      "date": "2026-08-24T08:46:25-07:00",
+      "title": "No more human customer service",
+      "body": "They’ve fully transitioned to AI!! Their drivers use their phones and endanger lives, but they only thing they can do is restrict access. Absolutely horrible. Wait time to speak with someone is 3 hours!!!"
+    },
+    "14465066665": {
+      "rating": 1,
+      "date": "2026-08-23T21:19:22-07:00",
+      "title": "THEY WONT STOP COPY AND PASTING THE SAME SUPPORT MESSAGE TO ME AGAIN AND AGAIN",
+      "body": "I asked for help with a ride and they have copy and pasted the same response ten times now every other day I get the same message from them.  It isn’t helpful and it’s borderline harassment I’ve asked them to stop many times and even deleted the app. They keep messaging me the same thing over and over.\n\nI finally just deleted my account."
+    },
+    "14464725282": {
+      "rating": 1,
+      "date": "2026-08-23T18:57:03-07:00",
+      "title": "DONT USE UBER. Lyft customer service is better all around.",
+      "body": "PSA ** Do NOT use their uber rental program. Rather, Do not use Uber at all. \n\nI rented a car for personal use through uber specifically because they could drop off the car and pick it up (instead of going to the rental agency myself). \n\n5 minutes AFTER pickup was scheduled for the return,  they informed me that I had to drop it off at the rental agency myself. Customer service was no help, and ended the chat in the MIDDLE of the conversation on THREE seperate occasions! A phone rep didn’t even know about the personal use rental program. And ultimately absolutely no solution was provided for their last minute breach of contract for the services I paid for. \n\nTheir customer service reps don’t want to help when there is an issue and I will absolutely only be using Lyft from here on out. \n\nIf I could give one star I would. I will not be using uber again."
+    },
+    "14463028778": {
+      "rating": 3,
+      "date": "2026-08-23T08:46:30-07:00",
+      "title": "Good luck with customer assistance",
+      "body": "The App works well until you have a problem and try to contain customer assistance.  It never loads.  Never."
+    },
+    "14462549536": {
+      "rating": 1,
+      "date": "2026-08-23T06:25:30-07:00",
+      "title": "لا يوجد وسيله تواصل مع الدعم الفني ولا يوجد دفع عن طريق الفيزا",
+      "body": "لا يوجد اي وسيلة تواصل مع الدعم  الفني للشكاوي \nولا يوجد اي وسيله للدفع سوى الكاش وهذا مزعج"
+    }
+  }
+}

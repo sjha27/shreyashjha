@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Store Product Insights</title>
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="report.css">
+</head>
+<body class="report-body">
+
+<header class="report-header">
+  <div class="report-wrap report-header-inner">
+    <a class="report-back" href="../../index.html#experience">
+      <svg class="icon" viewBox="0 0 24 24"><polyline points="15 6 9 12 15 18"/></svg>
+      <span class="label-full">Shreyash&rsquo;s portfolio</span>
+      <span class="label-short">Portfolio</span>
+    </a>
+    <span class="report-header-title">App Store Product Insights</span>
+    <button type="button" class="export-btn" id="export-markdown-btn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 3v11.5"/><polyline points="7 10 12 15 17 10"/><path d="M4.5 19h15"/></svg>
+      <span class="label-full">Export Markdown</span>
+      <span class="label-short">Export</span>
+    </button>
+  </div>
+</header>
+
+<div id="report-toc-wrap" hidden>
+  <nav class="report-toc" aria-label="Report sections">
+    <div class="report-wrap report-toc-inner">
+      <a href="#snapshot-section">Snapshot</a>
+      <a href="#brief-section">Brief</a>
+      <a href="#headline-section">Signals</a>
+      <a href="#priority-overview-section">Priorities</a>
+      <a href="#love-section-wrap">Love</a>
+      <a href="#struggle-section-wrap">Struggle</a>
+      <a href="#want-section-wrap">Want</a>
+      <a href="#prioritize-section-wrap">Act</a>
+      <a href="#evidence-section-wrap">Evidence</a>
+      <a href="#methodology-section-wrap">Methodology</a>
+    </div>
+  </nav>
+</div>
+
+<p id="report-loading" class="report-wrap report-loading">Loading analysis&hellip;</p>
+<p id="report-error" class="report-wrap report-error" hidden></p>
+
+<main id="report-root" class="report-wrap" hidden>
+
+  <section id="app-identity" class="report-section" style="padding-top:var(--s5)"></section>
+
+  <section id="snapshot-section" class="report-section" style="scroll-margin-top:6rem">
+    <div id="snapshot"></div>
+  </section>
+
+  <section id="brief-section" class="report-section" style="scroll-margin-top:6rem">
+    <div id="brief"></div>
+  </section>
+
+  <section class="report-section" style="padding-block:var(--s3)">
+    <div id="transformation"></div>
+  </section>
+
+  <section id="headline-section" class="report-section" style="scroll-margin-top:6rem">
+    <div id="headline-signals"></div>
+  </section>
+
+  <section id="priority-overview-section" class="report-section" style="scroll-margin-top:6rem">
+    <div id="priority-overview"></div>
+  </section>
+
+  <section id="love-section-wrap" class="report-section" style="scroll-margin-top:6rem">
+    <div id="love-section"></div>
+  </section>
+
+  <section id="struggle-section-wrap" class="report-section" style="scroll-margin-top:6rem">
+    <div id="struggle-section"></div>
+  </section>
+
+  <section id="want-section-wrap" class="report-section" style="scroll-margin-top:6rem">
+    <div id="want-section"></div>
+  </section>
+
+  <section id="prioritize-section-wrap" class="report-section" style="scroll-margin-top:6rem">
+    <div id="prioritize-section"></div>
+  </section>
+
+  <section id="evidence-section-wrap" class="report-section" style="scroll-margin-top:6rem">
+    <div id="evidence-explorer"></div>
+  </section>
+
+  <section id="methodology-section-wrap" class="report-section" style="scroll-margin-top:6rem">
+    <div id="methodology"></div>
+  </section>
+
+</main>
+
+<footer class="report-footer">
+  <div class="report-wrap">
+    <p>Part of <a href="../../index.html">Shreyash Jha&rsquo;s portfolio</a> — App Store Product Insights, a PM case study.</p>
+  </div>
+</footer>
+
+<script src="report.js"></script>
+</body>
+</html>

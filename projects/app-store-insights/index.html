@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Store Product Insights</title>
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="report.css">
+</head>
+<body class="report-body">
+
+<header class="report-header">
+  <div class="report-wrap report-header-inner">
+    <a class="report-back" href="../../index.html#experience">
+      <svg class="icon" viewBox="0 0 24 24"><polyline points="15 6 9 12 15 18"/></svg>
+      <span class="label-full">Shreyash&rsquo;s portfolio</span>
+      <span class="label-short">Portfolio</span>
+    </a>
+    <span class="report-header-title">App Store Product Insights</span>
+    <span></span>
+  </div>
+</header>
+
+<main class="report-wrap">
+  <section class="report-section" style="padding-top:var(--s5); max-width:38rem">
+    <span class="report-kicker">App Store Insights Tool</span>
+    <h1 class="report-section-title">Choose a product. See what its recent users are telling the product team.</h1>
+    <p class="report-lede">
+      Each report turns a frozen snapshot of an app&rsquo;s 200 most recent public App Store
+      reviews into an evidence-backed Product Management brief &mdash; what users value,
+      where they struggle, what they want, and what a product team should investigate next.
+    </p>
+  </section>
+
+  <section class="report-section" style="padding-top:0">
+    <div class="headline-grid" id="app-grid"></div>
+    <p class="snapshot-note" style="margin-top:var(--s4)">
+      This portfolio demo ships <span id="app-count">&hellip;</span> precomputed analyses so every
+      report loads instantly and consistently for every visitor, without live inference cost or
+      variability. The underlying methodology &mdash; frozen review snapshots, deterministic
+      statistics, evidence-linked AI analysis &mdash; is built to work on any App Store listing;
+      this V1 exposes a curated, pre-analyzed set rather than live on-demand analysis.
+    </p>
+  </section>
+</main>
+
+<footer class="report-footer">
+  <div class="report-wrap">
+    <p>Part of <a href="../../index.html">Shreyash Jha&rsquo;s portfolio</a>.</p>
+  </div>
+</footer>
+
+<script src="picker.js"></script>
+</body>
+</html>

@@ -210,6 +210,17 @@
     document.getElementById("headline-signals").innerHTML =
       '<div class="headline-grid">' +
         cards.map(function (c, i) {
+          // topStrengthId may legitimately be null — render the finding, not a broken card.
+          if (!c.item) {
+            return (
+              '<div class="headline-card headline-card-null">' +
+                '<div class="headline-icon-row"><span class="headline-icon">' + c.icon + "</span></div>" +
+                '<span class="headline-eyebrow">' + c.eyebrow + "</span>" +
+                '<span class="headline-theme">None identified</span>' +
+                '<span class="headline-excerpt">No strong current positive theme emerged in this sample.</span>' +
+              "</div>"
+            );
+          }
           var title = c.item.theme || c.item.title || c.item.requestedCapability;
           var priBadge = c.item.priorityLabel ? badgeForPriority(c.item.priorityLabel) : "";
           return (
@@ -270,6 +281,32 @@
     }).join("");
   }
 
+  /* Counterevidence: reviews that materially qualify a claim. Shown because
+     surfacing what argues against a conclusion is what makes the conclusion
+     credible -- never counted toward evidenceCount or prevalence. */
+  function counterEvidence(item) {
+    var ids = item.counterEvidenceReviewIds || [];
+    if (!ids.length || !DATA.evidenceIndex) return "";
+    var rows = ids.map(function (id) {
+      var r = DATA.evidenceIndex[id];
+      if (!r) return "";
+      var body = r.body || "";
+      return (
+        '<div class="counter-quote">' +
+          "“" + esc(body.length > 240 ? body.slice(0, 240).trim() + "…" : body) + "”" +
+          '<div class="quote-meta">' + starRow(r.rating) + "<span>" + fmtDate(r.date) + "</span></div>" +
+        "</div>"
+      );
+    }).join("");
+    if (!rows) return "";
+    return (
+      '<div class="counter-block">' +
+        '<span class="counter-label">Counterevidence &mdash; qualifies this finding, not counted in the ' +
+          item.evidenceCount + ' supporting reviews</span>' + rows +
+      "</div>"
+    );
+  }
+
   function viewEvidenceButton(theme, count) {
     return (
       '<button type="button" class="view-evidence-link" data-theme="' + esc(theme) + '">' +
@@ -279,6 +316,22 @@
   }
 
   function renderLove() {
+    // A report is allowed to find no defensible current strength. That's a real
+    // analytical result, not missing data, so it gets a deliberate rendered state
+    // rather than a manufactured positive theme.
+    if (!DATA.strengths || !DATA.strengths.length) {
+      document.getElementById("love-section").innerHTML =
+        '<h2 class="report-section-title">What Users Love</h2>' +
+        '<div class="null-finding">' +
+          '<p class="null-finding-head">No strong current positive theme emerged in this sample.</p>' +
+          '<p class="null-finding-body">' + prose(DATA.noStrengthRationale ||
+            "Reviews in this sample did not contain a recurring, current positive signal substantial " +
+            "enough to report as a product strength. This is stated as a finding rather than filled " +
+            "with a weaker theme for structural symmetry.") + "</p>" +
+        "</div>";
+      return;
+    }
+
     var cards = DATA.strengths.map(function (s) {
       return (
         '<article class="content-card" id="love-' + s.id + '">' +
@@ -288,6 +341,7 @@
           '<p class="card-prose">' + prose(s.whyThisMatters) + "</p>" +
           '<div class="protect-block"><span class="protect-label">Protect this</span><p class="card-prose">' + prose(s.protectThis) + "</p></div>" +
           voiceQuotes(s.voiceOfCustomer) +
+          counterEvidence(s) +
           viewEvidenceButton(s.theme, s.evidenceCount) +
         "</article>"
       );
@@ -295,7 +349,7 @@
 
     document.getElementById("love-section").innerHTML =
       '<h2 class="report-section-title">What Users Love</h2>' +
-      '<p class="report-lede">What Spotify should protect, not just what\'s going well.</p>' +
+      '<p class="report-lede">What the product team should protect, not just what\'s going well.</p>' +
       '<div class="content-cards">' + cards + "</div>";
   }
 
@@ -337,6 +391,7 @@
           "</div>" +
           '<p class="card-prose">' + prose(p.synthesis) + "</p>" +
           voiceQuotes(p.voiceOfCustomer) +
+          counterEvidence(p) +
           '<details class="deep-dive"><summary>View Deep Dive ' + ICONS.chevronDown + "</summary>" +
             '<div class="deep-dive-body">' + deepDiveFields(p) + "</div>" +
           "</details>" +
@@ -363,6 +418,7 @@
           '<p class="evidence-count-line"><strong>' + r.evidenceCount + "</strong> supporting reviews</p>" +
           (r.context ? '<p class="card-prose">' + prose(r.context) + "</p>" : "") +
           '<div class="need-block"><span class="need-label">Underlying need</span><p class="card-prose">' + prose(r.underlyingNeed) + "</p></div>" +
+          counterEvidence(r) +
           viewEvidenceButton(r.requestedCapability, r.evidenceCount) +
         "</article>"
       );
@@ -487,8 +543,13 @@
 
     filtered.sort(function (a, b) { return new Date(DATA.evidenceIndex[b].date) - new Date(DATA.evidenceIndex[a].date); });
 
-    document.getElementById("evidence-count-summary").textContent =
-      filtered.length + " review" + (filtered.length === 1 ? "" : "s") + " shown";
+    // Be explicit that this is the cited-evidence subset, not the full sample --
+    // "60 reviews shown" invited the reading that 140 reviews went missing.
+    var total = (DATA.reviewSnapshot && DATA.reviewSnapshot.reviewsAnalyzed) || 200;
+    var isAll = evidenceState.theme === "all" && evidenceState.rating === "all";
+    document.getElementById("evidence-count-summary").textContent = isAll
+      ? filtered.length + " of " + total + " reviews cited as thematic evidence"
+      : filtered.length + " cited review" + (filtered.length === 1 ? "" : "s") + " match this filter";
 
     var grid = document.getElementById("evidence-grid");
     if (filtered.length === 0) {

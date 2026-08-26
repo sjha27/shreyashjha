@@ -39,7 +39,7 @@
       "count": 8431118
     }
   },
-  "productBrief": "By a wide margin, the dominant signal in this sample is a specific, recent product change: a default AI search experience (\"Alexa for Shopping\") inserted ahead of standard search results with no setting to disable it. This is the single most consistent and frequent complaint pattern observed across this entire ten-app project, with reviewers explicitly stating they've reduced Amazon use or considered cancelling Prime specifically over it. A second, largely independent pattern describes delivery estimates -- including the Prime shipping promise itself -- slipping after an order is placed, and a related cluster describes customer support as effectively inaccessible for resolving the refund and billing disputes that result. Where users do praise the app, it centers on Amazon's foundational strengths: sheer selection and, separately, delivery reliability when it works as intended -- both of which are precisely what the top two pain points describe eroding.",
+  "productBrief": "One complaint dominates this sample: a default AI search experience ('Alexa for Shopping') placed ahead of standard results with no setting to disable it. Reviewers frame the objection as losing a choice they used to have, not as dislike of AI. The second recurring problem is delivery dates promised at checkout, including Prime dates, slipping after the order is placed. Reaching a human when either goes wrong is described as effectively impossible.",
   "transformationSummary": {
     "reviewsAnalyzed": 200,
     "recurringSignalCount": 9,
@@ -63,7 +63,7 @@
         "14461234633"
       ],
       "evidenceCount": 5,
-      "whatUsersValue": "Reviewers repeatedly cite the sheer breadth of what's available on Amazon and the convenience of finding nearly anything in one place, compared to competitors or physical shopping.",
+      "whatUsersValue": "Reviewers cite the breadth of what is available on Amazon and the convenience of finding nearly anything in one place. Some name selection specifically; others describe only the ease and simplicity of shopping there.",
       "whyThisMatters": "Selection breadth is Amazon's foundational value proposition; this remains a genuine draw for reviewers even in a sample otherwise dominated by complaints about a specific recent change (forced AI search).",
       "protectThis": "The core search-and-browse experience that lets people actually find and compare this vast selection is exactly what the AI-search pain point below describes as newly degraded -- protecting this strength and fixing that pain point are the same underlying task.",
       "voiceOfCustomer": [
@@ -140,7 +140,7 @@
         "level": "High",
         "reasoning": "This is, by a wide margin, the single largest and most consistent complaint pattern observed across this entire batch of ten apps -- reviewers overwhelmingly describe the identical specific grievance (a mandatory AI response inserted before search results, with no setting to disable it) using near-identical language independently."
       },
-      "synthesis": "An overwhelming volume of reviewers describe a new default AI search experience (\"Alexa for Shopping\") that inserts an AI-generated response or summary before showing standard search results, with no available setting to disable it. Reviewers consistently frame this not as dislike of AI in general, but specifically as removing a choice they previously had.",
+      "synthesis": "The largest recurring signal in this sample: reviewers describe a default AI search experience ('Alexa for Shopping') inserting an AI-generated response ahead of standard search results, with no setting to disable it. They consistently frame the objection not as dislike of AI generally but as the removal of a choice they previously had. Several describe it as newly introduced; that timing is their account, and a single point-in-time sample cannot establish when it shipped.",
       "potentialImplication": "Because search is the primary entry point to nearly every shopping session, and many reviewers explicitly state intent to reduce Amazon use, shop via other retailers, or cancel Prime specifically over this change, sustained friction here could plausibly affect engagement with the core shopping funnel more broadly than a typical feature complaint.",
       "recommendedNextStep": "Validate whether a setting to disable the AI search response (reverting to direct results) is feasible, given the volume and consistency of reviewers requesting exactly that as the fix -- not an improved AI feature, but a way to skip it.",
       "likelyImplementationSurface": "Search entry point and default search-result rendering (AI summary vs. direct results).",
@@ -198,7 +198,7 @@
         "level": "High",
         "reasoning": "Eleven reviewers describe the same pattern -- delivery dates slipping after an order is placed, sometimes repeatedly for the same order -- with specific dates and multiple describing this as a new, worsening pattern rather than an occasional miss."
       },
-      "synthesis": "Reviewers describe delivery dates that are promised at checkout (including expedited/Prime dates) slipping after the order is placed, in some cases multiple times for the same order, with several explicitly framing this as a recent decline from previously reliable service.",
+      "synthesis": "Reviewers describe delivery dates promised at checkout -- including expedited and Prime dates -- slipping after the order is placed, in several cases more than once for the same order. Several describe this as worse than the service they remember; that is their recollection rather than a measured change.",
       "potentialImplication": "Because reliable delivery timing is the specific thing a Prime subscription is paid for, a sustained pattern of slipping dates could plausibly affect subscription renewal decisions specifically, beyond ordinary shopping satisfaction.",
       "recommendedNextStep": "Segment delayed-delivery reports by fulfillment center and delivery-window type (standard vs. expedited/same-day) to determine whether delays concentrate in specific regions or delivery tiers.",
       "likelyImplementationSurface": "Delivery-estimate calculation and fulfillment/logistics scheduling.",
@@ -280,7 +280,7 @@
     },
     {
       "id": "pain-review-system-integrity",
-      "theme": "Reduced Trust in the Product Review System",
+      "theme": "Reduced Trust in the Product Review System (heterogeneous, low confidence)",
       "issueType": "Policy / Trust Pushback",
       "productSurface": "Customer Reviews",
       "supportingReviewIds": [
@@ -304,7 +304,7 @@
         "level": "Low",
         "reasoning": "Only four reviewers raise this specific concern, and they describe related but distinct symptoms (a curated/limited review view, an AI review-approval gate, reviews vanishing while being typed) -- a real and specific enough pattern to note, but too sparse to treat as a dominant signal."
       },
-      "synthesis": "A small number of reviewers describe reduced ability to see the full range of customer reviews for a product (a \"curated selection\" rather than all reviews), one reviewer describing an AI gate that can reject a submitted review without explanation, and another describing a negative review about Amazon itself vanishing before they could finish writing it.",
+      "synthesis": "Four reviewers describe different things that each reduce their trust in the review system: seeing a 'curated selection' rather than all reviews, an AI gate rejecting a submitted review with no stated reason and no second attempt, and a critical review of Amazon itself vanishing mid-composition. These are four distinct mechanisms, not one defect, and are grouped only because they point at the same user concern. The reviewer describing the vanishing review explicitly says they assume it is a glitch while noting it feels intentional -- this analysis takes that at face value and makes no suppression claim.",
       "potentialImplication": "If genuinely widespread, reduced confidence in review completeness or submission fairness could plausibly erode the specific trust advantage Amazon has built around customer reviews as a purchase-decision tool -- though this sample's low volume means this should be treated as a signal worth watching, not a confirmed pattern.",
       "recommendedNextStep": "Clarify what criteria determine which reviews are shown by default versus require an extra step to view, and validate whether the described review-vanishing behavior is a rendering bug or intentional moderation.",
       "likelyImplementationSurface": "Review display/curation logic and review-submission moderation.",
@@ -434,7 +434,7 @@
       "Internal engineering effort is intentionally not estimated anywhere in this report.",
       "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Amazon's actual internal team structure."
     ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
     "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Forced AI search, shipping delays, and support access are kept as separate pain points despite sometimes co-occurring in the same reviews, because each points at a distinct product mechanism (search UX, logistics, support routing)."
   },
   "evidenceIndex": {

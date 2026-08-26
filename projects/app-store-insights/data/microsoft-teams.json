@@ -39,7 +39,7 @@
       "count": 3371120
     }
   },
-  "productBrief": "The single most frequent and specific complaint in this sample is a long-standing notification badge bug: unread-message counts that don't clear after reading or don't sync across devices, with several reviewers noting this has persisted across years and multiple updates. A separate, similarly frequent pattern describes the app failing to launch or connect reliably, in several cases causing reviewers to miss actual work meetings. A smaller but distinctive and highly consistent cluster describes Teams intercepting native iPhone FaceTime call attempts and redirecting them into Teams without the user changing any setting. A further pattern describes authentication friction, including a circular failure mode where the Authenticator app itself becomes required to authenticate the Authenticator app. Where users do praise the app, it's largely for straightforward core collaboration value -- chat, meetings, file sharing working adequately for daily work -- with a smaller, notable positive signal around Copilot-generated meeting recaps specifically, a contrast to how AI features were received in several other apps in this demo set.",
+  "productBrief": "Teams is described as an adequate, functional work tool rather than a loved one -- which is the right baseline for reading the rest. The single most specific complaint is a notification badge showing unread counts that do not match reality, which several reviewers note has survived years and multiple updates. A separate group reports the app failing to launch or connect at the moment a meeting starts. Both are reliability problems in the core daily path.",
   "transformationSummary": {
     "reviewsAnalyzed": 200,
     "recurringSignalCount": 10,
@@ -83,14 +83,14 @@
     },
     {
       "id": "strength-ai-meeting-recap",
-      "theme": "AI-Powered Meeting Recaps (Copilot)",
+      "theme": "Copilot Integration Valued in the Microsoft 365 Context",
       "supportingReviewIds": [
         "14048403689",
         "14029572901"
       ],
       "evidenceCount": 2,
-      "whatUsersValue": "A small but distinct group of reviewers specifically credit Copilot-generated meeting summaries and action items as useful for catching up on missed meetings.",
-      "whyThisMatters": "This is a notable contrast to the AI reception seen in other apps in this demo set (where AI features were frequently unwanted) -- here, an AI feature applied to a specific, well-scoped task (summarizing a meeting the user missed) is described positively.",
+      "whatUsersValue": "One reviewer specifically credits Copilot's meeting summaries and action items as useful for catching up on meetings they missed. A second praises Copilot within the wider Microsoft 365 experience without naming a particular capability.",
+      "whyThisMatters": "AI applied to a narrow, well-scoped job -- summarising a meeting the user missed -- is described positively here, while general-purpose AI insertion draws complaints elsewhere in this report. With two reviewers, one of them non-specific, that is a hypothesis worth testing rather than a finding this sample establishes.",
       "protectThis": "This suggests AI features framed around a specific, well-defined task (summarize what I missed) land better with users than general-purpose AI insertion -- worth keeping in mind as a contrast case.",
       "voiceOfCustomer": [
         {
@@ -144,7 +144,7 @@
         "level": "High",
         "reasoning": "This is the single largest, most specific, and most consistently worded complaint pattern in this sample -- thirteen reviewers independently describe the identical symptom (a badge count that doesn't clear after reading, or shows a number unrelated to actual unread messages), several explicitly noting this has persisted across multiple app versions and years."
       },
-      "synthesis": "An overwhelming and highly specific pattern: reviewers report the notification badge showing unread counts that don't match reality -- persisting after messages are read, failing to sync when read on another device, or showing an inflated number unrelated to actual unread messages. Several reviewers explicitly note this bug has persisted across multiple updates and years, not a one-time regression.",
+      "synthesis": "The largest and most specific recurring pattern in this sample: reviewers report the notification badge showing unread counts that do not match reality -- persisting after messages are read, failing to sync when read on another device, or showing an inflated number unrelated to actual unread messages. Several note it has survived multiple updates and years of use, which is what makes it a durability problem rather than a one-off defect.",
       "potentialImplication": "Because this specifically undermines trust in the tool's core notification function, sustained inaccuracy could plausibly cause users to miss genuinely important messages (having learned to distrust the badge) or waste time repeatedly checking for messages that don't exist.",
       "recommendedNextStep": "Given how long-standing and specific this pattern is (several reviewers cite it persisting for years), prioritize root-causing the cross-device notification-state sync logic directly rather than treating it as a routine bug report.",
       "likelyImplementationSurface": "Cross-device notification-state synchronization and badge-count calculation.",
@@ -180,15 +180,14 @@
         "14383581948",
         "14363525295",
         "14306935342",
-        "14271283550",
         "14243329392",
         "14233443568",
         "14209229981",
         "14046630088",
         "14030669925"
       ],
-      "evidenceCount": 11,
-      "evidencePercentOfSample": 5.5,
+      "evidenceCount": 10,
+      "evidencePercentOfSample": 5,
       "affectedJourney": "Opening the app or joining a meeting when it's needed for work.",
       "userImpact": {
         "level": "Critical",
@@ -491,7 +490,7 @@
       "Internal engineering effort is intentionally not estimated anywhere in this report.",
       "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Microsoft's actual internal team structure."
     ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
     "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Notification accuracy, app reliability, FaceTime interception, and authentication friction are kept as separate pain points because each represents a distinct product mechanism, even though several co-occur in the same reviews."
   },
   "evidenceIndex": {
@@ -638,12 +637,6 @@
       "date": "2026-07-15T10:08:23-07:00",
       "title": "Cumbersome",
       "body": "Logging in can be very cumbersome and tedious. Often requiring multiple attempts before able to connect.  Freezes up on my iPad.  Disappointed that so many businesses have moved to this platform."
-    },
-    "14271283550": {
-      "rating": 1,
-      "date": "2026-07-06T12:57:51-07:00",
-      "title": "Worst app",
-      "body": "Worst app ever nothing works. Unable to create new account or even login I was logged out and the since it been a shame. This is very low quality. Wrong app, WORST !!!!"
     },
     "14243329392": {
       "rating": 1,

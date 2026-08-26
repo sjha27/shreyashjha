@@ -39,47 +39,19 @@
       "count": 702609
     }
   },
-  "productBrief": "This is an unusually negative sample -- 87.5% one-star, with only a single outright positive review -- and unlike Google Maps, this is not a data-quality artifact: these are overwhelmingly genuine, specific, on-topic accounts of the platform's dispute-resolution and trust systems. The dominant pattern is guests receiving refunds reviewers describe as disproportionately small for stays that became unsafe or uninhabitable (lost utilities, mold, hazardous air quality), paired with a closely related complaint from both guests and hosts that damage claims and review disputes are resolved without transparent evidence or reasoning shown to the disadvantaged party. A smaller but specific cluster describes an advertised price differing from what's actually charged, and a further group of hosts describe a recent 15.5% fee increase as financially significant and poorly communicated. Notably, many of the harshest reviews come from self-described long-tenured users (10+ years) rather than new or occasional ones, suggesting a real erosion of trust among the platform's most loyal base rather than a mismatch with new users' expectations.",
+  "productBrief": "This sample is overwhelmingly negative -- 87.5% one-star -- and no strong current positive theme emerged from it. Two failures dominate. Guests describe serious property problems, from sewage to no running water to hazardous air quality, followed by refunds returning a fraction of what was paid. Separately, guests and hosts alike describe damage claims and review disputes decided without visible evidence or reasoning. Many of these reviewers volunteer a decade or more of prior trouble-free use.",
   "transformationSummary": {
     "reviewsAnalyzed": 200,
-    "recurringSignalCount": 9,
+    "recurringSignalCount": 8,
     "priorityCount": 5
   },
   "headlineSignals": {
-    "topStrengthId": "strength-legacy-loyalty",
+    "topStrengthId": null,
     "topPainPointId": "pain-property-refunds",
     "topRequestId": "request-transparent-adjudication",
     "topPriorityId": "priority-property-refunds"
   },
-  "strengths": [
-    {
-      "id": "strength-legacy-loyalty",
-      "theme": "Long-Tenured User Loyalty, Predating a Recent Decline",
-      "supportingReviewIds": [
-        "14411620302",
-        "14395629265",
-        "14331850984"
-      ],
-      "evidenceCount": 3,
-      "whatUsersValue": "A notable pattern in this sample: reviewers repeatedly cite many years (often 10+) of trouble-free use before describing the specific incident that made them stop trusting the platform. This is evidence of durable past satisfaction, not current praise -- worth stating plainly rather than dressing it up as an active strength.",
-      "whyThisMatters": "The fact that so many of the harshest reviews in this sample come from self-described long-time loyal users -- not first-time or occasional users -- suggests the underlying product concept and historical execution built real trust, and that trust is what's currently being spent down by the issues detailed below.",
-      "protectThis": "This is less something to protect going forward and more a signal of how much goodwill is at stake: these are exactly the users a trust/dispute-resolution fix would need to win back.",
-      "voiceOfCustomer": [
-        {
-          "reviewId": "14395629265",
-          "quote": "After 13 years of using Airbnb, this is the first time I’ve ever had a truly disappointing experience.",
-          "rating": 1,
-          "date": "2026-08-06"
-        },
-        {
-          "reviewId": "14331850984",
-          "quote": "After 11 years and many stays, I’m done with using Airbnb.",
-          "rating": 1,
-          "date": "2026-07-21"
-        }
-      ]
-    }
-  ],
+  "strengths": [],
   "painPoints": [
     {
       "id": "pain-property-refunds",
@@ -97,12 +69,11 @@
         "14339075934",
         "14331850984",
         "14330518333",
-        "14303181394",
         "14302899602",
         "14299860070"
       ],
-      "evidenceCount": 13,
-      "evidencePercentOfSample": 6.5,
+      "evidenceCount": 12,
+      "evidencePercentOfSample": 6,
       "affectedJourney": "Staying at a booked property that turns out to be unsafe, uninhabitable, or materially misrepresented, and seeking a fair refund.",
       "userImpact": {
         "level": "Critical",
@@ -116,7 +87,7 @@
         "level": "High",
         "reasoning": "Thirteen independent reviewers describe the same underlying pattern -- a genuinely unsafe or uninhabitable property, followed by a refund reviewers describe as disproportionately small relative to the harm -- with specific, verifiable-sounding details (dollar amounts, AQI readings, utility outages)."
       },
-      "synthesis": "Reviewers describe serious property failures -- no water or electricity for days, sewage backup, mold, dangerous air quality from nearby wildfires -- and then a refund process that returns only a fraction of what was paid, with several describing the resolution amount as arbitrary rather than tied to a clear policy.",
+      "synthesis": "Reviewers describe serious property failures -- no water or electricity for days, sewage backing up into a kitchen sink, mold, air quality at AQI 192 from nearby wildfires -- followed by a refund returning a fraction of what was paid, with several describing the amount as arbitrary rather than tied to a stated policy. Several of these reviewers volunteer ten or more years of prior trouble-free use before this incident, which is why the sample reads as long-standing trust being spent down rather than first-time dissatisfaction.",
       "potentialImplication": "Because several of these cases involve health/safety conditions (mold, hazardous air quality, contaminated water) rather than mere inconvenience, a pattern of under-refunding could plausibly expose the platform to reputational and possibly regulatory risk beyond ordinary customer dissatisfaction -- though this sample cannot establish legal exposure, only reviewer-reported experience.",
       "recommendedNextStep": "Review the current refund-calculation policy for safety/habitability failures specifically (as distinct from ordinary cancellations), and validate whether the partial-refund amounts reviewers report are consistent with an intended policy or reflect inconsistent case-by-case judgment calls.",
       "likelyImplementationSurface": "AirCover/refund policy logic and the support-agent tooling used to calculate compensation.",
@@ -285,7 +256,7 @@
         "level": "Medium",
         "reasoning": "Five reviewers specifically cite the 15.5% figure and describe it as a recent, poorly-communicated change, which is a coherent and specific signal despite the modest count."
       },
-      "synthesis": "A specific group of hosts describe a recent change to a 15.5% service fee as both financially significant and poorly disclosed -- with one reviewer noting the change took effect immediately rather than at a clearly communicated future date.",
+      "synthesis": "A specific group of hosts describe a 15.5% service fee as both financially significant and poorly disclosed, with one reporting it took effect immediately rather than at a clearly communicated later date. The existence, size and timing of this change come from the reviewers; this analysis has not verified them against Airbnb's published terms.",
       "potentialImplication": "Host-side margin pressure could plausibly push hosts to raise listing prices or leave the platform, though this sample cannot measure actual host attrition or pricing behavior.",
       "recommendedNextStep": "Review how recent host fee changes are communicated (timing, notice period) and validate hosts' specific claim that the change applied immediately rather than at the stated future date.",
       "likelyImplementationSurface": "Host payout calculation and fee-change communication/notice systems.",
@@ -317,10 +288,11 @@
         "14350566566",
         "14297699604",
         "14314643211",
-        "14368429940"
+        "14368429940",
+        "14303181394"
       ],
-      "evidenceCount": 8,
-      "evidencePercentOfSample": 4,
+      "evidenceCount": 9,
+      "evidencePercentOfSample": 4.5,
       "affectedJourney": "Attempting to book, host, or maintain an account, and being blocked, flagged, or banned by an automated or policy-driven decision.",
       "userImpact": {
         "level": "High",
@@ -334,7 +306,7 @@
         "level": "Medium",
         "reasoning": "Eight reviewers describe related but not identical restriction types (host bans, guest account locks, automated booking-block flags), which is a coherent pattern but spans a few different specific mechanisms."
       },
-      "synthesis": "Reviewers describe being banned, blocked, or flagged -- sometimes by what they describe as an automated 'unauthorized party' system -- with little or no explanation of the specific reason and no clear path to appeal or speak with a person about it.",
+      "synthesis": "Reviewers describe being banned, blocked or flagged -- in several cases by what they describe as an automated 'unauthorized party' check, in one case by a verification failure that prevented rebooking after they left an unsafe stay. Most report no specific reason and no path to appeal; a few do know the stated grounds and dispute them instead. The common thread is the absence of a real appeal route rather than an absence of any explanation.",
       "potentialImplication": "For hosts describing this as their livelihood, an opaque, hard-to-appeal restriction could plausibly cause real financial harm beyond the immediate booking or listing affected.",
       "recommendedNextStep": "Validate whether current account-restriction notices include a specific, case-relevant reason and a documented appeal path, and whether the automated booking-flag system has a lower-friction override for false positives.",
       "likelyImplementationSurface": "Trust-and-safety enforcement rules and account-restriction notification/appeal flows.",
@@ -370,23 +342,21 @@
         "14463798583",
         "14353201769",
         "14348417348",
-        "14330518333",
         "14306059613"
       ],
-      "evidenceCount": 5
+      "evidenceCount": 4
     },
     {
       "id": "request-upfront-pricing",
-      "requestedCapability": "The full, final price -- including all mandatory fees -- shown before checkout, matching what marketing already claims is the case.",
-      "underlyingNeed": "Confidence that the price seen while browsing is the price paid, without having to discover additions at the last step or after arrival.",
+      "requestedCapability": "The full, final price -- including all mandatory fees -- shown before checkout",
+      "underlyingNeed": "Confidence that the price seen while browsing is the price paid, without discovering additions at the last step or after arrival. Several reviewers say this contradicts what Airbnb's own marketing promises; that comparison is theirs, and this analysis has not checked it against Airbnb's published claims.",
       "context": "Comparing listings or reaching the final booking/payment step.",
       "supportingReviewIds": [
         "14436391367",
         "14380199467",
-        "14342790266",
-        "14317845566"
+        "14342790266"
       ],
-      "evidenceCount": 4
+      "evidenceCount": 3
     },
     {
       "id": "request-restriction-explanation",
@@ -493,28 +463,11 @@
       "Internal engineering effort is intentionally not estimated anywhere in this report -- public reviews reveal user-facing symptoms, not Airbnb's internal architecture, policy rationale, or operational capacity.",
       "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Airbnb's actual internal team structure."
     ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
     "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence), applying the Theme Cohesion Rule and Review Relevance principle throughout -- for example, property-condition refund complaints and dispute-adjudication-fairness complaints are kept as two separate pain points because they point at two different product mechanisms (a refund-policy question vs. an evidence/process-transparency question), even though many individual reviews touch both."
   },
+  "noStrengthRationale": "The closest candidate -- reviewers describing ten or more years of trouble-free use before a bad experience -- comes entirely from one-star reviews already counted as evidence for the problems below. That is a record of goodwill being spent down, not a current strength, so it is reported inside the findings rather than presented as one.",
   "evidenceIndex": {
-    "14411620302": {
-      "rating": 1,
-      "date": "2026-08-10T11:55:59-07:00",
-      "title": "Horrible experience with Airbnb lately",
-      "body": "Have been a Airbnb user for many years, but recently had a really terrible experience with a trip we booked. We with friends and families booked a stay at a house in east Washington area. We had to cancel due to wildfires and hazardous smoke spreading in the area, there were statewide alerts and national weather service guidance for that as well. We wanted to get a refund (or partial refund) because the situation is completely out of control, however the host is greedy and doesn’t want to issue any refund even we had an agreement and the house got rebooked for some of the same days, the Airbnb support team is completely useless, couldn’t (maybe not willing to) do anything to help their customers. So disappointed!!!"
-    },
-    "14395629265": {
-      "rating": 1,
-      "date": "2026-08-06T09:37:26-07:00",
-      "title": "Unsafe situation no refund",
-      "body": "After 13 years of using Airbnb, this is the first time I’ve ever had a truly disappointing experience.\n\nI’m currently traveling in Washington State, where widespread wildfires have blanketed much of the state in smoke. Last night, the Air Quality Index (AQI) reached 192, according to sources including AirNow.gov—classified as “Very Unhealthy.” That’s approximately 22.9 times higher than the World Health Organization’s recommended PM2.5 guideline.\n\nFor the past two days, I’ve been trying to work with Airbnb to find a solution. I was surprised to learn that unless there is an active fire in the exact city where you’re staying, they won’t reimburse or assist, even when the air quality is hazardous enough that public health agencies recommend limiting outdoor exposure.\n\nThis is not just “air pollution.” Wildfire smoke contains extremely fine particles (PM2.5) and can also carry toxic substances released as homes, buildings, vehicles, and other materials burn. Depending on what is burning, the smoke may contain chemicals, heavy metals, asbestos from older structures, and other hazardous compounds. These microscopic particles can travel deep into the lungs and even enter the bloodstream.\n\nExposure can cause immediate health effects such as eye irritation, coughing, shortness of breath, and can worsen heart and lung conditions. Repeated or prolonged exposure to wildfire smoke has also been associated with an increased risk of serious long-term health problems, including cardiovascular disease and some cancers.\n\nPolicies should also take into account environmental conditions that make a destination unsafe—not just the location of the fire itself. Smoke doesn’t stop at city limits.\n\nI hope Airbnb reviews its policy for situations like this. Travelers shouldn’t have to choose between losing their money and protecting their health."
-    },
-    "14331850984": {
-      "rating": 1,
-      "date": "2026-07-21T14:16:22-07:00",
-      "title": "Enables exploitation of guests",
-      "body": "After 11 years and many stays, I’m done with using Airbnb. Here’s why, if you’re willing to read a long one.\n\nStay #1 (Akumal, Mexico): Half our party arrived to find a man asleep in the guest house. He didn’t wake up for an hour despite our attempts. Turned out to be the groundskeeper, who insisted afterward he’d just been “checking the bed.” The pool skimmer was full, the bottom and steps were covered in algae, the porch furniture was dirty, and the sheets in our room hadn’t been changed (there was a crusty substance on the fitted sheet my daughter slept on). The AC in one room wasn’t cooling properly. The beach, advertised with photos of crystal blue water, had a four-foot wall of seaweed that made the ocean inaccessible and left the whole house smelling like it.\nWe messaged the host and property management starting around 3:30 PM. Radio silence until I called the property management office directly the next morning at 8 AM. They’d found us another place, which we’d already requested the night before with no acknowledgment. Given the total unresponsiveness, we asked for a full refund to book elsewhere instead, worried that if something else went wrong, we’d again get no response.\nProperty management agreed to the refund on one condition: we couldn’t leave a bad review. I called Airbnb support and said this felt like an ethics problem, maybe even a consumer rights issue. They confirmed it’s within a host’s discretion to make a refund contingent on suppressing a review, and if I wanted the refund, I had to agree. We rebooked with a place in Cancun, and things got worse from there.\n\nStay #2 (Cancun, Mexico): One bedroom’s AC cooled inefficiently for two nights. The host was responsive here, sending a tech out twice and buying a fan, but ultimately blamed a “locked” remote, implying we’d caused it, when it was his own tech who’d adjusted those settings on the first visit.\n\nBigger issue: we lost water entirely for two nights. No showers, no flushing toilets (I carried pool water inside in a mop bucket up the stairs to flush toilets while without water). The host called it “beyond his control” and blamed it on Quintana Roo utility distortions, then claimed our six-person group had drained his 1,000-liter cistern, despite no one being able to shower when we got home in the evening and his own maintenance reporting the cistern full that same morning. When I sent him the water meter readings, he told me I was misreading them. When I broke the math down and it held up, he said it was irrelevant. He refused any refund. Airbnb ultimately required a 30% refund for those two nights, but only after I spent a chunk of my vacation arguing on the phone.\n\nNow, post-returning home, the host is denying we ever paid the $100 cash electricity deposit his own listing requires, that he messaged us about, and that his own team collected in person. Airbnb is asking me to prove we paid this, and beyond a message where the host acknowledged our electricity concerns, I don’t have a clean paper trail for a cash handoff, because the person collecting the deposit would not give us a receipt. In retrospect, we should have just refused to pay, but it’s Airbnb’s policy that if it’s listed in advance of booking, you’re supposed to pay the host’s required deposit. \n\nIndividually, any one of these might be a bad-luck booking. Together, plus watching Airbnb side with hosts even when a refund is being held hostage in exchange for silence (thus subjecting future guests to potentially similar experiences), I’m out. If you’re going to travel, I’d look at hotels or a platform that doesn’t let hosts do whatever they’d like."
-    },
     "14448580370": {
       "rating": 1,
       "date": "2026-08-19T16:00:08-07:00",
@@ -539,6 +492,18 @@
       "title": "Terrible Refund Policy",
       "body": "The AC was out for 5 days in the hot Toronto summer and I was refunded only 20% for the affected days."
     },
+    "14411620302": {
+      "rating": 1,
+      "date": "2026-08-10T11:55:59-07:00",
+      "title": "Horrible experience with Airbnb lately",
+      "body": "Have been a Airbnb user for many years, but recently had a really terrible experience with a trip we booked. We with friends and families booked a stay at a house in east Washington area. We had to cancel due to wildfires and hazardous smoke spreading in the area, there were statewide alerts and national weather service guidance for that as well. We wanted to get a refund (or partial refund) because the situation is completely out of control, however the host is greedy and doesn’t want to issue any refund even we had an agreement and the house got rebooked for some of the same days, the Airbnb support team is completely useless, couldn’t (maybe not willing to) do anything to help their customers. So disappointed!!!"
+    },
+    "14395629265": {
+      "rating": 1,
+      "date": "2026-08-06T09:37:26-07:00",
+      "title": "Unsafe situation no refund",
+      "body": "After 13 years of using Airbnb, this is the first time I’ve ever had a truly disappointing experience.\n\nI’m currently traveling in Washington State, where widespread wildfires have blanketed much of the state in smoke. Last night, the Air Quality Index (AQI) reached 192, according to sources including AirNow.gov—classified as “Very Unhealthy.” That’s approximately 22.9 times higher than the World Health Organization’s recommended PM2.5 guideline.\n\nFor the past two days, I’ve been trying to work with Airbnb to find a solution. I was surprised to learn that unless there is an active fire in the exact city where you’re staying, they won’t reimburse or assist, even when the air quality is hazardous enough that public health agencies recommend limiting outdoor exposure.\n\nThis is not just “air pollution.” Wildfire smoke contains extremely fine particles (PM2.5) and can also carry toxic substances released as homes, buildings, vehicles, and other materials burn. Depending on what is burning, the smoke may contain chemicals, heavy metals, asbestos from older structures, and other hazardous compounds. These microscopic particles can travel deep into the lungs and even enter the bloodstream.\n\nExposure can cause immediate health effects such as eye irritation, coughing, shortness of breath, and can worsen heart and lung conditions. Repeated or prolonged exposure to wildfire smoke has also been associated with an increased risk of serious long-term health problems, including cardiovascular disease and some cancers.\n\nPolicies should also take into account environmental conditions that make a destination unsafe—not just the location of the fire itself. Smoke doesn’t stop at city limits.\n\nI hope Airbnb reviews its policy for situations like this. Travelers shouldn’t have to choose between losing their money and protecting their health."
+    },
     "14382297910": {
       "rating": 1,
       "date": "2026-08-03T04:16:56-07:00",
@@ -551,17 +516,17 @@
       "title": "Nightmare",
       "body": "If I could give 0 stars, I would.\n\nThe property became completely uninhabitable after it lost both electricity and running water. No guest should ever be expected to stay in those conditions, yet there was little meaningful support when it mattered most.\n\nThe most disappointing part was Airbnb’s response. Despite paying for accommodations that could not be used, Airbnb took almost no responsibility for the situation. After countless calls, broken promises of callbacks, and hours spent trying to resolve the issue, the only goodwill gesture offered was $100, which doesn’t come close to making up for the experience.\n\nInstead of standing behind their guests when a listing is unlivable, Airbnb leaves you to fight for a fair resolution while passing the responsibility back and forth. The lack of accountability and customer support was just as frustrating as the property itself.\n\nThis experience completely changed my opinion of Airbnb. When something goes seriously wrong, don’t expect the company to stand by you."
     },
+    "14331850984": {
+      "rating": 1,
+      "date": "2026-07-21T14:16:22-07:00",
+      "title": "Enables exploitation of guests",
+      "body": "After 11 years and many stays, I’m done with using Airbnb. Here’s why, if you’re willing to read a long one.\n\nStay #1 (Akumal, Mexico): Half our party arrived to find a man asleep in the guest house. He didn’t wake up for an hour despite our attempts. Turned out to be the groundskeeper, who insisted afterward he’d just been “checking the bed.” The pool skimmer was full, the bottom and steps were covered in algae, the porch furniture was dirty, and the sheets in our room hadn’t been changed (there was a crusty substance on the fitted sheet my daughter slept on). The AC in one room wasn’t cooling properly. The beach, advertised with photos of crystal blue water, had a four-foot wall of seaweed that made the ocean inaccessible and left the whole house smelling like it.\nWe messaged the host and property management starting around 3:30 PM. Radio silence until I called the property management office directly the next morning at 8 AM. They’d found us another place, which we’d already requested the night before with no acknowledgment. Given the total unresponsiveness, we asked for a full refund to book elsewhere instead, worried that if something else went wrong, we’d again get no response.\nProperty management agreed to the refund on one condition: we couldn’t leave a bad review. I called Airbnb support and said this felt like an ethics problem, maybe even a consumer rights issue. They confirmed it’s within a host’s discretion to make a refund contingent on suppressing a review, and if I wanted the refund, I had to agree. We rebooked with a place in Cancun, and things got worse from there.\n\nStay #2 (Cancun, Mexico): One bedroom’s AC cooled inefficiently for two nights. The host was responsive here, sending a tech out twice and buying a fan, but ultimately blamed a “locked” remote, implying we’d caused it, when it was his own tech who’d adjusted those settings on the first visit.\n\nBigger issue: we lost water entirely for two nights. No showers, no flushing toilets (I carried pool water inside in a mop bucket up the stairs to flush toilets while without water). The host called it “beyond his control” and blamed it on Quintana Roo utility distortions, then claimed our six-person group had drained his 1,000-liter cistern, despite no one being able to shower when we got home in the evening and his own maintenance reporting the cistern full that same morning. When I sent him the water meter readings, he told me I was misreading them. When I broke the math down and it held up, he said it was irrelevant. He refused any refund. Airbnb ultimately required a 30% refund for those two nights, but only after I spent a chunk of my vacation arguing on the phone.\n\nNow, post-returning home, the host is denying we ever paid the $100 cash electricity deposit his own listing requires, that he messaged us about, and that his own team collected in person. Airbnb is asking me to prove we paid this, and beyond a message where the host acknowledged our electricity concerns, I don’t have a clean paper trail for a cash handoff, because the person collecting the deposit would not give us a receipt. In retrospect, we should have just refused to pay, but it’s Airbnb’s policy that if it’s listed in advance of booking, you’re supposed to pay the host’s required deposit. \n\nIndividually, any one of these might be a bad-luck booking. Together, plus watching Airbnb side with hosts even when a refund is being held hostage in exchange for silence (thus subjecting future guests to potentially similar experiences), I’m out. If you’re going to travel, I’d look at hotels or a platform that doesn’t let hosts do whatever they’d like."
+    },
     "14330518333": {
       "rating": 1,
       "date": "2026-07-21T07:17:51-07:00",
       "title": "Very difficult to communicate with customer service",
       "body": "We had a terrible experience with our listing and the air bnb customer service. The issue with the listing was an unfortunate mishap where the air conditioner broke during our stay. \n\nWhen we reported he response was extremely disappointing. Airbnb support offered a fraction of a refund that in no way compensated for the unlivable conditions we stayed in. Trying to get a clear answer from customer service was almost impossible.  At this rate, I have talked to five different people and they keep telling me the one person who is trying to resolve this issue. Will give me a call and still has not. \n\nI will never book with Airbnb again because of this process.  I expected them to protect our rights in issues like this. Especially when we were told to keep the windows open during an air quality crisis mandated by the state."
-    },
-    "14303181394": {
-      "rating": 1,
-      "date": "2026-07-14T11:43:54-07:00",
-      "title": "Illusion of convenience",
-      "body": "The app is an illusion of convenience. The moment something goes wrong, you're back in the '90s dealing with call centers. I left a stay because of documented safety and sanitation issues. Airbnb's own verification system then prevented me from booking another Airbnb, leaving me homeless in a foreign country while I was bounced between agents, given contradictory solutions, and told it was my bank's fault when it wasn't. The support staff are trained to be polite. They are not empowered to solve problems. Despite the verification failure being entirely on Airbnb's side, no one could provide or explain a manual workaround—such as arranging the booking while the verification issue was being resolved and settling payment afterward. Instead, I was repeatedly offered solutions that depended on the very system that had already failed."
     },
     "14302899602": {
       "rating": 1,
@@ -778,6 +743,12 @@
       "date": "2026-07-30T16:54:58-07:00",
       "title": "Just not right",
       "body": "I was trying to book an Airbnb for a weekend to visit my hometown and they said i could not book due to the fact their AI system thinks that I’m trying to have an unauthorized party. I had the option to submit an appeal and wait a couple of hours for them to take notice. After the appeal was approved I tried to book again but this time the screen says system error contact support. Contacted support and they said that I now have to wait another 24 hours to book it again. I now pull up the same Airbnb again and now it’s booked and I have to look for something else for me and my people. Does not make sense at all."
+    },
+    "14303181394": {
+      "rating": 1,
+      "date": "2026-07-14T11:43:54-07:00",
+      "title": "Illusion of convenience",
+      "body": "The app is an illusion of convenience. The moment something goes wrong, you're back in the '90s dealing with call centers. I left a stay because of documented safety and sanitation issues. Airbnb's own verification system then prevented me from booking another Airbnb, leaving me homeless in a foreign country while I was bounced between agents, given contradictory solutions, and told it was my bank's fault when it wasn't. The support staff are trained to be polite. They are not empowered to solve problems. Despite the verification failure being entirely on Airbnb's side, no one could provide or explain a manual workaround—such as arranging the booking while the verification issue was being resolved and settling payment afterward. Instead, I was repeatedly offered solutions that depended on the very system that had already failed."
     }
   }
 }

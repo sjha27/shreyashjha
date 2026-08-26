@@ -39,7 +39,7 @@
       "count": 2148266
     }
   },
-  "productBrief": "This is the most positive sample in the entire ten-app demo set (88.5% five-star), with reviewers consistently crediting Gemini with accuracy and usefulness across daily research, decisions, and professional tasks -- specific praise, not just enthusiasm. A recurring group explicitly prefers it over competing AI assistants, particularly ChatGPT, citing account stability and factual reliability. Genuine friction in this sample is comparatively rare and lower-severity than in any other app analyzed: a small cluster describes accuracy and instruction-following breaking down specifically on complex, multi-step requests (in contrast to strong performance on simple questions), and a thinner signal describes a promised free-trial offer for video generation not working as advertised. Neither issue approaches the severity of pain points found elsewhere in this project.",
+  "productBrief": "This is a strongly positive sample -- 88.5% five-star -- with reviewers crediting Gemini for accuracy and usefulness across daily research and professional work, and a recurring group preferring it to competing assistants. The friction is narrow and comparatively mild: a small number describe Gemini ignoring explicit instructions, including direct negative ones, or answering with unsolicited tangents. Nothing in this sample rises to a P0-level problem, which is itself the finding.",
   "transformationSummary": {
     "reviewsAnalyzed": 200,
     "recurringSignalCount": 8,
@@ -62,8 +62,8 @@
         "14466514440"
       ],
       "evidenceCount": 4,
-      "whatUsersValue": "Reviewers describe using Gemini multiple times a day across a wide range of practical tasks -- research, decisions, professional and personal chores -- and specifically credit it with accuracy and detail rather than generic praise.",
-      "whyThisMatters": "This sample is the most positive of any app in this demo set (88.5% five-star), and the praise is consistently specific about accuracy and usefulness rather than vague enthusiasm, suggesting the core assistant value proposition is landing very strongly.",
+      "whatUsersValue": "Reviewers describe using Gemini multiple times a day across a wide range of practical tasks -- research, decisions, professional and personal chores -- with several specifically crediting it with accuracy and detail rather than generic praise.",
+      "whyThisMatters": "This sample is strongly positive -- 88.5% five-star -- and the praise is consistently specific about accuracy and usefulness rather than vague enthusiasm, which suggests the core assistant value proposition is landing rather than merely being tolerated.",
       "protectThis": "Response accuracy and detail is specifically what this large group credits -- protecting that as usage scales, and as the accuracy pain point below is addressed, is directly connected to this strength.",
       "voiceOfCustomer": [
         {
@@ -90,7 +90,7 @@
         "14466295755"
       ],
       "evidenceCount": 4,
-      "whatUsersValue": "A recurring group of reviewers explicitly compare Gemini favorably against ChatGPT and other AI assistants -- citing account stability, factual reliability, and overall quality -- rather than describing Gemini in isolation.",
+      "whatUsersValue": "A recurring group of reviewers explicitly compare Gemini favourably against ChatGPT and other AI assistants, citing factual reliability and overall quality. One reviewer additionally contrasts it with being banned by a competitor -- their own account of events, not a verified platform difference.",
       "whyThisMatters": "In a competitive AI-assistant market with low switching costs, being the reviewer's stated preference over well-known alternatives is a meaningful competitive signal.",
       "protectThis": "The specific comparison points reviewers raise (not banning accounts without warning, fewer hallucinations) should be understood as competitive differentiators worth protecting deliberately, not just incidental positives.",
       "voiceOfCustomer": [
@@ -132,18 +132,16 @@
   "painPoints": [
     {
       "id": "pain-accuracy-instruction-following",
-      "theme": "Accuracy & Instruction-Following Failures on Complex Tasks",
+      "theme": "Accuracy & Instruction-Following Failures",
       "issueType": "Core Functionality Quality",
       "productSurface": "Response Accuracy & Prompt Adherence",
       "supportingReviewIds": [
         "14468622548",
         "14468003505",
-        "14467729053",
-        "14466478766",
         "14465193184"
       ],
-      "evidenceCount": 5,
-      "evidencePercentOfSample": 2.5,
+      "evidenceCount": 3,
+      "evidencePercentOfSample": 1.5,
       "affectedJourney": "Giving Gemini a complex, multi-step, or precise instruction and expecting it to be followed accurately.",
       "userImpact": {
         "level": "Moderate",
@@ -157,7 +155,7 @@
         "level": "Medium",
         "reasoning": "Five reviewers describe related but distinct symptoms (ignoring explicit instructions, hallucinating details, unsolicited tangential advice, inconsistent quality), a real pattern though a modest volume in an otherwise overwhelmingly positive sample."
       },
-      "synthesis": "A small group of reviewers describe Gemini struggling specifically with complex, multi-step, or precisely-specified requests -- ignoring explicit negative instructions, hallucinating details, or responding with unsolicited tangential content instead of directly answering what was asked.",
+      "synthesis": "A small group of reviewers describe Gemini ignoring explicit instructions -- including direct negative instructions such as not generating an image -- hallucinating details, or answering with unsolicited tangential content instead of the question asked. One reviewer describes this specifically on multi-step prompts and continuity checks; the others describe it on ordinary requests, so this is reported as general instruction-adherence rather than a complexity threshold. A separate reviewer in this same sample praises Gemini's factual accuracy relative to a competitor, which is shown as counterevidence.",
       "potentialImplication": "Because this sample's dominant strength is trust in accuracy for everyday research and decisions, unresolved failures specifically on complex tasks could plausibly limit adoption for more advanced or professional use cases even as basic-use satisfaction remains high.",
       "recommendedNextStep": "Validate reported instruction-following failures against specific complex-task categories (multi-step prompts, negative/exclusionary instructions) to determine whether this concentrates in particular task types.",
       "likelyImplementationSurface": "Prompt adherence and multi-step reasoning/instruction-following logic.",
@@ -180,19 +178,21 @@
           "rating": 1,
           "date": "2026-08-24"
         }
+      ],
+      "counterEvidenceReviewIds": [
+        "14466295755"
       ]
     },
     {
       "id": "pain-generation-paywall",
-      "theme": "Unclear Paywall Boundaries for Generation Features",
+      "theme": "Promotional Free-Trial Offer Not Honored",
       "issueType": "Policy / Monetization Pushback",
       "productSurface": "Video & Image Generation Access",
       "supportingReviewIds": [
-        "14468351722",
-        "14468190114"
+        "14468351722"
       ],
-      "evidenceCount": 2,
-      "evidencePercentOfSample": 1,
+      "evidenceCount": 1,
+      "evidencePercentOfSample": 0.5,
       "affectedJourney": "Attempting to use a promised free trial of video generation, or editing a generated image.",
       "userImpact": {
         "level": "Moderate",
@@ -206,11 +206,11 @@
         "level": "Low",
         "reasoning": "Only two reviewers raise this specific concern -- real and specific, but too sparse to treat as more than a signal worth watching."
       },
-      "synthesis": "A small number of reviewers describe a promised free trial of video generation not actually being honored, and a persistent image-editing problem the reviewer states is not resolved by rewording the prompt.",
+      "synthesis": "A reviewer reports being told they had a week of free video generation, then being asked to upgrade on every attempt. A single account, but a specific and checkable one: promotional messaging that does not match entitlement behaviour.",
       "potentialImplication": "If a promotional offer is genuinely not being honored as advertised, this could plausibly be a straightforward fixable trust issue rather than a product-design tradeoff.",
       "recommendedNextStep": "Given the low volume, validate this as a support/QA ticket in the first instance (confirm whether the free-trial offer is being correctly applied) rather than a broader product investigation.",
-      "likelyImplementationSurface": "Free-trial offer application logic and image-editing pipeline.",
-      "implementationConsiderations": "Given the low evidence volume, this is better scoped as a specific bug check than a priority investigation.",
+      "likelyImplementationSurface": "Promotional entitlement/trial-activation logic for generation features.",
+      "implementationConsiderations": "Rests on one reviewer's account; whether the offer was mis-delivered, mis-targeted or mis-worded cannot be determined from the review alone.",
       "likelyCrossFunctionalPartners": [
         "Product",
         "Growth / Monetization",
@@ -266,7 +266,7 @@
       "priorityLabel": "P1",
       "title": "Prioritize Complex-Task Accuracy & Instruction Adherence",
       "linkedItemId": "pain-accuracy-instruction-following",
-      "whyNow": "The only pain point in this sample with Core strategic relevance and Medium-High confidence -- touches the core value proposition (accuracy) specifically where it currently seems weakest (complex, multi-step tasks).",
+      "whyNow": "The only pain point in this sample with Core strategic relevance and Medium confidence -- touches the core value proposition (accuracy) specifically where it currently seems weakest (complex, multi-step tasks).",
       "recommendedNextStep": "Validate reported instruction-following failures against specific complex-task categories to determine whether this concentrates in particular task types.",
       "likelyImplementationSurface": "Prompt adherence and multi-step reasoning/instruction-following logic.",
       "implementationConsiderations": "Distinguishing a model limitation from prompting technique isn't fully resolvable from review text alone.",
@@ -304,7 +304,7 @@
       "Internal engineering effort is intentionally not estimated anywhere in this report.",
       "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Google's actual internal team structure."
     ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
     "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Only two priorities are reported, both P1 and P2 -- reflecting genuinely low severity in this sample rather than an artificially padded list."
   },
   "evidenceIndex": {
@@ -380,18 +380,6 @@
       "title": "Problems never stop",
       "body": "Gives extra unwanted and unsolicited advice any time i ask a question. Never answers or gets to the point of what i asked in the first place."
     },
-    "14467729053": {
-      "rating": 4,
-      "date": "2026-08-24T13:18:26-07:00",
-      "title": "Es bastante bueno",
-      "body": "Pero todavía tiene muchos fachos"
-    },
-    "14466478766": {
-      "rating": 3,
-      "date": "2026-08-24T06:39:13-07:00",
-      "title": "Sometimes good sometimes not so good",
-      "body": "Doesn’t always work"
-    },
     "14465193184": {
       "rating": 1,
       "date": "2026-08-23T22:18:17-07:00",
@@ -403,12 +391,6 @@
       "date": "2026-08-24T17:21:34-07:00",
       "title": "No free video",
       "body": "Got a message saying that I would have a week of free videos, but I didn’t get a single free video at all every time I try to make one it says I have to upgrade."
-    },
-    "14468190114": {
-      "rating": 1,
-      "date": "2026-08-24T16:16:38-07:00",
-      "title": "Editing Image problem",
-      "body": "Fix the image editing problem already! It’s not the wording we use that’s causing the problem! It’s the stinkin’ app that’s having a problem! If you reply back saying that it is the wording and the prompt we use, then that proves that you’re using AI to respond to most of our complaints that you’re not fixing the problems! Just do your job and freakin’ fix it already!"
     },
     "14465244032": {
       "rating": 5,

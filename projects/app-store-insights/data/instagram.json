@@ -39,7 +39,7 @@
       "count": 29403386
     }
   },
-  "productBrief": "The single largest and most severe pattern in this sample is accounts -- some held for a decade or more -- being suspended or permanently banned with no stated reason and no reachable human reviewer, which several reviewers attribute to increased automated moderation. A related but mechanically distinct issue affects legitimate account owners who are not accused of any violation: a recovery/login flow that traps them out when they've lost an old device or phone number, with no fallback path. Separately, a frequent complaint describes the feed -- including the 'Following' filter meant to show only followed accounts -- increasingly dominated by ads and suggested content. Where users do praise the app, it's mostly simple, specific relational value: staying connected to friends and family, and a smaller group crediting the platform with helping grow a creative or business audience.",
+  "productBrief": "Reviewers value Instagram for staying in touch with friends and family, and that is the clearest positive signal here. The largest problem by volume is accounts -- some held for over a decade -- suspended with no specific reason and no reachable human to appeal to, with a related group locked out by recovery flows that assume a device or number they no longer have. A third group describes the feed, including the 'Following' filter, crowded out by ads and suggested posts.",
   "transformationSummary": {
     "reviewsAnalyzed": 200,
     "recurringSignalCount": 9,
@@ -57,22 +57,14 @@
       "theme": "Staying Connected With Friends & Family",
       "supportingReviewIds": [
         "14468831356",
-        "14468603099",
-        "14464869868",
         "14462969170",
         "14460920449"
       ],
-      "evidenceCount": 5,
+      "evidenceCount": 3,
       "whatUsersValue": "A recurring group of reviewers describe Instagram in simple relational terms -- a way to stay in touch with friends and family and feel connected -- rather than describing any single feature.",
       "whyThisMatters": "This is the app's most basic value proposition and, in a sample otherwise dominated by account-access and moderation complaints, it's notable that the core social function itself is still what satisfied reviewers point to.",
       "protectThis": "Whatever currently makes the app feel personally connective (seeing friends' posts, messaging) should be protected as feed-algorithm and moderation changes are made in response to the pain points below -- several pain points below directly describe this connective experience being crowded out by ads and suggested content.",
       "voiceOfCustomer": [
-        {
-          "reviewId": "14468603099",
-          "quote": "Came here after leaving facebook. This is a much better place. Good job. Instagram.",
-          "rating": 5,
-          "date": "2026-08-24"
-        },
         {
           "reviewId": "14462969170",
           "quote": "I love Instagram",
@@ -86,12 +78,11 @@
       "theme": "Platform for Creative & Business Growth",
       "supportingReviewIds": [
         "14468039580",
-        "14467938832",
-        "14467903472"
+        "14467938832"
       ],
-      "evidenceCount": 3,
+      "evidenceCount": 2,
       "whatUsersValue": "A smaller group of reviewers specifically credit Instagram with helping them grow a personal brand, creative practice, or small business, distinct from the general social-connection praise above.",
-      "whyThisMatters": "This points at a second, distinct value driver (creator/business tooling) alongside personal social use -- worth tracking separately since the two audiences may care about different things.",
+      "whyThisMatters": "Two reviewers credit Instagram with helping them build a business or brand. Two others in the same sample say the opposite -- that their reach is suppressed unless they pay. Both are shown, because a growth claim resting on two positive accounts should be read next to the reviewers reporting the reverse.",
       "protectThis": "Discoverability and reach for creators/businesses is what this group values; the feed-algorithm complaints elsewhere in this sample (accounts not reaching people who already follow them) are a direct risk to this specific value driver.",
       "voiceOfCustomer": [
         {
@@ -100,6 +91,10 @@
           "rating": 5,
           "date": "2026-08-24"
         }
+      ],
+      "counterEvidenceReviewIds": [
+        "14467903472",
+        "14467531491"
       ]
     }
   ],
@@ -111,7 +106,6 @@
       "productSurface": "Account Moderation & Enforcement",
       "supportingReviewIds": [
         "14468901085",
-        "14468803536",
         "14468771497",
         "14468711149",
         "14467882061",
@@ -124,8 +118,8 @@
         "14461655987",
         "14461038057"
       ],
-      "evidenceCount": 13,
-      "evidencePercentOfSample": 6.5,
+      "evidenceCount": 12,
+      "evidencePercentOfSample": 6,
       "affectedJourney": "Using an existing account, or creating a new one, without triggering an automated suspension or permanent ban.",
       "userImpact": {
         "level": "Critical",
@@ -175,10 +169,11 @@
         "14463202938",
         "14463072280",
         "14463065474",
-        "14460172090"
+        "14460172090",
+        "14468803536"
       ],
-      "evidenceCount": 6,
-      "evidencePercentOfSample": 3,
+      "evidenceCount": 7,
+      "evidencePercentOfSample": 3.5,
       "affectedJourney": "Recovering access to an existing, non-banned account after a lost device, forgotten password, or routine security prompt.",
       "userImpact": {
         "level": "Critical",
@@ -226,12 +221,11 @@
         "14468777363",
         "14468739669",
         "14467887920",
-        "14467531491",
         "14460843496",
         "14460343144"
       ],
-      "evidenceCount": 6,
-      "evidencePercentOfSample": 3,
+      "evidenceCount": 5,
+      "evidencePercentOfSample": 2.5,
       "affectedJourney": "Opening the app to see updates from accounts the user actually follows.",
       "userImpact": {
         "level": "Moderate",
@@ -245,7 +239,7 @@
         "level": "High",
         "reasoning": "Six reviewers independently describe the same specific pattern -- ads and suggested/unfollowed content interleaved with or replacing followed-account posts, including in the supposedly-filtered 'Following' view -- with concrete before/after comparisons."
       },
-      "synthesis": "Reviewers describe the feed -- including the 'Following' filter specifically meant to show only followed accounts -- increasingly interleaved with ads and algorithmically suggested content, to the point that posts from people they actually follow become hard to find.",
+      "synthesis": "Reviewers describe the feed -- including the 'Following' filter specifically meant to show only followed accounts -- interleaved with ads and algorithmically suggested posts to the point that people they actually follow become hard to find. Several describe this as a change from how the feed used to behave; that comparison is their recollection, not a measured shift.",
       "potentialImplication": "Because several reviewers frame this as the reason they're reducing use or considering leaving, sustained ad/suggestion density could plausibly suppress time spent with the app's core social-connection value, though this sample can't measure actual usage change.",
       "recommendedNextStep": "Validate the actual ad/suggested-content ratio currently shown in the 'Following' feed view specifically against its intended design, since reviewers report ads appearing there despite the filter's purpose.",
       "likelyImplementationSurface": "Feed ranking algorithm and the 'Following'-filtered feed view specifically.",
@@ -272,7 +266,7 @@
     },
     {
       "id": "pain-general-bugs",
-      "theme": "App Bugs & Feature Regressions",
+      "theme": "Scattered App Bugs & Broken Controls",
       "issueType": "Bug / Stability",
       "productSurface": "App Performance (general)",
       "supportingReviewIds": [
@@ -299,7 +293,7 @@
         "level": "Medium",
         "reasoning": "Seven reviewers describe genuinely different bugs (translation stuck on one language, missing story highlights, freezing, notifications not firing), which is real but heterogeneous -- likely several small independent defects rather than one root cause."
       },
-      "synthesis": "A scattered set of specific bugs recur: the app freezing shortly after opening, notifications silently not firing despite correct settings, translation locked to one language, and story highlights missing on mobile but present on web.",
+      "synthesis": "A scattered set of specific defects recur with no common cause: a 'cancel upload' button that does nothing, a bio character limit rejecting input below its stated maximum, the app freezing shortly after opening, translation locked to one language, story highlights missing on mobile but present on web, a repost function never arriving, and notifications silently not firing despite correct settings. Grouped as a monitoring signal, not one defect.",
       "potentialImplication": "Accumulated small defects across secondary features could plausibly erode confidence in overall app quality even without one severe failure.",
       "recommendedNextStep": "Log and cluster these by app version and platform (iOS-specific effects are mentioned in some reports) to determine which are still live versus already fixed in a more recent release.",
       "likelyImplementationSurface": "Several independent client-side features (notifications, localization, story highlights, media caching).",
@@ -328,7 +322,7 @@
   "requests": [
     {
       "id": "request-feed-control",
-      "requestedCapability": "A genuinely followed-only feed option (including in 'Following' view) and a way to turn off forced autoplay/suggested content.",
+      "requestedCapability": "Control and predictability over feed composition",
       "underlyingNeed": "Control over what appears in the primary browsing surface, and confidence that a filter meant to show only followed accounts actually does.",
       "context": "Opening the app to check on friends/accounts the user follows, including when using the 'Following' filter specifically.",
       "supportingReviewIds": [
@@ -341,7 +335,7 @@
     },
     {
       "id": "request-human-appeal",
-      "requestedCapability": "A reachable human reviewer for account suspensions and bans, with a specific stated reason, before or instead of automated permanent enforcement.",
+      "requestedCapability": "A reachable human reviewer for account suspensions and bans, with a specific stated reason",
       "underlyingNeed": "Users don't necessarily dispute that enforcement should exist -- they want to know specifically why, and to have a real path to contest a mistake, especially for long-held accounts.",
       "context": "Immediately after an account suspension or ban notice.",
       "supportingReviewIds": [
@@ -413,7 +407,7 @@
     {
       "id": "priority-general-bugs",
       "priorityLabel": "P2",
-      "title": "Monitor App Bugs & Feature Regressions",
+      "title": "Monitor Scattered App Bugs & Broken Controls",
       "linkedItemId": "pain-general-bugs",
       "whyNow": "Real but heterogeneous and narrower in scope than the top three issues -- better suited to monitoring and triage than immediate deep investigation.",
       "recommendedNextStep": "Cluster reports by app version and platform to determine which are still live.",
@@ -439,7 +433,7 @@
       "Internal engineering effort is intentionally not estimated anywhere in this report.",
       "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Meta's actual internal team structure."
     ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
     "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence), applying the Theme Cohesion Rule throughout -- account bans/suspensions (a moderation-policy question) and account-recovery lockouts (an authentication-flow question) are kept as two separate pain points despite both resulting in lost account access, because they point at different product mechanisms with different owners and fixes."
   },
   "evidenceIndex": {
@@ -448,18 +442,6 @@
       "date": "2026-08-24T20:30:15-07:00",
       "title": ".",
       "body": "Me encanta Puedo platicar con mis amigos y familiares 💗"
-    },
-    "14468603099": {
-      "rating": 5,
-      "date": "2026-08-24T18:58:20-07:00",
-      "title": "Good job!",
-      "body": "Came here after leaving facebook. This is a much better place. Good job. Instagram."
-    },
-    "14464869868": {
-      "rating": 5,
-      "date": "2026-08-23T19:54:54-07:00",
-      "title": "IG",
-      "body": "Is one of the best platform"
     },
     "14462969170": {
       "rating": 5,
@@ -491,17 +473,17 @@
       "title": "Unable to grow",
       "body": "My content is being stifled, hashtags never worked"
     },
+    "14467531491": {
+      "rating": 1,
+      "date": "2026-08-24T12:08:02-07:00",
+      "title": "Algorithm",
+      "body": "My explore page has nothing related to my content or what I’m interested in despite liking and pressing suggest more like this buttons for months. My content has nothing related reach unless I pay. Trash every since Facebook/Meta took over"
+    },
     "14468901085": {
       "rating": 1,
       "date": "2026-08-24T21:00:15-07:00",
       "title": "Fix this please",
       "body": "Meta AI Ban 3 accounts & my Facebook for no reason and accused me with false accusations I never committed, lost my account that I been having over 14+ yrs. I can’t make another because I’m IP banned which is ridiculous. Fix this bug very soon if it is a bug and return my accounts back and billions of ppl that are getting affected by this. No support to reach out from real people working for meta/Instagram & Facebook. Definitely going to file a lawsuit for this."
-    },
-    "14468803536": {
-      "rating": 1,
-      "date": "2026-08-24T20:18:29-07:00",
-      "title": "Doesn’t care about its users.",
-      "body": "I’ve been trying to contact support for about 7 months now. Their forum that comes up with you ask their ai for help just comes up with.a page not found error, I no longer have access to an account I had since I was a kid over being hacked. The email and phone number on the account isn’t mine anymore so I can’t recover it. Support does nothing. I feel like I’ve lost an entire part of my life, friends I can no longer contact, photos I’ll never see again. Instagram simply just doesn’t care about their users and how difficult it is just to find someone to fix anything speaks volumes about how much they really do care."
     },
     "14468771497": {
       "rating": 1,
@@ -605,6 +587,12 @@
       "title": "No customer service with a bug on iOS.",
       "body": "I’ve had Instagram for about 8 years. In the past 3 years, I have been physically unable to access my account on any Apple device. It gives me error codes and tells me my password is wrong or sends me an email code to type in where I get blank error codes.\n\nHowever I’m perfectly able to sign into any Android or on the website.\n\nThere is no customer service. You cannot get help. It’s been years."
     },
+    "14468803536": {
+      "rating": 1,
+      "date": "2026-08-24T20:18:29-07:00",
+      "title": "Doesn’t care about its users.",
+      "body": "I’ve been trying to contact support for about 7 months now. Their forum that comes up with you ask their ai for help just comes up with.a page not found error, I no longer have access to an account I had since I was a kid over being hacked. The email and phone number on the account isn’t mine anymore so I can’t recover it. Support does nothing. I feel like I’ve lost an entire part of my life, friends I can no longer contact, photos I’ll never see again. Instagram simply just doesn’t care about their users and how difficult it is just to find someone to fix anything speaks volumes about how much they really do care."
+    },
     "14468777363": {
       "rating": 2,
       "date": "2026-08-24T20:07:38-07:00",
@@ -622,12 +610,6 @@
       "date": "2026-08-24T14:17:05-07:00",
       "title": "You Can Feel Yourself Rotting",
       "body": "It’s hard to imagine the Instagram of 10+ years ago compared to the Instagram of today. \n\n10 years ago you could scroll through your feed and see posts from your friends only, in chronological order, and once you were caught up there was no more feed. No endless scroll to suck you in and consume your thoughts and precious time. \n\nToday, Instagram has become an all seeing all consuming entity, determined to harvest your data and your energy at every possibly opportunity. \n\nOpen your feed. First post from a friend. Next post is an ad. Next post is an ad. Next post is someone you don’t know, but it’s recommended for you. Next post is an ad. Next post if your friend, sharing a video from a few days ago. You click the video to make it full screen. You finish the video and give it a like, then mindlessly scroll down. Now it’s an hour later, you find yourself scrolling through reels endlessly. You aren’t even sure why you ended up in reels in the first place, or why you’ve wasted such time scrolling and scrolling. All the while you are being advertised to. Aggressively. Somehow Instagram knows that you did a google search for hair growth tips yesterday, now you’re seeing ads for hair transplants, hair growth medicines. \n\nThere is almost a hypnotic effect at play here. Many times I have *snapped* out of the endless scroll and thought to myself “what am I doing? why am I doing this?”. It feels very gross. It has been designed to consume you while you consume it.  \n\nWhat inspired me to leave this review was the ads. Over the last few days my ads have suddenly shifted. I have been BOMBARDED with military propaganda. Every single ad has been for either a branch of the military, or an org supporting the military, or a local credit union for the military, or it’s a wife showing you how great it is to be a military spouse. It’s all so sick, especially for someone with ANY awareness of what is going on in this country and in the world right now. \n\nI’m so sick of it all. This is a sick app, designed by sick people. It is meant to harvest every detail about your life while simultaneously enslaving you to…. anything. To scrolling. To envy. To propaganda."
-    },
-    "14467531491": {
-      "rating": 1,
-      "date": "2026-08-24T12:08:02-07:00",
-      "title": "Algorithm",
-      "body": "My explore page has nothing related to my content or what I’m interested in despite liking and pressing suggest more like this buttons for months. My content has nothing related reach unless I pay. Trash every since Facebook/Meta took over"
     },
     "14460843496": {
       "rating": 1,

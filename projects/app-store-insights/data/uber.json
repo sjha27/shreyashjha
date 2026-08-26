@@ -39,11 +39,11 @@
       "count": 16688471
     }
   },
-  "productBrief": "This sample's positive reviews are dominated by specific, named praise for individual drivers -- punctuality, cleanliness, safety, and accessibility support -- suggesting driver quality is a genuine operational strength rather than generic satisfaction. The most frequent complaint is that the pickup-time estimate shown before booking is unreliable, sometimes expanding from '5 minutes' to 20-45 minutes after the ride is requested, including for advance-scheduled rides, with real consequences like missed flights. A closely related volume of reviews describe unexpected or disputed charges -- surge-price jumps, cancellation fees applied despite documented delays, double charges, and undisclosed international fees -- compounded by a smaller but consistent pattern of support being effectively unreachable when an automated flow doesn't resolve the issue. Together, these suggest the core ride experience (via drivers) remains strong, while trust in the platform's own estimates, billing, and support is the more pressing set of questions in this sample.",
+  "productBrief": "Where this sample is positive it is almost entirely about drivers, praised by name for professionalism and going out of their way. The app-side experience draws the complaints. The largest is pickup estimates that change once a ride is booked -- 'five minutes' becoming fifteen to forty-five. Two separate billing questions follow: surge pricing reviewers consider disproportionate, and specific charges they believe are simply wrong with no visible way to contest them.",
   "transformationSummary": {
     "reviewsAnalyzed": 200,
-    "recurringSignalCount": 8,
-    "priorityCount": 3
+    "recurringSignalCount": 9,
+    "priorityCount": 4
   },
   "headlineSignals": {
     "topStrengthId": "strength-driver-quality",
@@ -63,8 +63,8 @@
         "14465272807"
       ],
       "evidenceCount": 5,
-      "whatUsersValue": "By far the largest volume of positive reviews in this sample praise a specific driver by name -- for punctuality, cleanliness, safe driving, and going out of their way to help (e.g. with luggage or a difficult pickup location).",
-      "whyThisMatters": "Driver quality is the direct point of contact for the entire service, and the sheer volume and specificity of this praise (real names, specific helpful actions) suggests it's a genuine, consistent operational strength rather than generic satisfaction.",
+      "whatUsersValue": "The positive reviews in this sample overwhelmingly praise a specific driver by name -- for punctuality, cleanliness, safe driving, and going out of their way with luggage or a difficult pickup. Five are cited here as the clearest examples.",
+      "whyThisMatters": "Where this sample is positive, it is almost always about a driver rather than the app. That is worth noting because the product surfaces reviewers complain about -- estimates, billing, support -- are the ones Uber controls directly, while the experience they praise is delivered by drivers. Whether driver quality is what retains these riders is a reasonable hypothesis from this pattern, not something these reviews establish.",
       "protectThis": "Whatever currently drives consistent driver quality (vetting, incentives, ratings) should be protected, especially as pricing and support issues elsewhere in this sample are addressed -- driver quality appears to be the main thing currently keeping riders loyal despite those issues.",
       "voiceOfCustomer": [
         {
@@ -90,7 +90,7 @@
         "14463645925"
       ],
       "evidenceCount": 3,
-      "whatUsersValue": "A smaller but distinct group of reviewers describe Uber as a trusted transportation option specifically because of accessibility support (wheelchair assistance, a requested woman driver for a teenager, being a primary mode of transport for a rider with a disability).",
+      "whatUsersValue": "A smaller but distinct group describe Uber as a trusted option for accessibility reasons: an Uber Assist driver trained in wheelchair support, a parent who says they requested a woman driver for a teenager's first ride, and a rider with cerebral palsy for whom Uber is the primary mode of transport. Whether a verified driver-gender preference is an actual product feature is not something these reviews establish.",
       "whyThisMatters": "This points at a specific, differentiated trust dimension beyond general ride quality -- riders with particular safety or accessibility needs describing the service as reliably meeting them.",
       "protectThis": "Accessibility-aware driver training and features (like requesting a driver of a specific gender) should be protected as a specific trust dimension, separate from general ride quality.",
       "voiceOfCustomer": [
@@ -125,11 +125,10 @@
         "14465951096",
         "14465638954",
         "14465223237",
-        "14463322223",
-        "14466173011"
+        "14463322223"
       ],
-      "evidenceCount": 11,
-      "evidencePercentOfSample": 5.5,
+      "evidenceCount": 10,
+      "evidencePercentOfSample": 5,
       "affectedJourney": "Requesting a ride and trusting the displayed pickup-time estimate, including advance-scheduled rides.",
       "userImpact": {
         "level": "High",
@@ -169,25 +168,19 @@
       ]
     },
     {
-      "id": "pain-billing-charges",
-      "theme": "Unexpected Charges & Fee Disputes",
+      "id": "pain-price-surge",
+      "theme": "Surge Pricing & Price Level",
       "issueType": "Policy / Monetization Pushback",
-      "productSurface": "Pricing & Billing",
+      "productSurface": "Pricing & Surge",
       "supportingReviewIds": [
         "14468530442",
         "14467410796",
-        "14466843197",
-        "14466815065",
-        "14464447957",
         "14463522587",
-        "14462474868",
-        "14462251352",
-        "14462134139",
         "14464226498"
       ],
-      "evidenceCount": 10,
-      "evidencePercentOfSample": 5,
-      "affectedJourney": "Being charged an amount the rider considers unexpected, unfair, or erroneous -- surge pricing jumps, cancellation fees, double charges, or undisclosed fees in a different country.",
+      "evidenceCount": 4,
+      "evidencePercentOfSample": 2,
+      "affectedJourney": "Checking a fare and deciding whether to book.",
       "userImpact": {
         "level": "High",
         "reasoning": "Reviewers describe real financial harm -- being charged twice, charged a cancellation fee while waiting through no fault of their own, or hit with undisclosed fees abroad -- with several describing an inability to get the charge reviewed or reversed."
@@ -200,11 +193,56 @@
         "level": "High",
         "reasoning": "Ten reviewers describe related but distinct billing complaints (surge shock, cancellation fees charged despite the rider not causing the cancellation, double charges, undisclosed international fees) that together form a consistent pattern of charges reviewers experience as unfair or unexplained."
       },
-      "synthesis": "Reviewers describe a range of billing situations they experience as unfair: sudden, large surge-price jumps between checking and booking; being charged a cancellation fee while waiting for weather-delayed luggage or for a driver who never arrived; being charged twice for one ride; and undisclosed fees when using the app internationally.",
-      "potentialImplication": "Because several reviewers describe these as one-time incidents that ended their use of the app entirely ('lost me as a customer for life'), unresolved billing disputes could plausibly have an outsized effect on retention relative to their individual dollar value.",
-      "recommendedNextStep": "Audit cancellation-fee logic specifically for cases where the rider's delay was disclosed in-app (e.g. a flight/luggage delay) or the driver was at fault, and validate whether the international fee-disclosure flow meets the same standard as the US app.",
-      "likelyImplementationSurface": "Cancellation-fee logic, surge-pricing display, and international fee disclosure.",
-      "implementationConsiderations": "Distinguishing a policy the company intends (e.g. cancellation fees generally) from cases reviewers describe as clearly unfair requires case-level review not available from public reviews alone.",
+      "synthesis": "Reviewers describe fares they consider disproportionate, and in particular large surge increases between checking a price and booking -- one reporting an airport fare moving from $40 to $80 within an hour, others describing evening fares doubling or tripling. Several name a competitor's price for the same trip. This is a pricing and surge-transparency question, distinct from charges reviewers believe are simply wrong.",
+      "potentialImplication": "Riders who compare against a competitor at the moment of surge are making a direct substitution decision. How surge is explained at that moment is a plausible lever on that decision, though these reviews cannot show what share of riders actually switch.",
+      "recommendedNextStep": "Look at whether surge magnitude and its explanation at the point of quote correlate with abandonment and with subsequent competitor usage, before treating this as a pure pricing question.",
+      "likelyImplementationSurface": "Surge pricing display and fare-explanation copy in the booking flow.",
+      "implementationConsiderations": "Surge levels are set by systems these reviews cannot observe; only the rider-facing presentation is visible here.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Pricing / Business Strategy",
+        "Customer Support Operations"
+      ],
+      "voiceOfCustomer": [
+        {
+          "reviewId": "14468530442",
+          "quote": "Uber price surged to $80 from the airport at 12:00pm when it was $40 at 11:00am.",
+          "rating": 1,
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "id": "pain-disputed-charges",
+      "theme": "Disputed Charges: Cancellation Fees, Double Billing & Undisclosed International Fees",
+      "issueType": "Policy / Monetization Pushback",
+      "productSurface": "Billing & Charge Disputes",
+      "supportingReviewIds": [
+        "14462474868",
+        "14462251352",
+        "14462134139",
+        "14466815065"
+      ],
+      "evidenceCount": 4,
+      "evidencePercentOfSample": 2,
+      "affectedJourney": "Discovering an unexpected charge after a trip and trying to dispute it.",
+      "userImpact": {
+        "level": "High",
+        "reasoning": "Reviewers describe real financial harm -- being charged twice, charged a cancellation fee while waiting through no fault of their own, or hit with undisclosed fees abroad -- with several describing an inability to get the charge reviewed or reversed."
+      },
+      "strategicRelevance": {
+        "level": "Core",
+        "reasoning": "Trust in accurate, fair billing is foundational to a payment-first transportation service; billing disputes go directly at that trust."
+      },
+      "evidenceConfidence": {
+        "level": "High",
+        "reasoning": "Ten reviewers describe related but distinct billing complaints (surge shock, cancellation fees charged despite the rider not causing the cancellation, double charges, undisclosed international fees) that together form a consistent pattern of charges reviewers experience as unfair or unexplained."
+      },
+      "synthesis": "A separate group describe specific charges they believe are simply wrong rather than merely high: a cancellation fee applied while waiting for lightning-delayed luggage, a ride charged twice, undisclosed fees on international use, and a recurring membership charge a reviewer says they never signed up for. What links these is not the amount but the absence of a route to contest them.",
+      "potentialImplication": "Each of these is individually small, but a disputed charge with no visible appeal path is the kind of experience that ends an account relationship. Whether that is what happens here is a reasonable expectation rather than something these reviews measure.",
+      "recommendedNextStep": "Audit the cancellation-fee waiver rules against the situations reviewers describe (airport baggage delays, driver no-shows) and check whether a rider-initiated charge dispute currently reaches a human.",
+      "likelyImplementationSurface": "Cancellation-fee policy logic, duplicate-charge detection, and the in-app charge dispute flow.",
+      "implementationConsiderations": "Whether each disputed charge was actually erroneous cannot be determined from review text; the recurring theme is the difficulty of contesting one.",
       "likelyCrossFunctionalPartners": [
         "Product",
         "Pricing / Business Strategy",
@@ -216,12 +254,6 @@
           "quote": "Uber cancelled my ride AND charged me a fee, without my knowing! That is essentially the same as stealing from me.",
           "rating": 1,
           "date": "2026-08-23"
-        },
-        {
-          "reviewId": "14468530442",
-          "quote": "Uber price surged to $80 from the airport at 12:00pm when it was $40 at 11:00am.",
-          "rating": 1,
-          "date": "2026-08-24"
         }
       ]
     },
@@ -252,7 +284,7 @@
         "level": "Medium",
         "reasoning": "Five reviewers describe a consistent pattern (no accessible human, repetitive scripted responses, chat disconnection), a real and specific signal though a more modest volume than the top two pain points."
       },
-      "synthesis": "Reviewers describe support as effectively unreachable for issues the automated/AI flow doesn't resolve -- repeated identical scripted responses, chats that end before the issue is resolved, and no phone-based option in some regions.",
+      "synthesis": "Reviewers describe support as effectively unreachable once an issue is not resolved by the first automated step: the same scripted response sent repeatedly over days, chats that dead-end, a help surface that never loads, and no contact channel at all in one region. Several characterise the front line as AI-driven; that is their description of the experience, not a documented account of Uber's support architecture.",
       "potentialImplication": "Because this pain point compounds the billing-dispute pain point above (reviewers describe both problems together), unresolved support access could plausibly make otherwise-recoverable billing complaints permanently damaging to retention.",
       "recommendedNextStep": "Validate whether a genuine human-escalation path exists for billing disputes specifically, and audit reported cases of scripted-response loops and mid-conversation chat termination.",
       "likelyImplementationSurface": "Support-routing logic and the AI/automated support flow's escalation triggers.",
@@ -286,10 +318,9 @@
       "context": "Before requesting a ride, comparing the displayed ETA to what actually happens after booking.",
       "supportingReviewIds": [
         "14463322223",
-        "14466220795",
-        "14466173011"
+        "14466220795"
       ],
-      "evidenceCount": 3
+      "evidenceCount": 2
     },
     {
       "id": "request-fair-billing-review",
@@ -334,17 +365,33 @@
     },
     {
       "id": "priority-billing-charges",
-      "priorityLabel": "P1",
-      "title": "Prioritize Billing Dispute Fairness",
-      "linkedItemId": "pain-billing-charges",
-      "whyNow": "High-frequency, high-confidence pattern of reviewers describing real financial harm and several stating the incident ended their use of the app entirely.",
-      "recommendedNextStep": "Audit cancellation-fee logic for cases with a disclosed rider-side delay, and validate the international fee-disclosure flow.",
+      "priorityLabel": "P2",
+      "title": "Assess Surge Pricing Presentation",
+      "linkedItemId": "pain-price-surge",
+      "whyNow": "Reviewers describe surge increases they consider disproportionate and several name a competitor's price for the same trip. This is a pricing-strategy and transparency question rather than a defect, which is why it sits below the correctness and reliability items above.",
+      "recommendedNextStep": "Test whether surge magnitude and the explanation shown at the point of quote correlate with abandonment and subsequent competitor use.",
       "likelyImplementationSurface": "Cancellation-fee logic, surge-pricing display, and international fee disclosure.",
       "implementationConsiderations": "Distinguishing intended policy from cases reviewers describe as clearly unfair requires case-level review.",
       "likelyCrossFunctionalPartners": [
         "Product",
         "Pricing / Business Strategy",
         "Customer Support Operations"
+      ]
+    },
+    {
+      "id": "priority-disputed-charges",
+      "priorityLabel": "P1",
+      "title": "Give Disputed Charges a Route to a Human",
+      "linkedItemId": "pain-disputed-charges",
+      "whyNow": "A cancellation fee applied during a lightning-delayed baggage wait, a double charge, undisclosed international fees and an unrecognised membership charge share one property: reviewers could not get any of them reviewed. A wrongly-applied charge with no appeal path damages trust out of proportion to its size.",
+      "recommendedNextStep": "Audit cancellation-fee waiver rules against the situations reviewers describe, and confirm whether a rider-initiated charge dispute currently reaches a person.",
+      "likelyImplementationSurface": "Cancellation-fee policy logic, duplicate-charge detection, and the in-app dispute flow.",
+      "implementationConsiderations": "Whether each charge was actually erroneous cannot be established from review text; the consistent finding is the difficulty of contesting one.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Payments Engineering",
+        "Customer Support Operations",
+        "Policy"
       ]
     },
     {
@@ -374,7 +421,7 @@
       "Internal engineering effort is intentionally not estimated anywhere in this report.",
       "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Uber's actual internal team structure."
     ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text.",
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
     "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). ETA reliability, billing disputes, and support access are kept as three separate pain points despite frequently co-occurring in the same reviews, because they represent three distinct product mechanisms (dispatch/estimation, pricing/billing, and support routing) with different owners and fixes."
   },
   "evidenceIndex": {
@@ -486,12 +533,6 @@
       "title": "Misleading pickup times every single time",
       "body": "Every single time I open Uber, it says something like “pickup in 5 minutes” and shows plenty of drivers nearby. Then the second I actually request the ride and get matched with a driver, surprise — the driver is 15–20 minutes away, sometimes practically 20 miles away.\n\nThen what exactly does “pickup in 5 minutes” mean? Why show me all these supposedly nearby drivers if you’re going to match me with someone coming from the other side of the planet?\n\nThis happens CONSTANTLY. At this point, the estimated pickup time before booking feels completely meaningless and borderline deceptive. If it’s going to take 20 minutes, just tell me it’s going to take 20 minutes. Stop showing “5 min” just to get people to request the ride.\n\nAbsolutely ridiculous. One star."
     },
-    "14466173011": {
-      "rating": 1,
-      "date": "2026-08-24T05:03:03-07:00",
-      "title": "Late at work",
-      "body": "They changed the route and made go late at work"
-    },
     "14468530442": {
       "rating": 1,
       "date": "2026-08-24T18:30:41-07:00",
@@ -504,29 +545,17 @@
       "title": "Expensive is an understatement",
       "body": "You used to offer an affordable service to get a safe ride home, but you have ruined your company because of greed. The initial fare is a decent price but when you are ready to go home it doubles even triples the fare price. Doesn’t matter what time you request the ride it will always be more expensive. Your surge pricing is just another way to increase fares and price gouge your customers. You have ruined your own company because you are trying to get more money out people who built your business."
     },
-    "14466843197": {
-      "rating": 1,
-      "date": "2026-08-24T08:27:13-07:00",
-      "title": "prices are out of hand!",
-      "body": "prices for delivery have gotten disgustingly stupid. $50 for 2 cousin subs. only $35 through their actual site. i ordered a special shampoo one day from pick n save. was like $60. just insane."
-    },
-    "14466815065": {
-      "rating": 1,
-      "date": "2026-08-24T08:18:46-07:00",
-      "title": "scam",
-      "body": "made it’s own membership into charging my card ever month when i never even made an account. wasted money on its own monthly while barely even using any rides"
-    },
-    "14464447957": {
-      "rating": 1,
-      "date": "2026-08-23T17:06:30-07:00",
-      "title": "Fired",
-      "body": "Steal my 28 $ . That was my girls money, and I don’t take too politely to you robbing her."
-    },
     "14463522587": {
       "rating": 3,
       "date": "2026-08-23T11:18:35-07:00",
       "title": "Overcharge",
       "body": "I was charged $68 while Lyft was giving $20-30.  It was too late for me to switch.  I will choose Lyft first.  This is bad enough experience."
+    },
+    "14464226498": {
+      "rating": 1,
+      "date": "2026-08-23T15:34:15-07:00",
+      "title": "TOO EXPENSIVE",
+      "body": "Don’t reep people off"
     },
     "14462474868": {
       "rating": 1,
@@ -546,11 +575,11 @@
       "title": "Absolute Scammers",
       "body": "I used the app in Japan. Charged all sorts of hidden fees, absolute scam. Your US app should not work there or prompt you about extra fees. Cheaper to just take a taxi"
     },
-    "14464226498": {
+    "14466815065": {
       "rating": 1,
-      "date": "2026-08-23T15:34:15-07:00",
-      "title": "TOO EXPENSIVE",
-      "body": "Don’t reep people off"
+      "date": "2026-08-24T08:18:46-07:00",
+      "title": "scam",
+      "body": "made it’s own membership into charging my card ever month when i never even made an account. wasted money on its own monthly while barely even using any rides"
     },
     "14466906634": {
       "rating": 1,

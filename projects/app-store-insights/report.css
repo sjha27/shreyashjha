@@ -764,3 +764,110 @@ details.deep-dive[open] summary .chevron { transform: rotate(180deg); }
 @media (prefers-reduced-motion: reduce) {
   .headline-card, .card-hover, .export-btn { transition: none !important; }
 }
+
+/* ---------------------------------------------------------------
+   V1.1 — counterevidence, null-strength finding, print
+--------------------------------------------------------------- */
+
+/* Counterevidence: reviews that qualify a claim. Visually distinct from
+   supporting quotes so a reader can never mistake one for the other. */
+.counter-block {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--line-strong);
+  background: var(--paper-soft);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}
+
+.counter-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.6rem;
+}
+
+.counter-quote {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.counter-quote + .counter-quote { margin-top: 0.75rem; }
+.counter-quote .quote-meta { font-style: normal; margin-top: 0.3rem; }
+
+/* "No strong current positive theme emerged" — a finding, not an error state,
+   so it is styled as a deliberate result rather than an empty placeholder. */
+.null-finding {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--line-strong);
+  border-radius: var(--r-lg);
+  background: var(--paper-soft);
+  padding: var(--s3);
+  max-width: var(--measure);
+}
+
+.null-finding-head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.null-finding-body { color: var(--ink-soft); font-size: 0.95rem; }
+
+.headline-card-null { opacity: 0.72; }
+.headline-card-null .headline-theme { color: var(--ink-faint); }
+
+/* ---------------------------------------------------------------
+   Print / PDF export
+   The priority table sat at min-width:640px inside an overflow-x:auto
+   container. On paper there is no scrolling, so anything past the
+   printable width (~624px on Letter) was silently clipped — the
+   Confidence column vanished. Every report was affected, not just one.
+--------------------------------------------------------------- */
+@media print {
+  .table-scroll { overflow: visible !important; border: none; }
+
+  table.priority-table {
+    min-width: 0 !important;
+    width: 100% !important;
+    table-layout: fixed;
+    font-size: 0.72rem;
+  }
+
+  .priority-table th,
+  .priority-table td {
+    padding: 0.4rem 0.45rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  /* Give the signal column the room; keep rubric columns narrow but present. */
+  .priority-table th:nth-child(1), .priority-table td:nth-child(1) { width: 8%; }
+  .priority-table th:nth-child(2), .priority-table td:nth-child(2) { width: 34%; }
+  .priority-table th:nth-child(3), .priority-table td:nth-child(3) { width: 12%; }
+  .priority-table th:nth-child(4), .priority-table td:nth-child(4) { width: 14%; }
+  .priority-table th:nth-child(5), .priority-table td:nth-child(5) { width: 16%; }
+  .priority-table th:nth-child(6), .priority-table td:nth-child(6) { width: 16%; }
+
+  .rubric-plain { white-space: normal; }
+
+  /* Sticky nav and controls are meaningless on paper. */
+  .report-toc, #report-toc-wrap, .evidence-controls, .view-evidence-link,
+  .export-btn, #export-markdown-btn { display: none !important; }
+
+  /* Deep dives are part of the analysis — always expanded in print. */
+  .deep-dive > .deep-dive-body { display: block !important; }
+  details.deep-dive[open] > summary, details.deep-dive > summary { display: none; }
+
+  .content-card, .evidence-card, .null-finding, .counter-block {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+
+  body { background: #fff; }
+}

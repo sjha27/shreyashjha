@@ -39,7 +39,7 @@
       "count": 41714870
     }
   },
-  "productBrief": "Recent feedback suggests Spotify's core value proposition remains strong: users consistently praise the breadth of its music, podcast, and audiobook catalog, and describe its DJ and recommendation features positively in general terms. However, a meaningful share of the sample -- particularly long-tenured and free-tier users -- describes the discovery experience becoming less reliable in practice, with shuffle and autoplay repeating a narrow set of songs or episodes rather than surfacing the full catalog. Ad frequency on the free tier is the most common complaint by volume and includes several explicit statements of intent to stop paying or using the app, while a smaller but specific cluster reports audiobook playback failing outright and a distinct group raises trust concerns about newly integrated AI features. Together these suggest the free-tier monetization experience and the reliability of the personalization engine are more urgent near-term questions in this sample than the underlying catalog or core app concept.",
+  "productBrief": "Spotify's catalogue breadth is doing the heavy lifting here: reviewers describe music, podcasts and audiobooks in one place as the specific reason they stay. The dominant complaint by volume is free-tier ad frequency, though other reviewers in the same sample call the ad load acceptable -- so the question is consistency, not simply volume. A separate, more detailed group reports shuffle and autoplay surfacing less variety than they remember, and a small cluster reports audiobooks failing outright.",
   "transformationSummary": {
     "reviewsAnalyzed": 200,
     "recurringSignalCount": 11,
@@ -118,10 +118,9 @@
         "14466861005",
         "14466552150",
         "14466314666",
-        "14466188338",
-        "14466183475"
+        "14466188338"
       ],
-      "evidenceCount": 5,
+      "evidenceCount": 4,
       "whatUsersValue": "Among reviewers who mention paying for Premium, several explicitly frame it as worth the cost -- citing audio quality and the range of perks -- even while acknowledging the price is noticeable.",
       "whyThisMatters": "This is a useful counterweight to the free-tier ad complaints below: the dissatisfaction in this sample concentrates heavily in the free experience, while paying users who comment on price tend to describe it as worth it rather than resent it.",
       "protectThis": "As monetization or ad strategy changes are considered in response to free-tier complaints, this sample suggests the Premium value proposition itself is currently landing well and shouldn't be diluted in the process.",
@@ -185,7 +184,7 @@
         "level": "High",
         "reasoning": "This is the largest, most frequent, and most consistent cluster in the sample, spanning a wide range of star ratings, with multiple reviewers independently volunteering specific numeric details (e.g., ads per song count) that corroborate each other."
       },
-      "synthesis": "Free-tier users describe ad interruptions as frequent enough to disrupt continuous listening -- several cite multiple ads within or between individual songs -- and frame this as the main reason they'd consider leaving or finally paying. Notably, several other reviewers in this same sample describe the ad load as acceptable ('very little ads', 'not too much'), suggesting the complaints may reflect either inconsistent ad delivery across sessions/users or a recent change that hasn't reached everyone yet -- both are plausible and worth investigating rather than assuming a uniform experience.",
+      "synthesis": "Free-tier reviewers describe ad interruptions frequent enough to break continuous listening -- several cite multiple ads within or around a single song -- and name it as the reason they would leave or finally pay. Other reviewers in this same sample describe the ad load as acceptable, shown below as counterevidence. The two together suggest the experience is not uniform: either delivery varies between users and sessions, or a change has not reached everyone. That is worth establishing before treating ad load as a single global setting.",
       "potentialImplication": "Because this friction sits on the free-tier funnel, persistently high ad frequency could plausibly suppress free-to-paid conversion or free-tier retention, though this report cannot measure either outcome directly from review text alone.",
       "recommendedNextStep": "Validate actual ad frequency delivered per session against the range reviewers describe as tolerable (roughly one ad per two or more songs) versus what triggers complaints (multiple ads within a single song gap), and check whether the experience is consistent across users/sessions or varies -- before deciding whether to adjust frequency or capping logic.",
       "likelyImplementationSurface": "Ad-frequency pacing and capping logic in the free-tier playback/ad-serving system.",
@@ -217,6 +216,10 @@
           "date": "2026-08-24",
           "matchedSignal": "Explicit numeric tolerance threshold volunteered by reviewer"
         }
+      ],
+      "counterEvidenceReviewIds": [
+        "14466839116",
+        "14466791625"
       ]
     },
     {
@@ -250,7 +253,7 @@
         "level": "High",
         "reasoning": "Multiple independent reviewers, across English and Spanish, describe the same specific symptom (shuffle replaying a fixed order or narrow subset of tracks; autoplay/Daylist repeating despite explicit negative feedback) with concrete detail rather than vague dissatisfaction."
       },
-      "synthesis": "A distinct and detailed group of reviewers -- several describing years of prior use -- report that shuffle, autoplay, and Daylists have become less varied: shuffle appears to replay a fixed order rather than randomizing, autoplay resurfaces the same podcast episodes despite explicit 'not interested' feedback, and Daylists have narrowed to a single recurring category for at least one long-time user. This reads as a reported regression ('used to be great, now...') rather than users encountering a feature for the first time.",
+      "synthesis": "A distinct and detailed group of reviewers -- several describing years of prior use -- report that shuffle, autoplay and Daylists surface less variety than they remember: shuffle replaying a fixed order rather than randomising, autoplay resurfacing podcast episodes despite explicit 'not interested' feedback, and one long-time user's Daylist narrowing to a single recurring category. These are reviewer recollections of change, not measured drift. A separate reviewer in this sample credits the DJ with surfacing genuinely new music, shown as counterevidence.",
       "potentialImplication": "If genuinely widespread, reduced perceived variety in the core discovery loop could plausibly reduce engagement for exactly the power users most likely to advocate for the product, though this sample cannot establish how widespread the underlying behavior actually is versus how vocal the affected reviewers are.",
       "recommendedNextStep": "Audit whether shuffle randomization, autoplay selection, and Daylist ranking share a recent common change, and validate the 'same songs/episodes repeating' reports against actual play-history data for a sample of affected accounts before scoping a fix.",
       "likelyImplementationSurface": "Shuffle/queue randomization logic and the personalization/recommendation ranking system.",
@@ -282,6 +285,9 @@
           "date": "2026-08-24",
           "matchedSignal": "Long-tenured user reporting a regression, not a missing feature"
         }
+      ],
+      "counterEvidenceReviewIds": [
+        "14467877602"
       ]
     },
     {
@@ -364,7 +370,7 @@
         "level": "Medium",
         "reasoning": "Only 3 supporting reviews in this sample -- too few to call a dominant signal -- but each is specific, independent, and unusually direct about the action taken, which keeps confidence from being 'Low' despite the small count."
       },
-      "synthesis": "A small number of reviewers explicitly object to AI integration -- one to AI-generated music/content displacing 'real music' or 'struggling musicians,' another asking to disable AI-driven playback behavior entirely. Two of the three state they already stopped or reduced their subscription over this specifically.",
+      "synthesis": "A small number of reviewers object explicitly to AI in the app: one to AI-generated 'artists' taking streams from working musicians, one asking how to switch AI off, one leaving for other platforms. One states they have unsubscribed over it; another says they are going back to Pandora and YouTube. One reviewer attributes a playback failure to AI -- that causal link is their inference, not something these reviews establish.",
       "potentialImplication": "Because each account here pairs the complaint with a stated subscription action, this could plausibly represent a small but genuine retention risk tied specifically to AI features, distinct from general product satisfaction -- though the sample is too small to size the risk.",
       "recommendedNextStep": "Clarify what AI-related settings currently exist and whether an opt-out is technically and product-feasible; separately validate how much of this sentiment is about AI-generated content presence versus AI-driven recommendation behavior, since the appropriate response differs for each.",
       "likelyImplementationSurface": "AI feature settings/opt-out controls, and content labeling for AI-assisted or AI-generated audio.",
@@ -423,7 +429,7 @@
       },
       "synthesis": "A moderate number of reviewers report distinct technical issues -- a UI element disappearing after backgrounding the app, playlist edits not saving reliably, general crashing/freezing, intermittent Bluetooth disconnection, and music unexpectedly speeding up. These don't share an obvious single cause and are grouped here as a general stability signal worth monitoring rather than one specific bug.",
       "potentialImplication": "Accumulated small reliability issues across different subsystems could plausibly erode trust in the app's general stability over time, even though no single symptom here is severe on its own.",
-      "recommendedNextStep": "Cluster these reports by symptom (UI state, playlist sync, Bluetooth, playback speed) to determine whether they share a root cause or represent several independent regressions before prioritizing engineering investigation.",
+      "recommendedNextStep": "Check whether these reports concentrate on particular devices or releases before treating them as a single defect; several reviewers describe a decline, which is their recollection rather than measured drift.",
       "likelyImplementationSurface": "Several subsystems: UI state persistence, playlist sync, Bluetooth/media-session handling, and playback speed control.",
       "implementationConsiderations": "Because the symptoms are heterogeneous, a single fix is unlikely to resolve all of them; this is better scoped as several small investigations than one ticket.",
       "likelyCrossFunctionalPartners": [
@@ -452,18 +458,20 @@
   "requests": [
     {
       "id": "request-ad-tolerance",
-      "requestedCapability": "Fewer / less frequent ads on the free tier",
-      "underlyingNeed": "Reviewers aren't uniformly asking for zero ads -- several explicitly describe a specific ad frequency as acceptable (\"very little ads\", \"not too much adds\") while others name an unacceptable frequency (multiple ads within one song gap). The underlying need is a predictable, bounded interruption rate, not necessarily an ad-free experience.",
+      "requestedCapability": "A predictable, bounded free-tier ad frequency",
+      "underlyingNeed": "Reviewers are not uniformly asking for zero ads. Some name an unacceptable cadence (several ads around a single song); others describe the current load as fine. The need the evidence supports is a predictable, bounded interruption rate -- which makes the acceptable-cadence reviews useful for setting the boundary rather than evidence against the problem.",
       "context": "Continuous free-tier listening sessions, most often called out when ads interrupt within or immediately around a single song rather than between longer stretches of listening.",
       "supportingReviewIds": [
         "14467857913",
         "14467509727",
-        "14466839116",
-        "14466791625",
         "14466495399",
         "14466264055"
       ],
-      "evidenceCount": 6
+      "evidenceCount": 4,
+      "counterEvidenceReviewIds": [
+        "14466839116",
+        "14466791625"
+      ]
     },
     {
       "id": "request-shuffle-control",
@@ -569,7 +577,7 @@
       "Internal engineering effort is intentionally not estimated anywhere in this report -- public reviews reveal user-facing symptoms, not Spotify's internal architecture, codebase, or engineering capacity.",
       "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Spotify's actual internal team structure or codebase."
     ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages, and date ranges were computed in code directly from the frozen review file (_tools/app-store-analyzer/scripts/compute-stats.mjs) and are exactly reproducible from that file. Thematic clustering, severity judgments, synthesis, and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme above links back to the specific review IDs that support it.",
+    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
     "prioritizationFramework": "Priorities use a transparent categorical rubric, not RICE/ICE or an invented numeric score: Frequency (share of the 200-review sample), User Impact (Critical/High/Moderate/Low, based on how severely the issue blocks the user's intended task), Strategic Relevance (Core/Important/Adjacent/Peripheral, based on closeness to Spotify's primary listening/discovery experience), and Evidence Confidence (High/Medium/Low, based on how consistent and specific the supporting reviews are). A very angry review is not treated as more important than a calmly written report of a severe failure -- severity is judged by consequence to the user's task, not tone."
   },
   "evidenceIndex": {
@@ -662,12 +670,6 @@
       "date": "2026-08-24T05:08:08-07:00",
       "title": "Worth Every Penny!",
       "body": "I value this subscription most of all. Best value for the money."
-    },
-    "14466183475": {
-      "rating": 5,
-      "date": "2026-08-24T05:06:31-07:00",
-      "title": "RiLyMiLy",
-      "body": "I love Spotify premium"
     },
     "14468175451": {
       "rating": 3,
@@ -794,6 +796,18 @@
       "date": "2026-08-24T05:32:46-07:00",
       "title": "It’s nice",
       "body": "I like Spotify because you can listen to stuff for free but then like every 7-10 songs there 1-3 REALLY LONG ADDS"
+    },
+    "14466839116": {
+      "rating": 4,
+      "date": "2026-08-24T08:25:59-07:00",
+      "title": "For all music lovers!!",
+      "body": "Without premium it’s an awesome app alone with very little ads. You can play like 5 or 6 songs without an add playing and with a playlist it’s even better. Awesome app would definitely recommend for music lover or podcast lovers."
+    },
+    "14466791625": {
+      "rating": 4,
+      "date": "2026-08-24T08:11:49-07:00",
+      "title": "Good",
+      "body": "5 star because it’s a really good app not to much adds"
     },
     "14467787570": {
       "rating": 3,
@@ -932,18 +946,6 @@
       "date": "2026-08-24T06:11:01-07:00",
       "title": "Music speeds up and skips",
       "body": "Music keeps speeding up and skipping"
-    },
-    "14466839116": {
-      "rating": 4,
-      "date": "2026-08-24T08:25:59-07:00",
-      "title": "For all music lovers!!",
-      "body": "Without premium it’s an awesome app alone with very little ads. You can play like 5 or 6 songs without an add playing and with a playlist it’s even better. Awesome app would definitely recommend for music lover or podcast lovers."
-    },
-    "14466791625": {
-      "rating": 4,
-      "date": "2026-08-24T08:11:49-07:00",
-      "title": "Good",
-      "body": "5 star because it’s a really good app not to much adds"
     },
     "14468172731": {
       "rating": 1,

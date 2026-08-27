@@ -451,21 +451,6 @@
       ]
     }
   ],
-  "methodology": {
-    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
-    "sampleScope": "200 most recent publicly available reviews for Airbnb (App Store ID 401626263) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
-    "limitations": [
-      "This sample is unusually negative (87.5% one-star) and positive evidence is genuinely thin -- only one outright positive review and a handful of asides establishing prior loyalty before a complaint. The single reported strength reflects that thinness honestly rather than manufacturing balance that the sample doesn't support.",
-      "A small number of reviews referencing geopolitical topics (disputed-territory property listings) or personal attacks on named executives were read but excluded from thematic evidence, consistent with this project's Review Relevance principle -- isolated, unverifiable, or sensitive single mentions are not a sound basis for a product theme.",
-      "App Store reviewers are self-selected and are not a random or complete sample of Airbnb's user base (which includes both guests and hosts); prevalence in this sample is not the same as prevalence across all users.",
-      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend or measures whether sentiment has changed, even where reviewers themselves reference a change ('used to be good').",
-      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
-      "Internal engineering effort is intentionally not estimated anywhere in this report -- public reviews reveal user-facing symptoms, not Airbnb's internal architecture, policy rationale, or operational capacity.",
-      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Airbnb's actual internal team structure."
-    ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
-    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence), applying the Theme Cohesion Rule and Review Relevance principle throughout -- for example, property-condition refund complaints and dispute-adjudication-fairness complaints are kept as two separate pain points because they point at two different product mechanisms (a refund-policy question vs. an evidence/process-transparency question), even though many individual reviews touch both."
-  },
   "noStrengthRationale": "The closest candidate -- reviewers describing ten or more years of trouble-free use before a bad experience -- comes entirely from one-star reviews already counted as evidence for the problems below. That is a record of goodwill being spent down, not a current strength, so it is reported inside the findings rather than presented as one.",
   "evidenceIndex": {
     "14448580370": {

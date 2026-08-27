@@ -484,7 +484,6 @@ h1, h2, h3, p, figure { margin: 0; }
 /* Hero photo */
 
 .hero-media {
-  position: relative;
   max-width: 24rem;
   width: 100%;
   margin-inline: auto;
@@ -503,41 +502,6 @@ h1, h2, h3, p, figure { margin: 0; }
   height: 100%;
   object-fit: cover;
   object-position: center 18%;
-}
-
-.float-chip {
-  position: absolute;
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 0.5rem 0.95rem;
-  border-radius: var(--r-pill);
-  background: #FFFFFF;
-  color: var(--ink);
-  box-shadow: var(--shadow-card);
-  border: 1px solid var(--line);
-  white-space: nowrap;
-}
-
-.chip-a { top: 8%;  left: -8%;  background: var(--mint); }
-.chip-b { top: 34%; right: -9%; background: var(--sky); }
-.chip-c { bottom: 20%; left: -12%; background: var(--butter); }
-.chip-d { bottom: 6%; right: -6%; background: var(--blush); }
-
-.js .float-chip { animation: bob 6s ease-in-out infinite; }
-.js .chip-b { animation-delay: -1.5s; }
-.js .chip-c { animation-delay: -3s; }
-.js .chip-d { animation-delay: -4.5s; }
-
-@keyframes bob {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-7px); }
-}
-
-@media (max-width: 480px) {
-  .chip-a { left: -2%; }
-  .chip-c { left: -4%; }
-  .chip-d { right: -2%; }
-  .chip-b { right: -3%; }
 }
 
 /* ---------------------------------------------------------------

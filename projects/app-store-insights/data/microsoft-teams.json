@@ -479,20 +479,6 @@
       ]
     }
   ],
-  "methodology": {
-    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
-    "sampleScope": "200 most recent publicly available reviews for Microsoft Teams (App Store ID 1113153706) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
-    "limitations": [
-      "A small number of reviews making unverifiable technical accusations (e.g. claims of deliberate data manipulation or government surveillance) were read but excluded from thematic evidence, consistent with this project's Review Relevance principle -- a single unverifiable technical accusation is not a sound basis for a product theme.",
-      "App Store reviewers are self-selected, and this app's user base is largely workplace-mandated rather than opt-in, which may affect how representative self-selected reviewers are of the full user base.",
-      "This is a single point-in-time snapshot with no historical or version-linked data; several reviewers describe the notification bug as multi-year, but this analysis cannot independently verify duration, only that it's a described characteristic of the current complaint pattern.",
-      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
-      "Internal engineering effort is intentionally not estimated anywhere in this report.",
-      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Microsoft's actual internal team structure."
-    ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
-    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Notification accuracy, app reliability, FaceTime interception, and authentication friction are kept as separate pain points because each represents a distinct product mechanism, even though several co-occur in the same reviews."
-  },
   "evidenceIndex": {
     "14447722791": {
       "rating": 5,

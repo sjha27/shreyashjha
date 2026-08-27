@@ -511,21 +511,6 @@
       ]
     }
   ],
-  "methodology": {
-    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
-    "sampleScope": "200 most recent publicly available reviews for Google Maps (App Store ID 585027354) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. this sample spans roughly 8 days (Aug 16-24, 2026), reflecting Google Maps' lower daily review volume. Only the US storefront was analyzed.",
-    "limitations": [
-      "A substantial portion of this sample's nominally positive (mostly 5-star) reviews are not evaluations of the Google Maps app at all -- they read as reviews of local businesses (restaurants, contractors, medical offices, car dealerships) seemingly submitted through Google Maps' in-app 'write a review for this place' flow and miscategorized into the App Store review feed. These were identified by content and excluded from thematic evidence about the app's own product experience; this means the raw 36% five-star share should not be read as a reliable measure of app satisfaction.",
-      "App Store reviewers are self-selected and are not a random or complete sample of Google Maps' user base; prevalence in this sample is not the same as prevalence across all users.",
-      "This is a single point-in-time snapshot with no historical or version-linked data, so no statement in this report describes a trend, spike, or regression over time -- only what this specific 200-review sample contains, even where reviewers themselves describe a change ('used to be good,' 'since the last update').",
-      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
-      "A small number of reviews referencing geopolitical topics (map labeling of disputed territories) were read but excluded from thematic evidence -- a single-digit handful of reviews on a sensitive, unverifiable topic is not a sufficient basis for a product theme.",
-      "Internal engineering effort is intentionally not estimated anywhere in this report -- public reviews reveal user-facing symptoms, not Google's internal architecture, codebase, or engineering capacity.",
-      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Google's actual internal team structure or codebase."
-    ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
-    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports, not RICE/ICE or an invented numeric score: Frequency (share of the 200-review sample), User Impact (Critical/High/Moderate/Low), Strategic Relevance (Core/Important/Adjacent/Peripheral), and Evidence Confidence (High/Medium/Low). A formal theme represents one coherent, investigable product question (the Theme Cohesion Rule) -- for example, routing-preference overrides and route-quality complaints are kept as two separate pain points here because they point at two different product levers, even though both relate to 'routing' broadly."
-  },
   "evidenceIndex": {
     "14467404188": {
       "rating": 5,

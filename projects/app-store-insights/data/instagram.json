@@ -420,22 +420,6 @@
       ]
     }
   ],
-  "methodology": {
-    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
-    "sampleScope": "200 most recent publicly available reviews for Instagram (App Store ID 389801252) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
-    "limitations": [
-      "A number of reviews referencing geopolitical conflicts, conspiracy-style claims about coordinated harassment, or personal attacks on named executives were read but excluded from thematic evidence, consistent with this project's Review Relevance principle -- these are not a sound basis for a product theme regardless of how the reviewer frames them.",
-      "A small number of reviews read as testimonials for a third-party business or creator (e.g. a photographer, a cooking class) rather than feedback about Instagram itself, similar to the pattern first observed in the Google Maps analysis, and were excluded on the same basis.",
-      "Several reviewers attribute account bans specifically to increased AI-driven moderation; this is the reviewers' own theory about cause, not something independently verifiable from public review text, and is presented as such rather than as a confirmed fact.",
-      "App Store reviewers are self-selected and are not a random or complete sample of Instagram's user base; prevalence in this sample is not the same as prevalence across all users.",
-      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend, even where reviewers reference a change ('used to be good').",
-      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
-      "Internal engineering effort is intentionally not estimated anywhere in this report.",
-      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Meta's actual internal team structure."
-    ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
-    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence), applying the Theme Cohesion Rule throughout -- account bans/suspensions (a moderation-policy question) and account-recovery lockouts (an authentication-flow question) are kept as two separate pain points despite both resulting in lost account access, because they point at different product mechanisms with different owners and fixes."
-  },
   "evidenceIndex": {
     "14468831356": {
       "rating": 5,

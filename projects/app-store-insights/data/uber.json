@@ -410,20 +410,6 @@
       ]
     }
   ],
-  "methodology": {
-    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
-    "sampleScope": "200 most recent publicly available reviews for Uber (App Store ID 368677368) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
-    "limitations": [
-      "A number of driver-specific reviews were excluded from thematic evidence where the complaint was a single, unverifiable claim about an individual driver's conduct rather than a recurring pattern about the app or platform, consistent with this project's Review Relevance principle.",
-      "App Store reviewers are self-selected and are not a random or complete sample of Uber's user base; prevalence in this sample is not the same as prevalence across all users.",
-      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend over time.",
-      "Only the US App Store storefront was analyzed, though one review describes an international (Japan) trip; findings should not be assumed to generalize to other countries or storefronts.",
-      "Internal engineering effort is intentionally not estimated anywhere in this report.",
-      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Uber's actual internal team structure."
-    ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
-    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). ETA reliability, billing disputes, and support access are kept as three separate pain points despite frequently co-occurring in the same reviews, because they represent three distinct product mechanisms (dispatch/estimation, pricing/billing, and support routing) with different owners and fixes."
-  },
   "evidenceIndex": {
     "14468498361": {
       "rating": 5,

@@ -567,19 +567,6 @@
       ]
     }
   ],
-  "methodology": {
-    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
-    "sampleScope": "200 most recent publicly available reviews for Spotify: Music and Podcasts (App Store ID 324684580) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. All 200 reviews happened to fall within roughly a 12-hour window on 2026-08-24 -- a reflection of Spotify's review volume, not a restriction imposed by this tool. Only the US storefront was analyzed.",
-    "limitations": [
-      "App Store reviewers are self-selected and are not a random or complete sample of Spotify's user base; prevalence in this sample is not the same as prevalence across all users.",
-      "This is a single point-in-time snapshot with no historical or version-linked data, so no statement in this report describes a trend, spike, or regression over time -- only what this specific 200-review sample contains.",
-      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
-      "Internal engineering effort is intentionally not estimated anywhere in this report -- public reviews reveal user-facing symptoms, not Spotify's internal architecture, codebase, or engineering capacity.",
-      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Spotify's actual internal team structure or codebase."
-    ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
-    "prioritizationFramework": "Priorities use a transparent categorical rubric, not RICE/ICE or an invented numeric score: Frequency (share of the 200-review sample), User Impact (Critical/High/Moderate/Low, based on how severely the issue blocks the user's intended task), Strategic Relevance (Core/Important/Adjacent/Peripheral, based on closeness to Spotify's primary listening/discovery experience), and Evidence Confidence (High/Medium/Low, based on how consistent and specific the supporting reviews are). A very angry review is not treated as more important than a calmly written report of a severe failure -- severity is judged by consequence to the user's task, not tone."
-  },
   "evidenceIndex": {
     "14468107610": {
       "rating": 5,

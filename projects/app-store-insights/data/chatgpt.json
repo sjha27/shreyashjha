@@ -339,23 +339,6 @@
       ]
     }
   ],
-  "methodology": {
-    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
-    "sampleScope": "200 most recent publicly available reviews for ChatGPT (App Store ID 6448311069) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
-    "limitations": [
-      "This sample skews unusually positive (75% five-star); the pain points identified here are real but comparatively low in severity.",
-      "The 'emotional companionship' strength is reported as an observed, recurring pattern in review language, not a clinical or product-safety judgment -- this analysis has no basis to assess whether this kind of reliance is beneficial or concerning for any individual user.",
-      "A single review alleged that a critical review of the app disappeared while a more favorable one persisted -- a serious claim this analysis cannot verify from a single, isolated report, so it was not built into any theme, and is recorded here only as an unverified single account.",
-      "A small number of reviews making unrelated political or unverifiable claims were read but excluded from thematic evidence, consistent with this project's Review Relevance principle.",
-      "App Store reviewers are self-selected and are not a random or complete sample of ChatGPT's user base; prevalence in this sample is not the same as prevalence across all users.",
-      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend.",
-      "Only the US App Store storefront was analyzed, though at least one reviewer describes usage from outside the US (Iran) and raised regional-pricing concerns; findings should not be assumed to generalize to other countries or storefronts.",
-      "Internal engineering effort is intentionally not estimated anywhere in this report.",
-      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about OpenAI's actual internal team structure."
-    ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
-    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). No priority in this report reaches P0 -- a direct, honest reflection of this sample's comparatively low overall severity rather than a floor applied artificially."
-  },
   "evidenceIndex": {
     "14467751530": {
       "rating": 5,

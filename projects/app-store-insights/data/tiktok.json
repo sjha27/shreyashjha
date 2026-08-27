@@ -389,21 +389,6 @@
       ]
     }
   ],
-  "methodology": {
-    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
-    "sampleScope": "200 most recent publicly available reviews for TikTok (App Store ID 835599320) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
-    "limitations": [
-      "This report contains an unusually severe finding (content moderation failures involving explicit content reportedly reaching minors) drawn entirely from reviewer-reported experience. This analysis cannot verify the underlying content, confirm TikTok's actual moderation outcomes, or independently substantiate any individual claim -- it reports what a consistent, specific pattern of reviewers describe, and flags it for direct human verification rather than treating it as confirmed fact.",
-      "A number of reviews referencing broader political or geopolitical topics, or making unverifiable claims about coordinated targeting, were read but excluded from thematic evidence, consistent with this project's Review Relevance principle.",
-      "App Store reviewers are self-selected and skew toward strong reactions; prevalence in this sample is not the same as prevalence across all users.",
-      "This is a single point-in-time snapshot with no historical or version-linked data; no statement here describes a trend, even where reviewers reference a change.",
-      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
-      "Internal engineering effort is intentionally not estimated anywhere in this report.",
-      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about TikTok's actual internal team structure."
-    ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
-    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Content moderation failures and account-ban/age-verification issues are kept as two separate pain points because they involve different systems (content/ad classification vs. account-level enforcement) despite both falling under trust and safety broadly."
-  },
   "contentAdvisory": "Some reviews cited below describe sexual content involving minors, sexual violence and graphic harm. Review text is shown unedited because the evidence is the finding, but it is collapsed by default -- expand only if you need to read the source material.",
   "evidenceIndex": {
     "14468576985": {

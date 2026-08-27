@@ -423,20 +423,6 @@
       ]
     }
   ],
-  "methodology": {
-    "dataSource": "App metadata resolved via Apple's public iTunes Search/Lookup API; review content retrieved from Apple's public App Store customer-review RSS feed. Both are public, unauthenticated endpoints -- no App Store Connect credentials were used.",
-    "sampleScope": "200 most recent publicly available reviews for Amazon Shopping (App Store ID 297606951) in Apple's United States storefront (country code 'us'), frozen on 2026-08-26. Only the US storefront was analyzed.",
-    "limitations": [
-      "A small number of reviews referencing unrelated political or unverifiable conspiracy-style content were read but excluded from thematic evidence, consistent with this project's Review Relevance principle.",
-      "App Store reviewers are self-selected and are not a random or complete sample of Amazon Shopping's user base; prevalence in this sample is not the same as prevalence across all users.",
-      "This is a single point-in-time snapshot with no historical or version-linked data; the AI-search complaint volume in particular likely reflects the recency of that specific feature's rollout rather than a stable long-term baseline -- no claim is made about whether this signal will persist.",
-      "Only the US App Store storefront was analyzed; findings should not be assumed to generalize to other countries, languages, or storefronts.",
-      "Internal engineering effort is intentionally not estimated anywhere in this report.",
-      "'Likely cross-functional partners' and 'likely implementation surface' are reasoned hypotheses based on the public product experience, not claims about Amazon's actual internal team structure."
-    ],
-    "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
-    "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Forced AI search, shipping delays, and support access are kept as separate pain points despite sometimes co-occurring in the same reviews, because each points at a distinct product mechanism (search UX, logistics, support routing)."
-  },
   "evidenceIndex": {
     "14467998461": {
       "rating": 5,

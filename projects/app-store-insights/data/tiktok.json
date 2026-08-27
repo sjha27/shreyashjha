@@ -331,10 +331,10 @@
     {
       "id": "priority-moderation-failures",
       "priorityLabel": "P0",
-      "title": "Escalate Content Moderation Failures for Explicit/Violent Content",
+      "title": "Verify and Escalate Reported Moderation Failures for Explicit/Violent Content",
       "linkedItemId": "pain-moderation-failures",
-      "whyNow": "The most severe signal in this sample by a wide margin -- reviewers describe sexually explicit and violent content, including in paid ads, reaching what they describe as minor-inclusive audiences, with reports dismissed as non-violations. This combination of severity, specificity, and volume warrants treating it as a priority escalation, not a routine backlog item.",
-      "recommendedNextStep": "Audit a sample of the specific ad/content reports reviewers describe as wrongly dismissed, and validate whether the automated moderation system's threshold is calibrated appropriately for content of this severity.",
+      "whyNow": "The most serious pattern in this sample by consequence rather than volume. Reviewers report explicit and violent material -- including content they describe as sexualising minors -- reaching the feed and paid ads, with in-app reports returning 'no violation'. These are reviewer accounts this analysis cannot verify, which is exactly why the first step is verification by a team that can, not routine triage.",
+      "recommendedNextStep": "Pull the specific ad and content reports reviewers describe as wrongly dismissed and have Trust & Safety confirm what was actually served and what the reporting flow returned. If the accounts hold, treat moderation threshold calibration for content of this severity as the follow-on workstream.",
       "likelyImplementationSurface": "Automated content and ad moderation classifiers, and the human-review escalation path.",
       "implementationConsiderations": "Public reviews cannot verify the actual content or confirm moderation outcomes, but the volume, consistency, and severity described warrant direct verification.",
       "likelyCrossFunctionalPartners": [
@@ -347,10 +347,10 @@
     {
       "id": "priority-account-bans",
       "priorityLabel": "P1",
-      "title": "Prioritize Account Ban & Age-Verification Appeal Accuracy",
+      "title": "Prioritize a Workable Appeal Path for Bans & Age Restrictions",
       "linkedItemId": "pain-account-bans",
-      "whyNow": "High-frequency, high-confidence pattern of account access loss -- including a specific, verifiable-sounding failure mode (face-scan age verification misclassifying adults) with no working appeal.",
-      "recommendedNextStep": "Audit the false-positive rate of the face-scan age-verification tool and validate current appeal-resolution times.",
+      "whyNow": "Reviewers describe accounts banned or age-restricted with no stated reason and appeals that never resolve, some waiting years. Whether each individual enforcement was correct cannot be determined from these reviews -- what they consistently establish is the absence of a route to contest one, which is actionable regardless of how many restrictions were justified.",
+      "recommendedNextStep": "Measure appeal throughput and resolution time for bans and age restrictions, and confirm whether a contested case reaches human review at all. Determining the false-positive rate of the age check is a separate question this sample cannot answer.",
       "likelyImplementationSurface": "Age-verification (face-scan) classifier and the account-ban appeal review queue.",
       "implementationConsiderations": "Distinguishing justified enforcement from false positives requires case-level detail not available from public reviews.",
       "likelyCrossFunctionalPartners": [
@@ -404,6 +404,7 @@
     "deterministicVsAI": "Review counts, star-rating distributions, averages, percentages and date ranges were computed in code directly from the frozen review file and are exactly reproducible from it. Thematic clustering, severity judgments, synthesis and recommendations were produced by AI analysis of the review text and are judgment calls, not arithmetic -- which is why every theme links back to the specific review IDs behind it, and why reviews that did not actually support the claim they were attached to were removed rather than counted.",
     "prioritizationFramework": "Priorities use the same transparent categorical rubric as prior reports (Frequency, User Impact, Strategic Relevance, Evidence Confidence). Content moderation failures and account-ban/age-verification issues are kept as two separate pain points because they involve different systems (content/ad classification vs. account-level enforcement) despite both falling under trust and safety broadly."
   },
+  "contentAdvisory": "Some reviews cited below describe sexual content involving minors, sexual violence and graphic harm. Review text is shown unedited because the evidence is the finding, but it is collapsed by default -- expand only if you need to read the source material.",
   "evidenceIndex": {
     "14468576985": {
       "rating": 5,

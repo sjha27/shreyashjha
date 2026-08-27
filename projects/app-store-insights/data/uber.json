@@ -364,21 +364,6 @@
       ]
     },
     {
-      "id": "priority-billing-charges",
-      "priorityLabel": "P2",
-      "title": "Assess Surge Pricing Presentation",
-      "linkedItemId": "pain-price-surge",
-      "whyNow": "Reviewers describe surge increases they consider disproportionate and several name a competitor's price for the same trip. This is a pricing-strategy and transparency question rather than a defect, which is why it sits below the correctness and reliability items above.",
-      "recommendedNextStep": "Test whether surge magnitude and the explanation shown at the point of quote correlate with abandonment and subsequent competitor use.",
-      "likelyImplementationSurface": "Cancellation-fee logic, surge-pricing display, and international fee disclosure.",
-      "implementationConsiderations": "Distinguishing intended policy from cases reviewers describe as clearly unfair requires case-level review.",
-      "likelyCrossFunctionalPartners": [
-        "Product",
-        "Pricing / Business Strategy",
-        "Customer Support Operations"
-      ]
-    },
-    {
       "id": "priority-disputed-charges",
       "priorityLabel": "P1",
       "title": "Give Disputed Charges a Route to a Human",
@@ -407,6 +392,21 @@
         "Product",
         "Customer Support Operations",
         "Trust & Safety"
+      ]
+    },
+    {
+      "id": "priority-price-surge",
+      "priorityLabel": "P2",
+      "title": "Assess Surge Pricing Transparency",
+      "linkedItemId": "pain-price-surge",
+      "whyNow": "Reviewers describe surge increases they consider disproportionate, several naming a competitor's price for the same trip at the same moment. This is a pricing and transparency question rather than a defect, which is why it sits below the reliability and charge-correctness items above.",
+      "recommendedNextStep": "Test whether surge magnitude, and how it is explained at the point of quote, correlate with abandonment and with riders switching to a competitor for that trip.",
+      "likelyImplementationSurface": "Surge pricing display and fare-explanation copy in the booking and quote flow.",
+      "implementationConsiderations": "Surge levels are set by systems these reviews cannot observe; only the rider-facing presentation at the moment of quote is visible here.",
+      "likelyCrossFunctionalPartners": [
+        "Product",
+        "Pricing / Business Strategy",
+        "Data Science"
       ]
     }
   ],

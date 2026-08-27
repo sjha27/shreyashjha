@@ -47,6 +47,14 @@
     return esc(s).replace(/ -- /g, " — ");
   }
 
+  /* Count labels must agree in number. Hardcoded "supporting reviews" printed
+     "1 supporting reviews" wherever a claim rested on a single review. */
+  function plural(n, singular, pluralForm) {
+    return n + " " + (n === 1 ? singular : (pluralForm || singular + "s"));
+  }
+
+  function reviewsLabel(n) { return plural(n, "supporting review"); }
+
   function fmtDate(iso) {
     if (!iso) return "";
     var d = new Date(iso);
@@ -302,7 +310,7 @@
     return (
       '<div class="counter-block">' +
         '<span class="counter-label">Counterevidence &mdash; qualifies this finding, not counted in the ' +
-          item.evidenceCount + ' supporting reviews</span>' + rows +
+          reviewsLabel(item.evidenceCount) + '</span>' + rows +
       "</div>"
     );
   }
@@ -310,7 +318,7 @@
   function viewEvidenceButton(theme, count) {
     return (
       '<button type="button" class="view-evidence-link" data-theme="' + esc(theme) + '">' +
-        "View all " + count + " supporting reviews " + ICONS.arrowUpRight +
+        "View all " + reviewsLabel(count) + " " + ICONS.arrowUpRight +
       "</button>"
     );
   }
@@ -336,7 +344,8 @@
       return (
         '<article class="content-card" id="love-' + s.id + '">' +
           '<div class="content-card-head"><h3 class="content-card-title">' + esc(s.theme) + "</h3></div>" +
-          '<p class="evidence-count-line"><strong>' + s.evidenceCount + "</strong> supporting reviews</p>" +
+          '<p class="evidence-count-line"><strong>' + s.evidenceCount + "</strong> " +
+            (s.evidenceCount === 1 ? "supporting review" : "supporting reviews") + "</p>" +
           '<p class="card-prose">' + prose(s.whatUsersValue) + "</p>" +
           '<p class="card-prose">' + prose(s.whyThisMatters) + "</p>" +
           '<div class="protect-block"><span class="protect-label">Protect this</span><p class="card-prose">' + prose(s.protectThis) + "</p></div>" +
@@ -383,7 +392,10 @@
         '<article class="content-card" id="struggle-' + p.id + '">' +
           '<div class="content-card-head"><h3 class="content-card-title">' + esc(p.theme) + "</h3></div>" +
           '<div class="tag-row"><span class="tag">' + esc(p.issueType) + '</span><span class="tag">' + esc(p.productSurface) + "</span></div>" +
-          '<p class="evidence-count-line"><strong>' + p.evidenceCount + "</strong> supporting reviews (" + p.evidencePercentOfSample + "% of analyzed sample)</p>" +
+          '<p class="evidence-count-line"><strong>' + p.evidenceCount + "</strong> " +
+            (p.evidenceCount === 1 ? "supporting review" : "supporting reviews") +
+            " (" + p.evidencePercentOfSample + "% of the " +
+            ((DATA.reviewSnapshot && DATA.reviewSnapshot.reviewsAnalyzed) || 200) + "-review snapshot)</p>" +
           '<div class="rubric-row">' +
             "<span>" + badgeForImpact(p.userImpact.level) + " Impact</span>" +
             plainRubric("Relevance", p.strategicRelevance.level) +
@@ -415,7 +427,8 @@
       return (
         '<article class="content-card" id="want-' + r.id + '">' +
           '<div class="content-card-head"><h3 class="content-card-title">' + esc(r.requestedCapability) + "</h3></div>" +
-          '<p class="evidence-count-line"><strong>' + r.evidenceCount + "</strong> supporting reviews</p>" +
+          '<p class="evidence-count-line"><strong>' + r.evidenceCount + "</strong> " +
+            (r.evidenceCount === 1 ? "supporting review" : "supporting reviews") + "</p>" +
           (r.context ? '<p class="card-prose">' + prose(r.context) + "</p>" : "") +
           '<div class="need-block"><span class="need-label">Underlying need</span><p class="card-prose">' + prose(r.underlyingNeed) + "</p></div>" +
           counterEvidence(r) +
@@ -500,6 +513,10 @@
     document.getElementById("evidence-explorer").innerHTML =
       '<h2 class="report-section-title">Evidence Explorer</h2>' +
       '<p class="report-lede">Every conclusion above traces back to real reviews. Filter and browse them here.</p>' +
+      (DATA.contentAdvisory
+        ? '<div class="content-advisory" role="note"><span class="content-advisory-label">Content note</span>' +
+            '<p>' + prose(DATA.contentAdvisory) + '</p></div>'
+        : "") +
       '<div class="evidence-controls">' +
         '<select class="evidence-select" id="evidence-theme-select">' + options + "</select>" +
         '<div class="rating-filter" id="evidence-rating-filter">' +
@@ -564,7 +581,10 @@
         '<div class="evidence-card">' +
           '<div class="quote-meta">' + starRow(r.rating) + "<span>" + fmtDate(r.date) + "</span></div>" +
           (r.title ? '<div class="evidence-card-title">' + esc(r.title) + "</div>" : "") +
-          '<p class="evidence-card-body">' + esc(r.body) + "</p>" +
+          (DATA.contentAdvisory
+            ? '<details class="evidence-collapse"><summary>Show review text</summary>' +
+                '<p class="evidence-card-body">' + esc(r.body) + "</p></details>"
+            : '<p class="evidence-card-body">' + esc(r.body) + "</p>") +
           '<div class="chip-list">' + themes.map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
         "</div>"
       );
@@ -618,7 +638,7 @@
 
     lines.push("## What Users Love\n");
     d.strengths.forEach(function (s) {
-      lines.push("### " + s.theme + " — " + s.evidenceCount + " supporting reviews\n");
+      lines.push("### " + s.theme + " — " + reviewsLabel(s.evidenceCount) + "\n");
       lines.push(s.whatUsersValue + "\n");
       lines.push("*Why this matters:* " + s.whyThisMatters + "\n");
       lines.push("*Protect this:* " + s.protectThis + "\n");
@@ -626,7 +646,7 @@
 
     lines.push("## Where Users Are Struggling\n");
     d.painPoints.forEach(function (p) {
-      lines.push("### " + p.theme + " (" + p.issueType + ") — " + p.evidenceCount + " reviews, " + p.evidencePercentOfSample + "%\n");
+      lines.push("### " + p.theme + " (" + p.issueType + ") — " + plural(p.evidenceCount, "review") + ", " + p.evidencePercentOfSample + "% of the " + d.reviewSnapshot.reviewsAnalyzed + "-review snapshot\n");
       lines.push("User Impact: " + p.userImpact.level + " · Strategic Relevance: " + p.strategicRelevance.level + " · Evidence Confidence: " + p.evidenceConfidence.level + "\n");
       lines.push(p.synthesis + "\n");
       lines.push("*Recommended next step:* " + p.recommendedNextStep + "\n");
@@ -634,7 +654,7 @@
 
     lines.push("## What Users Want\n");
     d.requests.forEach(function (r) {
-      lines.push("### " + r.requestedCapability + " — " + r.evidenceCount + " supporting reviews\n");
+      lines.push("### " + r.requestedCapability + " — " + reviewsLabel(r.evidenceCount) + "\n");
       lines.push("*Underlying need:* " + r.underlyingNeed + "\n");
     });
 

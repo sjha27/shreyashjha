@@ -324,14 +324,14 @@
       ]
     },
     {
-      "id": "priority-memory-consistency",
+      "id": "priority-instruction-consistency",
       "priorityLabel": "P2",
-      "title": "Monitor Memory & Consistency in Multi-Turn Use",
+      "title": "Monitor Multi-Turn Instruction Adherence & Consistency",
       "linkedItemId": "pain-memory-consistency",
-      "whyNow": "Moderate-volume signal affecting project-style use specifically -- worth monitoring given it touches the same use cases driving this sample's strongest praise.",
-      "recommendedNextStep": "Investigate whether context retention degrades predictably after a certain conversation length or complexity.",
-      "likelyImplementationSurface": "Conversation memory/context retention and model-response consistency.",
-      "implementationConsiderations": "Distinguishing a technical memory limitation from shifting user expectations isn't fully resolvable from review text alone.",
+      "whyNow": "A moderate-volume signal that lands on project-style, multi-turn use -- the same use cases driving this sample's strongest praise. Worth monitoring rather than acting on immediately, and worth investigating without assuming a single cause.",
+      "recommendedNextStep": "Reproduce the reported failures and distinguish between instruction adherence, self-contradiction within a session, context carryover across turns, and other multi-turn consistency failures. The reviews establish that the assistant does not reliably hold or follow what it was told; they do not establish which of these mechanisms is responsible.",
+      "likelyImplementationSurface": "Multi-turn response consistency and instruction-following behaviour.",
+      "implementationConsiderations": "Whether this is a technical context limitation, an instruction-weighting issue, or shifted user expectations cannot be resolved from review text alone -- which is why the next step is diagnostic rather than corrective.",
       "likelyCrossFunctionalPartners": [
         "Product",
         "Machine Learning",

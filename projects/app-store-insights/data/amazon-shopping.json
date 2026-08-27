@@ -64,8 +64,8 @@
       ],
       "evidenceCount": 5,
       "whatUsersValue": "Reviewers cite the breadth of what is available on Amazon and the convenience of finding nearly anything in one place. Some name selection specifically; others describe only the ease and simplicity of shopping there.",
-      "whyThisMatters": "Selection breadth is Amazon's foundational value proposition; this remains a genuine draw for reviewers even in a sample otherwise dominated by complaints about a specific recent change (forced AI search).",
-      "protectThis": "The core search-and-browse experience that lets people actually find and compare this vast selection is exactly what the AI-search pain point below describes as newly degraded -- protecting this strength and fixing that pain point are the same underlying task.",
+      "whyThisMatters": "Selection breadth is Amazon's foundational value proposition; this remains a genuine draw for reviewers even in a sample otherwise dominated by complaints about a change reviewers describe as recent (forced AI search).",
+      "protectThis": "The core search-and-browse experience that lets people actually find and compare this vast selection is exactly what reviewers in the AI-search pain point below describe as having got worse -- protecting this strength and fixing that pain point are the same underlying task.",
       "voiceOfCustomer": [
         {
           "reviewId": "14461234633",
@@ -92,7 +92,7 @@
       "evidenceCount": 3,
       "whatUsersValue": "A separate group of reviewers specifically credit fast, dependable delivery -- some citing a decade or more of consistent experience -- distinct from the general selection/convenience praise above.",
       "whyThisMatters": "This is direct evidence that the core Prime delivery promise works well for a meaningful share of reviewers, which is worth stating plainly alongside the shipping-delay pain point below since both can be true in the same sample.",
-      "protectThis": "Consistent, fast delivery is the specific thing this group praises and is directly what the shipping-delay pain point below describes eroding for other reviewers -- worth protecting as the underlying cause of that pain point is investigated.",
+      "protectThis": "Consistent, fast delivery is the specific thing this group praises and is directly what other reviewers in the shipping-delay pain point below describe losing -- worth protecting as the underlying cause of that pain point is investigated.",
       "voiceOfCustomer": [
         {
           "reviewId": "14467404536",
@@ -383,7 +383,7 @@
       "priorityLabel": "P1",
       "title": "Prioritize Delivery Estimate Reliability",
       "linkedItemId": "pain-shipping-delays",
-      "whyNow": "High-frequency, high-confidence pattern directly undermining the core paid Prime benefit (reliable fast shipping), with several reviewers framing it as a recent decline.",
+      "whyNow": "High-frequency, high-confidence pattern directly undermining the core paid Prime benefit (reliable fast shipping), with several reviewers describing it as worse than the service they remember.",
       "recommendedNextStep": "Segment delayed-delivery reports by fulfillment center and delivery-window type to determine where delays concentrate.",
       "likelyImplementationSurface": "Delivery-estimate calculation and fulfillment/logistics scheduling.",
       "implementationConsiderations": "Whether this is an estimation-display issue or an actual fulfillment-capacity issue isn't determinable from review text alone.",

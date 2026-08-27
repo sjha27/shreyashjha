@@ -378,7 +378,7 @@
       "priorityLabel": "P0",
       "title": "Investigate Refund Adequacy for Unsafe/Uninhabitable Stays",
       "linkedItemId": "pain-property-refunds",
-      "whyNow": "This is the highest-frequency, highest-severity signal in the sample -- involving lost utilities, mold, and hazardous air quality -- with reviewers consistently describing refunds disproportionate to the harm experienced.",
+      "whyNow": "This is the highest-severity signal in the sample -- lost utilities, mold and hazardous air quality -- with reviewers consistently describing refunds disproportionate to the harm experienced. It is not the largest theme by volume, but severity and the concreteness of the accounts justify treating it first.",
       "recommendedNextStep": "Review the refund-calculation policy for safety/habitability failures specifically, and validate whether reported partial-refund amounts reflect intended policy or inconsistent case-by-case discretion.",
       "likelyImplementationSurface": "AirCover/refund policy logic and support-agent compensation tooling.",
       "implementationConsiderations": "May reflect genuine policy nuance, agent discretion, or a policy gap for safety-specific cases.",

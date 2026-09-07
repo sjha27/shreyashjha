@@ -687,6 +687,48 @@ h1, h2, h3, p, figure { margin: 0; }
 
 .project-card { cursor: pointer; }
 
+/* Project cards lead with a real screenshot of the thing they link to.
+   The thumb is pulled out to the card's edges with negative margins so
+   it sits flush under the top corners. */
+/* Both cards run to the height of the taller one, so the two thumbnails
+   line up across the row. */
+.projects-grid > li { display: flex; }
+.projects-grid .project-card { flex: 1; }
+
+.project-thumb {
+  margin: calc(var(--s3) * -1) calc(var(--s3) * -1) var(--s3);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  background: var(--paper-soft);
+  flex-shrink: 0;
+}
+
+/* The crop is baked into the asset (both are 16:10), so the image sets
+   its own height. Setting an aspect-ratio here instead would resolve
+   against the content box rather than the negative-margin box and clip
+   the bottom of the screenshot. */
+.project-thumb img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s var(--ease);
+}
+
+@media (hover: hover) {
+  .project-card:hover .project-thumb img { transform: scale(1.03); }
+}
+
+/* Sits above the title rather than beside it, so a long project name
+   never has to share a line with the pill. */
+.project-date {
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-thumb img { transition: none; }
+}
+
 .card-cta {
   font-size: 0.88rem;
   font-weight: 700;
